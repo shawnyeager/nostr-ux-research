@@ -22,37 +22,37 @@
 ### Current State
 
 **The empty feed problem:**
-- New Nostr users report empty or boring feeds after signup [User:22]
-- "Traditional apps win simply by having much better content selection - you get to see a variety of interesting things that Nostr simply can't match" [User:15]
-- Cold start problem drives early abandonment: "Nostr is lacking in content, which could be the primary reason people are not sticking around" [User:22]
+- New Nostr users report empty or boring feeds after signup [[User:22]](#user-22)
+- "Traditional apps win simply by having much better content selection - you get to see a variety of interesting things that Nostr simply can't match" [[User:15]](#user-15)
+- Cold start problem drives early abandonment: "Nostr is lacking in content, which could be the primary reason people are not sticking around" [[User:22]](#user-22)
 
 **Discovery failures:**
-- "The main problem of decentralized alternatives like Nostr is content discovery" [User:27]
-- Global feed unusable due to spam: Nostr hit with approximately 500,000 daily spam messages in mid-February 2024 [User:29]
-- "There can't be a 'global' view of the network, as it would be full of spam" [User:30]
-- Search limitations: "It's only possible to search on what you have seen" [User:28]
-- "Nostr does not seem to have any external growth loops, such as the ability to invite people by email" [User:24]
+- "The main problem of decentralized alternatives like Nostr is content discovery" [[User:27]](#user-27)
+- Global feed unusable due to spam: Nostr hit with approximately 500,000 daily spam messages in mid-February 2024 [[User:29]](#user-29)
+- "There can't be a 'global' view of the network, as it would be full of spam" [[User:30]](#user-30)
+- Search limitations: "It's only possible to search on what you have seen" [[User:28]](#user-28)
+- "Nostr does not seem to have any external growth loops, such as the ability to invite people by email" [[User:24]](#user-24)
 
 **The retention impact:**
-- 30-day retention trending to 0% for recent cohorts [Data:1]
-- Only ~36,000 weekly active users as of October 2024; less than 15,000 daily active [Data:2]
-- Post-viral-event retention failure: adoption spikes from X ban in Brazil, Reddit/TikTok events showed poor retention [Data:2]
-- "Nostr suffers from the chicken/egg problem where new users are needed to generate more content, and more content is needed to retain new users" [User:23]
+- 30-day retention trending to 0% for recent cohorts [[Data:1]](#data-1)
+- Only ~36,000 weekly active users as of October 2024; less than 15,000 daily active [[Data:2]](#data-2)
+- Post-viral-event retention failure: adoption spikes from X ban in Brazil, Reddit/TikTok events showed poor retention [[Data:2]](#data-2)
+- "Nostr suffers from the chicken/egg problem where new users are needed to generate more content, and more content is needed to retain new users" [[User:23]](#user-23)
 
 ### Root Causes
 
-1. **No algorithmic curation**: Pure chronological feeds without intelligent ranking [User:27]
-2. **Cold start unsolved**: No default follows or starter content until recent innovations (Nstart, January 2025) [User:32]
-3. **Relay fragmentation**: Content scattered across relays, hard to aggregate [User:28]
+1. **No algorithmic curation**: Pure chronological feeds without intelligent ranking [[User:27]](#user-27)
+2. **Cold start unsolved**: No default follows or starter content until recent innovations (Nstart, January 2025) [[User:32]](#user-32)
+3. **Relay fragmentation**: Content scattered across relays, hard to aggregate [[User:28]](#user-28)
 4. **Spam and noise**: 500K daily spam messages overwhelmed global feeds (February 2024) [User:29, Data:5]
-5. **Search limitations**: Full-text search difficult in decentralized architecture [User:28]
+5. **Search limitations**: Full-text search difficult in decentralized architecture [[User:28]](#user-28)
 6. **No growth loops**: No email invites, weak notifications, poor habit formation [User:24, User:25, User:26]
 
 ### Why This Matters
 
-> "Nostr is lacking in content, which could be the primary reason people are not sticking around after trying it." [User:22]
+> "Nostr is lacking in content, which could be the primary reason people are not sticking around after trying it." [[User:22]](#user-22)
 
-**Success metric:** Session length and posts-per-session in first 7 days directly correlate with D30 retention. With Nostr's retention trending toward 0% [Data:1], content discovery is THE critical problem to solve.
+**Success metric:** Session length and posts-per-session in first 7 days directly correlate with D30 retention. With Nostr's retention trending toward 0% [[Data:1]](#data-1), content discovery is THE critical problem to solve.
 
 ---
 
@@ -62,18 +62,18 @@ These principles apply to any social application, regardless of underlying archi
 
 ### 1. The Cold Start Problem: Solve It or Die
 
-**Research backing:** Bluesky's starter packs (curated lists of accounts users can follow with one click) accounted for 43% of follow actions during peak periods. Users included in starter packs received 85% more followers and posted 60% more than similar users not included. [Research:4]
+**Research backing:** Bluesky's starter packs (curated lists of accounts users can follow with one click) accounted for 43% of follow actions during peak periods. Users included in starter packs received 85% more followers and posted 60% more than similar users not included. [[Research:4]](#research-4)
 
 **Core principle:** New users with empty feeds abandon immediately. Every social app must solve: "What do I show someone who follows nobody?"
 
 **Mainstream solutions:**
-- **TikTok:** Algorithm-first, no following required. For You Page shows trending content immediately. Users with zero followers can reach large audiences if content aligns with viewer interests. [Example:4]
-- **Instagram:** Browse mode with trending content, then signup wall. Multiple specialized algorithms: Feed (connections), Reels (entertainment + viral potential for newcomers), Explore (discovery). [Example:5]
-- **Twitter/X:** Suggests accounts during signup, shows "For You" algorithmic feed by default [Example:5]
-- **Bluesky:** Starter packs allow users to follow up to 150 people + 3 custom feeds with one click, solving empty feed problem. [Example:6]
-- **Mastodon:** Local/Federated timeline provides instant content discovery [Example:7]
+- **TikTok:** Algorithm-first, no following required. For You Page shows trending content immediately. Users with zero followers can reach large audiences if content aligns with viewer interests. [[Example:4]](#example-4)
+- **Instagram:** Browse mode with trending content, then signup wall. Multiple specialized algorithms: Feed (connections), Reels (entertainment + viral potential for newcomers), Explore (discovery). [[Example:5]](#example-5)
+- **Twitter/X:** Suggests accounts during signup, shows "For You" algorithmic feed by default [[Example:5]](#example-5)
+- **Bluesky:** Starter packs allow users to follow up to 150 people + 3 custom feeds with one click, solving empty feed problem. [[Example:6]](#example-6)
+- **Mastodon:** Local/Federated timeline provides instant content discovery [[Example:7]](#example-7)
 
-**Academic research identifies cold start strategies:** Using social network information from existing platforms, collaborative filtering based on similar user behavior, hybrid models, incorporating user demographics and stated preferences, community detection to identify similar users. [Research:5]
+**Academic research identifies cold start strategies:** Using social network information from existing platforms, collaborative filtering based on similar user behavior, hybrid models, incorporating user demographics and stated preferences, community detection to identify similar users. [[Research:5]](#research-5)
 
 **Key metrics:**
 - Time to first interesting content: <30 seconds
@@ -82,30 +82,30 @@ These principles apply to any social application, regardless of underlying archi
 
 ### 2. Feed Algorithms: Balancing Discovery and Control
 
-**Research backing:** Georgetown University's "Better Feeds" report (March 2025) found that moving users from algorithmic to reverse-chronological feeds decreased time spent on platform over 3 months. Instagram users compensated by increasing TikTok usage by 36% and YouTube by 20%; Facebook users moved to Reddit (+52%) and YouTube (+21%). **Critically**: Chronological feeds did NOT reduce polarization as commonly believed. [Research:6]
+**Research backing:** Georgetown University's "Better Feeds" report (March 2025) found that moving users from algorithmic to reverse-chronological feeds decreased time spent on platform over 3 months. Instagram users compensated by increasing TikTok usage by 36% and YouTube by 20%; Facebook users moved to Reddit (+52%) and YouTube (+21%). **Critically**: Chronological feeds did NOT reduce polarization as commonly believed. [[Research:6]](#research-6)
 
 **The tradeoff:**
-- **Chronological feeds:** User control, transparency, but requires manual curation and leads to platform abandonment [Research:6]
-- **Algorithmic feeds:** Better discovery, higher engagement, but must avoid pure engagement optimization that amplifies divisive content [Research:7]
+- **Chronological feeds:** User control, transparency, but requires manual curation and leads to platform abandonment [[Research:6]](#research-6)
+- **Algorithmic feeds:** Better discovery, higher engagement, but must avoid pure engagement optimization that amplifies divisive content [[Research:7]](#research-7)
 
 **Successful hybrid approaches:**
 - Multiple feed types with clear switching (Mastodon: Home/Local/Federated)
 - Algorithmic "For You" + chronological "Following" (Twitter/X)
 - User-configurable feed preferences (Bluesky custom feeds)
-- Specialized algorithms for different goals: Instagram uses separate algorithms for Feed, Reels, and Explore [Example:5]
+- Specialized algorithms for different goals: Instagram uses separate algorithms for Feed, Reels, and Explore [[Example:5]](#example-5)
 
 **What makes a good algorithm:**
 - Prioritizes content from accounts user explicitly follows
 - Surfaces high-engagement content from extended network
 - Balances familiar (people you follow) with novel (discovery)
 - Responds quickly to engagement signals
-- **WARNING:** Avoids pure engagement optimization that amplifies emotionally charged, divisive content users report makes them feel worse [Research:7]
-- Incorporates user satisfaction signals (muting, reporting, explicit feedback) alongside engagement metrics [Research:7]
+- **WARNING:** Avoids pure engagement optimization that amplifies emotionally charged, divisive content users report makes them feel worse [[Research:7]](#research-7)
+- Incorporates user satisfaction signals (muting, reporting, explicit feedback) alongside engagement metrics [[Research:7]](#research-7)
 - Transparent about why content is shown
 
 ### 3. Content Quality Signals
 
-**Research backing:** Instagram's April 2024 algorithm update heavily weights "shares per reach" (content sent via DMs) as deeper engagement than likes. [Example:5]
+**Research backing:** Instagram's April 2024 algorithm update heavily weights "shares per reach" (content sent via DMs) as deeper engagement than likes. [[Example:5]](#example-5)
 
 **Quality indicators across platforms:**
 - **Engagement rate:** Likes, comments, shares relative to follower count
@@ -116,10 +116,10 @@ These principles apply to any social application, regardless of underlying archi
 
 ### 4. Search and Discovery Mechanisms
 
-**Critical shift:** Two in five Americans currently use TikTok as a search engine. Over 50% of Gen Z and Millennials prefer social media for product discovery, recommendations, and research over traditional search engines. Platforms are no longer just for scrolling—they're where consumers look for information. [Research:8]
+**Critical shift:** Two in five Americans currently use TikTok as a search engine. Over 50% of Gen Z and Millennials prefer social media for product discovery, recommendations, and research over traditional search engines. Platforms are no longer just for scrolling—they're where consumers look for information. [[Research:8]](#research-8)
 
 **User expectations from mainstream apps:**
-- **Search:** Find people by name/username, find posts by keyword - now TABLE STAKES, not optional [Research:8]
+- **Search:** Find people by name/username, find posts by keyword - now TABLE STAKES, not optional [[Research:8]](#research-8)
 - **Explore/Trending:** See what's popular right now
 - **Recommendations:** "People you might like" based on follows
 - **Topics/Hashtags:** Browse content by subject
@@ -162,7 +162,7 @@ These principles apply to any social application, regardless of underlying archi
 - Inconsistent discovery experience across clients
 - Harder to bootstrap network effects
 
-**Current state:** Major innovation launched November 21, 2024: Primal 2.0 offers Feed Marketplace, Explore tab, comprehensive Advanced Search, and Reads tab with topic-specific feeds (Bitcoin Reads, Philosophy Reads, News Reads, etc.). [User:31] This addresses longstanding discovery weaknesses identified across the ecosystem.
+**Current state:** Major innovation launched November 21, 2024: Primal 2.0 offers Feed Marketplace, Explore tab, comprehensive Advanced Search, and Reads tab with topic-specific feeds (Bitcoin Reads, Philosophy Reads, News Reads, etc.). [[User:31]](#user-31) This addresses longstanding discovery weaknesses identified across the ecosystem.
 
 ### Challenge 2: Multi-Relay Content Aggregation
 
@@ -173,7 +173,7 @@ These principles apply to any social application, regardless of underlying archi
 - Slow/dead relays delay content loading
 
 **Current approaches:**
-- Query user's relay list for followed accounts [Protocol:65 - NIP-65]
+- Query user's relay list for followed accounts [[Protocol:5]](#protocol-5)
 - Use relay hints from user profiles [Protocol:NEEDED]
 - Implement timeout/fallback for slow relays
 - Cache content for offline reading
@@ -210,7 +210,7 @@ This creates spam resistance and discovery improvement by limiting global feeds 
 
 ### Challenge 4: Zaps as Quality Signal
 
-**The unique advantage:** Zaps (Lightning payments) [Protocol:5] provide strong quality signal that can't be faked at scale.
+**The unique advantage:** Zaps (Lightning payments) [[Protocol:5]](#protocol-5) provide strong quality signal that can't be faked at scale.
 
 **Why it works:**
 - Costs real money to zap, unlike free likes
@@ -224,7 +224,7 @@ This creates spam resistance and discovery improvement by limiting global feeds 
 - Total zaps as reputation/credibility score
 - Weighted feed ranking by zap engagement
 
-**Current usage:** Primal 2.0's trending feeds likely incorporate zap signals as quality indicators. [User:31] This is a unique Nostr advantage that mainstream platforms lack—authentic monetary endorsement as a ranking signal.
+**Current usage:** Primal 2.0's trending feeds likely incorporate zap signals as quality indicators. [[User:31]](#user-31) This is a unique Nostr advantage that mainstream platforms lack—authentic monetary endorsement as a ranking signal.
 
 ### Challenge 5: Relay-Based Content Filtering & Specialization
 
@@ -242,7 +242,7 @@ This creates spam resistance and discovery improvement by limiting global feeds 
 - Users can subscribe to high-quality relay feeds
 - Community-oriented relays can provide useful search by indexing notes locally, already filtered and scoped to that relay's topic [Research note: Search functionality discussions]
 
-**Current state:** Primal 2.0 Feed Marketplace (November 2024) offers topic-specific feeds: Nostr Reads, Bitcoin Reads, Philosophy Reads, News Reads, and custom feeds available on the marketplace. [User:31] This demonstrates relay/feed specialization in practice.
+**Current state:** Primal 2.0 Feed Marketplace (November 2024) offers topic-specific feeds: Nostr Reads, Bitcoin Reads, Philosophy Reads, News Reads, and custom feeds available on the marketplace. [[User:31]](#user-31) This demonstrates relay/feed specialization in practice.
 
 ---
 
@@ -286,13 +286,13 @@ After signup:
 ```
 
 **Examples from mainstream apps:**
-- Instagram: Suggests accounts from contacts and popular accounts during signup [Example:5]
+- Instagram: Suggests accounts from contacts and popular accounts during signup [[Example:5]](#example-5)
 - Twitter: "Who to follow" based on interests and popular accounts
-- Mastodon: Server-specific featured accounts [Example:7]
+- Mastodon: Server-specific featured accounts [[Example:7]](#example-7)
 - **Bluesky**: Starter packs allow users to follow up to 150 people + 3 custom feeds with one click. 43% of follows during peak periods came from starter packs, and users in starter packs got 85% more followers. [Research:4, Example:6]
 
 **Nostr implementation:**
-- **Nstart** (January 2025): Onboarding wizard that can "Auto follow the contacts list of some old and trusted Nostr users" [User:32]
+- **Nstart** (January 2025): Onboarding wizard that can "Auto follow the contacts list of some old and trusted Nostr users" [[User:32]](#user-32)
 - **NIP-51 starter packs**: Protocol spec exists (kind 39089: "a named set of profiles to be shared around with the goal of being followed together") but clients haven't widely implemented [Research note: NIP-51]
 - **Opportunity**: Nostr has the protocol support but needs more client implementations
 
@@ -801,43 +801,69 @@ Challenge: Nostr has no central push notification server.
 
 ### Data & Analytics
 
+<a id="data-1"></a>
 **[Data:1]** Nostr.band Analytics - 30-day retention trending to 0% for recent cohorts
+<a id="data-2"></a>
 **[Data:2]** Nostr Content Discovery Crisis - ~36K weekly active users (October 2024), post-viral retention failure
+<a id="data-5"></a>
 **[Data:5]** Nostr Spam Crisis - 500,000 daily spam messages (February 2024)
 
 ### Academic & UX Research
 
+<a id="research-4"></a>
 **[Research:4]** Bluesky Starter Packs Study (Lancaster University, January 2025) - 43% of follows from starter packs during peak periods, 85% more followers for included users
+<a id="research-5"></a>
 **[Research:5]** Cold Start Problem in Recommendation Systems (Academic, 2024) - Strategies: social network info, collaborative filtering, hybrid models, user demographics, community detection
+<a id="research-6"></a>
 **[Research:6]** "Better Feeds" Report (Georgetown University, March 2025) - Chronological feeds decrease engagement without reducing polarization; users compensate by using other platforms
+<a id="research-7"></a>
 **[Research:7]** Engagement-Based Algorithms Amplify Divisive Content (PNAS Nexus, 2024-2025) - Pure engagement optimization amplifies content users report makes them feel worse
+<a id="research-8"></a>
 **[Research:8]** Social Media as Search Engine (2024-2025) - 2 in 5 Americans use TikTok as search engine; 50%+ of Gen Z prefer social for discovery over Google
 
 ### Case Studies & Examples
 
+<a id="example-4"></a>
 **[Example:4]** TikTok For You Algorithm (2024-2025) - Prioritizes content relevance over creator popularity; users with zero followers can reach large audiences; 75%+ impressions from For You feed
+<a id="example-5"></a>
 **[Example:5]** Instagram Algorithm Updates (2024-2025) - April 2024: rewards original content, weights shares over likes; Multiple specialized algorithms for Feed/Reels/Explore
+<a id="example-6"></a>
 **[Example:6]** Bluesky Starter Packs (June 2024) - Up to 150 people + 3 custom feeds per pack; proven cold start solution
+<a id="example-7"></a>
 **[Example:7]** Mastodon Discovery - Local/Federated timeline structure, hashtag-based discovery
 
 ### Nostr Protocol Documentation
 
+<a id="protocol-5"></a>
 **[Protocol:5]** NIP-57: Lightning Zaps - Unique quality signal for content ranking
 
 ### User Feedback & Quotes (2024-2025)
 
+<a id="user-15"></a>
 **[User:15]** "Traditional apps win simply by having much better content selection" (karnage, March 2024)
+<a id="user-22"></a>
 **[User:22]** "Nostr is lacking in content, which could be the primary reason people are not sticking around" (2024)
+<a id="user-23"></a>
 **[User:23]** Chicken-egg problem: need users for content, need content for users (2024)
+<a id="user-24"></a>
 **[User:24]** "Nostr does not seem to have any external growth loops" (karnage, March 2024)
+<a id="user-25"></a>
 **[User:25]** "Users are not notified when tagged" (karnage, March 2024)
+<a id="user-26"></a>
 **[User:26]** "Habit formation... Nostr seems to have a weak spot here" (karnage, March 2024)
+<a id="user-27"></a>
 **[User:27]** "The main problem of decentralized alternatives like Nostr is content discovery" (2024)
+<a id="user-28"></a>
 **[User:28]** "It's only possible to search on what you have seen" (2024)
+<a id="user-29"></a>
 **[User:29]** "500,000 daily spam messages in mid-February" (February 2024)
+<a id="user-30"></a>
 **[User:30]** "There can't be a 'global' view of the network, as it would be full of spam" (2024)
+<a id="user-31"></a>
 **[User:31]** Primal 2.0 launch - Feed Marketplace, Explore tab, Advanced Search (November 21, 2024)
+<a id="user-32"></a>
 **[User:32]** Nstart onboarding wizard - Auto-follow trusted users (January 2025)
+<a id="user-33"></a>
 **[User:33]** Derek Ross - "Content discovery keeps improving, but we still need to act as our own algorithms" (January 2025)
 
 ---
