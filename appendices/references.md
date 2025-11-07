@@ -125,8 +125,55 @@ Citations in pattern documents use this format:
 - **Source:** "An Empirical Analysis of the Nostr Social Network: Decentralization, Availability, and Replication Overhead" - arXiv
 - **URL:** https://arxiv.org/abs/2402.05709
 - **Date:** February 2024
-- **Key findings:** "Relay availability remains a challenge, where financial sustainability (particularly for free-to-use relays) emerges as a contributing factor. 93% of posts can be found across multiple relays, but 178 relays (25% of all relays) hosting more than 5% of posts each"
+- **Key findings:** "Relay availability remains a challenge, where financial sustainability (particularly for-to-use relays) emerges as a contributing factor. 93% of posts can be found across multiple relays, but 178 relays (25% of all relays) hosting more than 5% of posts each"
 - **Relevance:** Pattern 3 - Academic validation of systemic reliability challenges
+
+### Pattern 4: Performance & Perceived Speed Data
+
+**[Data:19]** User complaints - Nostr apps "slow and clunky"
+- **Source:** Community feedback on Nostr performance (2024-2025)
+- **Key findings:** Apps described as "slow and clunky" compared to Twitter, with "clients blasting entire message history" causing inefficiency
+- **Relevance:** Pattern 4 - User perception of performance problems
+
+**[Data:20]** Crash reports across Nostr clients
+- **Sources:** GitHub issues from major Nostr clients (2024-2025)
+- **Key findings:** Primal Android crashes (September & October 2025), Amethyst community join/leave crashes and permission crashes, Nostur iOS crashes and slow loading, Damus Issue #3163 (July 2025)
+- **Relevance:** Pattern 4 - Stability and performance issues driving abandonment
+
+**[Data:21]** Database performance bottleneck
+- **Source:** Nostr developer discussions (2024-2025)
+- **Key findings:** Users identify database as "core bottleneck" for slow feed loading. Comparison to Twitter's Redis architecture shows gap
+- **Relevance:** Pattern 4 - Technical root cause of performance problems
+
+**[Data:22]** Amethyst battery drain issues
+- **Source:** Amethyst GitHub issues (2024-2025)
+- **Key findings:** Background video playback silently draining battery on loop, multi-relay connections (up to 100 relays) causing resource consumption, improper WebSocket connection management when app backgrounds
+- **Relevance:** Pattern 4 - Mobile performance problems affecting user experience
+
+**[Data:23]** Relay infrastructure statistics
+- **Source:** Nostr relay monitoring (2024-2025)
+- **Key findings:** Only 639 relays online globally (80% in North America & Europe), default nostr-relay config: ~100 requests/second, default SQLite backend has "worst performance", free relays have higher latency and less reliability
+- **Relevance:** Pattern 4 - Infrastructure limitations affecting performance
+
+**[Data:24]** Multi-relay coordination overhead
+- **Source:** Nostr protocol analysis (2024-2025)
+- **Key findings:** Clients can open "hundreds of WebSocket connections simultaneously", each relay gets one WebSocket connection for all communication
+- **Relevance:** Pattern 4 - Architecture creating performance bottlenecks
+
+**[Data:25]** Black Hat USA 2025: "Not Sealed: Practical Attacks on Nostr"
+- **Source:** Black Hat USA 2025 security research
+- **Key findings:** Several clients (Damus, Iris, FreeFrom, Plebstr past versions) omit signature verification entirely to improve speed. Trade-off: Performance improvement vs security vulnerability. Recommendation: Enforce mandatory signature verification in NIP-01
+- **Relevance:** Pattern 4 - Critical security vs performance trade-off
+
+**[Data:26]** nostrdb optimization
+- **Source:** nostrdb documentation (2024-2025)
+- **Key findings:** "Unfairly fast" embedded database with zero-copy, O(1) access patterns, memory-mapped LMDB design (copied from strfry)
+- **Relevance:** Pattern 4 - Example of performance optimization solution
+
+**[Data:27]** Primal Caching Service
+- **Source:** Primal project (2024-2025)
+- **Key findings:** Server-side caching for Nostr events, open sourced, archived December 2024
+- **Relevance:** Pattern 4 - Relay-level caching strategy
 
 ---
 
@@ -343,22 +390,173 @@ Citations in pattern documents use this format:
 - **Key findings:** Initial sync with clear guidance and time estimates, status bar indicates offline/syncing/success/failure, background syncing based on relevant intervals, progress indicators on key screens, timestamps show recent update times
 - **Relevance:** Pattern 3 - Nostr clients should show relay sync status and allow offline post queuing
 
-### Performance & Perceived Speed
+### Pattern 4: Performance & Perceived Speed
 
-**[Research:9]** Perceived Performance vs Actual Performance
-- **Citation:** [UX research - to be found]
-- **Key finding:** Users perceive apps as faster with skeleton screens and optimistic UI
-- **Relevance:** Pattern 4 (Performance)
+**[Research:31]** Nielsen Norman Group - Response Time Limits (Updated January 2024)
+- **Source:** Nielsen Norman Group
+- **URL:** https://www.nngroup.com/articles/response-times-3-important-limits/
+- **Date:** Updated January 2024
+- **Key findings:** 100ms (instant response), 1.0 second (upper limit of user's flow of thought), 10 seconds → Now 5 seconds: "Probably safe to say the upper limit of 10 seconds is now 5 seconds or even less"
+- **Relevance:** Pattern 4 - Foundational performance thresholds updated for 2024 expectations
 
-**[Research:10]** Mobile App Performance Budgets
-- **Citation:** [To be researched - Google Web Fundamentals or similar]
-- **Key finding:** [Summary]
-- **Relevance:** Pattern 4 (Performance)
+**[Research:32]** Website Speed & Bounce Rate Statistics
+- **Source:** Site Builder Report
+- **URL:** https://www.sitebuilderreport.com/website-speed-statistics
+- **Date:** 2025
+- **Key findings:** 32% bounce increase from 1 to 3 seconds load time, 90% bounce increase at 5 seconds, 53% of mobile visitors leave if page takes >3 seconds
+- **Relevance:** Pattern 4 - Quantifies business impact of speed on retention
 
-**[Research:11]** Optimistic UI Patterns
-- **Citation:** [To be researched]
-- **Key finding:** [Summary]
-- **Relevance:** Pattern 3 (Core Interactions), Pattern 4 (Performance)
+**[Research:33]** User Experience Conversion Statistics
+- **Source:** TechJury
+- **URL:** https://techjury.net/industry-analysis/user-experience-stats/
+- **Date:** 2025
+- **Key findings:** Sites loading in 1 second achieve 39% conversion rates, 1.9% conversion at 2.4 seconds, 7% loss in conversion for every 1-second delay
+- **Relevance:** Pattern 4 - Conversion rate correlation with load times
+
+**[Research:34]** Skeleton Loading Screen Design
+- **Source:** LogRocket
+- **URL:** https://blog.logrocket.com/ux-design/skeleton-loading-screen-design/
+- **Date:** 2024
+- **Key findings:** Users perceive skeleton screens as 30% faster than spinners for identical wait times. Best for wait times under 10 seconds, container-based components
+- **Relevance:** Pattern 4 - Perceived performance optimization with concrete data
+
+**[Research:35]** Skeleton Screens vs Spinners Performance
+- **Source:** UI Deploy
+- **URL:** https://ui-deploy.com/blog/skeleton-screens-vs-spinners-optimizing-perceived-performance
+- **Date:** 2024
+- **Key findings:** Skeleton screens keep users more engaged during wait times. Developer saw dramatic UX improvement despite identical backend speed
+- **Relevance:** Pattern 4 - Loading state pattern selection
+
+**[Research:36]** React Optimistic UI with useOptimistic Hook
+- **Source:** LogRocket
+- **URL:** https://blog.logrocket.com/understanding-optimistic-ui-react-useoptimistic-hook/
+- **Date:** 2024
+- **Key findings:** React 19's useOptimistic Hook provides elegant solution. Essential for social media: "seeing a comment appear the moment it's clicked"
+- **Relevance:** Pattern 4 - Modern optimistic UI implementation
+
+**[Research:37]** Material Design 3 Loading Indicators
+- **Source:** Material Design 3, Google
+- **URL:** https://m3.material.io/components/progress-indicators/guidelines
+- **URL:** https://9to5google.com/2025/05/16/material-3-expressive-loading-indicator/
+- **Date:** May 2025
+- **Key findings:** New Material 3 Expressive loading indicator (2025) for wait times <5 seconds. Looping shape morph sequence with 7 unique shapes
+- **Relevance:** Pattern 4 - Modern loading pattern design
+
+**[Research:38]** React Design Patterns Best Practices
+- **Source:** Telerik
+- **URL:** https://www.telerik.com/blogs/react-design-patterns-best-practices
+- **Date:** 2025
+- **Key findings:** Optimistic UI especially vital in social media. Facebook example: Like button immediately turns blue
+- **Relevance:** Pattern 4 - Mainstream app optimistic UI examples
+
+**[Research:39]** Caching Strategy with Service Workers
+- **Source:** Peerdh Blog
+- **URL:** https://peerdh.com/blogs/programming-insights/implementing-a-caching-strategy-for-indexeddb-with-service-workers
+- **Date:** September 2024
+- **Key findings:** Service Workers + IndexedDB significantly improves performance and UX. Enables robust offline-first applications
+- **Relevance:** Pattern 4 - Caching architecture for performance
+
+**[Research:40]** Offline-First Web Applications
+- **Source:** TechTruth
+- **URL:** https://techtruth.dev/building-offline-first-web-applications-with-service-workers-and-indexeddb
+- **Date:** August 2025
+- **Key findings:** Cache-then-network or stale-while-revalidate for dynamic content. 2024 HTTP Archive data: Nearly 45% of high-rated PWAs use hybrid approach
+- **Relevance:** Pattern 4 - Industry adoption of caching patterns
+
+**[Research:41]** JavaScript Bundle Size Reduction
+- **Source:** Dev.to
+- **URL:** https://dev.to/hamzakhan/reducing-javascript-bundle-size-with-code-splitting-in-2025-3927
+- **Date:** 2025
+- **Key findings:** Tree shaking, code splitting can reduce bundle sizes by 20-50% in typical applications. Use dynamic import() expressions
+- **Relevance:** Pattern 4 - Bundle optimization strategies
+
+**[Research:42]** Webpack Bundle Splitting Best Practices
+- **Source:** Infervour
+- **URL:** https://infervour.com/blog/how-to-split-webpack-bundles-for-code-splitting
+- **Date:** 2025
+- **Key findings:** Performance budgets for 2024: Initial bundle <250KB gzipped for fast 3G, total bundle <1MB gzipped for good UX
+- **Relevance:** Pattern 4 - Specific performance budgets for 2024
+
+**[Research:43]** React Server Components Performance Impact
+- **Source:** Developer Way, CoderTrove
+- **URL:** https://www.developerway.com/posts/react-server-components-performance
+- **URL:** https://www.codertrove.com/articles/react-server-components-2025-nextjs-performance
+- **Date:** 2024-2025
+- **Key findings:** Real-world example: 40% improvement in load times, 15% increase in conversion rates. RSCs not hydrated, no JS shipped to client
+- **Relevance:** Pattern 4 - Emerging React performance optimization
+
+**[Research:44]** Native Image Lazy Loading Performance
+- **Source:** Web.dev, MDN, Medium
+- **URL:** https://web.dev/articles/browser-level-image-lazy-loading
+- **URL:** https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Lazy_loading
+- **URL:** https://medium.com/@iliketoplay/lazy-loading-images-in-2024-9b579e885e07
+- **Date:** 2024-2025
+- **Key findings:** On 4G: 97.5% of lazy-loaded images fully loaded within 10ms of becoming visible. On 2G: 92.6% loaded within 10ms. Native loading="lazy" attribute
+- **Relevance:** Pattern 4 - Image optimization for feeds
+
+**[Research:45]** React Performance Optimization Complete Guide
+- **Source:** Dev.to
+- **URL:** https://dev.to/amaresh_adak/react-performance-optimization-from-slow-to-lightning-fast-complete-guide-2025-19hl
+- **Date:** 2025
+- **Key findings:** Virtual scrolling/windowing essential for large lists. Only render visible items to reduce DOM operations
+- **Relevance:** Pattern 4 - Feed rendering optimization
+
+**[Research:46]** Virtualization in React for Large Lists
+- **Source:** Medium
+- **URL:** https://medium.com/@ignatovich.dm/virtualization-in-react-improving-performance-for-large-lists-3df0800022ef
+- **Date:** 2024
+- **Key findings:** Significantly reduces DOM updates, memory usage, and render time by only rendering visible elements
+- **Relevance:** Pattern 4 - Virtual scrolling benefits quantified
+
+**[Research:47]** Smooth Scrolling with TanStack Virtual
+- **Source:** Borstch
+- **URL:** https://borstch.com/blog/development/achieving-smooth-scrolling-in-react-with-tanstack-virtual-best-practices
+- **Date:** November 2024
+- **Key findings:** TanStack Virtual most popular library (Nov 2024). Best practices: Wrap rows in React.memo(), render 1-2 additional items (overscan)
+- **Relevance:** Pattern 4 - Current virtual scrolling best practices
+
+**[Research:48]** Academic Research: Nostr Replication Overhead
+- **Source:** arXiv 2402.05709 (Yiluo Wei & Gareth Tyson)
+- **Date:** February 2024, revised September 2025
+- **Key findings:** "Replication of posts across relays enhances censorship-resistance but introduces significant overhead." Proposed solutions: Control replication count + reduce retrieval overhead
+- **Relevance:** Pattern 4 - Academic analysis of Nostr performance trade-offs
+
+**[Research:49]** INP Replaces FID as Core Web Vital (March 2024)
+- **Source:** Web.dev
+- **URL:** https://web.dev/blog/inp-cwv-march-12
+- **Date:** March 12, 2024
+- **Key findings:** INP (Interaction to Next Paint) replaced FID as Core Web Vital on March 12, 2024. FID officially deprecated, removed from Google Search Console
+- **Relevance:** Pattern 4 - Critical 2024 metric change
+
+**[Research:50]** First Input Delay vs Interaction to Next Paint
+- **Source:** Vercel
+- **URL:** https://vercel.com/blog/first-input-delay-vs-interaction-to-next-paint
+- **Date:** 2024
+- **Key findings:** INP measures all interactions (not just first). Good INP: <200ms, Poor: >500ms
+- **Relevance:** Pattern 4 - Understanding new metric requirements
+
+**[Research:51]** Animation Performance and Frame Rate
+- **Source:** MDN, MoldStud
+- **URL:** https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Animation_performance_and_frame_rate
+- **URL:** https://moldstud.com/articles/p-exploring-the-impact-of-animation-on-performance-essential-insights-for-developers
+- **Date:** Updated November 2025, September 2025
+- **Key findings:** For 60fps: Browser has 16.7ms to execute scripts. GPU-accelerated properties (transform, opacity) provide smoother results
+- **Relevance:** Pattern 4 - Smooth scrolling requirements
+
+**[Research:52]** Rakuten Core Web Vitals Case Study
+- **Source:** Web.dev
+- **URL:** https://web.dev/case-studies/rakuten
+- **Date:** 2024
+- **Key findings:** Good LCP led to up to 61.13% increase in conversion rate, 26.09% increase in revenue per visitor
+- **Relevance:** Pattern 4 - Business ROI of performance optimization
+
+**[Research:53]** Core Web Vitals Business Impact
+- **Source:** Blue Triangle, NitroPack
+- **URL:** https://bluetriangle.com/blog/web-vitals-impact-lcp
+- **URL:** https://nitropack.io/blog/post/improve-conversion-rates-cwv
+- **Date:** 2024
+- **Key findings:** Sites meeting Core Web Vitals: 24% reduction in page abandonment, 8-10% conversion increase per 0.1-second improvement
+- **Relevance:** Pattern 4 - Performance's direct impact on retention and conversion
 
 ### Progressive Complexity & Feature Discovery
 
@@ -477,17 +675,42 @@ Citations in pattern documents use this format:
 - **Key pattern:** Local/Federated timeline structure provides instant content discovery; Hashtag-based discovery
 - **Relevance:** Pattern 2 (Content Discovery)
 
-### Performance Optimization
+### Pattern 4: Performance & Perceived Speed Examples
 
-**[Example:8]** Twitter/X Performance Optimization
-- **Source:** [Engineering blog - to be found]
-- **Key pattern:** [Summary]
-- **Relevance:** Pattern 4 (Performance)
+**[Example:11]** Twitter/X Algorithm Performance
+- **Source:** Sprout Social - "How the Twitter Algorithm Works" (2025)
+- **URL:** https://sproutsocial.com/insights/twitter-algorithm/
+- **Date:** 2025
+- **Key patterns:** Recommendation algorithm runs ~5 billion times per day, completes each execution in under 1.5 seconds on average. Massive scale delivering personalized content
+- **Relevance:** Pattern 4 (Performance) - Demonstrates scale and speed requirements for social feed algorithms
 
-**[Example:9]** Facebook Mobile Performance Budgets
-- **Source:** [Engineering blog]
-- **Key pattern:** [Summary]
-- **Relevance:** Pattern 4 (Performance)
+**[Example:12]** Instagram Algorithm and Performance
+- **Source:** Sprout Social - "How the Instagram Algorithm Works [Updated 2025]"
+- **URL:** https://sproutsocial.com/insights/instagram-algorithm/
+- **Date:** 2025
+- **Key patterns:** Instagram's AI picks 500 posts per user, ranks by predictions. Instagram explicitly advises: "Engage your audience in the first three seconds"
+- **Relevance:** Pattern 4 (Performance) - First 3 seconds critical for engagement
+
+**[Example:13]** TikTok Performance Optimization
+- **Source:** Dash Social - "TikTok Benchmarks 2025"
+- **URL:** https://www.dashsocial.com/social-media-benchmarks/tiktok
+- **Date:** 2025
+- **Key patterns:** Watch time prioritized—content that "stops scrolls cold" with grabber upfront. Brands post 6 times per week on average for frequent surfacing
+- **Relevance:** Pattern 4 (Performance) - Stopping power and perceived instant loading
+
+**[Example:14]** Starbucks PWA Case Study
+- **Source:** Solutelabs - "The State of Progressive Web Applications" (2025)
+- **URL:** https://www.solutelabs.com/blog/the-state-of-progressive-web-applications
+- **Date:** 2025
+- **Key patterns:** Offline functionality led to 2x increase in daily active users and 53% rise in order completions. PWAs typically weigh <1 megabyte, sites load in less than 1 second
+- **Relevance:** Pattern 4 (Performance) - PWA performance benefits with concrete metrics
+
+**[Example:15]** Discord Performance Improvements (2024-2025)
+- **Source:** Discord Update Changelog - December 19, 2024
+- **URL:** https://discord.com/blog/discord-update-december-19-2024-changelog
+- **Date:** December 19, 2024
+- **Key patterns:** 84% reduction in overall crash rate on iOS (August 2024), 30% faster server switching on mobile, up to 80% faster GIF Picker loading times, ~25% reduction in API latency
+- **Relevance:** Pattern 4 (Performance) - Specific improvements (crash reduction, server switching speed, API latency) applicable to Nostr's real-time needs
 
 ### Pattern 3: Core Interaction Examples
 
