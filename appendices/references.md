@@ -70,6 +70,64 @@ Citations in pattern documents use this format:
   - Industry baseline shows most apps lose 80% of users in first days
 - **Relevance:** Even AppsFlyer's lower benchmarks (3.11% D30) exceed Nostr's near-zero retention, indicating fundamental onboarding/retention failures
 
+### Pattern 3: Core Interaction Reliability Data
+
+**[Data:11]** Post Publishing Failures in Nostr
+- **Source:** Nostr Biweekly Review (23 Dec 2024-5 Jan 2025)
+- **URL:** https://thenostrreview.substack.com/p/nostr-biweekly-review-23-dec-2024
+- **Date:** January 2025
+- **Key findings:** "If a mod post (later blog post) gets stuck while publishing, a timer kicks in that'll lead to a 'try again' option that usually publishes the post correctly"
+- **Relevance:** Pattern 3 - Confirms posts getting stuck during publishing is common enough to require retry mechanisms
+
+**[Data:12]** Relay Data Loss During Downtime
+- **Source:** "User Relays" by Sondre Bjellås, Medium
+- **URL:** https://medium.com/@sondreb/user-relays-7e23e2ac2590
+- **Date:** April 2025
+- **Key findings:** "When the Damus relay was taken down for upgrades, users' content was potentially wiped and gone... content stored on that relay was reduced to remaining on one less relay"
+- **Relevance:** Pattern 3 - Posts can disappear when relays go down without proper synchronization
+
+**[Data:13]** NIP-25 Reaction Inefficiency Problem
+- **Source:** "Reactions are inefficient. There needs to be an aggregate kind" - GitHub Issue #159
+- **URL:** https://github.com/nostr-protocol/nips/issues/159
+- **Date:** Discussed throughout 2024
+- **Key findings:** "NIP-25 is a terribly inefficient way to do it. Clients must gather potentially thousands of events just to count up the likes for a note. Storage of non-kind:1 events is at a MINIMUM about 10:1 compared to actual content posts. One relay operator reported relay growth of about 2GB per day primarily from reactions and metadata"
+- **Relevance:** Pattern 3 - Core architectural problem causing reaction display failures and performance issues
+
+**[Data:14]** Catastrophic Follow List Loss
+- **Source:** "All my nostr follows gone - how do I get them back?" - Stacker News
+- **URL:** https://stacker.news/items/182519
+- **Date:** 2024
+- **Key findings:** User reported "I was trying out the new Iris Nostr client and decided to follow someone new. From that moment on, I noticed my follows count reset from about 130 to 1 (that last follow)... At least one developer reported losing 75% of their follows"
+- **Relevance:** Pattern 3 - Following/unfollowing catastrophically unreliable due to race conditions
+
+**[Data:15]** Kind 3 Race Condition Root Cause
+- **Source:** "Add kinds 10 and 11 to prevent race conditions" - GitHub PR #349
+- **URL:** https://github.com/nostr-protocol/nips/pull/349
+- **Date:** Opened 2023, discussed through 2024
+- **Key findings:** "A very common experience on Nostr is that of losing follows due to race conditions when sending kind 3 events... Earlier this week someone signed in to Coracle, their contact list failed to fully sync before they followed someone, and they ended up deleting all their follows"
+- **Relevance:** Pattern 3 - Protocol design flaw causing systematic follow list destruction
+
+**[Data:16]** Notification Failures
+- **Source:** Nostrability Issues and NDK GitHub
+- **URLs:** https://github.com/nostrability/nostrability/issues, https://github.com/nostr-dev-kit/ndk/issues/175
+- **Date:** 2024
+- **Key findings:** "Receiving payments via Zeus wallet in Damus sometimes fails to trigger zap notifications... Quoting a user without a p-tag does not generate notifications... When outbox is enabled in NDK, the relay list becomes huge, causing zap requests to fail with an HTTP 431 error"
+- **Relevance:** Pattern 3 - Missing notifications widespread due to protocol complexity
+
+**[Data:17]** Relay Network Decline
+- **Source:** "Improving the Availability and Reliability of the Relay Network"
+- **URL:** https://research.dorahacks.io/2024/04/30/nostr-relay-incentive/
+- **Date:** April 23, 2024
+- **Key findings:** "Only 639 relays online globally (two-thirds reduction from previous year). 95% of relays struggle to cover operational costs. 20% have faced significant downtime"
+- **Relevance:** Pattern 3 - Shrinking infrastructure directly impacts reliability
+
+**[Data:18]** Empirical Analysis of Nostr Reliability
+- **Source:** "An Empirical Analysis of the Nostr Social Network: Decentralization, Availability, and Replication Overhead" - arXiv
+- **URL:** https://arxiv.org/abs/2402.05709
+- **Date:** February 2024
+- **Key findings:** "Relay availability remains a challenge, where financial sustainability (particularly for free-to-use relays) emerges as a contributing factor. 93% of posts can be found across multiple relays, but 178 relays (25% of all relays) hosting more than 5% of posts each"
+- **Relevance:** Pattern 3 - Academic validation of systemic reliability challenges
+
 ---
 
 ## 2. Academic & UX Research
@@ -184,6 +242,106 @@ Citations in pattern documents use this format:
   - TikTok introduced "Creator Search Insights Tool" in 2024 to help creators optimize for search behavior
   - Platforms are no longer just for scrolling—they're where consumers look for information
 - **Relevance:** Pattern 2 (Content Discovery) - Search functionality is now table stakes, not an afterthought. Users expect to search for topics, hashtags, and people as primary discovery mechanism
+
+### Pattern 3: Core Interaction Loops & Reliability
+
+**[Research:17]** Mobile App Trust and Design (Framna 2024)
+- **Source:** "Mobile App Trends 2024 Report" - Framna
+- **URL:** https://framna.com/en-us/mobile-app-trends-2024-report
+- **Date:** 2024
+- **Key findings:** Survey of 3,000+ people ages 18-70 found that 94% of users cited design as main reason they mistrusted or rejected apps. 40% said poor performance would make them prefer better alternatives. If app doesn't load quickly or show signs of reliability, users immediately uninstall.
+- **Relevance:** Pattern 3 - Perceived reliability is critical for user trust and retention
+
+**[Research:18]** Social Platform Trust Decline (eMarketer 2024)
+- **Source:** "User trust in social platforms is falling" - eMarketer
+- **URL:** https://www.emarketer.com/content/user-trust-social-platforms-falling-according-our-new-study
+- **Date:** 2024
+- **Key findings:** Only 35% of users feel safe participating on social platforms (down from 44%). All 9 major platforms lost trust ground in 2024.
+- **Relevance:** Pattern 3 - Trust erosion means core interactions must be rock-solid reliable
+
+**[Research:19]** Response Time Limits (Nielsen Norman Group 2024)
+- **Source:** "Response Time Limits: Article by Jakob Nielsen" - NN/g
+- **URL:** https://www.nngroup.com/articles/response-times-3-important-limits/
+- **Date:** January 2024 (updated)
+- **Key findings:** Three critical thresholds: 0.1 seconds (100ms) - limit for feeling system reacts instantaneously; 1.0 second - limit for user's flow of thought staying uninterrupted; 10 seconds - limit for keeping user's attention
+- **Relevance:** Pattern 3 - Nostr clients must respond to clicks within 100ms even if relay response takes longer
+
+**[Research:20]** React useOptimistic Hook (Official Documentation 2024)
+- **Source:** "useOptimistic – React" - React Official Docs
+- **URL:** https://react.dev/reference/react/useOptimistic
+- **Date:** 2024 (Canary version)
+- **Key findings:** New official React hook for optimistic UI updates. Shows different state while async action is underway, indicating optimistic UI is now framework-level standard pattern
+- **Relevance:** Pattern 3 - Optimistic UI is established best practice for social app interactions
+
+**[Research:21]** Optimistic UI Patterns (LogRocket 2024)
+- **Source:** "Understanding optimistic UI and React's useOptimistic Hook" - LogRocket
+- **URL:** https://blog.logrocket.com/understanding-optimistic-ui-react-useoptimistic-hook/
+- **Date:** August 2024
+- **Key findings:** Optimistic UI makes applications feel faster and more responsive. Excels when actions are nearly always successful (messages, posts, preferences). NOT recommended for critical operations (flight booking, cash transfers). Must properly handle failure cases and revert state
+- **Relevance:** Pattern 3 - Guidelines for when to use optimistic UI in Nostr clients
+
+**[Research:22]** Visibility of System Status (Nielsen Norman Group 2024)
+- **Source:** "Visibility of System Status" - NN/g
+- **URL:** https://www.nngroup.com/articles/visibility-system-status/
+- **Date:** January 2024
+- **Key findings:** "Most basic guideline of UI design" - keep users informed about what's going on. Provide appropriate feedback within reasonable time. Present feedback as quickly as possible (ideally immediately)
+- **Relevance:** Pattern 3 - Every Nostr interaction needs immediate visual feedback
+
+**[Research:23]** Skeleton Screens (Nielsen Norman Group 2024)
+- **Source:** "Skeleton Screens 101" - NN/g
+- **URL:** https://www.nngroup.com/articles/skeleton-screens/
+- **Date:** November 2024
+- **Key findings:** Skeleton screens are new norm for full-page loading. Show wireframe immediately before real content. Best for 2-10 second wait times. Must be consistent with final screen layout
+- **Relevance:** Pattern 3 - Nostr feeds taking 2-10 seconds should use skeleton screens, not spinners
+
+**[Research:24]** Success Message UX (Pencil & Paper 2024)
+- **Source:** "Success Message UX Examples & Best Practices" - Pencil & Paper
+- **URL:** https://www.pencilandpaper.io/articles/success-ux
+- **Date:** 2024
+- **Key findings:** Error states often prioritized over success states, but both must work together. Success feedback as important as error feedback for user confidence
+- **Relevance:** Pattern 3 - Don't neglect success states in Nostr clients
+
+**[Research:25]** Error Message Guidelines (Nielsen Norman Group 2024)
+- **Source:** "10 Design Guidelines for Reporting Errors in Forms" - NN/g
+- **URL:** https://www.nngroup.com/articles/errors-forms-design-guidelines/
+- **Date:** December 2024
+- **Key findings:** Help users recover from errors by clearly identifying problems. Allow users to access and correct fields easily
+- **Relevance:** Pattern 3 - Error messages in Nostr must be clear and actionable
+
+**[Research:26]** Error Handling UX Patterns (Medium 2025)
+- **Source:** "Error handling - UX design patterns" - Medium/Design Bootcamp
+- **URL:** https://medium.com/design-bootcamp/error-handling-ux-design-patterns-c2a5bbae5f8d
+- **Date:** October 2025
+- **Key findings:** Based on Jakob Nielsen's heuristic: "Help Users Recognize, Diagnose, and Recover." Three steps: Tell users error occurred, explain what went wrong, show how to recover
+- **Relevance:** Pattern 3 - Three-part error message structure for Nostr
+
+**[Research:27]** Idempotency Explained (FreeCodeCamp 2024)
+- **Source:** "What is Idempotence? Explained with Real-World Examples" - FreeCodeCamp
+- **URL:** https://www.freecodecamp.org/news/idempotence-explained/
+- **Date:** September 2024
+- **Key findings:** Post/Redirect/Get (PRG) pattern prevents double-submission. Prevents double-clicks, page refreshes creating duplicate orders. Real-world examples: Traffic light buttons, elevator call buttons
+- **Relevance:** Pattern 3 - Nostr clients should prevent double-posting via button disabling and request deduplication
+
+**[Research:28]** Designing Idempotent APIs (Bits and Pieces 2025)
+- **Source:** "How To Design an Idempotent API in 2024?" - Bits and Pieces
+- **URL:** https://blog.bitsrc.io/designing-an-idempotent-api-in-2024-d4a3cf8d8bf2
+- **Date:** March 2025
+- **Key findings:** Idempotency improves UX by ensuring consistent results, avoiding duplicate actions, providing predictable and stable interactions
+- **Relevance:** Pattern 3 - Nostr events should be idempotent by design
+
+**[Research:29]** Retry Pattern Best Practices (Microsoft Azure 2024)
+- **Source:** Microsoft Azure Retry Pattern
+- **URL:** https://learn.microsoft.com/en-us/azure/architecture/patterns/retry
+- **Date:** 2024
+- **Key findings:** Use exponential back-off for retries. Classify errors: Transient (retry) vs Permanent (user action). Don't retry: Authentication failures, invalid requests. Keep user informed during retries
+- **Relevance:** Pattern 3 - Nostr clients should auto-retry transient relay failures with exponential backoff
+
+**[Research:30]** Offline-First Design Patterns (Google 2024)
+- **Source:** "Design Guidelines for Offline & Sync" - Google Open Health Stack
+- **URL:** https://developers.google.com/open-health-stack/design/offline-sync-guideline
+- **Date:** 2024
+- **Key findings:** Initial sync with clear guidance and time estimates, status bar indicates offline/syncing/success/failure, background syncing based on relevant intervals, progress indicators on key screens, timestamps show recent update times
+- **Relevance:** Pattern 3 - Nostr clients should show relay sync status and allow offline post queuing
 
 ### Performance & Perceived Speed
 
@@ -331,6 +489,41 @@ Citations in pattern documents use this format:
 - **Key pattern:** [Summary]
 - **Relevance:** Pattern 4 (Performance)
 
+### Pattern 3: Core Interaction Examples
+
+**[Example:6]** Instagram Posting and Confirmation (2024)
+- **Source:** "How the Instagram Algorithm Works in 2025" - Later
+- **URL:** https://later.com/blog/how-instagram-algorithm-works/
+- **Date:** 2024-2025
+- **Key patterns:** Upload progress bar, "Posted" confirmation. 2024 algorithm now heavily weights "shares per reach" as key engagement signal, showing Instagram prioritizes reliable delivery confirmation
+- **Relevance:** Pattern 3 - Mainstream app example of clear posting feedback
+
+**[Example:7]** TikTok Instant Content Display (2024)
+- **Source:** "5 TikTok UI Choices That Made the App Successful" - Iterators
+- **URL:** https://www.iteratorshq.com/blog/5-tiktok-ui-choices-that-made-the-app-successful
+- **Date:** 2024
+- **Key patterns:** Shows content immediately with no loading state. Up/down swiping is "game-changer" - intuitive and effortless navigation. 100ms creates illusion of instantaneous response
+- **Relevance:** Pattern 3 - Example of optimistic loading and instant feedback
+
+**[Example:8]** Apple Human Interface Guidelines - Action Feedback (2024)
+- **Source:** "Human Interface Guidelines" - Apple Developer
+- **URL:** https://developer.apple.com/design/human-interface-guidelines/
+- **Date:** 2024
+- **Key patterns:** Give users clear and consistent feedback. Ensure understanding of what's happening at every stage. Inform about errors clearly. Visually indicate progress with loading bars. Provide notifications for completion. Use animations, sounds, haptic feedback to confirm actions
+- **Relevance:** Pattern 3 - Design system guidance on interaction feedback
+
+**[Example:9]** Material Design 3 - Responsive Feedback (2024)
+- **Source:** Material Design 3 articles
+- **Date:** 2024
+- **Key patterns:** Use motion for visual feedback (clicks, submissions). Components respond instantly to user inputs. Provide clear feedback, enhance overall experience. Responsive feedback is essential for interactivity. Spring-like motion - animations bounce, stretch, respond organically
+- **Relevance:** Pattern 3 - Design system approach to interaction responsiveness
+
+**[Example:10]** Social Media Management Tools - Retry Patterns (2024)
+- **Source:** SocialBee, SmarterQueue, Vista Social
+- **Date:** 2024
+- **Key patterns:** For temporary platform bugs - simply re-queue and retry. For post issues (too long, duplicate) - must edit before re-queuing. Rate limiting - wait specified period, slow down activity rate
+- **Relevance:** Pattern 3 - Real-world retry pattern implementations
+
 ### Progressive Disclosure
 
 **[Example:10]** Slack Settings Hierarchy
@@ -355,32 +548,39 @@ Citations in pattern documents use this format:
 
 **[Protocol:2]** NIP-02: Contact List and Petnames
 - **Source:** https://github.com/nostr-protocol/nips/blob/master/02.md
-- **Relevance:** Pattern 6 (Cross-Client Consistency)
+- **Key details:** Defines kind 3 events for following lists. Each new contact list event is a replaceable event that supersedes previous ones. Must contain all pubkeys the user is following, as event replaces previous list entirely.
+- **Relevance:** Pattern 3 (Core Interactions - follow/unfollow reliability), Pattern 6 (Cross-Client Consistency)
 
-**[Protocol:3]** NIP-46: Nostr Connect (Signers)
+**[Protocol:3]** NIP-25: Reactions
+- **Source:** https://github.com/nostr-protocol/nips/blob/master/25.md
+- **Key details:** Defines kind 7 events for reactions/likes. Each reaction references the event being reacted to using 'e' and 'p' tags. Reactions should be published to author's relays and user's write relays.
+- **Relevance:** Pattern 3 (Core Interactions - reaction/like reliability)
+
+**[Protocol:4]** NIP-46: Nostr Connect (Signers)
 - **Source:** https://github.com/nostr-protocol/nips/blob/master/46.md
 - **Relevance:** Pattern 1 (Onboarding), Pattern 5 (Progressive Complexity)
 
-**[Protocol:4]** NIP-65: Relay List Metadata (Outbox Model)
+**[Protocol:5]** NIP-65: Relay List Metadata (Outbox Model)
 - **Source:** https://github.com/nostr-protocol/nips/blob/master/65.md
-- **Relevance:** Pattern 5 (Progressive Complexity), Pattern 6 (Cross-Client Consistency)
+- **Key details:** Defines kind 10002 events for user's relay preferences. Helps other users discover which relays to use when looking for someone's content or publishing content meant for them to see.
+- **Relevance:** Pattern 3 (Core Interactions - relay coordination), Pattern 5 (Progressive Complexity), Pattern 6 (Cross-Client Consistency)
 
-**[Protocol:5]** NIP-57: Lightning Zaps
+**[Protocol:6]** NIP-57: Lightning Zaps
 - **Source:** https://github.com/nostr-protocol/nips/blob/master/57.md
-- **Relevance:** Pattern 2 (Content Discovery - quality signal)
+- **Relevance:** Pattern 2 (Content Discovery - quality signal), Pattern 3 (Core Interactions - zap notifications)
 
-**[Protocol:6]** Event Kinds Reference
+**[Protocol:7]** Event Kinds Reference
 - **Source:** [NIPs repository]
 - **Key kinds:** Kind 0 (metadata), Kind 1 (notes), Kind 3 (contacts)
 - **Relevance:** Multiple patterns
 
 ### Nostr Design Resources
 
-**[Protocol:7]** Nostr Design - UX Guidelines
+**[Protocol:8]** Nostr Design - UX Guidelines
 - **Source:** https://nostrdesign.org/
 - **Relevance:** All patterns (community design resource)
 
-**[Protocol:8]** Nostr Protocol Specification
+**[Protocol:9]** Nostr Protocol Specification
 - **Source:** [Official docs]
 - **Relevance:** All patterns (foundational)
 
