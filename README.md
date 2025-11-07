@@ -38,7 +38,7 @@ This research is for:
 Based on research into Nostr apps' typical weaknesses, this study focuses on:
 
 1. **[Onboarding & First-Run Experience](patterns/01-onboarding.md)** ✅ - Get to value fast, defer complexity
-2. **Content Discovery & Feed Quality** 🚧 - Solve the cold start problem
+2. **[Content Discovery & Feed Quality](patterns/02-content-discovery.md)** ✅ - Solve the cold start problem
 3. **Core Interaction Loops** 🚧 - Make posting/replying/reacting work perfectly
 4. **Performance & Perceived Speed** 🚧 - Optimistic UI, loading states, reliability
 5. **Progressive Complexity** 🚧 - Reveal power features gradually (relays, signers)
