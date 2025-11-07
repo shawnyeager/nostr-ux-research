@@ -72,7 +72,7 @@ A meta-pattern addressing "features without validation" problem.
 
 ### Pattern Documentation
 1. **[Pattern 1: Onboarding & First-Run Experience](patterns/01-onboarding.md)** ✅ Complete
-2. Pattern 2: Content Discovery & Feed Quality 🚧 Coming soon
+2. **[Pattern 2: Content Discovery & Feed Quality](patterns/02-content-discovery.md)** ✅ Complete
 3. Pattern 3: Core Interaction Loops 🚧 Coming soon
 4. Pattern 4: Performance & Perceived Speed 🚧 Coming soon
 5. Pattern 5: Progressive Complexity 🚧 Coming soon
@@ -92,7 +92,8 @@ nostr-ux-research/
 ├── OUTLINE.md                   # Complete study structure ✅
 ├── CLAUDE.md                    # Project context for AI assistance ✅
 ├── patterns/                    # Detailed pattern documentation
-│   └── 01-onboarding.md         # ✅ Complete with citations
+│   ├── 01-onboarding.md         # ✅ Complete with citations
+│   └── 02-content-discovery.md  # ✅ Complete with citations
 ├── validation-framework.md      # 🚧 Coming soon
 ├── implementation-guide.md      # 🚧 Coming soon
 └── appendices/
@@ -120,9 +121,10 @@ This balance makes the research valuable for both existing Nostr developers and 
 - [x] [Master bibliography structure](appendices/references.md)
 - [x] [Complete study outline](OUTLINE.md)
 - [x] [Pattern 1: Onboarding](patterns/01-onboarding.md) - Fully documented with 2024-2025 citations
+- [x] [Pattern 2: Content Discovery & Feed Quality](patterns/02-content-discovery.md) - Complete with 67+ 2024-2025 citations
 
 **Current Work:**
-- [ ] Patterns 2-6 - Detailed documentation
+- [ ] Patterns 3-6 - Detailed documentation
 - [ ] Case studies from mainstream apps
 - [ ] Validation framework
 - [ ] Implementation guide
