@@ -37,12 +37,12 @@ This research is for:
 
 Based on research into Nostr apps' typical weaknesses, this study focuses on:
 
-1. **Onboarding & First-Run Experience** - Get to value fast, defer complexity
-2. **Content Discovery & Feed Quality** - Solve the cold start problem
-3. **Core Interaction Loops** - Make posting/replying/reacting work perfectly
-4. **Performance & Perceived Speed** - Optimistic UI, loading states, reliability
-5. **Progressive Complexity** - Reveal power features gradually (relays, signers)
-6. **Cross-Client Consistency** - Following/follower sync, data integrity
+1. **[Onboarding & First-Run Experience](patterns/01-onboarding.md)** ✅ - Get to value fast, defer complexity
+2. **Content Discovery & Feed Quality** 🚧 - Solve the cold start problem
+3. **Core Interaction Loops** 🚧 - Make posting/replying/reacting work perfectly
+4. **Performance & Perceived Speed** 🚧 - Optimistic UI, loading states, reliability
+5. **Progressive Complexity** 🚧 - Reveal power features gradually (relays, signers)
+6. **Cross-Client Consistency** 🚧 - Following/follower sync, data integrity
 
 Each pattern includes:
 - Problem statement (research-backed)
@@ -63,27 +63,45 @@ A meta-pattern addressing "features without validation" problem.
 
 **Core principle:** Ship small, validate fast. Core interactions before new features.
 
+## Navigation
+
+### Core Documentation
+- **[Complete Outline](OUTLINE.md)** - Full study structure and plan
+- **[Research Methodology](appendices/methodology.md)** - How this study was conducted
+- **[References & Bibliography](appendices/references.md)** - All citations and sources
+
+### Pattern Documentation
+1. **[Pattern 1: Onboarding & First-Run Experience](patterns/01-onboarding.md)** ✅ Complete
+2. Pattern 2: Content Discovery & Feed Quality 🚧 Coming soon
+3. Pattern 3: Core Interaction Loops 🚧 Coming soon
+4. Pattern 4: Performance & Perceived Speed 🚧 Coming soon
+5. Pattern 5: Progressive Complexity 🚧 Coming soon
+6. Pattern 6: Cross-Client Consistency 🚧 Coming soon
+
+### Supporting Materials
+- Validation Framework 🚧 Coming soon
+- Implementation Guide 🚧 Coming soon
+- Case Studies 🚧 Coming soon
+- Glossary 🚧 Coming soon
+
 ## Project Structure
 
 ```
 nostr-ux-research/
-├── README.md                    # This file
-├── OUTLINE.md                   # Complete study structure
-├── CLAUDE.md                    # Project context and guidelines
+├── README.md                    # This file (navigation & overview)
+├── OUTLINE.md                   # Complete study structure ✅
+├── CLAUDE.md                    # Project context for AI assistance ✅
 ├── patterns/                    # Detailed pattern documentation
-│   ├── 01-onboarding.md
-│   ├── 02-content-discovery.md
-│   ├── 03-core-interactions.md
-│   ├── 04-performance.md
-│   ├── 05-progressive-complexity.md
-│   └── 06-cross-client-consistency.md
-├── validation-framework.md      # Meta-pattern for feature validation
-├── implementation-guide.md      # Where to start, how to measure
+│   └── 01-onboarding.md         # ✅ Complete with citations
+├── validation-framework.md      # 🚧 Coming soon
+├── implementation-guide.md      # 🚧 Coming soon
 └── appendices/
-    ├── case-studies.md          # Successful patterns from mainstream apps
-    ├── resources.md             # Nostr Design, NIPs, design systems
-    ├── glossary.md              # Terms for mainstream developers
-    └── methodology.md           # How this research was conducted
+    ├── methodology.md           # ✅ Research approach and ethics
+    ├── references.md            # ✅ Master bibliography
+    ├── research-notes.md        # ✅ Raw findings organized by topic
+    ├── case-studies.md          # 🚧 Coming soon
+    ├── resources.md             # 🚧 Coming soon
+    └── glossary.md              # 🚧 Coming soon
 ```
 
 ## Content Balance
@@ -95,23 +113,25 @@ This balance makes the research valuable for both existing Nostr developers and 
 
 ## Status
 
-🚧 **Work in Progress** - Currently in early development phase.
+🚧 **Work in Progress** - Pattern documentation underway.
 
 **Completed:**
-- [x] Initial research on Nostr client UX problems
-- [x] Pattern identification and prioritization
-- [x] Complete study structure and outline
+- [x] [Research methodology framework](appendices/methodology.md)
+- [x] [Master bibliography structure](appendices/references.md)
+- [x] [Complete study outline](OUTLINE.md)
+- [x] [Pattern 1: Onboarding](patterns/01-onboarding.md) - Fully documented with 2024-2025 citations
 
-**In Progress:**
-- [ ] Detailed pattern documentation
-- [ ] Case studies and examples
-- [ ] Visual diagrams and flows
-- [ ] Code examples
+**Current Work:**
+- [ ] Patterns 2-6 - Detailed documentation
+- [ ] Case studies from mainstream apps
+- [ ] Validation framework
+- [ ] Implementation guide
 
 **Planned:**
+- [ ] Visual diagrams and flows
 - [ ] Community feedback and iteration
-- [ ] Video walkthrough
 - [ ] Summary quick-start guide
+- [ ] Video walkthrough
 
 ## Research Methodology
 
@@ -123,7 +143,7 @@ This study synthesizes:
 - Developer discussions on UX challenges
 - Successful patterns from mainstream social apps
 
-Full methodology documented in [appendices/methodology.md](appendices/methodology.md) (coming soon).
+Full methodology documented in **[appendices/methodology.md](appendices/methodology.md)** - includes research approach, source categories, citation standards, limitations, and research ethics.
 
 ## Success Criteria
 
