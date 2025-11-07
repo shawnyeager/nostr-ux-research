@@ -70,6 +70,111 @@ Citations in pattern documents use this format:
   - Industry baseline shows most apps lose 80% of users in first days
 - **Relevance:** Even AppsFlyer's lower benchmarks (3.11% D30) exceed Nostr's near-zero retention, indicating fundamental onboarding/retention failures
 
+### Pattern 3: Core Interaction Reliability Data
+
+**[Data:11]** Post Publishing Failures in Nostr
+- **Source:** Nostr Biweekly Review (23 Dec 2024-5 Jan 2025)
+- **URL:** https://thenostrreview.substack.com/p/nostr-biweekly-review-23-dec-2024
+- **Date:** January 2025
+- **Key findings:** "If a mod post (later blog post) gets stuck while publishing, a timer kicks in that'll lead to a 'try again' option that usually publishes the post correctly"
+- **Relevance:** Pattern 3 - Confirms posts getting stuck during publishing is common enough to require retry mechanisms
+
+**[Data:12]** Relay Data Loss During Downtime
+- **Source:** "User Relays" by Sondre Bjellås, Medium
+- **URL:** https://medium.com/@sondreb/user-relays-7e23e2ac2590
+- **Date:** April 2025
+- **Key findings:** "When the Damus relay was taken down for upgrades, users' content was potentially wiped and gone... content stored on that relay was reduced to remaining on one less relay"
+- **Relevance:** Pattern 3 - Posts can disappear when relays go down without proper synchronization
+
+**[Data:13]** NIP-25 Reaction Inefficiency Problem
+- **Source:** "Reactions are inefficient. There needs to be an aggregate kind" - GitHub Issue #159
+- **URL:** https://github.com/nostr-protocol/nips/issues/159
+- **Date:** Discussed throughout 2024
+- **Key findings:** "NIP-25 is a terribly inefficient way to do it. Clients must gather potentially thousands of events just to count up the likes for a note. Storage of non-kind:1 events is at a MINIMUM about 10:1 compared to actual content posts. One relay operator reported relay growth of about 2GB per day primarily from reactions and metadata"
+- **Relevance:** Pattern 3 - Core architectural problem causing reaction display failures and performance issues
+
+**[Data:14]** Catastrophic Follow List Loss
+- **Source:** "All my nostr follows gone - how do I get them back?" - Stacker News
+- **URL:** https://stacker.news/items/182519
+- **Date:** 2024
+- **Key findings:** User reported "I was trying out the new Iris Nostr client and decided to follow someone new. From that moment on, I noticed my follows count reset from about 130 to 1 (that last follow)... At least one developer reported losing 75% of their follows"
+- **Relevance:** Pattern 3 - Following/unfollowing catastrophically unreliable due to race conditions
+
+**[Data:15]** Kind 3 Race Condition Root Cause
+- **Source:** "Add kinds 10 and 11 to prevent race conditions" - GitHub PR #349
+- **URL:** https://github.com/nostr-protocol/nips/pull/349
+- **Date:** Opened 2023, discussed through 2024
+- **Key findings:** "A very common experience on Nostr is that of losing follows due to race conditions when sending kind 3 events... Earlier this week someone signed in to Coracle, their contact list failed to fully sync before they followed someone, and they ended up deleting all their follows"
+- **Relevance:** Pattern 3 - Protocol design flaw causing systematic follow list destruction
+
+**[Data:16]** Notification Failures
+- **Source:** Nostrability Issues and NDK GitHub
+- **URLs:** https://github.com/nostrability/nostrability/issues, https://github.com/nostr-dev-kit/ndk/issues/175
+- **Date:** 2024
+- **Key findings:** "Receiving payments via Zeus wallet in Damus sometimes fails to trigger zap notifications... Quoting a user without a p-tag does not generate notifications... When outbox is enabled in NDK, the relay list becomes huge, causing zap requests to fail with an HTTP 431 error"
+- **Relevance:** Pattern 3 - Missing notifications widespread due to protocol complexity
+
+**[Data:17]** Relay Network Decline
+- **Source:** "Improving the Availability and Reliability of the Relay Network"
+- **URL:** https://research.dorahacks.io/2024/04/30/nostr-relay-incentive/
+- **Date:** April 23, 2024
+- **Key findings:** "Only 639 relays online globally (two-thirds reduction from previous year). 95% of relays struggle to cover operational costs. 20% have faced significant downtime"
+- **Relevance:** Pattern 3 - Shrinking infrastructure directly impacts reliability
+
+**[Data:18]** Empirical Analysis of Nostr Reliability
+- **Source:** "An Empirical Analysis of the Nostr Social Network: Decentralization, Availability, and Replication Overhead" - arXiv
+- **URL:** https://arxiv.org/abs/2402.05709
+- **Date:** February 2024
+- **Key findings:** "Relay availability remains a challenge, where financial sustainability (particularly for-to-use relays) emerges as a contributing factor. 93% of posts can be found across multiple relays, but 178 relays (25% of all relays) hosting more than 5% of posts each"
+- **Relevance:** Pattern 3 - Academic validation of systemic reliability challenges
+
+### Pattern 4: Performance & Perceived Speed Data
+
+**[Data:19]** User complaints - Nostr apps "slow and clunky"
+- **Source:** Community feedback on Nostr performance (2024-2025)
+- **Key findings:** Apps described as "slow and clunky" compared to Twitter, with "clients blasting entire message history" causing inefficiency
+- **Relevance:** Pattern 4 - User perception of performance problems
+
+**[Data:20]** Crash reports across Nostr clients
+- **Sources:** GitHub issues from major Nostr clients (2024-2025)
+- **Key findings:** Primal Android crashes (September & October 2025), Amethyst community join/leave crashes and permission crashes, Nostur iOS crashes and slow loading, Damus Issue #3163 (July 2025)
+- **Relevance:** Pattern 4 - Stability and performance issues driving abandonment
+
+**[Data:21]** Database performance bottleneck
+- **Source:** Nostr developer discussions (2024-2025)
+- **Key findings:** Users identify database as "core bottleneck" for slow feed loading. Comparison to Twitter's Redis architecture shows gap
+- **Relevance:** Pattern 4 - Technical root cause of performance problems
+
+**[Data:22]** Amethyst battery drain issues
+- **Source:** Amethyst GitHub issues (2024-2025)
+- **Key findings:** Background video playback silently draining battery on loop, multi-relay connections (up to 100 relays) causing resource consumption, improper WebSocket connection management when app backgrounds
+- **Relevance:** Pattern 4 - Mobile performance problems affecting user experience
+
+**[Data:23]** Relay infrastructure statistics
+- **Source:** Nostr relay monitoring (2024-2025)
+- **Key findings:** Only 639 relays online globally (80% in North America & Europe), default nostr-relay config: ~100 requests/second, default SQLite backend has "worst performance", free relays have higher latency and less reliability
+- **Relevance:** Pattern 4 - Infrastructure limitations affecting performance
+
+**[Data:24]** Multi-relay coordination overhead
+- **Source:** Nostr protocol analysis (2024-2025)
+- **Key findings:** Clients can open "hundreds of WebSocket connections simultaneously", each relay gets one WebSocket connection for all communication
+- **Relevance:** Pattern 4 - Architecture creating performance bottlenecks
+
+**[Data:25]** Black Hat USA 2025: "Not Sealed: Practical Attacks on Nostr"
+- **Source:** Black Hat USA 2025 security research
+- **Key findings:** Several clients (Damus, Iris, FreeFrom, Plebstr past versions) omit signature verification entirely to improve speed. Trade-off: Performance improvement vs security vulnerability. Recommendation: Enforce mandatory signature verification in NIP-01
+- **Relevance:** Pattern 4 - Critical security vs performance trade-off
+
+**[Data:26]** nostrdb optimization
+- **Source:** nostrdb documentation (2024-2025)
+- **Key findings:** "Unfairly fast" embedded database with zero-copy, O(1) access patterns, memory-mapped LMDB design (copied from strfry)
+- **Relevance:** Pattern 4 - Example of performance optimization solution
+
+**[Data:27]** Primal Caching Service
+- **Source:** Primal project (2024-2025)
+- **Key findings:** Server-side caching for Nostr events, open sourced, archived December 2024
+- **Relevance:** Pattern 4 - Relay-level caching strategy
+
 ---
 
 ## 2. Academic & UX Research
@@ -185,22 +290,273 @@ Citations in pattern documents use this format:
   - Platforms are no longer just for scrolling—they're where consumers look for information
 - **Relevance:** Pattern 2 (Content Discovery) - Search functionality is now table stakes, not an afterthought. Users expect to search for topics, hashtags, and people as primary discovery mechanism
 
-### Performance & Perceived Speed
+### Pattern 3: Core Interaction Loops & Reliability
 
-**[Research:9]** Perceived Performance vs Actual Performance
-- **Citation:** [UX research - to be found]
-- **Key finding:** Users perceive apps as faster with skeleton screens and optimistic UI
-- **Relevance:** Pattern 4 (Performance)
+**[Research:17]** Mobile App Trust and Design (Framna 2024)
+- **Source:** "Mobile App Trends 2024 Report" - Framna
+- **URL:** https://framna.com/en-us/mobile-app-trends-2024-report
+- **Date:** 2024
+- **Key findings:** Survey of 3,000+ people ages 18-70 found that 94% of users cited design as main reason they mistrusted or rejected apps. 40% said poor performance would make them prefer better alternatives. If app doesn't load quickly or show signs of reliability, users immediately uninstall.
+- **Relevance:** Pattern 3 - Perceived reliability is critical for user trust and retention
 
-**[Research:10]** Mobile App Performance Budgets
-- **Citation:** [To be researched - Google Web Fundamentals or similar]
-- **Key finding:** [Summary]
-- **Relevance:** Pattern 4 (Performance)
+**[Research:18]** Social Platform Trust Decline (eMarketer 2024)
+- **Source:** "User trust in social platforms is falling" - eMarketer
+- **URL:** https://www.emarketer.com/content/user-trust-social-platforms-falling-according-our-new-study
+- **Date:** 2024
+- **Key findings:** Only 35% of users feel safe participating on social platforms (down from 44%). All 9 major platforms lost trust ground in 2024.
+- **Relevance:** Pattern 3 - Trust erosion means core interactions must be rock-solid reliable
 
-**[Research:11]** Optimistic UI Patterns
-- **Citation:** [To be researched]
-- **Key finding:** [Summary]
-- **Relevance:** Pattern 3 (Core Interactions), Pattern 4 (Performance)
+**[Research:19]** Response Time Limits (Nielsen Norman Group 2024)
+- **Source:** "Response Time Limits: Article by Jakob Nielsen" - NN/g
+- **URL:** https://www.nngroup.com/articles/response-times-3-important-limits/
+- **Date:** January 2024 (updated)
+- **Key findings:** Three critical thresholds: 0.1 seconds (100ms) - limit for feeling system reacts instantaneously; 1.0 second - limit for user's flow of thought staying uninterrupted; 10 seconds - limit for keeping user's attention
+- **Relevance:** Pattern 3 - Nostr clients must respond to clicks within 100ms even if relay response takes longer
+
+**[Research:20]** React useOptimistic Hook (Official Documentation 2024)
+- **Source:** "useOptimistic – React" - React Official Docs
+- **URL:** https://react.dev/reference/react/useOptimistic
+- **Date:** 2024 (Canary version)
+- **Key findings:** New official React hook for optimistic UI updates. Shows different state while async action is underway, indicating optimistic UI is now framework-level standard pattern
+- **Relevance:** Pattern 3 - Optimistic UI is established best practice for social app interactions
+
+**[Research:21]** Optimistic UI Patterns (LogRocket 2024)
+- **Source:** "Understanding optimistic UI and React's useOptimistic Hook" - LogRocket
+- **URL:** https://blog.logrocket.com/understanding-optimistic-ui-react-useoptimistic-hook/
+- **Date:** August 2024
+- **Key findings:** Optimistic UI makes applications feel faster and more responsive. Excels when actions are nearly always successful (messages, posts, preferences). NOT recommended for critical operations (flight booking, cash transfers). Must properly handle failure cases and revert state
+- **Relevance:** Pattern 3 - Guidelines for when to use optimistic UI in Nostr clients
+
+**[Research:22]** Visibility of System Status (Nielsen Norman Group 2024)
+- **Source:** "Visibility of System Status" - NN/g
+- **URL:** https://www.nngroup.com/articles/visibility-system-status/
+- **Date:** January 2024
+- **Key findings:** "Most basic guideline of UI design" - keep users informed about what's going on. Provide appropriate feedback within reasonable time. Present feedback as quickly as possible (ideally immediately)
+- **Relevance:** Pattern 3 - Every Nostr interaction needs immediate visual feedback
+
+**[Research:23]** Skeleton Screens (Nielsen Norman Group 2024)
+- **Source:** "Skeleton Screens 101" - NN/g
+- **URL:** https://www.nngroup.com/articles/skeleton-screens/
+- **Date:** November 2024
+- **Key findings:** Skeleton screens are new norm for full-page loading. Show wireframe immediately before real content. Best for 2-10 second wait times. Must be consistent with final screen layout
+- **Relevance:** Pattern 3 - Nostr feeds taking 2-10 seconds should use skeleton screens, not spinners
+
+**[Research:24]** Success Message UX (Pencil & Paper 2024)
+- **Source:** "Success Message UX Examples & Best Practices" - Pencil & Paper
+- **URL:** https://www.pencilandpaper.io/articles/success-ux
+- **Date:** 2024
+- **Key findings:** Error states often prioritized over success states, but both must work together. Success feedback as important as error feedback for user confidence
+- **Relevance:** Pattern 3 - Don't neglect success states in Nostr clients
+
+**[Research:25]** Error Message Guidelines (Nielsen Norman Group 2024)
+- **Source:** "10 Design Guidelines for Reporting Errors in Forms" - NN/g
+- **URL:** https://www.nngroup.com/articles/errors-forms-design-guidelines/
+- **Date:** December 2024
+- **Key findings:** Help users recover from errors by clearly identifying problems. Allow users to access and correct fields easily
+- **Relevance:** Pattern 3 - Error messages in Nostr must be clear and actionable
+
+**[Research:26]** Error Handling UX Patterns (Medium 2025)
+- **Source:** "Error handling - UX design patterns" - Medium/Design Bootcamp
+- **URL:** https://medium.com/design-bootcamp/error-handling-ux-design-patterns-c2a5bbae5f8d
+- **Date:** October 2025
+- **Key findings:** Based on Jakob Nielsen's heuristic: "Help Users Recognize, Diagnose, and Recover." Three steps: Tell users error occurred, explain what went wrong, show how to recover
+- **Relevance:** Pattern 3 - Three-part error message structure for Nostr
+
+**[Research:27]** Idempotency Explained (FreeCodeCamp 2024)
+- **Source:** "What is Idempotence? Explained with Real-World Examples" - FreeCodeCamp
+- **URL:** https://www.freecodecamp.org/news/idempotence-explained/
+- **Date:** September 2024
+- **Key findings:** Post/Redirect/Get (PRG) pattern prevents double-submission. Prevents double-clicks, page refreshes creating duplicate orders. Real-world examples: Traffic light buttons, elevator call buttons
+- **Relevance:** Pattern 3 - Nostr clients should prevent double-posting via button disabling and request deduplication
+
+**[Research:28]** Designing Idempotent APIs (Bits and Pieces 2025)
+- **Source:** "How To Design an Idempotent API in 2024?" - Bits and Pieces
+- **URL:** https://blog.bitsrc.io/designing-an-idempotent-api-in-2024-d4a3cf8d8bf2
+- **Date:** March 2025
+- **Key findings:** Idempotency improves UX by ensuring consistent results, avoiding duplicate actions, providing predictable and stable interactions
+- **Relevance:** Pattern 3 - Nostr events should be idempotent by design
+
+**[Research:29]** Retry Pattern Best Practices (Microsoft Azure 2024)
+- **Source:** Microsoft Azure Retry Pattern
+- **URL:** https://learn.microsoft.com/en-us/azure/architecture/patterns/retry
+- **Date:** 2024
+- **Key findings:** Use exponential back-off for retries. Classify errors: Transient (retry) vs Permanent (user action). Don't retry: Authentication failures, invalid requests. Keep user informed during retries
+- **Relevance:** Pattern 3 - Nostr clients should auto-retry transient relay failures with exponential backoff
+
+**[Research:30]** Offline-First Design Patterns (Google 2024)
+- **Source:** "Design Guidelines for Offline & Sync" - Google Open Health Stack
+- **URL:** https://developers.google.com/open-health-stack/design/offline-sync-guideline
+- **Date:** 2024
+- **Key findings:** Initial sync with clear guidance and time estimates, status bar indicates offline/syncing/success/failure, background syncing based on relevant intervals, progress indicators on key screens, timestamps show recent update times
+- **Relevance:** Pattern 3 - Nostr clients should show relay sync status and allow offline post queuing
+
+### Pattern 4: Performance & Perceived Speed
+
+**[Research:31]** Nielsen Norman Group - Response Time Limits (Updated January 2024)
+- **Source:** Nielsen Norman Group
+- **URL:** https://www.nngroup.com/articles/response-times-3-important-limits/
+- **Date:** Updated January 2024
+- **Key findings:** 100ms (instant response), 1.0 second (upper limit of user's flow of thought), 10 seconds → Now 5 seconds: "Probably safe to say the upper limit of 10 seconds is now 5 seconds or even less"
+- **Relevance:** Pattern 4 - Foundational performance thresholds updated for 2024 expectations
+
+**[Research:32]** Website Speed & Bounce Rate Statistics
+- **Source:** Site Builder Report
+- **URL:** https://www.sitebuilderreport.com/website-speed-statistics
+- **Date:** 2025
+- **Key findings:** 32% bounce increase from 1 to 3 seconds load time, 90% bounce increase at 5 seconds, 53% of mobile visitors leave if page takes >3 seconds
+- **Relevance:** Pattern 4 - Quantifies business impact of speed on retention
+
+**[Research:33]** User Experience Conversion Statistics
+- **Source:** TechJury
+- **URL:** https://techjury.net/industry-analysis/user-experience-stats/
+- **Date:** 2025
+- **Key findings:** Sites loading in 1 second achieve 39% conversion rates, 1.9% conversion at 2.4 seconds, 7% loss in conversion for every 1-second delay
+- **Relevance:** Pattern 4 - Conversion rate correlation with load times
+
+**[Research:34]** Skeleton Loading Screen Design
+- **Source:** LogRocket
+- **URL:** https://blog.logrocket.com/ux-design/skeleton-loading-screen-design/
+- **Date:** 2024
+- **Key findings:** Users perceive skeleton screens as 30% faster than spinners for identical wait times. Best for wait times under 10 seconds, container-based components
+- **Relevance:** Pattern 4 - Perceived performance optimization with concrete data
+
+**[Research:35]** Skeleton Screens vs Spinners Performance
+- **Source:** UI Deploy
+- **URL:** https://ui-deploy.com/blog/skeleton-screens-vs-spinners-optimizing-perceived-performance
+- **Date:** 2024
+- **Key findings:** Skeleton screens keep users more engaged during wait times. Developer saw dramatic UX improvement despite identical backend speed
+- **Relevance:** Pattern 4 - Loading state pattern selection
+
+**[Research:36]** React Optimistic UI with useOptimistic Hook
+- **Source:** LogRocket
+- **URL:** https://blog.logrocket.com/understanding-optimistic-ui-react-useoptimistic-hook/
+- **Date:** 2024
+- **Key findings:** React 19's useOptimistic Hook provides elegant solution. Essential for social media: "seeing a comment appear the moment it's clicked"
+- **Relevance:** Pattern 4 - Modern optimistic UI implementation
+
+**[Research:37]** Material Design 3 Loading Indicators
+- **Source:** Material Design 3, Google
+- **URL:** https://m3.material.io/components/progress-indicators/guidelines
+- **URL:** https://9to5google.com/2025/05/16/material-3-expressive-loading-indicator/
+- **Date:** May 2025
+- **Key findings:** New Material 3 Expressive loading indicator (2025) for wait times <5 seconds. Looping shape morph sequence with 7 unique shapes
+- **Relevance:** Pattern 4 - Modern loading pattern design
+
+**[Research:38]** React Design Patterns Best Practices
+- **Source:** Telerik
+- **URL:** https://www.telerik.com/blogs/react-design-patterns-best-practices
+- **Date:** 2025
+- **Key findings:** Optimistic UI especially vital in social media. Facebook example: Like button immediately turns blue
+- **Relevance:** Pattern 4 - Mainstream app optimistic UI examples
+
+**[Research:39]** Caching Strategy with Service Workers
+- **Source:** Peerdh Blog
+- **URL:** https://peerdh.com/blogs/programming-insights/implementing-a-caching-strategy-for-indexeddb-with-service-workers
+- **Date:** September 2024
+- **Key findings:** Service Workers + IndexedDB significantly improves performance and UX. Enables robust offline-first applications
+- **Relevance:** Pattern 4 - Caching architecture for performance
+
+**[Research:40]** Offline-First Web Applications
+- **Source:** TechTruth
+- **URL:** https://techtruth.dev/building-offline-first-web-applications-with-service-workers-and-indexeddb
+- **Date:** August 2025
+- **Key findings:** Cache-then-network or stale-while-revalidate for dynamic content. 2024 HTTP Archive data: Nearly 45% of high-rated PWAs use hybrid approach
+- **Relevance:** Pattern 4 - Industry adoption of caching patterns
+
+**[Research:41]** JavaScript Bundle Size Reduction
+- **Source:** Dev.to
+- **URL:** https://dev.to/hamzakhan/reducing-javascript-bundle-size-with-code-splitting-in-2025-3927
+- **Date:** 2025
+- **Key findings:** Tree shaking, code splitting can reduce bundle sizes by 20-50% in typical applications. Use dynamic import() expressions
+- **Relevance:** Pattern 4 - Bundle optimization strategies
+
+**[Research:42]** Webpack Bundle Splitting Best Practices
+- **Source:** Infervour
+- **URL:** https://infervour.com/blog/how-to-split-webpack-bundles-for-code-splitting
+- **Date:** 2025
+- **Key findings:** Performance budgets for 2024: Initial bundle <250KB gzipped for fast 3G, total bundle <1MB gzipped for good UX
+- **Relevance:** Pattern 4 - Specific performance budgets for 2024
+
+**[Research:43]** React Server Components Performance Impact
+- **Source:** Developer Way, CoderTrove
+- **URL:** https://www.developerway.com/posts/react-server-components-performance
+- **URL:** https://www.codertrove.com/articles/react-server-components-2025-nextjs-performance
+- **Date:** 2024-2025
+- **Key findings:** Real-world example: 40% improvement in load times, 15% increase in conversion rates. RSCs not hydrated, no JS shipped to client
+- **Relevance:** Pattern 4 - Emerging React performance optimization
+
+**[Research:44]** Native Image Lazy Loading Performance
+- **Source:** Web.dev, MDN, Medium
+- **URL:** https://web.dev/articles/browser-level-image-lazy-loading
+- **URL:** https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Lazy_loading
+- **URL:** https://medium.com/@iliketoplay/lazy-loading-images-in-2024-9b579e885e07
+- **Date:** 2024-2025
+- **Key findings:** On 4G: 97.5% of lazy-loaded images fully loaded within 10ms of becoming visible. On 2G: 92.6% loaded within 10ms. Native loading="lazy" attribute
+- **Relevance:** Pattern 4 - Image optimization for feeds
+
+**[Research:45]** React Performance Optimization Complete Guide
+- **Source:** Dev.to
+- **URL:** https://dev.to/amaresh_adak/react-performance-optimization-from-slow-to-lightning-fast-complete-guide-2025-19hl
+- **Date:** 2025
+- **Key findings:** Virtual scrolling/windowing essential for large lists. Only render visible items to reduce DOM operations
+- **Relevance:** Pattern 4 - Feed rendering optimization
+
+**[Research:46]** Virtualization in React for Large Lists
+- **Source:** Medium
+- **URL:** https://medium.com/@ignatovich.dm/virtualization-in-react-improving-performance-for-large-lists-3df0800022ef
+- **Date:** 2024
+- **Key findings:** Significantly reduces DOM updates, memory usage, and render time by only rendering visible elements
+- **Relevance:** Pattern 4 - Virtual scrolling benefits quantified
+
+**[Research:47]** Smooth Scrolling with TanStack Virtual
+- **Source:** Borstch
+- **URL:** https://borstch.com/blog/development/achieving-smooth-scrolling-in-react-with-tanstack-virtual-best-practices
+- **Date:** November 2024
+- **Key findings:** TanStack Virtual most popular library (Nov 2024). Best practices: Wrap rows in React.memo(), render 1-2 additional items (overscan)
+- **Relevance:** Pattern 4 - Current virtual scrolling best practices
+
+**[Research:48]** Academic Research: Nostr Replication Overhead
+- **Source:** arXiv 2402.05709 (Yiluo Wei & Gareth Tyson)
+- **Date:** February 2024, revised September 2025
+- **Key findings:** "Replication of posts across relays enhances censorship-resistance but introduces significant overhead." Proposed solutions: Control replication count + reduce retrieval overhead
+- **Relevance:** Pattern 4 - Academic analysis of Nostr performance trade-offs
+
+**[Research:49]** INP Replaces FID as Core Web Vital (March 2024)
+- **Source:** Web.dev
+- **URL:** https://web.dev/blog/inp-cwv-march-12
+- **Date:** March 12, 2024
+- **Key findings:** INP (Interaction to Next Paint) replaced FID as Core Web Vital on March 12, 2024. FID officially deprecated, removed from Google Search Console
+- **Relevance:** Pattern 4 - Critical 2024 metric change
+
+**[Research:50]** First Input Delay vs Interaction to Next Paint
+- **Source:** Vercel
+- **URL:** https://vercel.com/blog/first-input-delay-vs-interaction-to-next-paint
+- **Date:** 2024
+- **Key findings:** INP measures all interactions (not just first). Good INP: <200ms, Poor: >500ms
+- **Relevance:** Pattern 4 - Understanding new metric requirements
+
+**[Research:51]** Animation Performance and Frame Rate
+- **Source:** MDN, MoldStud
+- **URL:** https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Animation_performance_and_frame_rate
+- **URL:** https://moldstud.com/articles/p-exploring-the-impact-of-animation-on-performance-essential-insights-for-developers
+- **Date:** Updated November 2025, September 2025
+- **Key findings:** For 60fps: Browser has 16.7ms to execute scripts. GPU-accelerated properties (transform, opacity) provide smoother results
+- **Relevance:** Pattern 4 - Smooth scrolling requirements
+
+**[Research:52]** Rakuten Core Web Vitals Case Study
+- **Source:** Web.dev
+- **URL:** https://web.dev/case-studies/rakuten
+- **Date:** 2024
+- **Key findings:** Good LCP led to up to 61.13% increase in conversion rate, 26.09% increase in revenue per visitor
+- **Relevance:** Pattern 4 - Business ROI of performance optimization
+
+**[Research:53]** Core Web Vitals Business Impact
+- **Source:** Blue Triangle, NitroPack
+- **URL:** https://bluetriangle.com/blog/web-vitals-impact-lcp
+- **URL:** https://nitropack.io/blog/post/improve-conversion-rates-cwv
+- **Date:** 2024
+- **Key findings:** Sites meeting Core Web Vitals: 24% reduction in page abandonment, 8-10% conversion increase per 0.1-second improvement
+- **Relevance:** Pattern 4 - Performance's direct impact on retention and conversion
 
 ### Progressive Complexity & Feature Discovery
 
@@ -319,17 +675,77 @@ Citations in pattern documents use this format:
 - **Key pattern:** Local/Federated timeline structure provides instant content discovery; Hashtag-based discovery
 - **Relevance:** Pattern 2 (Content Discovery)
 
-### Performance Optimization
+### Pattern 4: Performance & Perceived Speed Examples
 
-**[Example:8]** Twitter/X Performance Optimization
-- **Source:** [Engineering blog - to be found]
-- **Key pattern:** [Summary]
-- **Relevance:** Pattern 4 (Performance)
+**[Example:11]** Twitter/X Algorithm Performance
+- **Source:** Sprout Social - "How the Twitter Algorithm Works" (2025)
+- **URL:** https://sproutsocial.com/insights/twitter-algorithm/
+- **Date:** 2025
+- **Key patterns:** Recommendation algorithm runs ~5 billion times per day, completes each execution in under 1.5 seconds on average. Massive scale delivering personalized content
+- **Relevance:** Pattern 4 (Performance) - Demonstrates scale and speed requirements for social feed algorithms
 
-**[Example:9]** Facebook Mobile Performance Budgets
-- **Source:** [Engineering blog]
-- **Key pattern:** [Summary]
-- **Relevance:** Pattern 4 (Performance)
+**[Example:12]** Instagram Algorithm and Performance
+- **Source:** Sprout Social - "How the Instagram Algorithm Works [Updated 2025]"
+- **URL:** https://sproutsocial.com/insights/instagram-algorithm/
+- **Date:** 2025
+- **Key patterns:** Instagram's AI picks 500 posts per user, ranks by predictions. Instagram explicitly advises: "Engage your audience in the first three seconds"
+- **Relevance:** Pattern 4 (Performance) - First 3 seconds critical for engagement
+
+**[Example:13]** TikTok Performance Optimization
+- **Source:** Dash Social - "TikTok Benchmarks 2025"
+- **URL:** https://www.dashsocial.com/social-media-benchmarks/tiktok
+- **Date:** 2025
+- **Key patterns:** Watch time prioritized—content that "stops scrolls cold" with grabber upfront. Brands post 6 times per week on average for frequent surfacing
+- **Relevance:** Pattern 4 (Performance) - Stopping power and perceived instant loading
+
+**[Example:14]** Starbucks PWA Case Study
+- **Source:** Solutelabs - "The State of Progressive Web Applications" (2025)
+- **URL:** https://www.solutelabs.com/blog/the-state-of-progressive-web-applications
+- **Date:** 2025
+- **Key patterns:** Offline functionality led to 2x increase in daily active users and 53% rise in order completions. PWAs typically weigh <1 megabyte, sites load in less than 1 second
+- **Relevance:** Pattern 4 (Performance) - PWA performance benefits with concrete metrics
+
+**[Example:15]** Discord Performance Improvements (2024-2025)
+- **Source:** Discord Update Changelog - December 19, 2024
+- **URL:** https://discord.com/blog/discord-update-december-19-2024-changelog
+- **Date:** December 19, 2024
+- **Key patterns:** 84% reduction in overall crash rate on iOS (August 2024), 30% faster server switching on mobile, up to 80% faster GIF Picker loading times, ~25% reduction in API latency
+- **Relevance:** Pattern 4 (Performance) - Specific improvements (crash reduction, server switching speed, API latency) applicable to Nostr's real-time needs
+
+### Pattern 3: Core Interaction Examples
+
+**[Example:6]** Instagram Posting and Confirmation (2024)
+- **Source:** "How the Instagram Algorithm Works in 2025" - Later
+- **URL:** https://later.com/blog/how-instagram-algorithm-works/
+- **Date:** 2024-2025
+- **Key patterns:** Upload progress bar, "Posted" confirmation. 2024 algorithm now heavily weights "shares per reach" as key engagement signal, showing Instagram prioritizes reliable delivery confirmation
+- **Relevance:** Pattern 3 - Mainstream app example of clear posting feedback
+
+**[Example:7]** TikTok Instant Content Display (2024)
+- **Source:** "5 TikTok UI Choices That Made the App Successful" - Iterators
+- **URL:** https://www.iteratorshq.com/blog/5-tiktok-ui-choices-that-made-the-app-successful
+- **Date:** 2024
+- **Key patterns:** Shows content immediately with no loading state. Up/down swiping is "game-changer" - intuitive and effortless navigation. 100ms creates illusion of instantaneous response
+- **Relevance:** Pattern 3 - Example of optimistic loading and instant feedback
+
+**[Example:8]** Apple Human Interface Guidelines - Action Feedback (2024)
+- **Source:** "Human Interface Guidelines" - Apple Developer
+- **URL:** https://developer.apple.com/design/human-interface-guidelines/
+- **Date:** 2024
+- **Key patterns:** Give users clear and consistent feedback. Ensure understanding of what's happening at every stage. Inform about errors clearly. Visually indicate progress with loading bars. Provide notifications for completion. Use animations, sounds, haptic feedback to confirm actions
+- **Relevance:** Pattern 3 - Design system guidance on interaction feedback
+
+**[Example:9]** Material Design 3 - Responsive Feedback (2024)
+- **Source:** Material Design 3 articles
+- **Date:** 2024
+- **Key patterns:** Use motion for visual feedback (clicks, submissions). Components respond instantly to user inputs. Provide clear feedback, enhance overall experience. Responsive feedback is essential for interactivity. Spring-like motion - animations bounce, stretch, respond organically
+- **Relevance:** Pattern 3 - Design system approach to interaction responsiveness
+
+**[Example:10]** Social Media Management Tools - Retry Patterns (2024)
+- **Source:** SocialBee, SmarterQueue, Vista Social
+- **Date:** 2024
+- **Key patterns:** For temporary platform bugs - simply re-queue and retry. For post issues (too long, duplicate) - must edit before re-queuing. Rate limiting - wait specified period, slow down activity rate
+- **Relevance:** Pattern 3 - Real-world retry pattern implementations
 
 ### Progressive Disclosure
 
@@ -355,32 +771,39 @@ Citations in pattern documents use this format:
 
 **[Protocol:2]** NIP-02: Contact List and Petnames
 - **Source:** https://github.com/nostr-protocol/nips/blob/master/02.md
-- **Relevance:** Pattern 6 (Cross-Client Consistency)
+- **Key details:** Defines kind 3 events for following lists. Each new contact list event is a replaceable event that supersedes previous ones. Must contain all pubkeys the user is following, as event replaces previous list entirely.
+- **Relevance:** Pattern 3 (Core Interactions - follow/unfollow reliability), Pattern 6 (Cross-Client Consistency)
 
-**[Protocol:3]** NIP-46: Nostr Connect (Signers)
+**[Protocol:3]** NIP-25: Reactions
+- **Source:** https://github.com/nostr-protocol/nips/blob/master/25.md
+- **Key details:** Defines kind 7 events for reactions/likes. Each reaction references the event being reacted to using 'e' and 'p' tags. Reactions should be published to author's relays and user's write relays.
+- **Relevance:** Pattern 3 (Core Interactions - reaction/like reliability)
+
+**[Protocol:4]** NIP-46: Nostr Connect (Signers)
 - **Source:** https://github.com/nostr-protocol/nips/blob/master/46.md
 - **Relevance:** Pattern 1 (Onboarding), Pattern 5 (Progressive Complexity)
 
-**[Protocol:4]** NIP-65: Relay List Metadata (Outbox Model)
+**[Protocol:5]** NIP-65: Relay List Metadata (Outbox Model)
 - **Source:** https://github.com/nostr-protocol/nips/blob/master/65.md
-- **Relevance:** Pattern 5 (Progressive Complexity), Pattern 6 (Cross-Client Consistency)
+- **Key details:** Defines kind 10002 events for user's relay preferences. Helps other users discover which relays to use when looking for someone's content or publishing content meant for them to see.
+- **Relevance:** Pattern 3 (Core Interactions - relay coordination), Pattern 5 (Progressive Complexity), Pattern 6 (Cross-Client Consistency)
 
-**[Protocol:5]** NIP-57: Lightning Zaps
+**[Protocol:6]** NIP-57: Lightning Zaps
 - **Source:** https://github.com/nostr-protocol/nips/blob/master/57.md
-- **Relevance:** Pattern 2 (Content Discovery - quality signal)
+- **Relevance:** Pattern 2 (Content Discovery - quality signal), Pattern 3 (Core Interactions - zap notifications)
 
-**[Protocol:6]** Event Kinds Reference
+**[Protocol:7]** Event Kinds Reference
 - **Source:** [NIPs repository]
 - **Key kinds:** Kind 0 (metadata), Kind 1 (notes), Kind 3 (contacts)
 - **Relevance:** Multiple patterns
 
 ### Nostr Design Resources
 
-**[Protocol:7]** Nostr Design - UX Guidelines
+**[Protocol:8]** Nostr Design - UX Guidelines
 - **Source:** https://nostrdesign.org/
 - **Relevance:** All patterns (community design resource)
 
-**[Protocol:8]** Nostr Protocol Specification
+**[Protocol:9]** Nostr Protocol Specification
 - **Source:** [Official docs]
 - **Relevance:** All patterns (foundational)
 

@@ -38,9 +38,9 @@ This research is for:
 Based on research into Nostr apps' typical weaknesses, this study focuses on:
 
 1. **[Onboarding & First-Run Experience](patterns/01-onboarding.md)** ✅ - Get to value fast, defer complexity
-2. **Content Discovery & Feed Quality** 🚧 - Solve the cold start problem
-3. **Core Interaction Loops** 🚧 - Make posting/replying/reacting work perfectly
-4. **Performance & Perceived Speed** 🚧 - Optimistic UI, loading states, reliability
+2. **[Content Discovery & Feed Quality](patterns/02-content-discovery.md)** ✅ - Solve the cold start problem
+3. **[Core Interaction Loops](patterns/03-core-interactions.md)** ✅ - Make posting/replying/reacting work perfectly
+4. **[Performance & Perceived Speed](patterns/04-performance.md)** ✅ - Optimistic UI, loading states, reliability
 5. **Progressive Complexity** 🚧 - Reveal power features gradually (relays, signers)
 6. **Cross-Client Consistency** 🚧 - Following/follower sync, data integrity
 
@@ -73,8 +73,8 @@ A meta-pattern addressing "features without validation" problem.
 ### Pattern Documentation
 1. **[Pattern 1: Onboarding & First-Run Experience](patterns/01-onboarding.md)** ✅ Complete
 2. **[Pattern 2: Content Discovery & Feed Quality](patterns/02-content-discovery.md)** ✅ Complete
-3. Pattern 3: Core Interaction Loops 🚧 Coming soon
-4. Pattern 4: Performance & Perceived Speed 🚧 Coming soon
+3. **[Pattern 3: Core Interaction Loops](patterns/03-core-interactions.md)** ✅ Complete
+4. **[Pattern 4: Performance & Perceived Speed](patterns/04-performance.md)** ✅ Complete with 35+ 2024-2025 citations
 5. Pattern 5: Progressive Complexity 🚧 Coming soon
 6. Pattern 6: Cross-Client Consistency 🚧 Coming soon
 
@@ -122,9 +122,11 @@ This balance makes the research valuable for both existing Nostr developers and 
 - [x] [Complete study outline](OUTLINE.md)
 - [x] [Pattern 1: Onboarding](patterns/01-onboarding.md) - Fully documented with 2024-2025 citations
 - [x] [Pattern 2: Content Discovery & Feed Quality](patterns/02-content-discovery.md) - Complete with 67+ 2024-2025 citations
+- [x] [Pattern 3: Core Interaction Loops](patterns/03-core-interactions.md) - Complete with 30+ 2024-2025 citations from Nostr-specific sources and UX research
+- [x] [Pattern 4: Performance & Perceived Speed](patterns/04-performance.md) - Complete with 35+ 2024-2025 citations, includes critical March 2024 Core Web Vitals update (INP replaced FID)
 
 **Current Work:**
-- [ ] Patterns 3-6 - Detailed documentation
+- [ ] Patterns 5-6 - Detailed documentation
 - [ ] Case studies from mainstream apps
 - [ ] Validation framework
 - [ ] Implementation guide
