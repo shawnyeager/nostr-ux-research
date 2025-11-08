@@ -1052,8 +1052,8 @@ Interest-based follow suggestions, pre-populated feed
 ---
 
 {{< cards >}}
-  {{< card link="/docs/patterns/02-content-discovery" title="Next: Pattern 2" subtitle="Content Discovery" icon="arrow-right" >}}
-  {{< card link="/docs/patterns/" title="All Patterns" subtitle="Back to patterns overview" icon="collection" >}}
+  {{< card link="02-content-discovery" title="Next: Pattern 2" subtitle="Content Discovery" icon="arrow-right" >}}
+  {{< card link="../" title="All Patterns" subtitle="Back to patterns overview" icon="collection" >}}
 {{< /cards >}}
 
 ---

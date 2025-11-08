@@ -1173,6 +1173,6 @@ User's posts disappear with no explanation
 ---
 
 {{< cards >}}
-  {{< card link="/docs/resources/references" title="References" subtitle="Full bibliography & sources" icon="book-open" >}}
-  {{< card link="/docs/patterns/" title="All Patterns" subtitle="Back to patterns overview" icon="collection" >}}
+  {{< card link="../../resources/references" title="References" subtitle="Full bibliography & sources" icon="book-open" >}}
+  {{< card link="../" title="All Patterns" subtitle="Back to patterns overview" icon="collection" >}}
 {{< /cards >}}

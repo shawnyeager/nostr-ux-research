@@ -415,8 +415,8 @@ When writing Pattern 1 (Onboarding), cite sources using this format:
 ---
 
 {{< cards >}}
-  {{< card link="/docs/patterns/01-onboarding" title="Pattern 1: Onboarding" subtitle="View the full pattern" icon="arrow-right" >}}
-  {{< card link="/docs/resources/references" title="References" subtitle="Full bibliography" icon="book-open" >}}
+  {{< card link="../patterns/01-onboarding" title="Pattern 1: Onboarding" subtitle="View the full pattern" icon="arrow-right" >}}
+  {{< card link="references" title="References" subtitle="Full bibliography" icon="book-open" >}}
 {{< /cards >}}
 
 ---

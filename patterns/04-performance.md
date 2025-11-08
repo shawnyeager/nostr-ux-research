@@ -1307,6 +1307,6 @@ Test different approaches:
 ---
 
 {{< cards >}}
-  {{< card link="/docs/patterns/05-progressive-complexity" title="Next: Pattern 5" subtitle="Progressive Complexity" icon="arrow-right" >}}
-  {{< card link="/docs/patterns/" title="All Patterns" subtitle="Back to patterns overview" icon="collection" >}}
+  {{< card link="05-progressive-complexity" title="Next: Pattern 5" subtitle="Progressive Complexity" icon="arrow-right" >}}
+  {{< card link="../" title="All Patterns" subtitle="Back to patterns overview" icon="collection" >}}
 {{< /cards >}}

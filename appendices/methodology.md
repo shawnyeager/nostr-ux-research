@@ -277,8 +277,8 @@ We'll know this methodology is sound if:
 ---
 
 {{< cards >}}
-  {{< card link="/docs/patterns/01-onboarding" title="View Patterns" subtitle="See the 6 design patterns" icon="collection" >}}
-  {{< card link="/docs/resources/references" title="References" subtitle="Full bibliography" icon="book-open" >}}
+  {{< card link="../patterns/01-onboarding" title="View Patterns" subtitle="See the 6 design patterns" icon="collection" >}}
+  {{< card link="references" title="References" subtitle="Full bibliography" icon="book-open" >}}
 {{< /cards >}}
 
 ---

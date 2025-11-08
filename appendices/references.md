@@ -1086,8 +1086,8 @@ Yeager, Shawn. "Nostr UX Research Study: Design Patterns for Consumer Applicatio
 ---
 
 {{< cards >}}
-  {{< card link="/docs/patterns/01-onboarding" title="View Patterns" subtitle="See the 6 design patterns" icon="collection" >}}
-  {{< card link="/docs/resources/methodology/" title="Methodology" subtitle="Research approach" icon="beaker" >}}
+  {{< card link="../patterns/01-onboarding" title="View Patterns" subtitle="See the 6 design patterns" icon="collection" >}}
+  {{< card link="methodology/" title="Methodology" subtitle="Research approach" icon="beaker" >}}
 {{< /cards >}}
 
 ---

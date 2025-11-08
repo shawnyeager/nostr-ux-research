@@ -1013,6 +1013,6 @@ Google Design Guidelines emphasize: Initial sync with clear guidance and time es
 ---
 
 {{< cards >}}
-  {{< card link="/docs/patterns/04-performance" title="Next: Pattern 4" subtitle="Performance & Perceived Speed" icon="arrow-right" >}}
-  {{< card link="/docs/patterns/" title="All Patterns" subtitle="Back to patterns overview" icon="collection" >}}
+  {{< card link="04-performance" title="Next: Pattern 4" subtitle="Performance & Perceived Speed" icon="arrow-right" >}}
+  {{< card link="../" title="All Patterns" subtitle="Back to patterns overview" icon="collection" >}}
 {{< /cards >}}
