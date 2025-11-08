@@ -1,5 +1,11 @@
-# Pattern 1: Onboarding & First-Run Experience
-
+---
+title: "Onboarding & First-Run Experience"
+patternNumber: 1
+problem: "15-20 minute setup, key management overwhelming"
+impact: "Users abandon before reaching value"
+solution: "Minimize time-to-first-value, defer complexity, browse-first approach"
+showToc: true
+weight: 1
 ---
 
 ## Problem Statement

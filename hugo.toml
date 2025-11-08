@@ -1,0 +1,74 @@
+baseURL = 'https://shawnyeager.github.io/nostr-ux-research/'
+languageCode = 'en-us'
+title = 'Nostr UX Research Study'
+theme = 'nostr-ux'
+
+[params]
+  description = 'Design patterns for building consumer Nostr applications with great UX'
+  author = 'Shawn Yeager'
+
+  # Plausible.io analytics
+  plausibleDomain = 'shawnyeager.github.io'
+  plausibleScript = 'https://plausible.io/js/script.js'
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 1
+
+  [[menu.main]]
+    name = 'Get Started'
+    url = '/start/'
+    weight = 2
+
+  [[menu.main]]
+    name = 'Patterns'
+    url = '/patterns/'
+    weight = 3
+
+  [[menu.main]]
+    name = 'Quick Reference'
+    url = '/quick-reference/'
+    weight = 4
+
+  [[menu.main]]
+    name = 'Resources'
+    url = '/resources/'
+    weight = 5
+
+[markup]
+  [markup.highlight]
+    style = 'github'
+    lineNos = true
+    lineNumbersInTable = true
+
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ['HTML', 'JSON']
+  section = ['HTML']
+  page = ['HTML']
+
+[module]
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+
+  [[module.mounts]]
+    source = "patterns"
+    target = "content/patterns"
+
+  [[module.mounts]]
+    source = "appendices"
+    target = "content/resources"
+
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+
+  [[module.mounts]]
+    source = "themes/nostr-ux/static"
+    target = "static"

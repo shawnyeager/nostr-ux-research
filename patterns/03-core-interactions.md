@@ -1,7 +1,12 @@
-# Pattern 3: Core Interaction Loops
-
-**Last Updated:** November 7, 2025
-
+---
+title: "Core Interaction Loops"
+patternNumber: 3
+problem: "Posts disappear, notifications missing, unreliable actions"
+impact: "Users lose trust, abandon platform"
+solution: "Optimistic UI, instant feedback, error recovery, reliability first"
+showToc: true
+weight: 3
+lastUpdated: "November 7, 2025"
 ---
 
 ## Table of Contents

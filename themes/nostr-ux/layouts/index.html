@@ -1,0 +1,97 @@
+{{ define "main" }}
+<div class="hero">
+  <div class="container">
+    <h1>Design Patterns for Nostr UX</h1>
+    <p class="hero-subtitle">Research-backed patterns to build consumer Nostr applications that people actually want to use</p>
+    <div class="hero-cta">
+      <a href="{{ "/start/" | relURL }}" class="btn btn-primary">Get Started</a>
+      <a href="{{ "/patterns/" | relURL }}" class="btn btn-secondary">Browse Patterns</a>
+    </div>
+  </div>
+</div>
+
+<section class="problem-section">
+  <div class="container">
+    <h2>The Problem</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">0%</div>
+        <div class="stat-label">30-day retention for recent cohorts</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">15-20 min</div>
+        <div class="stat-label">Onboarding time drives abandonment</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">5-6</div>
+        <div class="stat-label">Clients needed to work around bugs</div>
+      </div>
+    </div>
+    <p class="section-lead">Users are abandoning Nostr apps because core UX is broken. Feature bloat and protocol complexity are overwhelming users before they reach value.</p>
+  </div>
+</section>
+
+<section class="patterns-preview">
+  <div class="container">
+    <h2>The 6 Critical Patterns</h2>
+    <p class="section-lead">Research-backed solutions to the highest-impact UX problems in Nostr applications</p>
+
+    <div class="pattern-grid">
+      {{ range where .Site.RegularPages "Section" "patterns" }}
+      <article class="pattern-card">
+        <div class="pattern-number">{{ .Params.patternNumber }}</div>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        {{ with .Params.problem }}<p class="pattern-problem"><strong>Problem:</strong> {{ . }}</p>{{ end }}
+        {{ with .Params.impact }}<p class="pattern-impact"><strong>Impact:</strong> {{ . }}</p>{{ end }}
+        {{ with .Params.solution }}<p class="pattern-solution"><strong>Solution:</strong> {{ . }}</p>{{ end }}
+        <a href="{{ .RelPermalink }}" class="pattern-link">Read Pattern →</a>
+      </article>
+      {{ end }}
+    </div>
+
+    <div class="cta-block">
+      <a href="{{ "/patterns/" | relURL }}" class="btn btn-large">View All Patterns</a>
+    </div>
+  </div>
+</section>
+
+<section class="validation-framework">
+  <div class="container">
+    <h2>The Validation Framework</h2>
+    <p class="section-lead">Before building any feature, ask these three questions:</p>
+    <ol class="framework-questions">
+      <li><strong>Does this help users accomplish their core goal?</strong> (seeing content, connecting with people)</li>
+      <li><strong>Have we validated this solves a real problem?</strong> (data, user feedback, research - not hunches)</li>
+      <li><strong>Can we measure if it's working?</strong> (leading indicators, lagging indicators, qualitative signals)</li>
+    </ol>
+    <p class="framework-principle"><strong>Core principle:</strong> Great UX is the gateway to the protocol's power.</p>
+  </div>
+</section>
+
+<section class="audience-section">
+  <div class="container">
+    <h2>Who This Is For</h2>
+    <div class="audience-grid">
+      <div class="audience-card">
+        <h3>Nostr Developers</h3>
+        <p>Building consumer social apps (mobile, web, desktop) and want to improve retention and engagement</p>
+      </div>
+      <div class="audience-card">
+        <h3>Product Designers</h3>
+        <p>Working on Nostr clients and need research-backed patterns for common UX challenges</p>
+      </div>
+      <div class="audience-card">
+        <h3>Mainstream Developers</h3>
+        <p>Evaluating whether to build on Nostr and need to understand the UX landscape</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="container">
+    <h2>Ready to Improve Your Nostr App's UX?</h2>
+    <a href="{{ "/start/" | relURL }}" class="btn btn-primary btn-large">Get Started</a>
+  </div>
+</section>
+{{ end }}

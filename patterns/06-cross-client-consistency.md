@@ -1,8 +1,13 @@
-# Pattern 6: Cross-Client Consistency & Data Integrity
-
-**Last Updated:** November 8, 2025
-**Research Currency:** All sources from 2024-2025
-
+---
+title: "Cross-Client Consistency & Data Integrity"
+patternNumber: 6
+problem: "Lost all followers when switching clients"
+impact: "Users don't trust the platform"
+solution: "Multi-relay write strategy, sync verification, conflict resolution"
+showToc: true
+weight: 6
+lastUpdated: "November 8, 2025"
+researchCurrency: "All sources from 2024-2025"
 ---
 
 ## Table of Contents
