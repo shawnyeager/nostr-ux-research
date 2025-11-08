@@ -1,6 +1,6 @@
 # Content Discovery Evidence: 2024-2025
 
-Research findings on content discovery problems in Nostr apps, compiled November 2024.
+Research findings on content discovery problems in Nostr apps, compiled November 2025.
 
 **Sources:** Verified web sources with URLs only. All findings without verifiable URLs have been removed.
 
@@ -69,12 +69,26 @@ Research findings on content discovery problems in Nostr apps, compiled November
 
 ## 4. SOLUTIONS & INNOVATIONS (2024-2025)
 
-### Finding 4.1: Nstart Onboarding Wizard
+### Finding 4.1: Primal 2.0 Feed Marketplace
+- **Quote:** "Primal 2.0 was announced by miljan, founder and CEO of Primal, after the team worked for many months to reach this milestone. Primal now offers a much more comprehensive view of Nostr on its web and mobile apps, with the following additions: a Reads tab, an Explore tab, a Feed Marketplace, comprehensive Advanced Search options, and multiple performance improvements."
+- **Source:** https://www.nobsbitcoin.com/primal-v2-0/
+- **Date:** November 21, 2024
+- **Context:** Major discovery innovation launched. The Reads tab allows users to explore the latest Nostr-native long-form content via multiple feeds, including Nostr Reads, Bitcoin Reads, Philosophy Reads, News Reads, and a variety of other custom feeds available on the Feed Marketplace.
+- **Category:** Discovery / Solution
+
+### Finding 4.2: Nstart Onboarding Wizard
 - **Quote:** "Nstart aims to simplify onboarding for new users to the Nostr protocol with an easy-to-use wizard that provides helpful hints about the protocol and exclusive features... Auto follow the contacts list of some old and trusted Nostr users"
 - **Source:** https://www.nobsbitcoin.com/nstart-nostr-onboarding-wizard/
 - **Date:** January 2025
 - **Context:** Solves cold start by auto-following curated lists
 - **Category:** Discovery / Solution / Onboarding
+
+### Finding 4.3: Spam Attack and Mitigation Efforts
+- **Quote:** "Nostr was hit with approximately 500,000 daily spam messages in mid-February, consisting of ads for spam services, scams, and NSFW content. As a result of its ability to quickly and discreetly create accounts and publish posts to relays, Nostr can propagate spam much easier if left unchecked."
+- **Source:** https://spam.nostr.band/
+- **Date:** February 2024
+- **Context:** Global feed usability severely impacted by spam. Led to development of spam filtering approaches including Web of Trust filtering and the Purgatory anti-spam pipeline (September 2024).
+- **Category:** Feed quality / Problem & Solution
 
 ---
 
@@ -92,8 +106,10 @@ Research findings on content discovery problems in Nostr apps, compiled November
 3. **Weak habit formation:** No triggers to bring users back to app (karnage, March 2024)
 
 ### Solutions Emerging (2024-2025):
-1. **Nstart onboarding wizard** (Jan 2025): Auto-follow trusted users, email backup, simplified key management
-2. **Nostr Design guidelines**: Prioritizes progressive disclosure and content/user discovery in onboarding recommendations
+1. **Primal 2.0 Feed Marketplace** (Nov 2024): Explore tab, advanced search, curated feeds (Reads, Bitcoin, Philosophy, News)
+2. **Nstart onboarding wizard** (Jan 2025): Auto-follow trusted users, email backup, simplified key management
+3. **Spam mitigation** (Feb-Sep 2024): Response to 500K daily spam attack with Web of Trust filtering and Purgatory pipeline
+4. **Nostr Design guidelines**: Prioritizes progressive disclosure and content/user discovery in onboarding recommendations
 
 ### Design Community Acknowledgment:
 1. **Nostr Design:** Prioritizes "content and user discovery" as key areas for improvement
@@ -126,5 +142,5 @@ Research findings on content discovery problems in Nostr apps, compiled November
 
 **Research completed:** November 7, 2025
 **Cleaned:** November 8, 2025
-**Methodology:** Removed all findings without verifiable URLs. Consolidated findings from the same source where appropriate.
-**Total findings with verified sources:** 8 findings from 4 distinct sources
+**Methodology:** Removed all findings without verifiable URLs. Consolidated findings from the same source where appropriate. Restored key verified findings that were initially removed.
+**Total findings with verified sources:** 11 findings from 6 distinct sources

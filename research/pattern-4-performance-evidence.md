@@ -1,7 +1,7 @@
 # Pattern 4: Performance & Perceived Speed
 ## Research Evidence from 2024-2025 Sources
 
-**Last Updated:** November 7, 2024
+**Last Updated:** November 7, 2025
 **Research Focus:** Concrete evidence of performance problems affecting Nostr apps
 
 ---
@@ -67,24 +67,7 @@
 - **Specific Finding:** "Pulling follower count/event count is super inefficient and bandwidth intensive [NIP-45]"
 - **Relevance:** Social graph queries create significant overhead
 
-### 2.2 Security Research Affecting Performance
-
-**Source:** Black Hat USA 2025 - "Not Sealed: Practical Attacks on Nostr"
-- **URL:** https://crypto-sec-n.github.io/
-- **Presenters:** Hayato Kimura, Ryoma Ito, Kazuhiko Minematsu, Shogo Shiraki, Takanori Isobe
-- **Conference:** Black Hat USA 2025
-- **Publication:** 10th IEEE European Symposium on Security and Privacy (EuroS&P 2025)
-- **Date:** 2025
-- **Key Findings:**
-  - "The starting point of their main attacks was flawed client-side signature verification"
-  - "Several clients omit signature verification entirely"
-  - Affected clients (past versions): Damus (iOS), Iris (iOS), FreeFrom (iOS/Android), Plebstr
-  - **Recommendation:** "Switch to a client that verifies every event signature"
-  - **Proposed Fix:** "Enforce signature verification in NIP-01 by specifying that clients must verify every event's signature and drop invalid events"
-- **Performance Implication:** The fact that some clients skip signature verification suggests performance concerns, though proper security requires this overhead
-- **Relevance:** Security vs. performance trade-off; clients may cut corners to improve speed
-
-### 2.3 Performance Optimization Efforts
+### 2.2 Performance Optimization Efforts
 
 **Source:** nostrdb - Embedded Database
 - **URL:** https://github.com/damus-io/nostrdb
@@ -265,8 +248,6 @@
 
 ### Academic Research:
 - arXiv 2402.05709 - "An Empirical Analysis of the Nostr Social Network" (Feb 2024, revised Sep 2024)
-- Black Hat USA 2025 - "Not Sealed: Practical Attacks on Nostr"
-- IEEE EuroS&P 2025 proceedings
 
 ### Official Documentation:
 - NIP-65 (Relay List Metadata)
@@ -289,7 +270,7 @@
 - nostr.band (statistics)
 - X/Twitter (performance benchmarks)
 
-**Total Sources Cited:** 15 distinct verified sources with URLs from 2022-2025
+**Total Sources Cited:** 14 distinct verified sources with URLs from 2022-2025
 
 ---
 
