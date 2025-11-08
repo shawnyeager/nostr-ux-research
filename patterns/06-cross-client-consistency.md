@@ -6,8 +6,8 @@ weight: 6
 ## Table of Contents
 
 1. [Problem Statement](#problem-statement)
-2. [Universal Principles (70%)](#universal-principles-70)
-3. [Nostr-Specific Considerations (30%)](#nostr-specific-considerations-30)
+2. [Universal Principles](#universal-principles)
+3. [Nostr-Specific Considerations](#nostr-specific-considerations)
 4. [Pattern Library: Concrete Solutions](#pattern-library-concrete-solutions)
 5. [Anti-Patterns: What Not To Do](#anti-patterns-what-not-to-do)
 6. [Validation Checklist](#validation-checklist)
@@ -67,7 +67,7 @@ weight: 6
 
 ---
 
-## Universal Principles (70%)
+## Universal Principles
 
 These principles apply to any distributed system managing user data across multiple clients.
 
@@ -190,7 +190,7 @@ These principles apply to any distributed system managing user data across multi
 
 ---
 
-## Nostr-Specific Considerations (30%)
+## Nostr-Specific Considerations
 
 ### Challenge 1: Kind:3 Race Conditions Destroying Follow Lists
 

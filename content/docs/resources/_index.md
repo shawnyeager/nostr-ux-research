@@ -25,7 +25,7 @@ This study synthesizes:
 - Mainstream app case studies (TikTok, Instagram, Bluesky, Discord)
 - 100+ verified sources with URLs (strict citation policy)
 
-**Content balance:** 70% universal principles (applicable to any social app) + 30% Nostr-specific considerations (relays, keys, decentralization).
+**Content balance:** Universal principles applicable to any social app, with Nostr-specific considerations for decentralized architecture.
 
 **Citation Policy:** All claims backed by verifiable sources with URLs. No unverifiable statements.
 

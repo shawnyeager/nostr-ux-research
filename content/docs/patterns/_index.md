@@ -7,8 +7,8 @@ These six patterns address the most critical UX problems facing Nostr applicatio
 
 Each pattern includes:
 - **Problem Statement** backed by research
-- **Universal Principles** (70% - applicable to any social app)
-- **Nostr-Specific Considerations** (30%)
+- **Universal Principles** applicable to any social app
+- **Nostr-Specific Considerations**
 - **Pattern Library** with concrete examples
 - **Anti-Patterns** to avoid
 - **Validation Checklist** to measure success

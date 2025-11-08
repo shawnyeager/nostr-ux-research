@@ -6,8 +6,8 @@ weight: 5
 ## Table of Contents
 
 1. [Problem Statement](#problem-statement)
-2. [Universal Principles (70%)](#universal-principles-70)
-3. [Nostr-Specific Considerations (30%)](#nostr-specific-considerations-30)
+2. [Universal Principles](#universal-principles)
+3. [Nostr-Specific Considerations](#nostr-specific-considerations)
 4. [Pattern Library: Concrete Solutions](#pattern-library-concrete-solutions)
 5. [Anti-Patterns: What Not To Do](#anti-patterns-what-not-to-do)
 6. [Validation Checklist](#validation-checklist)
@@ -68,7 +68,7 @@ Nostr apps feel like developer tools, not consumer apps. Users compare to Twitte
 
 ---
 
-## Universal Principles (70%)
+## Universal Principles
 
 These principles apply to any application managing feature complexity and user experience.
 
@@ -284,7 +284,7 @@ Great UX isn't about hiding features—it's about organizing them so users can f
 
 ---
 
-## Nostr-Specific Considerations (30%)
+## Nostr-Specific Considerations
 
 ### Challenge 1: Relay Management Complexity
 

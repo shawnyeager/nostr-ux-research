@@ -30,7 +30,7 @@ Onboarding is not just about getting users in - it's about getting them to their
 
 ---
 
-## Universal Principles (70%)
+## Universal Principles
 
 These principles apply to any social application, not just Nostr.
 
@@ -199,7 +199,7 @@ Highest:         Advanced configuration (power user features)
 
 ---
 
-## Nostr-Specific Considerations (30%)
+## Nostr-Specific Considerations
 
 Nostr's decentralized architecture creates unique onboarding challenges that centralized apps don't face.
 
