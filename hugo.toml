@@ -33,9 +33,6 @@ theme = 'hextra'
     displayLogo = false
     width = "wide"
 
-  [params.page]
-    width = "wide"
-
   [params.footer]
     displayCopyright = true
     displayPoweredBy = false
