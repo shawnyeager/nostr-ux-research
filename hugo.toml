@@ -24,9 +24,9 @@ theme = 'hextra'
 [params]
   description = 'Design patterns for building consumer Nostr applications with great UX'
 
-  # Plausible.io analytics
+  # Plausible.io analytics (custom script in layouts/partials/custom/head-end.html)
   [params.analytics.plausible]
-    domain = "shawnyeager.github.io"
+    domain = "nostr-ux.com"
 
   [params.navbar]
     displayTitle = true
