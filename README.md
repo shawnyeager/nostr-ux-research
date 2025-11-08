@@ -6,7 +6,7 @@ A meta research study on UX best practices and design patterns for Nostr consume
 
 This project synthesizes research on user experience design for social applications and applies it to the unique challenges of building Nostr clients. It's designed to help Nostr developers create better user experiences by learning from both mainstream social app patterns and Nostr-specific considerations.
 
-**Core Thesis:** Good UX beats protocol purity. Ship working experiences, then add features.
+**Core Thesis:** Good UX wins every time. Ship working experiences, then add features.
 
 ## The Problem
 
