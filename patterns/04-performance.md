@@ -57,6 +57,7 @@ Nostr apps may not be objectively slower than centralized alternatives, but they
 
 These principles apply to any application prioritizing performance and user experience.
 
+
 ### 1. Perceived Performance > Actual Performance
 
 **Research backing:** [[Research:34]](#research-34) [[Research:35]](#research-35)
@@ -76,6 +77,7 @@ These principles apply to any application prioritizing performance and user expe
 - **Instagram:** [[Example:12]](#example-12) AI ranks 500 posts per user by engagement predictions, emphasizes "engage in first 3 seconds"
 - **TikTok:** [[Example:13]](#example-13) Watch time prioritized—content that "stops scrolls cold" with grabber upfront
 - **Starbucks PWA:** [[Example:14]](#example-14) Offline functionality led to **2x increase in daily active users** and **53% rise in order completions**
+
 
 ### 2. The 100ms / 1s / 10s Rule
 
@@ -99,6 +101,7 @@ These principles apply to any application prioritizing performance and user expe
 - **100ms-1s:** Use optimistic UI, show skeleton screens
 - **1-5s:** Progressive loading, show percentage/status, allow cancellation
 - **>5s:** Must be background operation with notification on completion
+
 
 ### 3. Skeleton Screens & Progressive Loading
 
@@ -130,6 +133,7 @@ These principles apply to any application prioritizing performance and user expe
 5. Lazy load images as user scrolls
 ```
 
+
 ### 4. Optimistic UI Patterns
 
 **Research backing:** [[Research:36]](#research-36) [[Research:38]](#research-38) (See also: Pattern 3)
@@ -144,6 +148,7 @@ These principles apply to any application prioritizing performance and user expe
 - Follow/unfollow (immediate button state)
 - Post drafts (save locally, sync in background)
 - Profile updates (show changes immediately)
+
 
 ### 5. Caching & Offline-First Architecture
 
@@ -176,6 +181,7 @@ These principles apply to any application prioritizing performance and user expe
 - Read cached content while new content loads
 - Progressive enhancement as network becomes available
 
+
 ### 6. Bundle Size & Initial Load Optimization
 
 **Research backing:** [[Research:41]](#research-41) [[Research:42]](#research-42) [[Research:43]](#research-43)
@@ -197,6 +203,7 @@ These principles apply to any application prioritizing performance and user expe
 - Total bundle: **<1MB gzipped** for good UX
 - Critical path: <50KB for above-the-fold content
 - Images: WebP/AVIF formats, responsive images [[Research:44]](#research-44)
+
 
 ### 7. Incremental Rendering & Virtual Scrolling
 

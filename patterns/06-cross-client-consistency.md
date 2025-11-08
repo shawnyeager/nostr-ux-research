@@ -60,6 +60,7 @@ weight: 6
 
 These principles apply to any distributed system managing user data across multiple clients.
 
+
 ### 1. Maintain Consistency & Adhere to Standards
 
 **Research backing:** [[Research:73]](#research-73) [[Research:74]](#research-74) [[Research:75]](#research-75)
@@ -86,6 +87,7 @@ These principles apply to any distributed system managing user data across multi
 - Provides common language of components and patterns for cohesive cross-platform experiences
 - Consistency creates seamless, intuitive experiences
 
+
 ### 2. User Expectations for Real-Time Sync
 
 **Research backing:** [[Research:70]](#research-70) [[Research:72]](#research-72) [[Research:76]](#research-76)
@@ -104,6 +106,7 @@ These principles apply to any distributed system managing user data across multi
 - Delivering seamless cross-device experience is "cornerstone of digital marketing success" in 2025
 - Users expect frictionless transitions between devices
 - Content, state, and interactions must persist
+
 
 ### 3. Offline-First with Visible Sync States
 
@@ -124,6 +127,7 @@ These principles apply to any distributed system managing user data across multi
 - Apps learn usage patterns and pre-cache likely-needed content
 - Offline editing queues for automatic sync
 - "Offline sync isn't optional anymore—it's a must-have for great UX"
+
 
 ### 4. Conflict Resolution Strategies
 
@@ -146,6 +150,7 @@ These principles apply to any distributed system managing user data across multi
 - Allow manual reconciliation when conflicts can't be auto-resolved
 - Inform users about conflict resolution strategy in use
 
+
 ### 5. Trust Through Transparency
 
 **Research backing:** [[Research:67]](#research-67) [[Research:68]](#research-68) [[Research:66]](#research-66)
@@ -165,6 +170,7 @@ These principles apply to any distributed system managing user data across multi
 
 **Critical for distributed systems:** [[Research:68]](#research-68)
 > "In an industry where scams are everywhere, UX = trust. Blockchain cannot guarantee the quality of service of DApps, which entirely depends on the services' performance."
+
 
 ### 6. Design for Distributed Systems Constraints
 

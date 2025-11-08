@@ -35,6 +35,7 @@ Onboarding is not just about getting users in - it's about getting them to their
 
 These principles apply to any social application, not just Nostr.
 
+
 ### 1. Time-to-Value: The 2-Minute Rule
 
 **Principle:** Users should reach their first moment of value within 2 minutes of opening your app.
@@ -61,6 +62,7 @@ These principles apply to any social application, not just Nostr.
 - **Instagram:** Can browse limited content before signup, demonstrates value upfront
 - **Discord:** Can join servers and read channels before creating account
 - **Twitter/X:** Can browse tweets and threads without account (partially)
+
 
 ### 2. Progressive Disclosure: Defer Non-Essential Complexity
 
@@ -95,6 +97,7 @@ Highest:         Advanced configuration (power user features)
 
 **Research backing:** Jakob Nielsen introduced progressive disclosure in 1995 as a principle to defer advanced or rarely used features to secondary screens. It improves 3 of 5 usability components: learnability, efficiency, and error rate [[Research:2]](#research-2).
 
+
 ### 3. Friction Laddering: Gradual Commitment
 
 **Principle:** Start with the lowest possible commitment, then gradually increase investment as users see value.
@@ -117,6 +120,7 @@ Highest:         Advanced configuration (power user features)
 **Anti-example:** Requiring 10 fields of information before users can browse
 
 **Research backing:** Robert Cialdini's research on commitment and consistency shows that "once we make a choice or take a stand, we encounter personal and interpersonal pressures to behave consistently with that commitment." Small commitments build to larger ones (the "foot-in-the-door" technique) [[Research:3]](#research-3). Luke Wroblewski's "Gradual Engagement" principle applies this to product design: showcase value before requiring information.
+
 
 ### 4. Social Proof: Show Value Before Asking for Effort
 
@@ -145,6 +149,7 @@ Highest:         Advanced configuration (power user features)
 
 **Research backing:** Social proof is a well-established psychological principle in persuasion and conversion optimization. TikTok demonstrates this by showing viral videos immediately - proof of entertaining content exists [[Example:1]](#example-1).
 
+
 ### 5. First Success: Create a Quick Win
 
 **Principle:** Engineer an early success moment that feels meaningful and rewarding.
@@ -171,6 +176,7 @@ Highest:         Advanced configuration (power user features)
 - Duolingo: First lesson is easy and rewarding
 
 **Research backing:** Early success experiences create positive reinforcement and build user confidence. Samuel Hulick emphasizes focusing on "meaningful wins as early as possible" to give users "a taste of why the product improves their lives" [[Example:2]](#example-2).
+
 
 ### 6. Onboarding as Education: Teach, Don't Overwhelm
 

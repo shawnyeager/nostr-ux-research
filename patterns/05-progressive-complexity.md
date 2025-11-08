@@ -63,6 +63,7 @@ Nostr apps feel like developer tools, not consumer apps. Users compare to Twitte
 
 These principles apply to any application managing feature complexity and user experience.
 
+
 ### 1. The Pareto Principle (80/20 Rule)
 
 **Research backing:** [[Research:54]](#research-54) [[Research:59]](#research-59)
@@ -87,6 +88,7 @@ These principles apply to any application managing feature complexity and user e
 - **Email clients:** Compose/Read/Archive visible; filters/labels/rules in settings
 - **Social apps:** Post/Like/Comment primary; mute lists/quality filters advanced
 - **Photo apps:** Basic filters prominent; curves/levels/masking for pros
+
 
 ### 2. Progressive Disclosure
 
@@ -119,6 +121,7 @@ These principles apply to any application managing feature complexity and user e
 **Design methods:** [[Research:60]](#research-60)
 Define essential vs. advanced content through user research using card sorting and task analysis.
 
+
 ### 3. Smart Defaults That Work for 80%
 
 **Research backing:** [[Research:57]](#research-57) [[Research:61]](#research-61)
@@ -150,6 +153,7 @@ Define essential vs. advanced content through user research using card sorting a
 - **Notification settings:** Defaults that balance engagement without spam
 - **Privacy settings:** Sensible privacy by default, opt-in for sharing
 - **Display settings:** Auto dark mode, readable font sizes, standard layouts
+
 
 ### 4. Settings Hierarchy: Basic → Advanced → Expert
 
@@ -193,6 +197,7 @@ Define essential vs. advanced content through user research using card sorting a
 - Use shared traits (color, shape, size) for quick understanding
 - Apply visual consistency
 
+
 ### 5. Contextual Help Over Upfront Tutorials
 
 **Research backing:** [[Research:62]](#research-62) [[Research:63]](#research-63)
@@ -219,6 +224,7 @@ Pendo, Appcues, and Userpilot enable contextual help implementation without codi
 
 **Design principle:** [[Research:63]](#research-63)
 Tooltips provide subtle, contextual guidance; pop-ups or modals are more disruptive—choose appropriately.
+
 
 ### 6. Feature Discovery for Power Users
 
@@ -258,6 +264,7 @@ Tooltips provide subtle, contextual guidance; pop-ups or modals are more disrupt
 - **Smart defaults** with behavior-based interfaces
 - **Dashboards that feel personalized**
 - **Adaptive interfaces:** Dark mode at night, simplified UI when fatigued
+
 
 ### 7. Minimize Cognitive Load
 

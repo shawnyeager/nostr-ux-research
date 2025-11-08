@@ -49,6 +49,7 @@ weight: 2
 
 These principles apply to any social application, regardless of underlying architecture.
 
+
 ### 1. The Cold Start Problem: Solve It or Die
 
 **Research backing:** Bluesky's starter packs (curated lists of accounts users can follow with one click) accounted for 43% of follow actions during peak periods. Users included in starter packs received 85% more followers and posted 60% more than similar users not included. [[Research:4]](#research-4)
@@ -70,6 +71,7 @@ These principles apply to any social application, regardless of underlying archi
 - Time to first interesting content: <30 seconds
 - Posts viewed in first session: >20 (establishes habit)
 - "Was your first session interesting?" user survey
+
 
 ### 2. Feed Algorithms: Balancing Discovery and Control
 
@@ -97,6 +99,7 @@ These principles apply to any social application, regardless of underlying archi
 - Incorporates user satisfaction signals (muting, reporting, explicit feedback) alongside engagement metrics [[Research:7]](#research-7)
 - Transparent about why content is shown
 
+
 ### 3. Content Quality Signals
 
 **Research backing:** Instagram's April 2024 algorithm update heavily weights "shares per reach" (content sent via DMs) as deeper engagement than likes. [[Example:5]](#example-5)
@@ -108,6 +111,7 @@ These principles apply to any social application, regardless of underlying archi
 - **Recency:** Fresh content prioritized over old
 - **Relevance:** Matches user interests (topics, hashtags, accounts)
 - **Social proof:** "People you follow liked this"
+
 
 ### 4. Search and Discovery Mechanisms
 
@@ -122,6 +126,7 @@ These principles apply to any social application, regardless of underlying archi
 - **Curated lists:** Topic-specific or editor-curated accounts
 
 **Implication for Nostr:** Search functionality must be a core discovery mechanism, not an afterthought. Users expect to search for topics, hashtags, and people as a primary way to find content.
+
 
 ### 5. Notification Strategy for Engagement
 

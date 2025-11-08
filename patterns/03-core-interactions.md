@@ -49,6 +49,7 @@ weight: 3
 
 These principles apply to any social application, regardless of underlying architecture.
 
+
 ### 1. Perceived Reliability Trumps Actual Speed
 
 **Research backing:** [[Research:1]](#research-1) Framna 2024 survey of 3,000+ users found that 94% cited design as the main reason they mistrusted or rejected apps, and 40% said poor performance would make them prefer better alternatives. Performance depends on Speed, Security, and Reliability - if an app doesn't load quickly or show signs of reliability, users immediately uninstall. [[Research:2]](#research-2) Only 35% of social media users feel safe participating on platforms (down from 44%), with all 9 major platforms losing trust ground in 2024.
@@ -71,6 +72,7 @@ These principles apply to any social application, regardless of underlying archi
 2. Loading/processing state
 3. Clear success/failure indication
 4. Easy retry on failure
+
 
 ### 2. Optimistic UI with Validation
 
@@ -102,6 +104,7 @@ User clicks like
 → If failure: revert to gray + show error toast
 ```
 
+
 ### 3. Progressive Feedback States
 
 **Research backing:** [[Research:7]](#research-7) Nielsen Norman Group's "Visibility of System Status" (2024) states this is the "most basic guideline of UI design" - keep users informed about what's going on with appropriate feedback within reasonable time, ideally immediately. [[Research:8]](#research-8) Skeleton screens are now the norm for full-page loading, showing wireframe immediately before real content. [[Research:9]](#research-9) Best for 2-10 second wait times, must be consistent with final screen layout, and should include subtle animations (pulsating, fading) to decrease perceived time. [[Research:10]](#research-10) Error states are often prioritized over success states, but both must work together - success feedback is as important as error feedback for user confidence.
@@ -120,6 +123,7 @@ User clicks like
 - Processing: Skeleton screen (2-10s) or spinner, progress bar
 - Success: Checkmark, color change, brief confirmation
 - Error: Red indicator, error message, retry button
+
 
 ### 4. Error Messages That Help
 
@@ -143,6 +147,7 @@ User clicks like
 - Suggests what user can do
 - Provides easy retry mechanism
 - Doesn't expose technical jargon
+
 
 ### 5. Idempotency: Allow Retries Safely
 
