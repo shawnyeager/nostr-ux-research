@@ -1,13 +1,10 @@
 baseURL = 'https://shawnyeager.github.io/nostr-ux-research/'
 languageCode = 'en-us'
 title = 'Nostr UX Research Study'
+theme = 'hextra'
 
-# Enable Hugo modules
+# Mount existing content
 [module]
-  [[module.imports]]
-    path = "github.com/imfing/hextra"
-
-  # Mount existing content
   [[module.mounts]]
     source = "content"
     target = "content"
