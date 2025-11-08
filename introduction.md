@@ -159,13 +159,11 @@ Each pattern addresses a specific, high-impact UX failure in Nostr clients:
 
 ## The Core Thesis
 
-**Good UX beats protocol purity.**
+**Great UX is the gateway to the protocol's power.**
 
-Nostr doesn't need more features. It needs working experiences. Ship core interactions that are reliable, fast, and delightful. Then add features.
+At 0% retention, users never experience what makes Nostr valuable. They abandon before discovering censorship resistance, data portability, or decentralization.
 
-The protocol's censorship resistance and decentralization are **core strengths**. The opportunity is to match mainstream apps on UX fundamentals while delivering on these protocol benefits.
-
-Users choose apps that work well. Reliable posting, engaging feeds, and clear onboarding are table stakes—regardless of architecture. Nostr clients can deliver both excellent UX and protocol benefits.
+The 6 patterns in this study build that gateway. Reliable posting, engaging feeds, and clear onboarding let users reach the protocol benefits that matter.
 
 ---
 

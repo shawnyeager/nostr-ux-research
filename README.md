@@ -125,7 +125,7 @@ Before building any feature, ask:
 2. **Have we validated this solves a real problem?** (data, user feedback, research - not hunches)
 3. **Can we measure if it's working?** (leading indicators, lagging indicators, qualitative signals)
 
-**Core principle:** Ship working experiences, then add features. Good UX beats protocol purity.
+**Core principle:** Great UX is the gateway to the protocol's power.
 
 Full framework with examples in **[Introduction](introduction.md#the-validation-framework-build-features-that-solve-real-problems)**.
 
