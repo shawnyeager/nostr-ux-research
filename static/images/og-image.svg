@@ -1,8 +1,8 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="1200" height="630" fill="#8e30eb"/>
+  <!-- Background - lighter purple -->
+  <rect width="1200" height="630" fill="#b76ef5"/>
 
-  <!-- Logo squircle - same color as logo.svg, centered at 600, 265 -->
+  <!-- Logo squircle - darker purple #8e30eb, centered at 600, 265 -->
   <rect x="450" y="115" width="300" height="300" rx="60" fill="#8e30eb"/>
 
   <!-- N - properly centered in the squircle -->
@@ -16,7 +16,7 @@
   </text>
 
   <!-- Tagline - safe from center crop -->
-  <text x="600" y="510" font-family="system-ui, -apple-system, sans-serif" font-size="26" fill="rgba(255,255,255,0.9)" text-anchor="middle">
+  <text x="600" y="510" font-family="system-ui, -apple-system, sans-serif" font-size="26" fill="rgba(255,255,255,0.95)" text-anchor="middle">
     Evidence-based patterns for building clients people actually use
   </text>
 </svg>
