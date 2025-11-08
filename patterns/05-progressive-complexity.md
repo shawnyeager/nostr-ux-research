@@ -63,7 +63,7 @@ Nostr apps feel like developer tools, not consumer apps. Users compare to Twitte
 
 These principles apply to any application managing feature complexity and user experience.
 
-### 1. The Pareto Principle (80/20 Rule)
+### 1. The Pareto Principle
 
 **Research backing:** [[Research:54]](#research-54) [[Research:59]](#research-59)
 
@@ -119,7 +119,7 @@ These principles apply to any application managing feature complexity and user e
 **Design methods:** [[Research:60]](#research-60)
 Define essential vs. advanced content through user research using card sorting and task analysis.
 
-### 3. Smart Defaults That Work for 80%
+### 3. Smart Defaults
 
 **Research backing:** [[Research:57]](#research-57) [[Research:61]](#research-61)
 
@@ -151,7 +151,7 @@ Define essential vs. advanced content through user research using card sorting a
 - **Privacy settings:** Sensible privacy by default, opt-in for sharing
 - **Display settings:** Auto dark mode, readable font sizes, standard layouts
 
-### 4. Settings Hierarchy: Basic → Advanced → Expert
+### 4. Settings Hierarchy
 
 **Research backing:** [[Research:58]](#research-58) [[Research:61]](#research-61)
 
@@ -193,7 +193,7 @@ Define essential vs. advanced content through user research using card sorting a
 - Use shared traits (color, shape, size) for quick understanding
 - Apply visual consistency
 
-### 5. Contextual Help Over Upfront Tutorials
+### 5. Contextual Help
 
 **Research backing:** [[Research:62]](#research-62) [[Research:63]](#research-63)
 

@@ -60,7 +60,7 @@ weight: 6
 
 These principles apply to any distributed system managing user data across multiple clients.
 
-### 1. Maintain Consistency & Adhere to Standards
+### 1. Consistency & Standards
 
 **Research backing:** [[Research:73]](#research-73) [[Research:74]](#research-74) [[Research:75]](#research-75)
 
@@ -86,7 +86,7 @@ These principles apply to any distributed system managing user data across multi
 - Provides common language of components and patterns for cohesive cross-platform experiences
 - Consistency creates seamless, intuitive experiences
 
-### 2. User Expectations for Real-Time Sync
+### 2. Real-Time Sync Expectations
 
 **Research backing:** [[Research:70]](#research-70) [[Research:72]](#research-72) [[Research:76]](#research-76)
 
@@ -105,7 +105,7 @@ These principles apply to any distributed system managing user data across multi
 - Users expect frictionless transitions between devices
 - Content, state, and interactions must persist
 
-### 3. Offline-First with Visible Sync States
+### 3. Offline-First & Sync States
 
 **Research backing:** [[Research:78]](#research-78) [[Research:79]](#research-79) [[Research:80]](#research-80)
 
@@ -166,7 +166,7 @@ These principles apply to any distributed system managing user data across multi
 **Critical for distributed systems:** [[Research:68]](#research-68)
 > "In an industry where scams are everywhere, UX = trust. Blockchain cannot guarantee the quality of service of DApps, which entirely depends on the services' performance."
 
-### 6. Design for Distributed Systems Constraints
+### 6. Distributed Systems Constraints
 
 **Research backing:** [[Research:83]](#research-83) [[Research:82]](#research-82) [[Research:84]](#research-84)
 

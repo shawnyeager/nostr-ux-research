@@ -57,7 +57,7 @@ Nostr apps may not be objectively slower than centralized alternatives, but they
 
 These principles apply to any application prioritizing performance and user experience.
 
-### 1. Perceived Performance > Actual Performance
+### 1. Perceived Performance
 
 **Research backing:** [[Research:34]](#research-34) [[Research:35]](#research-35)
 
@@ -100,7 +100,7 @@ These principles apply to any application prioritizing performance and user expe
 - **1-5s:** Progressive loading, show percentage/status, allow cancellation
 - **>5s:** Must be background operation with notification on completion
 
-### 3. Skeleton Screens & Progressive Loading
+### 3. Skeleton Screens
 
 **Research backing:** [[Research:34]](#research-34) [[Research:35]](#research-35)
 
@@ -145,7 +145,7 @@ These principles apply to any application prioritizing performance and user expe
 - Post drafts (save locally, sync in background)
 - Profile updates (show changes immediately)
 
-### 5. Caching & Offline-First Architecture
+### 5. Caching & Offline-First
 
 **Research backing:** [[Research:39]](#research-39) [[Research:40]](#research-40)
 
@@ -176,7 +176,7 @@ These principles apply to any application prioritizing performance and user expe
 - Read cached content while new content loads
 - Progressive enhancement as network becomes available
 
-### 6. Bundle Size & Initial Load Optimization
+### 6. Bundle Size & Initial Load
 
 **Research backing:** [[Research:41]](#research-41) [[Research:42]](#research-42) [[Research:43]](#research-43)
 
@@ -198,7 +198,7 @@ These principles apply to any application prioritizing performance and user expe
 - Critical path: <50KB for above-the-fold content
 - Images: WebP/AVIF formats, responsive images [[Research:44]](#research-44)
 
-### 7. Incremental Rendering & Virtual Scrolling
+### 7. Incremental Rendering
 
 **Research backing:** [[Research:45]](#research-45) [[Research:46]](#research-46) [[Research:47]](#research-47)
 

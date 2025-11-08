@@ -49,7 +49,7 @@ weight: 2
 
 These principles apply to any social application, regardless of underlying architecture.
 
-### 1. The Cold Start Problem: Solve It or Die
+### 1. The Cold Start Problem
 
 **Research backing:** Bluesky's starter packs (curated lists of accounts users can follow with one click) accounted for 43% of follow actions during peak periods. Users included in starter packs received 85% more followers and posted 60% more than similar users not included. [[Research:4]](#research-4)
 
@@ -71,7 +71,7 @@ These principles apply to any social application, regardless of underlying archi
 - Posts viewed in first session: >20 (establishes habit)
 - "Was your first session interesting?" user survey
 
-### 2. Feed Algorithms: Balancing Discovery and Control
+### 2. Feed Algorithms
 
 **Research backing:** Georgetown University's "Better Feeds" report (March 2025) found that moving users from algorithmic to reverse-chronological feeds decreased time spent on platform over 3 months. Instagram users compensated by increasing TikTok usage by 36% and YouTube by 20%; Facebook users moved to Reddit (+52%) and YouTube (+21%). **Critically**: Chronological feeds did NOT reduce polarization as commonly believed. [[Research:6]](#research-6)
 

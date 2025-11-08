@@ -49,7 +49,7 @@ weight: 3
 
 These principles apply to any social application, regardless of underlying architecture.
 
-### 1. Perceived Reliability Trumps Actual Speed
+### 1. Perceived Reliability
 
 **Research backing:** [[Research:1]](#research-1) Framna 2024 survey of 3,000+ users found that 94% cited design as the main reason they mistrusted or rejected apps, and 40% said poor performance would make them prefer better alternatives. Performance depends on Speed, Security, and Reliability - if an app doesn't load quickly or show signs of reliability, users immediately uninstall. [[Research:2]](#research-2) Only 35% of social media users feel safe participating on platforms (down from 44%), with all 9 major platforms losing trust ground in 2024.
 
@@ -144,7 +144,7 @@ User clicks like
 - Provides easy retry mechanism
 - Doesn't expose technical jargon
 
-### 5. Idempotency: Allow Retries Safely
+### 5. Idempotency
 
 **Research backing:** [[Research:14]](#research-14) The Post/Redirect/Get (PRG) pattern prevents double-submission by converting POST to GET (which is idempotent), preventing double-clicks and page refreshes from creating duplicate orders. [[Research:15]](#research-15) Idempotency improves UX by ensuring consistent results, avoiding duplicate actions, and providing predictable and stable interactions. Users benefit from reliability and confidence that actions won't have unintended consequences. [[Research:16]](#research-16) Best practices include using exponential back-off for retries (increasing time between attempts), classifying errors as transient (retry) vs permanent (user action needed), and keeping users informed during retries.
 
