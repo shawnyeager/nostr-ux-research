@@ -27,6 +27,7 @@ theme = 'hextra'
   # Plausible.io analytics (custom script in layouts/partials/custom/head-end.html)
   [params.analytics.plausible]
     domain = "nostr-ux.com"
+    siteId = "pa-oUUlFJE5n1WlHFNU0tUMt"
 
   [params.navbar]
     displayTitle = true
