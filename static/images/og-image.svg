@@ -1,0 +1,18 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#8e30eb"/>
+
+  <!-- Logo (centered, larger) -->
+  <rect x="475" y="165" width="250" height="250" rx="50" fill="rgba(255,255,255,0.15)"/>
+  <path d="M525 215h50l100 175V215h50v250h-50l-100-175v175h-50V215z" fill="white"/>
+
+  <!-- Title -->
+  <text x="600" y="520" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="700" fill="white" text-anchor="middle">
+    Design Patterns for Nostr UX
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="565" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="rgba(255,255,255,0.85)" text-anchor="middle">
+    Evidence-based patterns for building Nostr clients people actually use
+  </text>
+</svg>

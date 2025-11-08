@@ -23,6 +23,7 @@ theme = 'hextra'
 
 [params]
   description = 'Design patterns for building consumer Nostr applications with great UX'
+  images = ['/images/og-image.png']
 
   # Plausible.io analytics (custom script in layouts/partials/custom/head-end.html)
   [params.analytics.plausible]
@@ -64,7 +65,6 @@ theme = 'hextra'
 
 [markup]
   [markup.highlight]
-    style = 'github'
     lineNos = false
 
   [markup.goldmark]
