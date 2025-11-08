@@ -2,7 +2,7 @@
 
 **Evidence-based design patterns for building Nostr clients that people actually use.**
 
-**🌐 View the complete study at:** **[shawnyeager.github.io/nostr-ux-research](https://shawnyeager.github.io/nostr-ux-research/)**
+**🌐 View the complete study at:** **[nostr-ux.com](https://nostr-ux.com/)**
 
 ---
 
@@ -44,15 +44,15 @@ Each pattern includes:
 
 ## Quick Start
 
-→ **[Read the complete study](https://shawnyeager.github.io/nostr-ux-research/docs/get-started/)**
+→ **[Read the complete study](https://nostr-ux.com/docs/get-started/)**
 
 Or jump directly to a specific pattern:
-- **[Pattern 1: Onboarding](https://shawnyeager.github.io/nostr-ux-research/docs/patterns/01-onboarding)** - Get users to value in under 2 minutes
-- **[Pattern 2: Content Discovery](https://shawnyeager.github.io/nostr-ux-research/docs/patterns/02-content-discovery)** - Solve the empty feed problem
-- **[Pattern 3: Core Interactions](https://shawnyeager.github.io/nostr-ux-research/docs/patterns/03-core-interactions)** - Make basic actions reliable
-- **[Pattern 4: Performance](https://shawnyeager.github.io/nostr-ux-research/docs/patterns/04-performance)** - Feel fast even when slow
-- **[Pattern 5: Progressive Complexity](https://shawnyeager.github.io/nostr-ux-research/docs/patterns/05-progressive-complexity)** - Hide advanced features from beginners
-- **[Pattern 6: Cross-Client Consistency](https://shawnyeager.github.io/nostr-ux-research/docs/patterns/06-cross-client-consistency)** - Don't lose data when switching apps
+- **[Pattern 1: Onboarding](https://nostr-ux.com/docs/patterns/01-onboarding)** - Get users to value in under 2 minutes
+- **[Pattern 2: Content Discovery](https://nostr-ux.com/docs/patterns/02-content-discovery)** - Solve the empty feed problem
+- **[Pattern 3: Core Interactions](https://nostr-ux.com/docs/patterns/03-core-interactions)** - Make basic actions reliable
+- **[Pattern 4: Performance](https://nostr-ux.com/docs/patterns/04-performance)** - Feel fast even when slow
+- **[Pattern 5: Progressive Complexity](https://nostr-ux.com/docs/patterns/05-progressive-complexity)** - Hide advanced features from beginners
+- **[Pattern 6: Cross-Client Consistency](https://nostr-ux.com/docs/patterns/06-cross-client-consistency)** - Don't lose data when switching apps
 
 ---
 
@@ -77,7 +77,7 @@ This study synthesizes:
 
 **Content balance:** 70% universal principles (applicable to any social app) + 30% Nostr-specific considerations (relays, keys, decentralization)
 
-**[View complete methodology and references →](https://shawnyeager.github.io/nostr-ux-research/docs/resources/)**
+**[View complete methodology and references →](https://nostr-ux.com/docs/resources/)**
 
 ---
 
@@ -86,7 +86,7 @@ This study synthesizes:
 Found errors? Have additional research? Implemented these patterns and want to share results?
 
 - **GitHub Issues:** [Report issues or suggest improvements](https://github.com/shawnyeager/nostr-ux-research/issues)
-- **Pull Requests:** Contributions welcome (see [research methodology](https://shawnyeager.github.io/nostr-ux-research/docs/resources/methodology/))
+- **Pull Requests:** Contributions welcome (see [research methodology](https://nostr-ux.com/docs/resources/methodology/))
 - **Nostr Discussion:** Share feedback on Nostr with #NostrUX
 
 ---
@@ -101,7 +101,14 @@ Found errors? Have additional research? Implemented these patterns and want to s
 
 ## License
 
-This research is shared openly for the benefit of the Nostr community.
+This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+You are free to:
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially
+
+Under the following terms:
+- **Attribution** — You must give appropriate credit to Shawn Yeager, provide a link to the license, and indicate if changes were made
 
 ---
 

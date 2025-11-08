@@ -1,4 +1,4 @@
-baseURL = 'https://shawnyeager.github.io/nostr-ux-research/'
+baseURL = 'https://nostr-ux.com/'
 languageCode = 'en-us'
 title = 'Design Patterns for Nostr UX'
 theme = 'hextra'
