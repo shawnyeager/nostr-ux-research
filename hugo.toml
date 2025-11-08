@@ -36,7 +36,6 @@ theme = 'hextra'
     [params.navbar.logo]
       path = "images/logo.svg"
       dark = "images/logo-dark.svg"
-      link = "/"
       width = 32
       height = 32
 
@@ -48,6 +47,12 @@ theme = 'hextra'
   name = "Documentation"
   pageRef = "/docs"
   weight = 1
+
+[[menu.main]]
+  name = "Search"
+  weight = 4
+  [menu.main.params]
+    type = "search"
 
 [[menu.main]]
   name = "GitHub"

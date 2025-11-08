@@ -3,18 +3,6 @@ title: "Pattern 6: Cross-Client Consistency & Data Integrity"
 weight: 6
 ---
 
-## Table of Contents
-
-1. [Problem Statement](#problem-statement)
-2. [Universal Principles](#universal-principles)
-3. [Nostr-Specific Considerations](#nostr-specific-considerations)
-4. [Pattern Library: Concrete Solutions](#pattern-library-concrete-solutions)
-5. [Anti-Patterns: What Not To Do](#anti-patterns-what-not-to-do)
-6. [Validation Checklist](#validation-checklist)
-7. [Citations & Sources](#citations--sources)
-
----
-
 ## Problem Statement
 
 ### Current State
@@ -1180,12 +1168,11 @@ User's posts disappear with no explanation
 
 ---
 
-**See [References & Bibliography](../appendices/references.md) for full citation details.**
+**See [References & Bibliography](/docs/resources/references) for full citation details.**
 
 ---
 
-*This pattern is part of the [Nostr UX Research Study](../README.md). See [OUTLINE.md](../OUTLINE.md) for the complete study structure.*
-
----
-
-**Previous Pattern:** [Pattern 5: Progressive Complexity](05-progressive-complexity.md)
+{{< cards >}}
+  {{< card link="/docs/resources/references" title="References" subtitle="Full bibliography & sources" icon="book-open" >}}
+  {{< card link="/docs/patterns/" title="All Patterns" subtitle="Back to patterns overview" icon="collection" >}}
+{{< /cards >}}

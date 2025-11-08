@@ -1,5 +1,5 @@
 ---
-title: "Get Started"
+title: Get Started
 weight: 1
 ---
 
@@ -32,18 +32,18 @@ Browse the pattern summaries in the sidebar to understand the critical issues.
 
 ### If you have 30 minutes
 Pick the pattern that matches your biggest pain point:
-- **Users abandon during signup?** → [Pattern 1: Onboarding](patterns/01-onboarding)
-- **Empty feeds after signup?** → [Pattern 2: Content Discovery](patterns/02-content-discovery)
-- **Posts disappearing?** → [Pattern 3: Core Interactions](patterns/03-core-interactions)
-- **App feels slow/crashy?** → [Pattern 4: Performance](patterns/04-performance)
-- **Users overwhelmed by settings?** → [Pattern 5: Progressive Complexity](patterns/05-progressive-complexity)
-- **Data loss when switching clients?** → [Pattern 6: Cross-Client Consistency](patterns/06-cross-client-consistency)
+- **Users abandon during signup?** → [Pattern 1: Onboarding](/docs/patterns/01-onboarding)
+- **Empty feeds after signup?** → [Pattern 2: Content Discovery](/docs/patterns/02-content-discovery)
+- **Posts disappearing?** → [Pattern 3: Core Interactions](/docs/patterns/03-core-interactions)
+- **App feels slow/crashy?** → [Pattern 4: Performance](/docs/patterns/04-performance)
+- **Users overwhelmed by settings?** → [Pattern 5: Progressive Complexity](/docs/patterns/05-progressive-complexity)
+- **Data loss when switching clients?** → [Pattern 6: Cross-Client Consistency](/docs/patterns/06-cross-client-consistency)
 
 ### If you're building from scratch
 Read patterns in order (1-6). Each builds on principles from earlier patterns.
 
 ### If you want evidence
-Check the [Research Methodology](resources/methodology) and [References](resources/references) to see the 100+ sources backing these patterns.
+Check the [Research Methodology](/docs/resources/methodology/) and [References](/docs/resources/references) to see the 100+ sources backing these patterns.
 
 ---
 
@@ -107,6 +107,13 @@ Here are high-impact, low-effort improvements you can ship this week:
 2. **Join the discussion** on Nostr (search for #NostrUX)
 3. **Share feedback** by opening issues on [GitHub](https://github.com/shawnyeager/nostr-ux-research)
 4. **Measure your improvements** using the validation checklists in each pattern
+
+---
+
+{{< cards >}}
+  {{< card link="/docs/patterns/01-onboarding" title="Start with Pattern 1" subtitle="Onboarding & First-Run Experience" icon="arrow-right" >}}
+  {{< card link="/docs/patterns/" title="View All Patterns" subtitle="Browse all 6 design patterns" icon="collection" >}}
+{{< /cards >}}
 
 ---
 

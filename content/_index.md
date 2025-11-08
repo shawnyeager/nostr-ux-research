@@ -16,7 +16,7 @@ layout: hextra-home
 </div>
 
 <div class="hx:mb-6">
-{{< hextra/hero-button text="Get Started" link="docs/start" >}}
+{{< hextra/hero-button text="Get Started" link="docs/get-started/" >}}
 </div>
 
 <div class="hx:mt-6"></div>
@@ -28,7 +28,7 @@ layout: hextra-home
     link="docs/patterns/01-onboarding"
     class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-md:min-h-[340px]"
     image="images/onboarding.jpg"
-    imageClass="hx:top-[40%] hx:left-[24px] hx:w-[180%] hx:sm:w-[110%] hx:dark:opacity-80"
+    imageClass="hx:top-[40%] hx:left-[24px] hx:w-[180%] hx:sm:w-[110%] hx:opacity-50 hx:dark:opacity-80"
   >}}
   {{< hextra/feature-card
     title="Pattern 2: Content Discovery"
@@ -36,7 +36,7 @@ layout: hextra-home
     link="docs/patterns/02-content-discovery"
     class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-lg:min-h-[340px]"
     image="images/discovery.jpg"
-    imageClass="hx:top-[40%] hx:left-[36px] hx:w-[180%] hx:sm:w-[110%] hx:dark:opacity-80"
+    imageClass="hx:top-[40%] hx:left-[36px] hx:w-[180%] hx:sm:w-[110%] hx:opacity-50 hx:dark:opacity-80"
   >}}
   {{< hextra/feature-card
     title="Pattern 3: Core Interactions"
@@ -44,7 +44,7 @@ layout: hextra-home
     link="docs/patterns/03-core-interactions"
     class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-md:min-h-[340px]"
     image="images/interactions.webp"
-    imageClass="hx:top-[40%] hx:left-[36px] hx:w-[110%] hx:sm:w-[110%] hx:dark:opacity-80"
+    imageClass="hx:top-[40%] hx:left-[36px] hx:w-[110%] hx:sm:w-[110%] hx:opacity-50 hx:dark:opacity-80"
   >}}
   {{< hextra/feature-card
     title="Pattern 4: Performance"
@@ -52,7 +52,7 @@ layout: hextra-home
     link="docs/patterns/04-performance"
     class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-md:min-h-[340px]"
     image="images/performance.jpg"
-    imageClass="hx:top-[40%] hx:left-[24px] hx:w-[180%] hx:sm:w-[110%] hx:dark:opacity-80"
+    imageClass="hx:top-[40%] hx:left-[24px] hx:w-[180%] hx:sm:w-[110%] hx:opacity-50 hx:dark:opacity-80"
   >}}
   {{< hextra/feature-card
     title="Pattern 5: Progressive Complexity"
@@ -60,7 +60,7 @@ layout: hextra-home
     link="docs/patterns/05-progressive-complexity"
     class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-lg:min-h-[340px]"
     image="images/complexity.jpg"
-    imageClass="hx:top-[40%] hx:left-[36px] hx:w-[180%] hx:sm:w-[110%] hx:dark:opacity-80"
+    imageClass="hx:top-[40%] hx:left-[36px] hx:w-[180%] hx:sm:w-[110%] hx:opacity-50 hx:dark:opacity-80"
   >}}
   {{< hextra/feature-card
     title="Pattern 6: Cross-Client Consistency"
@@ -68,6 +68,6 @@ layout: hextra-home
     link="docs/patterns/06-cross-client-consistency"
     class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-md:min-h-[340px]"
     image="images/consistency.jpg"
-    imageClass="hx:top-[40%] hx:left-[36px] hx:w-[110%] hx:sm:w-[110%] hx:dark:opacity-80"
+    imageClass="hx:top-[40%] hx:left-[36px] hx:w-[110%] hx:sm:w-[110%] hx:opacity-50 hx:dark:opacity-80"
   >}}
 {{< /hextra/feature-grid >}}
