@@ -2,17 +2,18 @@
   <!-- Background -->
   <rect width="1200" height="630" fill="#8e30eb"/>
 
-  <!-- Logo (centered, larger) -->
-  <rect x="475" y="165" width="250" height="250" rx="50" fill="rgba(255,255,255,0.15)"/>
-  <path d="M525 215h50l100 175V215h50v250h-50l-100-175v175h-50V215z" fill="white"/>
+  <!-- Logo squircle - centered at 600, 315 -->
+  <rect x="450" y="165" width="300" height="300" rx="60" fill="rgba(255,255,255,0.15)"/>
 
-  <!-- Title -->
-  <text x="600" y="520" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="700" fill="white" text-anchor="middle">
-    Design Patterns for Nostr UX
-  </text>
+  <!-- N - properly centered in the squircle -->
+  <!-- Original logo: 40x40 with N from 12,10 to 28,30 (16x20 with margins) -->
+  <!-- Scaled 6x: 96x120, centered in 300x300 square -->
+  <g transform="translate(600, 315)">
+    <path d="M-48,-60 h24 l48,84 V-60 h24 v120 h-24 l-48,-84 v84 h-24 V-60 z" fill="white"/>
+  </g>
 
-  <!-- Subtitle -->
-  <text x="600" y="565" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="rgba(255,255,255,0.85)" text-anchor="middle">
-    Evidence-based patterns for building Nostr clients people actually use
+  <!-- Site name - positioned safely for center crop -->
+  <text x="600" y="510" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="700" fill="white" text-anchor="middle">
+    nostr-ux.com
   </text>
 </svg>
