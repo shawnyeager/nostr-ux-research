@@ -28,14 +28,17 @@ theme = 'hextra'
   [params.analytics.plausible]
     domain = "shawnyeager.github.io"
 
-  navbar.displayTitle = true
-  navbar.displayLogo = false
-  navbar.width = "wide"
+  [params.navbar]
+    displayTitle = true
+    displayLogo = false
+    width = "wide"
 
-  page.width = "wide"
+  [params.page]
+    width = "wide"
 
-  footer.displayCopyright = true
-  footer.displayPoweredBy = false
+  [params.footer]
+    displayCopyright = true
+    displayPoweredBy = false
 
 [[menu.main]]
   name = "Documentation"
