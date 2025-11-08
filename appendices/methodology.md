@@ -1,6 +1,6 @@
 ---
 title: "Research Methodology"
-description: "How this study was conducted, sources used, and research approach"
+weight: 1
 ---
 
 ## Overview

@@ -1,13 +1,6 @@
 ---
-title: "Performance & Perceived Speed"
-patternNumber: 4
-problem: "Apps hang/buffer, crashes, slow loading"
-impact: "Users perceive apps as unreliable"
-solution: "Skeleton screens, optimistic UI, lazy loading, caching strategies"
-showToc: true
+title: "Pattern 4: Performance & Perceived Speed"
 weight: 4
-lastUpdated: "November 7, 2025"
-researchCurrency: "All sources from 2024-2025"
 ---
 
 ## Table of Contents

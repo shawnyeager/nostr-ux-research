@@ -1,13 +1,6 @@
 ---
-title: "Progressive Complexity"
-patternNumber: 5
-problem: "Relay management, key signers, NIPs exposed to all users"
-impact: "Overwhelming, users leave"
-solution: "80/20 rule, smart defaults work for most, hide advanced settings"
-showToc: true
+title: "Pattern 5: Progressive Complexity"
 weight: 5
-lastUpdated: "November 8, 2025"
-researchCurrency: "All sources from 2024-2025"
 ---
 
 ## Table of Contents

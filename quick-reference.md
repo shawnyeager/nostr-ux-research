@@ -1,9 +1,5 @@
 ---
 title: "Quick Reference Guide"
-description: "TL;DR summaries of all 6 UX patterns for Nostr clients"
-menu:
-  main:
-    weight: 4
 ---
 
 Scan this guide in ~10 minutes to understand the critical issues. Then deep-dive the patterns most relevant to your work.

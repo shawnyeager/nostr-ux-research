@@ -1,6 +1,5 @@
 ---
-title: "Introduction: Improving UX for Nostr Clients"
-description: "Why this research exists and how to use it"
+title: "Introduction"
 ---
 
 ## The Problem

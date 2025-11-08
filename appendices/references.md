@@ -1,6 +1,6 @@
 ---
 title: "References & Bibliography"
-description: "All 100+ citations used across the 6 patterns"
+weight: 2
 ---
 
 This document contains all sources cited throughout the Nostr UX Research Study, organized by category.

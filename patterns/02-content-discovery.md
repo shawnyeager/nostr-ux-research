@@ -1,12 +1,6 @@
 ---
-title: "Content Discovery & Feed Quality"
-patternNumber: 2
-problem: "Empty feeds, Traditional apps win by having better content selection"
-impact: "Users bounce because feed is boring"
-solution: "Smart defaults, starter packs, algorithmic discovery, search that works"
-showToc: true
+title: "Pattern 2: Content Discovery & Feed Quality"
 weight: 2
-lastUpdated: "November 2025"
 ---
 
 ## Table of Contents
