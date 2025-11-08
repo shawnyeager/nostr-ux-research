@@ -66,6 +66,7 @@ These principles apply to any social application, regardless of underlying archi
 - **TikTok:** [[Example:3]](#example-3) Shows content immediately with no loading state - up/down swiping is "game-changer" for intuitive, effortless navigation
 
 **What users need:**
+
 1. Immediate visual feedback that action was received
 2. Loading/processing state
 3. Clear success/failure indication
@@ -76,6 +77,7 @@ These principles apply to any social application, regardless of underlying archi
 **Research backing:** [[Research:4]](#research-4) React introduced official `useOptimistic` hook in 2024 for showing different state while async actions are underway, indicating optimistic UI is now a framework-level standard pattern. [[Research:5]](#research-5) Optimistic UI makes applications feel faster and more responsive by updating UI immediately before server confirmation, creating the illusion of instant response. [[Research:6]](#research-6) Optimistic UI excels when actions are nearly always successful (messages, posts, preferences) but is NOT recommended for critical operations like flight booking or cash transfers. Must properly handle failure cases and revert state.
 
 **The pattern:**
+
 1. Show the change immediately (optimistic)
 2. Send the request in background
 3. Validate the response
@@ -91,6 +93,7 @@ These principles apply to any social application, regardless of underlying archi
 - ❌ When rollback is confusing
 
 **Example: Liking a post**
+
 ```
 User clicks like
 → Heart turns red immediately (optimistic)
@@ -104,6 +107,7 @@ User clicks like
 **Research backing:** [[Research:7]](#research-7) Nielsen Norman Group's "Visibility of System Status" (2024) states this is the "most basic guideline of UI design" - keep users informed about what's going on with appropriate feedback within reasonable time, ideally immediately. [[Research:8]](#research-8) Skeleton screens are now the norm for full-page loading, showing wireframe immediately before real content. [[Research:9]](#research-9) Best for 2-10 second wait times, must be consistent with final screen layout, and should include subtle animations (pulsating, fading) to decrease perceived time. [[Research:10]](#research-10) Error states are often prioritized over success states, but both must work together - success feedback is as important as error feedback for user confidence.
 
 **States every interaction needs:**
+
 1. **Idle** - Ready for action
 2. **Initiated** - User clicked/tapped
 3. **Processing** - Request in flight
@@ -154,6 +158,7 @@ User clicks like
 - UI prevents accidental double-taps (disable button after click)
 
 **Example: Publishing a post**
+
 ```
 Generate unique post ID client-side (Nostr event ID based on content)
 User clicks "Post" → button disables immediately
@@ -194,6 +199,7 @@ User clicks "Post" → button disables immediately
 **The issue:** Nostr clients can create the event and event ID locally, but that doesn't mean relays accepted it.
 
 **Bad pattern:**
+
 ```typescript
 const event = createEvent(content)
 // Event has ID, but hasn't been sent!
@@ -202,6 +208,7 @@ await publishToRelays(event) // Might fail, but post already shown
 ```
 
 **Good pattern:**
+
 ```typescript
 const event = createEvent(content)
 showAsPending(event) // Show as "sending"
@@ -256,6 +263,7 @@ if (results.successCount >= MIN_RELAYS) {
 ### Challenge 5: Zap Workflow Complexity
 
 **The multi-step process:**
+
 1. Get author's Lightning address (from Kind 0 metadata)
 2. Request invoice from author's Lightning service
 3. Pay invoice via Lightning wallet
@@ -336,6 +344,7 @@ async function publishPost(content: string): Promise<PublishResult> {
 ```
 
 **UI states:**
+
 ```
 Pending:  [•••] Publishing...
 Success:  [✓] Posted (4/4 relays)
@@ -388,6 +397,7 @@ async function reactToPost(postId: string, reaction: string = '+') {
 ```
 
 **Visual feedback:**
+
 ```
 Before: 👍 42   [tap]
 During: 👍 43   (your reaction appears instantly)
@@ -579,6 +589,7 @@ async function batchFollowUsers(pubkeys: string[]) {
 ### Anti-Pattern 1: Silent Failures
 
 **What it looks like:**
+
 ```typescript
 async function publishPost(content) {
   const event = createEvent(content)
@@ -610,6 +621,7 @@ async function publishPost(content) {
 ### Anti-Pattern 2: Fake Optimistic UI
 
 **What it looks like:**
+
 ```typescript
 function likePost(postId) {
   // Just update UI, never actually send
@@ -659,6 +671,7 @@ function likePost(postId) {
 ### Anti-Pattern 4: Spinner Forever (No Timeout)
 
 **What it looks like:**
+
 ```typescript
 async function followUser(pubkey) {
   showSpinner()
@@ -685,6 +698,7 @@ async function followUser(pubkey) {
 ### Anti-Pattern 5: Publishing to Only One Relay
 
 **What it looks like:**
+
 ```typescript
 async function publishPost(event) {
   const relay = getUserPreferredRelay()
@@ -759,6 +773,7 @@ async function publishPost(event) {
 ### A/B Testing Opportunities
 
 Test different approaches:
+
 - Optimistic vs confirmed UI
 - Spinner duration before timeout
 - Number of relays required for "success"
@@ -783,188 +798,219 @@ Test different approaches:
 
 <a id="data-1"></a>
 **[Data:1]** "If a mod post (later blog post) gets stuck while publishing, a timer kicks in that'll lead to a 'try again' option that usually publishes the post correctly."
+
 - Source: Nostr Biweekly Review (23 Dec 2024-5 Jan 2025)
-- URL: https://thenostrreview.substack.com/p/nostr-biweekly-review-23-dec-2024
+- URL: <https://thenostrreview.substack.com/p/nostr-biweekly-review-23-dec-2024>
 - Date: January 2025
 
 <a id="data-2"></a>
 **[Data:2]** "NIP-25 is a terribly inefficient way to do it. Burying reactions in the tags requires clients to do a huge amount of data gathering to properly show likes/reactions... clients must gather potentially thousands of events just to count up the likes for a note."
+
 - Source: "Reactions are inefficient. There needs to be an aggregate kind" - GitHub Issue #159
-- URL: https://github.com/nostr-protocol/nips/issues/159
+- URL: <https://github.com/nostr-protocol/nips/issues/159>
 - Date: Discussed throughout 2024
 
 <a id="data-3"></a>
 **[Data:3]** "When the Damus relay was taken down for upgrades, users' content was potentially wiped and gone... content stored on that relay was reduced to remaining on one less relay."
+
 - Source: "User Relays" by Sondre Bjellås
-- URL: https://medium.com/@sondreb/user-relays-7e23e2ac2590
+- URL: <https://medium.com/@sondreb/user-relays-7e23e2ac2590>
 - Date: April 2025
 
 <a id="data-4"></a>
 **[Data:4]** "I was trying out the new Iris Nostr client and decided to follow someone new. From that moment on, I noticed my follows count reset from about 130 to 1 (that last follow)... At least one developer reported losing 75% of their follows."
+
 - Source: "All my nostr follows gone - how do I get them back?" - Stacker News
-- URL: https://stacker.news/items/182519
+- URL: <https://stacker.news/items/182519>
 - Date: 2024
 
 <a id="data-5"></a>
 **[Data:5]** "Receiving payments via Zeus wallet in Damus sometimes fails to trigger zap notifications... Quoting a user without a p-tag does not generate notifications... When outbox is enabled in NDK, the relay list becomes huge, causing zap requests to fail with an HTTP 431 error."
+
 - Source: Nostrability Issues and NDK GitHub
-- URLs: https://github.com/nostrability/nostrability/issues, https://github.com/nostr-dev-kit/ndk/issues/175
+- URLs: <https://github.com/nostrability/nostrability/issues>, <https://github.com/nostr-dev-kit/ndk/issues/175>
 - Date: 2024
 
 <a id="data-6"></a>
 **[Data:6]** "A very common experience on Nostr is that of losing follows due to race conditions when sending kind 3 events... Earlier this week someone signed in to Coracle, their contact list failed to fully sync before they followed someone, and they ended up deleting all their follows."
+
 - Source: "Add kinds 10 and 11 to prevent race conditions" - GitHub PR #349
-- URL: https://github.com/nostr-protocol/nips/pull/349
+- URL: <https://github.com/nostr-protocol/nips/pull/349>
 - Date: Opened 2023, discussed through 2024
 
 <a id="data-7"></a>
 **[Data:7]** "~36,000 weekly active users, <15,000 daily active users, 165,725 total trusted users (2024). Adoption, engagement, and retention all quite low and having declined significantly from major adoption spikes. 30-day retention trends to 0% for recent cohorts."
+
 - Source: Nostr User Statistics 2025
-- URL: https://socialcapitalmarkets.net/crypto-trading/nostr-statistics/
+- URL: <https://socialcapitalmarkets.net/crypto-trading/nostr-statistics/>
 - Date: Late 2024 data
 
 <a id="data-8"></a>
 **[Data:8]** "Only 639 relays online globally (two-thirds reduction from previous year). 80% concentrated in North America and Europe. 95% of relays struggle to cover operational costs. 20% have faced significant downtime due to insufficient financial support."
+
 - Source: "Improving the Availability and Reliability of the Relay Network"
-- URL: https://research.dorahacks.io/2024/04/30/nostr-relay-incentive/
+- URL: <https://research.dorahacks.io/2024/04/30/nostr-relay-incentive/>
 - Date: April 23, 2024
 
 <a id="data-9"></a>
 **[Data:9]** "Storage of non-kind:1 events is at a MINIMUM about 10:1 compared to actual content posts. One relay operator reported relay growth of about 2GB per day primarily from reactions and metadata."
+
 - Source: NIP-25 reaction discussions on GitHub
-- URL: https://github.com/nostr-protocol/nips/issues/159
+- URL: <https://github.com/nostr-protocol/nips/issues/159>
 - Date: 2024
 
 <a id="data-10"></a>
 **[Data:10]** "An Empirical Analysis of the Nostr Social Network: Decentralization, Availability, and Replication Overhead. Relay availability remains a challenge, where financial sustainability (particularly for free-to-use relays) emerges as a contributing factor."
+
 - Source: arXiv Empirical Analysis
-- URL: https://arxiv.org/abs/2402.05709
+- URL: <https://arxiv.org/abs/2402.05709>
 - Date: February 2024
 
 ### Academic & UX Research (Universal Principles)
 
 <a id="research-1"></a>
 **[Research:1]** "Survey of 3,000+ people ages 18-70 on app preferences. 94% of users cited design as main reason they mistrusted or rejected apps. 40% said poor performance would make them prefer better alternatives. Performance depends on Speed, Security, and Reliability. If app doesn't load quickly or show signs of reliability, users immediately uninstall."
+
 - Source: "Mobile App Trends 2024 Report" - Framna
-- URL: https://framna.com/en-us/mobile-app-trends-2024-report
+- URL: <https://framna.com/en-us/mobile-app-trends-2024-report>
 - Date: 2024
 
 <a id="research-2"></a>
 **[Research:2]** "Only 35% of users feel safe participating on social platforms (down from 44%). Security of data and privacy was leading factor affecting trust. All 9 major platforms (Facebook, Instagram, LinkedIn, Pinterest, Reddit, Snapchat, TikTok, Twitter, YouTube) lost trust ground."
+
 - Source: "User trust in social platforms is falling" - eMarketer
-- URL: https://www.emarketer.com/content/user-trust-social-platforms-falling-according-our-new-study
+- URL: <https://www.emarketer.com/content/user-trust-social-platforms-falling-according-our-new-study>
 - Date: 2024 (analyzing trends through 2024)
 
 <a id="research-3"></a>
 **[Research:3]** "Three critical thresholds: 0.1 seconds (100ms) - limit for feeling system reacts instantaneously; 1.0 second - limit for user's flow of thought staying uninterrupted; 10 seconds - limit for keeping user's attention. 100ms creates illusion of instantaneous response. User feels they (not computer) caused the outcome."
+
 - Source: "Response Time Limits: Article by Jakob Nielsen" - NN/g
-- URL: https://www.nngroup.com/articles/response-times-3-important-limits/
+- URL: <https://www.nngroup.com/articles/response-times-3-important-limits/>
 - Date: January 2024 (updated)
 
 <a id="research-4"></a>
 **[Research:4]** "New official React hook `useOptimistic` for optimistic UI updates. Shows different state while async action is underway. Returns copy of state that can differ during pending actions."
+
 - Source: "useOptimistic – React" - React Official Docs
-- URL: https://react.dev/reference/react/useOptimistic
+- URL: <https://react.dev/reference/react/useOptimistic>
 - Date: 2024 (Canary version)
 
 <a id="research-5"></a>
 **[Research:5]** "Optimistic UI makes applications feel faster and more responsive. Updates UI immediately before server confirmation. Creates illusion of instant response."
+
 - Source: "Understanding optimistic UI and React's useOptimistic Hook" - LogRocket
-- URL: https://blog.logrocket.com/understanding-optimistic-ui-react-useoptimistic-hook/
+- URL: <https://blog.logrocket.com/understanding-optimistic-ui-react-useoptimistic-hook/>
 - Date: August 2024
 
 <a id="research-6"></a>
 **[Research:6]** "Optimistic UI excels when actions are nearly always successful (messages, posts, preferences). NOT recommended for critical operations (flight booking, cash transfers). For non-critical actions (posts, messages), optimistic UI is OK. Critical: Must properly handle failure cases and revert state."
+
 - Source: "Crafting a Seamless User Experience with Optimistic UI" - Medium
-- URL: https://medium.com/@boubkeraouabe/crafting-a-seamless-user-experience-with-optimistic-ui-547927af24da
+- URL: <https://medium.com/@boubkeraouabe/crafting-a-seamless-user-experience-with-optimistic-ui-547927af24da>
 - Date: August 2024
 
 <a id="research-7"></a>
 **[Research:7]** "'Most basic guideline of UI design' - keep users informed about what's going on. Provide appropriate feedback within reasonable time. Present feedback as quickly as possible (ideally immediately). Example: Column selection should highlight within 0.1 seconds."
+
 - Source: "Visibility of System Status" - NN/g
-- URL: https://www.nngroup.com/articles/visibility-system-status/
+- URL: <https://www.nngroup.com/articles/visibility-system-status/>
 - Date: January 2024
 
 <a id="research-8"></a>
 **[Research:8]** "Skeleton screens are new norm for full-page loading. Show wireframe immediately before real content. Reduces perception of long loading time by providing clues for final layout."
+
 - Source: "Skeleton Screens 101" - NN/g
-- URL: https://www.nngroup.com/articles/skeleton-screens/
+- URL: <https://www.nngroup.com/articles/skeleton-screens/>
 - Date: November 2024
 
 <a id="research-9"></a>
 **[Research:9]** "Best for 2-10 second wait times. Must be consistent with final screen layout. Include subtle animations (pulsating, fading) to decrease perceived time. Avoid frame-only skeletons (header/footer only) that don't show content structure."
+
 - Source: "Skeleton loading screen design" - LogRocket
-- URL: https://blog.logrocket.com/ux-design/skeleton-loading-screen-design/
+- URL: <https://blog.logrocket.com/ux-design/skeleton-loading-screen-design/>
 - Date: April 2025
 
 <a id="research-10"></a>
 **[Research:10]** "Error states often prioritized over success states, but both must work together. Success patterns include fields, toasts, banners, notifications. Success feedback as important as error feedback for user confidence."
+
 - Source: "Success Message UX Examples & Best Practices" - Pencil & Paper
-- URL: https://www.pencilandpaper.io/articles/success-ux
+- URL: <https://www.pencilandpaper.io/articles/success-ux>
 - Date: 2024
 
 <a id="research-11"></a>
 **[Research:11]** "10 Design Guidelines for Reporting Errors in Forms. Help users recover from errors by clearly identifying problems. Allow users to access and correct fields easily."
+
 - Source: "10 Design Guidelines for Reporting Errors in Forms" - NN/g
-- URL: https://www.nngroup.com/articles/errors-forms-design-guidelines/
+- URL: <https://www.nngroup.com/articles/errors-forms-design-guidelines/>
 - Date: December 2024
 
 <a id="research-12"></a>
 **[Research:12]** "Based on Jakob Nielsen's heuristic: 'Help Users Recognize, Diagnose, and Recover.' Three steps: Tell users error occurred, explain what went wrong, show how to recover. Error types: Slips (user intends one action but does another) and Mistakes (mismatch between user mental model and system)."
+
 - Source: "Error handling - UX design patterns" - Medium/Design Bootcamp
-- URL: https://medium.com/design-bootcamp/error-handling-ux-design-patterns-c2a5bbae5f8d
+- URL: <https://medium.com/design-bootcamp/error-handling-ux-design-patterns-c2a5bbae5f8d>
 - Date: October 2025
 
 <a id="research-13"></a>
 **[Research:13]** "Three Required Elements: (1) Problem statement (what went wrong), (2) Cause explanation (why it happened), (3) Solution suggestion (how to fix it). Recovery patterns: Retry/refresh button, search or browse function, suggest alternatives, contact support, save user progress. Use neutral and empathetic language (don't blame users)."
+
 - Source: Multiple UX design resources
 - Date: 2024
 
 <a id="research-14"></a>
 **[Research:14]** "Post/Redirect/Get (PRG) pattern prevents double-submission. PRG converts POST to GET (which is idempotent). Prevents double-clicks, page refreshes creating duplicate orders. Real-world examples: Traffic light buttons, elevator call buttons, bus stop buttons."
+
 - Source: "What is Idempotence? Explained with Real-World Examples" - FreeCodeCamp
-- URL: https://www.freecodecamp.org/news/idempotence-explained/
+- URL: <https://www.freecodecamp.org/news/idempotence-explained/>
 - Date: September 2024
 
 <a id="research-15"></a>
 **[Research:15]** "Idempotency improves UX by ensuring consistent results. Avoids duplicate actions. Provides predictable and stable interactions. Users benefit from reliability."
+
 - Source: "How To Design an Idempotent API in 2024?" - Bits and Pieces
-- URL: https://blog.bitsrc.io/designing-an-idempotent-api-in-2024-d4a3cf8d8bf2
+- URL: <https://blog.bitsrc.io/designing-an-idempotent-api-in-2024-d4a3cf8d8bf2>
 - Date: March 2025
 
 <a id="research-16"></a>
 **[Research:16]** "Use exponential back-off for retries (increasing time between attempts). Network/service may need time to clear backlog. Classify errors: Transient (retry) vs Permanent (user action). Don't retry: Authentication failures, invalid requests. Keep user informed during retries."
+
 - Source: Microsoft Azure Retry Pattern, DoorDash, Medium articles
-- URL: https://learn.microsoft.com/en-us/azure/architecture/patterns/retry
+- URL: <https://learn.microsoft.com/en-us/azure/architecture/patterns/retry>
 - Date: 2024
 
 ### Case Studies & Examples (Mainstream Apps)
 
 <a id="example-1"></a>
 **[Example:1]** "Social media management tools common retry patterns: For temporary platform bugs - simply re-queue and retry. For post issues (too long, duplicate) - must edit before re-queuing. Rate limiting - wait specified period, slow down activity rate."
+
 - Source: SocialBee, SmarterQueue, Vista Social
 - Date: 2024
 
 <a id="example-2"></a>
 **[Example:2]** "Instagram's April 2024 algorithm update rewards original content creation. Platform now heavily weights 'shares per reach' (content sent via DMs) as key engagement signal, viewing it as deeper engagement than likes."
+
 - Source: "How the Instagram Algorithm Works in 2025" - Later
-- URL: https://later.com/blog/how-instagram-algorithm-works/
+- URL: <https://later.com/blog/how-instagram-algorithm-works/>
 - Date: 2024-2025
 
 <a id="example-3"></a>
 **[Example:3]** "TikTok's For You Page algorithm prioritizes content relevance over creator popularity. Up/down swiping is 'game-changer' - intuitive and effortless navigation. Shows content immediately with no loading state. 100ms creates illusion of instantaneous response."
+
 - Source: "5 TikTok UI Choices That Made the App Successful" - Iterators
-- URL: https://www.iteratorshq.com/blog/5-tiktok-ui-choices-that-made-the-app-successful
+- URL: <https://www.iteratorshq.com/blog/5-tiktok-ui-choices-that-made-the-app-successful>
 - Date: 2024
 
 <a id="example-4"></a>
 **[Example:4]** "Apple Human Interface Guidelines (2024): Give users clear and consistent feedback. Ensure understanding of what's happening at every stage. Inform about errors clearly. Visually indicate progress with loading bars. Provide notifications for completion. Use animations, sounds, haptic feedback to confirm actions."
+
 - Source: "Human Interface Guidelines" - Apple Developer
-- URL: https://developer.apple.com/design/human-interface-guidelines/
+- URL: <https://developer.apple.com/design/human-interface-guidelines/>
 - Date: 2024
 
 <a id="example-5"></a>
 **[Example:5]** "Material Design 3: Use motion for visual feedback (clicks, submissions). Components respond instantly to user inputs. Provide clear feedback, enhance overall experience. Responsive feedback is essential for interactivity. Spring-like motion - animations bounce, stretch, respond organically."
+
 - Source: Material Design 3 articles
 - Date: 2024
 
@@ -972,38 +1018,44 @@ Test different approaches:
 
 <a id="protocol-1"></a>
 **[Protocol:1]** "NIP-02: Contact List and Petnames - defines kind 3 events for following lists. Each new contact list event is a replaceable event that supersedes previous ones. Must contain all pubkeys the user is following, as event replaces previous list entirely."
+
 - Source: nostr-protocol/nips GitHub
-- URL: https://github.com/nostr-protocol/nips/blob/master/02.md
+- URL: <https://github.com/nostr-protocol/nips/blob/master/02.md>
 - Date: Current specification
 
 <a id="protocol-2"></a>
 **[Protocol:2]** "NIP-65: Relay List Metadata - defines kind 10002 events for user's relay preferences. Helps other users discover which relays to use when looking for someone's content or publishing content meant for them to see."
+
 - Source: nostr-protocol/nips GitHub
-- URL: https://github.com/nostr-protocol/nips/blob/master/65.md
+- URL: <https://github.com/nostr-protocol/nips/blob/master/65.md>
 - Date: Current specification
 
 <a id="protocol-3"></a>
 **[Protocol:3]** "NIP-25: Reactions - defines kind 7 events for reactions/likes. Each reaction references the event being reacted to using 'e' and 'p' tags. Reactions should be published to author's relays and user's write relays."
+
 - Source: nostr-protocol/nips GitHub
-- URL: https://github.com/nostr-protocol/nips/blob/master/25.md
+- URL: <https://github.com/nostr-protocol/nips/blob/master/25.md>
 - Date: Current specification
 
 ### Additional Context
 
 **Toast Notification Patterns (2024):**
 Four types: SUCCESS (green), INFO (blue), WARNING (yellow), ERROR (red). Use distinctive color coding and icons for quick comprehension. Provide quick feedback without interrupting workflow. Don't use auto-dismiss for critical messages. High-contrast for urgent messages, low-contrast for supplemental.
+
 - Source: Salesforce, ByteHide, Carbon Design System
 - Date: 2024
 
 **Offline-First Patterns (2024):**
 "Offline sync isn't optional—it's a must-have for great UX." Sync intervals: as short as 5 minutes, as long as 1 day. Sync only when app active and device connected. Visual feedback vital: progress indicators, notifications. Keep users informed about what's happening.
+
 - Source: Daily.dev, Moments Log, Flutter docs, Microsoft Dynamics
 - Date: 2024
 
 **Design System Guidance:**
 Google Design Guidelines emphasize: Initial sync with clear guidance and time estimates, status bar indicates offline/syncing/success/failure, background syncing based on relevant intervals, progress indicators on key screens, timestamps show recent update times.
+
 - Source: Google Open Health Stack
-- URL: https://developers.google.com/open-health-stack/design/offline-sync-guideline
+- URL: <https://developers.google.com/open-health-stack/design/offline-sync-guideline>
 - Date: 2024
 
 ---

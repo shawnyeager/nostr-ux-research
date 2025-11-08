@@ -12,11 +12,12 @@ This document contains credible sources backing the core UX principles in Patter
 ### Source 1A: Industry Research on Time to First Value
 
 **Full Citation:**
+
 - Multiple industry sources including Sixteenventures, MarTech, and UserGuiding (2023-2024)
 - Primary: "Time to First Value (TTFV) is a Customer Onboarding Goal" - Sixteenventures
-- URL: https://sixteenventures.com/customer-onboarding-ttfv
+- URL: <https://sixteenventures.com/customer-onboarding-ttfv>
 - Supporting: "Time to First Value: The CX metric you can't afford to ignore" - MarTech
-- URL: https://martech.org/time-to-first-value-the-cx-metric-you-cant-afford-to-ignore/
+- URL: <https://martech.org/time-to-first-value-the-cx-metric-you-cant-afford-to-ignore/>
 
 **Key Findings:**
 > "Time to First Value measures how long it takes for a new user to experience their first meaningful benefit from your product. It's a critical metric because the faster users see value, the more likely they are to continue engaging."
@@ -26,6 +27,7 @@ This document contains credible sources backing the core UX principles in Patter
 > "It's not a first login, attending a kickoff call or completing onboarding. It is when the customer says, 'OK. This is worth it.' It's when the customer realizes the outcome that's aligned with why they purchased your product in the first place."
 
 **Application to Nostr:**
+
 - **Current problem:** Nostr's 15-20 minute onboarding (key generation, relay setup, profile creation) means users wait too long for first value
 - **First value for social app:** Seeing interesting content, not completing setup
 - **Recommendation:** Let users browse/read without account (like TikTok), defer key generation until user wants to post/interact
@@ -36,8 +38,9 @@ This document contains credible sources backing the core UX principles in Patter
 ### Source 1B: Samuel Hulick on User Onboarding & Time to Value
 
 **Full Citation:**
+
 - Hulick, Samuel. "Elements of User Onboarding" - UserOnboard.com
-- Interviews: Heavybit (https://www.heavybit.com/library/article/samuel-hulick-elements-of-user-onboarding), Intercom (https://www.intercom.com/blog/podcasts/podcast-samuel-hulick-onboarding/), Appcues (https://www.appcues.com/blog/onboarding-new-users-an-interview-with-samuel-hulick)
+- Interviews: Heavybit (<https://www.heavybit.com/library/article/samuel-hulick-elements-of-user-onboarding>), Intercom (<https://www.intercom.com/blog/podcasts/podcast-samuel-hulick-onboarding/>), Appcues (<https://www.appcues.com/blog/onboarding-new-users-an-interview-with-samuel-hulick>)
 - Years: 2015-present
 
 **Key Findings:**
@@ -51,6 +54,7 @@ This document contains credible sources backing the core UX principles in Patter
 - Focus on giving users "a taste of why the product improves their lives"
 
 **Application to Nostr:**
+
 - **Anti-pattern:** Treating onboarding completion as success (profile filled out, relays configured)
 - **Better metric:** User saw interesting content and came back the next day
 - **Design principle:** Defer everything except delivering the core value proposition (interesting social content)
@@ -63,8 +67,9 @@ This document contains credible sources backing the core UX principles in Patter
 ### Source 2A: Nielsen Norman Group - Progressive Disclosure Principle
 
 **Full Citation:**
+
 - Nielsen, Jakob. (1995). "Progressive Disclosure." Nielsen Norman Group.
-- URL: https://www.nngroup.com/articles/progressive-disclosure/
+- URL: <https://www.nngroup.com/articles/progressive-disclosure/>
 - Updated: Multiple revisions through 2024
 
 **Key Findings:**
@@ -76,12 +81,14 @@ This document contains credible sources backing the core UX principles in Patter
 - Helps advanced users save time by avoiding scanning past features they rarely use
 
 **Common Implementation Patterns:**
+
 - Accordions, tabs, dropdown menus
 - Tooltips and modal dialogs
 - Hypertext (higher-level pages with simplified descriptions, lower-level pages with details)
 - "Advanced options" buttons in dialogs (example: print dialog with advanced settings)
 
 **Application to Nostr:**
+
 - **Current problem:** New users see relay lists, key signers (NIP-46), outbox model settings, and protocol jargon immediately
 - **Progressive disclosure approach:**
   - **Level 1 (all users):** Read feed, post, reply, like
@@ -96,17 +103,20 @@ This document contains credible sources backing the core UX principles in Patter
 ### Source 2B: Academic Research on Progressive Disclosure
 
 **Full Citation:**
+
 - Springer, Aaron and Whittaker, Steve. (2019). "Progressive Disclosure: Designing for Effective Transparency." *ACM Transactions on Interactive Intelligent Systems*, Vol 10, No 4.
-- arXiv preprint: https://arxiv.org/pdf/1811.02164
+- arXiv preprint: <https://arxiv.org/pdf/1811.02164>
 - DOI: 10.1145/3374218
 
 **Key Findings:**
+
 - Extends progressive disclosure principles to algorithmic transparency in intelligent systems
 - Users benefit from "initially simplified feedback that assists in building working heuristics about system operation"
 - Progressive disclosure helps users manage information complexity while supporting understanding
 - Empirically motivated approaches show users want control over how much transparency information they see
 
 **Application to Nostr:**
+
 - **Relay selection as algorithmic transparency:** Most users don't need to know which relay served which post
 - **Progressive approach:**
   1. Initially: Posts just appear (like Twitter)
@@ -122,6 +132,7 @@ This document contains credible sources backing the core UX principles in Patter
 ### Source 3A: Robert Cialdini - Commitment & Consistency Principle
 
 **Full Citation:**
+
 - Cialdini, Robert B. (2006). *Influence: Science and Practice* (5th ed.). Pearson Education.
 - Chapter 3: "Commitment and Consistency"
 
@@ -134,6 +145,7 @@ This document contains credible sources backing the core UX principles in Patter
 - People prefer to be consistent with their prior actions to simplify decision-making
 
 **Application to Nostr:**
+
 - **Current anti-pattern:** Asking for large commitment immediately (generate keys = permanent identity, choose relays = can't change)
 - **Gradual commitment ladder:**
   1. **No commitment:** Browse without account (like Reddit, Twitter before 2023)
@@ -148,19 +160,22 @@ This document contains credible sources backing the core UX principles in Patter
 ### Source 3B: Nielsen Norman Group - Commitment & Consistency in UX
 
 **Full Citation:**
+
 - Moran, Kate. "The Principle of Commitment and Behavioral Consistency." Nielsen Norman Group.
-- URL: https://www.nngroup.com/articles/commitment-consistency-ux/
+- URL: <https://www.nngroup.com/articles/commitment-consistency-ux/>
 - Based on Cialdini's research applied to digital product design
 
 **Key Findings:**
 > "Designs which allow users to make a small, low-cost commitment will be more likely to convert customers than ones that make commitment a costly process. An all-or-nothing design will deliver nothing from most users."
 
 **Examples:**
+
 - **Yelp:** Asks users to write review first (small commitment), then create account to save it (leveraging aversion to data loss)
 - **Fitbit:** Asks users to state fitness goals early (small commitment), then builds on that commitment
 - **Effective technique:** Get users to make small commitment and follow up on it to increase engagement
 
 **Application to Nostr:**
+
 - **Current problem:** All-or-nothing approach (must generate keys and set up profile before seeing value)
 - **Better approach:** Let users draft a post before creating account (Yelp model)
   - User types interesting post
@@ -177,15 +192,18 @@ This document contains credible sources backing the core UX principles in Patter
 ### Source 3C: Luke Wroblewski - Gradual Engagement
 
 **Full Citation:**
+
 - Wroblewski, Luke. "Gradual Engagement" principle in mobile/web design
 - Referenced across multiple UX resources including industry analyses
 
 **Key Findings:**
+
 - "Gradual engagement" (also called "lazy registration") as ideal onboarding approach
 - Showcase product and let visitors experience value before asking for information
 - **Duolingo example:** "Gradual engagement and deferred account creation, letting you experience the value before requiring a full commitment"
 
 **Application to Nostr:**
+
 - **Parallel to TikTok model:** Show users great content immediately
 - **Defer account creation** until user wants to:
   - Post/reply (requires identity)
@@ -201,8 +219,9 @@ This document contains credible sources backing the core UX principles in Patter
 ### Source 4A: Andreessen Horowitz (a16z) Social App Benchmarks
 
 **Full Citation:**
+
 - Andreessen Horowitz Consumer Team. (March 2023). "Do You Have Lightning In a Bottle? How to Benchmark Your Social App."
-- URL: https://a16z.com/do-you-have-lightning-in-a-bottle-how-to-benchmark-your-social-app/
+- URL: <https://a16z.com/do-you-have-lightning-in-a-bottle-how-to-benchmark-your-social-app/>
 
 **Key Findings - Social App Retention Thresholds:**
 
@@ -213,11 +232,13 @@ This document contains credible sources backing the core UX principles in Patter
 | **Great** | 70% | 50% | 30% |
 
 Additional insights:
+
 - "More users who reach an 'aha moment' in onboarding (D0) correlates with better retention across all time periods (D1, D7, D30)"
 - "Retention curves typically flatten between D7-D14 and hit a plateau by D20"
 - These are n-day (bounded) retention: percentage of original cohort that enters app on specific day
 
 **Application to Nostr:**
+
 - **Current state:** ~0% D30 retention (per nostr.band data) - far below even "OK" threshold of 20%
 - **Root cause:** Onboarding fails to deliver "aha moment" - users face setup friction, empty feeds, unreliable posts
 - **Target:** Achieve at least "OK" tier (50% D1, 35% D7, 20% D30) before adding new features
@@ -229,20 +250,24 @@ Additional insights:
 ### Source 4B: AppsFlyer Mobile App Retention Benchmarks
 
 **Full Citation:**
+
 - AppsFlyer. (2024). "App Retention Benchmarks Report: 2024 Edition."
-- URL: https://www.appsflyer.com/resources/reports/app-retention-benchmarks/
+- URL: <https://www.appsflyer.com/resources/reports/app-retention-benchmarks/>
 
 **Key Findings - Social Media App Retention (2024):**
+
 - **D1 retention:** 26.3%
 - **D7 retention:** 9.3%
 - **D30 retention:** 3.11%
 
 Additional insights:
+
 - Social media category showed +23% year-over-year growth in retention (Android)
 - iOS retention rates 46% higher than Android across all app categories
 - General industry baseline: most apps lose 80% of users in first few days
 
 **Application to Nostr:**
+
 - **Context:** Even AppsFlyer's lower benchmarks (3.11% D30) are still above Nostr's ~0%
 - **Interpretation:** While social media has lower retention than a16z's VC-backed app benchmarks, even these "average" apps retain more users than Nostr
 - **This suggests:** Nostr's retention problem is not just about missing network effects, but fundamental onboarding/UX failures
@@ -254,16 +279,19 @@ Additional insights:
 ### Source 4C: Andrew Chen - Mobile User Retention Analysis
 
 **Full Citation:**
+
 - Chen, Andrew. (Multiple publications on andrewchen.com)
 - "New data shows losing 80% of mobile users is normal, and why the best apps do better"
-- URL: https://andrewchen.com/new-data-shows-why-losing-80-of-your-mobile-users-is-normal-and-that-the-best-apps-do-much-better/
+- URL: <https://andrewchen.com/new-data-shows-why-losing-80-of-your-mobile-users-is-normal-and-that-the-best-apps-do-much-better/>
 
 **Key Findings:**
+
 - Losing 80% of mobile users in first days is normal for average apps
 - The best apps significantly outperform through better onboarding and value delivery
 - Retention is not just about product quality, but about how quickly users understand and experience value
 
 **Application to Nostr:**
+
 - **Expectation setting:** High initial churn is normal, but Nostr's near-100% churn is extreme
 - **Differentiation:** Top apps succeed by optimizing onboarding, not by having inherently better products
 - **Action item:** Nostr can compete with mainstream apps *if* onboarding is fixed
@@ -276,13 +304,14 @@ Additional insights:
 ### Source 5A: Product Teardowns of TikTok Onboarding
 
 **Full Citation:**
+
 - Multiple sources analyzing TikTok's onboarding UX:
   - Appcues. "TikTok's addictive, activation-focused user onboarding"
-    - URL: https://goodux.appcues.com/blog/tiktok-user-onboarding
+    - URL: <https://goodux.appcues.com/blog/tiktok-user-onboarding>
   - Dulenko, Vitaly. (UX Planet). "How TikTok Design Hooks You Up"
-    - URL: https://uxplanet.org/how-tiktok-design-hooks-you-up-6c889522c7ed
+    - URL: <https://uxplanet.org/how-tiktok-design-hooks-you-up-6c889522c7ed>
   - Srivastava, Rishabh. (Medium). "Decoding TikTok's peerless onboarding and curation process"
-    - URL: https://medium.com/@rishdotblog/decoding-tiktoks-peerless-onboarding-and-curation-process-d520f3d17600
+    - URL: <https://medium.com/@rishdotblog/decoding-tiktoks-peerless-onboarding-and-curation-process-d520f3d17600>
 
 **Key Findings - TikTok's Onboarding Strategy:**
 
@@ -341,6 +370,7 @@ Additional insights:
   - Progressive disclosure: Start simple, offer complexity later
 
 **Anti-pattern to avoid:**
+
 - Don't copy TikTok's addictive variable-reward mechanisms if they conflict with user wellbeing
 - Do copy TikTok's *onboarding* philosophy: remove all friction between user and value
 
@@ -348,7 +378,7 @@ Additional insights:
 
 ## Summary: How to Apply These Sources to Pattern 1
 
-### Key Principles Backed by Research:
+### Key Principles Backed by Research
 
 1. **Time to Value (TTFV):**
    - Users abandon if they don't see value in first interaction (40% abandon rate)
@@ -375,7 +405,7 @@ Additional insights:
    - Algorithm or curated content solves cold-start problem
    - User gets "hooked" before asked for commitment
 
-### Validation Checklist for Nostr Clients:
+### Validation Checklist for Nostr Clients
 
 Using these sources, evaluate your onboarding:
 
@@ -388,7 +418,7 @@ Using these sources, evaluate your onboarding:
 - [ ] **Cold start solved:** New users see populated feed, not "follow people to see content"
 - [ ] **Success metric:** Define "aha moment" and measure % of users who reach it
 
-### Anti-Patterns to Avoid (Contradicted by Research):
+### Anti-Patterns to Avoid (Contradicted by Research)
 
 - ❌ "Users need to understand the protocol" (Progressive disclosure says no, hide complexity)
 - ❌ "Setup everything before showing value" (TTFV says show value first)
@@ -403,6 +433,7 @@ Using these sources, evaluate your onboarding:
 When writing Pattern 1 (Onboarding), cite sources using this format:
 
 **In-text citations:**
+
 - a16z benchmark data: `[Data:3]`
 - Progressive disclosure: `[Research:2]`
 - Commitment & consistency: `[Research:3]`

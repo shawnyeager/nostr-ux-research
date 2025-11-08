@@ -1,0 +1,21 @@
+{
+  "config": {
+    "default": true,
+    "MD013": false,
+    "MD033": false,
+    "MD041": false,
+    "MD012": {
+      "maximum": 2
+    },
+    "MD022": true,
+    "MD031": true,
+    "MD032": true
+  },
+  "globs": [
+    "**/*.md"
+  ],
+  "ignores": [
+    "node_modules",
+    "themes"
+  ]
+}

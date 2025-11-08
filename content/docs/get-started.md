@@ -17,6 +17,7 @@ weight: 1
 6. **Cross-Client Consistency** - Don't lose data when switching apps
 
 **Who This Is For:**
+
 - Nostr developers building consumer apps
 - Product designers working on Nostr clients
 - Mainstream developers evaluating Nostr
@@ -28,10 +29,13 @@ weight: 1
 ## Where to Start
 
 ### If you have 5 minutes
+
 Browse the pattern summaries in the sidebar to understand the critical issues.
 
 ### If you have 30 minutes
+
 Pick the pattern that matches your biggest pain point:
+
 - **Users abandon during signup?** → [Pattern 1: Onboarding](../patterns/01-onboarding)
 - **Empty feeds after signup?** → [Pattern 2: Content Discovery](../patterns/02-content-discovery)
 - **Posts disappearing?** → [Pattern 3: Core Interactions](../patterns/03-core-interactions)
@@ -40,9 +44,11 @@ Pick the pattern that matches your biggest pain point:
 - **Data loss when switching clients?** → [Pattern 6: Cross-Client Consistency](../patterns/06-cross-client-consistency)
 
 ### If you're building from scratch
+
 Read patterns in order (1-6). Each builds on principles from earlier patterns.
 
 ### If you want evidence
+
 Check the [Research Methodology](../resources/methodology/) and [References](../resources/references) to see the 100+ sources backing these patterns.
 
 ---

@@ -9,21 +9,25 @@ Scan this guide in ~10 minutes to understand the critical issues. Then deep-dive
 ## Pattern 1: Onboarding & First-Run Experience
 
 ### The Problem
+
 15-20 minute setup with overwhelming key management drives users away before they experience any value.
 
 ### Top 3 Recommendations
 
 **1. Time-to-First-Value < 2 Minutes**
+
 - Let users browse/read content without creating an account (like TikTok)
 - Show value BEFORE asking for commitment
 - Defer key generation until user wants to post/interact
 
 **2. Progressive Key Education**
+
 - Never show raw nsec during initial signup
 - Use gradual disclosure: "Your account is secured" → explain backup later
 - Offer multiple backup options (not just "write down this string")
 
 **3. Smart Defaults for Relays**
+
 - Pick good relays automatically based on geographic location
 - Don't show relay picker during onboarding
 - Defer relay management to settings (for power users only)
@@ -43,6 +47,7 @@ Scan this guide in ~10 minutes to understand the critical issues. Then deep-dive
 - [ ] A/B test: Browse-first vs account-first conversion rates
 
 ### Learn More
+
 → **[Full Pattern 1: Onboarding](patterns/01-onboarding.md)** (~1200 lines, 20+ citations)
 
 ---
@@ -50,21 +55,25 @@ Scan this guide in ~10 minutes to understand the critical issues. Then deep-dive
 ## Pattern 2: Content Discovery & Feed Quality
 
 ### The Problem
+
 Empty feeds and poor content discovery drive users away - "Traditional apps win by having much better content selection."
 
 ### Top 3 Recommendations
 
 **1. Solve the Cold Start Problem**
+
 - Provide starter packs or default follows (topic-based or curated accounts)
 - Auto-follow trusted accounts for new users (with clear "unfollow all" option)
 - Show "Explore" or "Trending" content even with no follows
 
 **2. Implement Effective Search**
+
 - Full-text search across posts, not just hashtags
 - Search is now table stakes (Gen Z uses social media as search engine)
 - Filter/sort options (recency, relevance, author)
 
 **3. Use Smart Discovery Mechanisms**
+
 - Web-of-Trust (WoT) filtering for quality without centralization
 - Zaps as quality signals (not just likes/reposts)
 - Topic/hashtag-based discovery feeds
@@ -85,6 +94,7 @@ Empty feeds and poor content discovery drive users away - "Traditional apps win 
 - [ ] User feedback: "Is your feed interesting?" (weekly survey)
 
 ### Learn More
+
 → **[Full Pattern 2: Content Discovery](patterns/02-content-discovery.md)** (~1900 lines, 67+ citations)
 
 ---
@@ -92,21 +102,25 @@ Empty feeds and poor content discovery drive users away - "Traditional apps win 
 ## Pattern 3: Core Interaction Loops
 
 ### The Problem
+
 Posts disappear, notifications missing, basic actions unreliable - users lose trust and abandon the platform.
 
 ### Top 3 Recommendations
 
 **1. Optimistic UI for Everything**
+
 - Show posts immediately when user clicks "Post" (don't wait for relay confirmation)
 - Like/reaction buttons respond instantly (<100ms visual feedback)
 - Only rollback if relay publish fails
 
 **2. Clear System Status Visibility**
+
 - Show explicit publish status: "Publishing..." → "Published to 8/10 relays"
 - Surface errors with actionable recovery: "Post failed to publish. [Retry]"
 - Display sync status for follows/profile updates
 
 **3. Implement Robust Error Recovery**
+
 - Auto-retry transient relay failures (exponential backoff)
 - Queue actions when offline, sync when reconnected
 - Never lose user's draft post (auto-save locally)
@@ -126,6 +140,7 @@ Posts disappear, notifications missing, basic actions unreliable - users lose tr
 - [ ] Notification delivery rate tracked
 
 ### Learn More
+
 → **[Full Pattern 3: Core Interactions](patterns/03-core-interactions.md)** (~1500 lines, 30+ citations)
 
 ---
@@ -133,21 +148,25 @@ Posts disappear, notifications missing, basic actions unreliable - users lose tr
 ## Pattern 4: Performance & Perceived Speed
 
 ### The Problem
+
 Apps hang, buffer, or crash - users perceive performance as below mainstream app standards.
 
 ### Top 3 Recommendations
 
 **1. Optimize Perceived Performance**
+
 - Skeleton screens for 2-10 second loads (perceived 30% faster than spinners)
 - Optimistic UI for all user actions
 - Progressive loading: Show partial data while fetching
 
 **2. Set Performance Budgets**
+
 - Initial bundle: <250KB gzipped for fast 3G
 - Page load time: Under 3 seconds (53% of mobile users abandon at >3 seconds)
 - React within 100ms to all user inputs (even if backend is slow)
 
 **3. Implement Smart Caching**
+
 - Cache profiles, media, frequently-accessed events locally
 - Stale-while-revalidate pattern for dynamic content
 - Service Workers + IndexedDB for offline-first
@@ -167,6 +186,7 @@ Apps hang, buffer, or crash - users perceive performance as below mainstream app
 - [ ] User feedback: "Does the app feel fast?"
 
 ### Learn More
+
 → **[Full Pattern 4: Performance](patterns/04-performance.md)** (~1400 lines, 35+ citations)
 
 ---
@@ -174,21 +194,25 @@ Apps hang, buffer, or crash - users perceive performance as below mainstream app
 ## Pattern 5: Progressive Complexity
 
 ### The Problem
+
 Exposing relay management, key signers (NIP-46), and protocol details to all users is overwhelming.
 
 ### Top 3 Recommendations
 
 **1. Apply the 80/20 Rule**
+
 - 80% of users need only 20% of features
 - Ship with defaults that work great for most people
 - Hide advanced features behind "Advanced Settings"
 
 **2. Smart Defaults for Relay Management**
+
 - Auto-select relays based on geography and reliability
 - Most users should NEVER need to configure relays
 - Surface relay health only when there's a problem
 
 **3. Progressive Feature Education**
+
 - Introduce power features contextually when users need them
 - "You have 50+ follows. Want to organize them into lists?" (not day 1)
 - Signer apps (NIP-46) are for advanced users, not onboarding
@@ -208,6 +232,7 @@ Exposing relay management, key signers (NIP-46), and protocol details to all use
 - [ ] A/B test: Simplified settings vs full exposure
 
 ### Learn More
+
 → **[Full Pattern 5: Progressive Complexity](patterns/05-progressive-complexity.md)** (~900 lines, 12+ citations)
 
 ---
@@ -215,21 +240,25 @@ Exposing relay management, key signers (NIP-46), and protocol details to all use
 ## Pattern 6: Cross-Client Consistency & Data Integrity
 
 ### The Problem
+
 "Lost all followers when switching from Primal → Damus → Snort" - users don't trust their data is safe.
 
 ### Top 3 Recommendations
 
 **1. Multi-Relay Write Strategy**
+
 - Write to 3-5 relays minimum for critical data (profile, follows, posts)
 - Verify events propagated successfully
 - Show explicit sync status: "Synced to 5/5 relays" vs "Syncing..."
 
 **2. Implement Conflict Resolution**
+
 - When loading follows/profile, compare timestamps across relays
 - Use most recent event (highest created_at timestamp)
 - Surface conflicts to users: "Your follows differ between clients. Which is correct?"
 
 **3. Explicit Data Health Checks**
+
 - "Verify My Data" button - check follows, profile across relays
 - Background sync to keep data consistent
 - Export/import tools for data portability
@@ -249,6 +278,7 @@ Exposing relay management, key signers (NIP-46), and protocol details to all use
 - [ ] Sync conflict frequency measured
 
 ### Learn More
+
 → **[Full Pattern 6: Cross-Client Consistency](patterns/06-cross-client-consistency.md)** (~1100 lines, 19+ citations)
 
 ---
@@ -258,12 +288,15 @@ Exposing relay management, key signers (NIP-46), and protocol details to all use
 Before building any feature, ask:
 
 ### 1. Does this help users accomplish their core goal?
+
 Users come to social apps to **see interesting content** and **connect with people**.
 
 If your feature doesn't directly support content discovery, posting, or social connection, it's probably not core functionality.
 
 ### 2. Have we validated this solves a real problem?
+
 Evidence includes:
+
 - **Data:** Retention metrics, session length, completion rates
 - **User feedback:** Direct complaints, support tickets, observed behavior
 - **Research:** Academic findings or mainstream app case studies
@@ -271,7 +304,9 @@ Evidence includes:
 "Users might want X" is NOT validation.
 
 ### 3. Can we measure if it's working?
+
 Every feature should have:
+
 - **Leading indicators:** Usage rates, adoption, engagement
 - **Lagging indicators:** D1/D7/D30 retention, DAU growth, session length
 - **Qualitative signals:** User feedback, support ticket volume
@@ -282,22 +317,26 @@ If you can't measure it, you can't improve it.
 
 ## Priority Framework: Where to Start
 
-### If you have <1 hour:
+### If you have <1 hour
+
 → Implement **one** quick win from any pattern's Top 3 Recommendations
 
-### If you have 1 day:
+### If you have 1 day
+
 1. Measure D1/D7/D30 retention (if not tracking already)
 2. Identify biggest drop-off point
 3. Implement Top 3 Recommendations from that pattern
 4. Measure if it improved retention
 
-### If you have 1 week:
+### If you have 1 week
+
 1. Audit app against all 6 patterns using validation checklists
 2. Prioritize by impact (retention data) × effort (engineering estimate)
 3. Fix highest-impact issues first
 4. Ship incrementally, measure each change
 
-### If you're building a new client:
+### If you're building a new client
+
 1. Read [Pattern 1: Onboarding](patterns/01-onboarding.md) + [Pattern 2: Content Discovery](patterns/02-content-discovery.md) first
 2. Implement browse-first onboarding with smart content defaults
 3. Get [Pattern 3: Core Interactions](patterns/03-core-interactions.md) working reliably
@@ -359,6 +398,7 @@ If you can't measure it, you can't improve it.
 ## Next Steps
 
 **Chose a pattern to deep-dive?**
+
 - [Pattern 1: Onboarding](patterns/01-onboarding.md)
 - [Pattern 2: Content Discovery](patterns/02-content-discovery.md)
 - [Pattern 3: Core Interactions](patterns/03-core-interactions.md)

@@ -17,6 +17,7 @@ weight: 5
 
 **The perception problem:**
 Nostr apps feel like developer tools, not consumer apps. Users compare to Twitter/Instagram's "it just works" simplicity and abandon when faced with:
+
 - Relay management decisions on first launch
 - Key signer configuration requirements
 - Technical error messages referencing NIPs
@@ -43,6 +44,7 @@ Nostr apps feel like developer tools, not consumer apps. Users compare to Twitte
 > "80% of users will only use 20% of features. Design for that 80% first." [[Research:54]](#research-54)
 
 **Research shows:** [[Research:55]](#research-55) [[Research:56]](#research-56) [[Research:57]](#research-57)
+
 - **30-40% reduction in cognitive load** through progressive disclosure during onboarding [[Research:55]](#research-55)
 - **25% fewer interactions** needed when interfaces apply smart defaults (Airbnb case study) [[Research:57]](#research-57)
 - **24% reduction in cognitive load** from minimal layouts with decluttered designs (Figma research) [[Research:57]](#research-57)
@@ -50,6 +52,7 @@ Nostr apps feel like developer tools, not consumer apps. Users compare to Twitte
 - Users abandon apps with >10-15 settings on a single screen [[Research:58]](#research-58)
 
 **The Pareto Principle in UX:** [[Research:54]](#research-54)
+
 - Focus on the 20% of features that deliver 80% of user value
 - Most users never explore advanced settings
 - Complexity should be optional, not mandatory
@@ -99,6 +102,7 @@ These principles apply to any application managing feature complexity and user e
 - Eliminates friction points that cause abandonment [[Research:55]](#research-55)
 
 **Common implementations:** [[Research:56]](#research-56) [[Research:60]](#research-60)
+
 - **Collapsible menus:** Hide advanced options until clicked
 - **Tooltips/contextual help:** Information appears on hover or interaction
 - **Hover-based actions:** Secondary actions revealed on hover
@@ -106,6 +110,7 @@ These principles apply to any application managing feature complexity and user e
 - **Step-by-step flows:** Multi-page wizards instead of one overwhelming screen
 
 **When to use:** [[Research:60]](#research-60)
+
 - Designing for novice users
 - Complex tasks with many options
 - Limited screen space (mobile)
@@ -128,6 +133,7 @@ Define essential vs. advanced content through user research using card sorting a
 - Never force decisions users aren't ready to make
 
 **Airbnb case study:** [[Research:57]](#research-57)
+
 - Smart defaults led to **25% fewer interactions** needed to complete bookings
 - Higher conversion rate with less cognitive effort
 - Users could still customize, but most didn't need to
@@ -154,29 +160,34 @@ Define essential vs. advanced content through user research using card sorting a
 **Three-tier hierarchy:**
 
 **Tier 1: Basic (Visible to all)**
+
 - Frequently used settings (top of screen) [[Research:58]](#research-58)
 - Core functionality toggles
 - Account/profile settings
 - <10 items maximum
 
 **Tier 2: Advanced (Behind "Advanced Settings" section)**
+
 - Features used by 20-40% of users
 - Customization options
 - Performance tweaks
 - Grouped logically by category
 
 **Tier 3: Expert (Hidden in debug/developer/power user mode)**
+
 - Experimental features
 - Technical configurations
 - Developer tools
 - Risk: Can break things if misused
 
 **Android design guidelines:** [[Research:58]](#research-58)
+
 - Place frequently used settings at top
 - Users should glance at settings and understand all individual settings and their values
 - Limit items per screen to avoid overwhelming users
 
 **Visual hierarchy principles:** [[Research:61]](#research-61)
+
 - Prioritize important information
 - Ensure content aligns with user needs and goals
 - Use shared traits (color, shape, size) for quick understanding
@@ -189,6 +200,7 @@ Define essential vs. advanced content through user research using card sorting a
 **Core insight:** Show help content alongside each step to minimize cognitive load, rather than overwhelming users upfront. [[Research:62]](#research-62)
 
 **Pull revelations vs. Push tutorials:** [[Research:62]](#research-62)
+
 - **Pull revelations:** Help triggered when user would benefit from that information at that moment
 - **Push tutorials:** Upfront product tours that users skip or forget
 
@@ -196,6 +208,7 @@ Define essential vs. advanced content through user research using card sorting a
 Progressive and contextual delivery introduces actions, steps, and features gradually as they become relevant to avoid cognitive overload.
 
 **Best practices:** [[Research:63]](#research-63)
+
 - **Tooltips:** Concise, context-sensitive pop-ups that give information without interrupting flow
 - **Contextual hints:** Explain features only when first used
 - **Progressive guidance:** Interactive tutorials, tooltips, step-by-step guides
@@ -216,26 +229,31 @@ Tooltips provide subtle, contextual guidance; pop-ups or modals are more disrupt
 **Discovery patterns:**
 
 **Pattern A: Keyboard shortcuts**
+
 - Display hints in tooltips (e.g., "⌘K to search")
 - Provide shortcuts panel (? key)
 - Allow customization for power users
 
 **Pattern B: Search within settings**
+
 - Filter settings by keyword
 - Jump to specific configurations
 - Avoids endless scrolling
 
 **Pattern C: "Advanced" toggle or mode**
+
 - Switch between simplified and full interfaces
 - Remember user preference
 - Clearly labeled entry point
 
 **Pattern D: Contextual upsells**
+
 - "Looking for more options? Try Advanced Mode"
 - Shown after user demonstrates proficiency
 - Not intrusive to beginners
 
 **2024-2025 trends:** [[Research:64]](#research-64)
+
 - **"Choose your own UX adventure" settings** for power users
 - **Smart defaults** with behavior-based interfaces
 - **Dashboards that feel personalized**
@@ -263,6 +281,7 @@ Accordions, tooltips, or step-by-step flows reveal content only when needed, kee
 Bottom navigation bars and gesture-based controls streamline user journeys. [[Research:65]](#research-65)
 
 **Measurable impact:** [[Research:57]](#research-57)
+
 - **Airbnb:** Higher conversion, 25% fewer interactions with smart defaults
 - **Figma:** 24% reduction in cognitive load with minimal layouts
 - **Adobe (2024):** 30% increase in engagement with decluttered designs
@@ -287,6 +306,7 @@ Great UX isn't about hiding features—it's about organizing them so users can f
 - No explanation of what relays are or why they matter
 
 **NIP-65 (Relay List Metadata) challenges:** [[Data:32]](#data-32)
+
 - Uses kind:10002 events to advertise user's write relays (OUTBOX) and read relays (INBOX)
 - Clients should guide users to keep lists small (2-4 relays) [[Data:32]](#data-32)
 - Users switching clients experience relay list confusion due to incomplete NIP implementations [[Data:31]](#data-31)
@@ -310,6 +330,7 @@ Great UX isn't about hiding features—it's about organizing them so users can f
 **Progressive disclosure approach:**
 
 **Level 1: Invisible (Default)**
+
 ```
 No relay UI at all. App chooses optimal relays automatically:
 - 2-3 well-connected, reliable relays
@@ -318,6 +339,7 @@ No relay UI at all. App chooses optimal relays automatically:
 ```
 
 **Level 2: Basic (Settings → Advanced)**
+
 ```
 "Network Settings" (not "Relay Management")
 - [✓] Automatic relay selection (recommended)
@@ -328,6 +350,7 @@ Automatic mode works great for most people."
 ```
 
 **Level 3: Power User (Settings → Advanced → Relay Management)**
+
 ```
 Full relay management interface:
 - Add/remove relays manually
@@ -338,6 +361,7 @@ Full relay management interface:
 ```
 
 **Implementation example:**
+
 ```typescript
 // Smart default relays based on user location
 function getDefaultRelays(userLocation: string): string[] {
@@ -368,6 +392,7 @@ function shouldShowRelayUI(user: User): boolean {
 **The problem:** Remote signers enhance security but add significant complexity.
 
 **Current state:** [[Data:33]](#data-33)
+
 - NIP-46 specification unclear and constantly changing
 - Incompatibilities between apps and signers
 - No signer apps in traditional app stores (requires Obtanium or zap.store)
@@ -375,6 +400,7 @@ function shouldShowRelayUI(user: User): boolean {
 - Push notification support incomplete
 
 **Available signers:** [[Data:34]](#data-34)
+
 - **Amber (Android):** Offline signing, multiple accounts, granular permissions
 - **Nostr Signer (Alby):** Remote signing via push notifications
 
@@ -397,6 +423,7 @@ While NIP-46 is best practice for key security, "it doesn't currently work very 
 **Progressive disclosure approach:**
 
 **Level 1: Simple & Secure (Default)**
+
 ```
 Onboarding:
 "Your account is secured with a private key, safely stored on your device"
@@ -412,6 +439,7 @@ NO mention of:
 ```
 
 **Level 2: Backup Awareness (After 1 week or first post)**
+
 ```
 Non-intrusive reminder:
 "💡 Secure your account with a backup"
@@ -423,6 +451,7 @@ Backup flow:
 ```
 
 **Level 3: Advanced Security (Settings → Security → Advanced)**
+
 ```
 "Advanced Key Management"
 - [ ] Use remote signer app (NIP-46)
@@ -460,7 +489,7 @@ Backup flow:
 | Event | Post, Message, Update | "Your post was published successfully" |
 | Kind:1 | Post | Never mention kind numbers |
 | Kind:3 | Following list | "Your following list" |
-| NIP-05 | Username, Verified name | "Get a username like alice@example.com" |
+| NIP-05 | Username, Verified name | "Get a username like <alice@example.com>" |
 | NIP-46 | Remote signer | "Use a separate app to manage your keys" |
 | NIP-65 | Network preferences | "Choose your preferred servers" |
 | nsec/npub | Private key/Public key | Only in advanced settings |
@@ -469,12 +498,14 @@ Backup flow:
 **Pattern: Hide protocol, show benefit**
 
 **Bad:**
+
 ```
 ⚠️ Failed to publish kind:1 event to wss://relay.example.com
 NIP-01 signature verification failed
 ```
 
 **Good:**
+
 ```
 ⚠️ Couldn't post right now
 We'll try again automatically, or you can retry
@@ -482,6 +513,7 @@ We'll try again automatically, or you can retry
 ```
 
 **Bad:**
+
 ```
 Settings
 ☐ Enable NIP-65 Outbox Model
@@ -490,6 +522,7 @@ Settings
 ```
 
 **Good:**
+
 ```
 Settings
 ☐ Optimize network performance (recommended)
@@ -504,6 +537,7 @@ Advanced →
 **The progressive rollout:**
 
 **Week 1: Core social experience**
+
 - Post, read, like, reply
 - Follow/unfollow
 - Profile editing
@@ -511,12 +545,14 @@ Advanced →
 - Zero Nostr-specific concepts
 
 **Week 2-4: Light customization**
+
 - Mute/block users (no "Web of Trust" jargon)
 - Notification preferences
 - Display preferences
 - Content filters
 
 **Month 2+: Power user features (opt-in)**
+
 - Network settings (relay management)
 - Advanced security (remote signers)
 - Data portability (export/import)
@@ -532,6 +568,7 @@ Advanced →
 - User has been active >30 days
 
 **Contextual feature discovery:**
+
 ```typescript
 // Show power user hints based on behavior
 if (user.daysActive > 30 && user.postsCount > 50) {
@@ -550,6 +587,7 @@ if (user.daysActive > 30 && user.postsCount > 50) {
 **Applying 10-15 items limit to Nostr settings:** [[Research:58]](#research-58)
 
 **Basic Settings (Visible to all, <10 items)**
+
 ```
 Profile & Account
   • Edit profile
@@ -570,6 +608,7 @@ Security
 ```
 
 **Advanced Settings (Collapsed by default)**
+
 ```
 Advanced →
   Network
@@ -590,6 +629,7 @@ Advanced →
 ```
 
 **Developer/Debug (Hidden, requires code/gesture)**
+
 ```
 Hold settings icon for 3 seconds →
 
@@ -1255,6 +1295,7 @@ function AdvancedNetworkSettings() {
 ### Anti-Pattern 1: Relay Picker in Onboarding
 
 **What it looks like:**
+
 ```
 Welcome to Nostr!
 Step 1: Choose your relays (required)
@@ -1286,6 +1327,7 @@ Learn more about NIP-01 relay specification →
 - Only show to power users who request it
 
 **Good example:**
+
 ```
 Welcome to Nostr!
 
@@ -1299,6 +1341,7 @@ Welcome to Nostr!
 ### Anti-Pattern 2: NIP Jargon in User-Facing UI
 
 **What it looks like:**
+
 ```
 Settings
 ☑ Enable NIP-01 Event Verification
@@ -1327,6 +1370,7 @@ a3f82...
 - Reference NIPs only in developer documentation
 
 **Good example:**
+
 ```
 Settings
 ☑ Verify post authenticity (recommended)
@@ -1345,6 +1389,7 @@ We'll try again automatically
 ### Anti-Pattern 3: All Features Visible to All Users
 
 **What it looks like:**
+
 ```
 Composer Toolbar:
 [B] [I] [U] [Link] [Image] [Video] [Poll] [Article]
@@ -1368,6 +1413,7 @@ Composer Toolbar:
 - Overflow menu for less-used actions
 
 **Good example:**
+
 ```
 Composer Toolbar:
 [B] [I] [Link] [Image] [⋯ More]
@@ -1384,6 +1430,7 @@ More menu (contextual):
 ### Anti-Pattern 4: No Smart Defaults
 
 **What it looks like:**
+
 ```
 First Launch
 Before you can use this app, please configure:
@@ -1413,6 +1460,7 @@ Before you can use this app, please configure:
 - One-click "Optimize automatically" option
 
 **Good example:**
+
 ```
 Welcome to Nostr!
 
@@ -1426,6 +1474,7 @@ Welcome to Nostr!
 ### Anti-Pattern 5: Settings Overload
 
 **What it looks like:**
+
 ```
 Settings (67 items on one screen)
 
@@ -1467,6 +1516,7 @@ Experimental
 - Hide developer options completely
 
 **Good example:**
+
 ```
 Settings
 
@@ -1485,6 +1535,7 @@ Advanced ▼ (8 items)
 ### Anti-Pattern 6: Upfront Tutorial Overload
 
 **What it looks like:**
+
 ```
 Welcome to Nostr! Let's get you started.
 
@@ -1522,6 +1573,7 @@ Tutorial (12 steps):
 - Progressive education as users grow
 
 **Good example:**
+
 ```
 Welcome to Nostr!
 
@@ -1541,6 +1593,7 @@ We've chosen the best ones for you.
 ### Anti-Pattern 7: Power User Features in Main Navigation
 
 **What it looks like:**
+
 ```
 Main Navigation:
 🏠 Home
@@ -1569,6 +1622,7 @@ Main Navigation:
 - Clear separation of concerns
 
 **Good example:**
+
 ```
 Main Navigation:
 🏠 Home
@@ -1585,6 +1639,7 @@ Main Navigation:
 ### Anti-Pattern 8: Immediate Signer App Requirement
 
 **What it looks like:**
+
 ```
 Create Account
 
@@ -1618,6 +1673,7 @@ You'll need to install Obtanium first...
 - Make it optional, not required
 
 **Good example:**
+
 ```
 Create Account
 
@@ -1791,26 +1847,31 @@ signer app to manage your keys.
 ### A/B Testing Opportunities
 
 **Test 1: Relay visibility**
+
 - A: Relays in onboarding
 - B: Relays hidden entirely
 - Measure: Completion rate, confusion, post success
 
 **Test 2: Settings organization**
+
 - A: Flat list (all settings visible)
 - B: Collapsed advanced section
 - Measure: Time to find settings, perceived complexity
 
 **Test 3: Feature gating**
+
 - A: All features always visible
 - B: Progressive feature unlock (beginner → advanced)
 - Measure: Feature discovery, usage rates, satisfaction
 
 **Test 4: Terminology**
+
 - A: Protocol terms (relays, NIPs, events)
 - B: User-friendly terms (servers, username, posts)
 - Measure: Comprehension, support tickets, confusion
 
 **Test 5: Signer introduction**
+
 - A: Signer during onboarding (current some apps)
 - B: Signer after 1 week (recommended)
 - Measure: Completion rate, signer adoption, abandonment
@@ -1825,139 +1886,155 @@ signer app to manage your keys.
 
 <a id="research-54"></a>
 **[Research:54]** Pareto Principle (80/20 Rule) in UX Design
+
 - **Updated:** September 2025 (Interaction Design Foundation)
 - **Key finding:** 80% of users use only 20% of features
 - **Application:** Focus on 20% of design decisions that drive 80% of impact
-- **Source:** https://www.interaction-design.org/literature/topics/pareto-principle
-- **Source:** https://think.design/blog/the-pareto-principle-in-ux/
+- **Source:** <https://www.interaction-design.org/literature/topics/pareto-principle>
+- **Source:** <https://think.design/blog/the-pareto-principle-in-ux/>
 - **Date:** December 2024
 
 <a id="research-55"></a>
 **[Research:55]** Progressive Disclosure Reduces Cognitive Load
+
 - **Key finding:** 30-40% reduction in cognitive load during onboarding
 - **Benefits:** Breaks complex processes into manageable steps, eliminates abandonment friction
-- **Source:** https://www.interaction-design.org/literature/topics/progressive-disclosure
-- **Source:** https://lollypop.design/blog/2025/may/progressive-disclosure/
+- **Source:** <https://www.interaction-design.org/literature/topics/progressive-disclosure>
+- **Source:** <https://lollypop.design/blog/2025/may/progressive-disclosure/>
 - **Date:** May 2025
 
 <a id="research-56"></a>
 **[Research:56]** Progressive Disclosure Strategy
+
 - **Key finding:** Reduces decision fatigue by revealing information in stages
 - **Common implementations:** Collapsible menus, tooltips, hover actions, toggles
-- **Source:** https://blog.logrocket.com/ux-design/progressive-disclosure-ux-types-use-cases/
-- **Source:** https://octet.design/journal/progressive-disclosure/
+- **Source:** <https://blog.logrocket.com/ux-design/progressive-disclosure-ux-types-use-cases/>
+- **Source:** <https://octet.design/journal/progressive-disclosure/>
 - **Date:** 2024-2025
 
 <a id="research-57"></a>
 **[Research:57]** Cognitive Load Reduction Impact
+
 - **Airbnb:** 25% fewer interactions with smart defaults, higher conversion
 - **Figma:** 24% reduction in cognitive load with minimal layouts
 - **Adobe (2024):** 30% increase in engagement with decluttered designs
-- **Source:** https://developerux.com/2025/04/18/ultimate-guide-to-cognitive-load-reduction-in-ux-design/
+- **Source:** <https://developerux.com/2025/04/18/ultimate-guide-to-cognitive-load-reduction-in-ux-design/>
 - **Date:** April 2025
 
 <a id="research-58"></a>
 **[Research:58]** Android Settings Design Guidelines
+
 - **Key finding:** Limit settings to 10-15 items per screen
 - **Best practices:** Place frequently used at top, users should glance and understand all settings
-- **Source:** https://source.android.com/docs/core/settings/settings-guidelines
-- **Source:** https://www.setproduct.com/blog/settings-ui-design
+- **Source:** <https://source.android.com/docs/core/settings/settings-guidelines>
+- **Source:** <https://www.setproduct.com/blog/settings-ui-design>
 - **Date:** 2024-2025
 
 <a id="research-59"></a>
 **[Research:59]** Pareto Principle Application to Interface Design
+
 - **Feature prioritization:** Identify 20% of features that meet 80% of users' needs
 - **MVP development:** Minimum viable products are Pareto Principle in action
-- **Source:** https://lawsofux.com/pareto-principle/
-- **Source:** https://www.cursorup.com/blog/the-pareto-principle
+- **Source:** <https://lawsofux.com/pareto-principle/>
+- **Source:** <https://www.cursorup.com/blog/the-pareto-principle>
 - **Date:** 2024-2025
 
 <a id="research-60"></a>
 **[Research:60]** Progressive Disclosure Techniques
+
 - **Core insight:** Defer advanced features to secondary UI, keep essential content in primary UI
 - **When to use:** Novice users, complex tasks, limited screen space, high cognitive load
 - **Design methods:** Card sorting and task analysis to define essential vs. advanced content
-- **Source:** https://www.nngroup.com/articles/progressive-disclosure/
-- **Source:** https://www.ux-bulletin.com/progressive-disclosure-in-ux/
+- **Source:** <https://www.nngroup.com/articles/progressive-disclosure/>
+- **Source:** <https://www.ux-bulletin.com/progressive-disclosure-in-ux/>
 - **Date:** 2024-2025
 
 <a id="research-61"></a>
 **[Research:61]** Complexity Organization Best Practices
+
 - **Core insight:** Great UX isn't hiding features—it's organizing them so users can find, understand, use without frustration
 - **Visual hierarchy:** Prioritize important information, align with user needs, use shared visual traits
-- **Source:** https://medium.com/@rounakbajoriastar/from-chaos-to-clarity-organizing-complex-interfaces-with-ux-best-practices-daec1a8328ab
-- **Source:** https://devpulse.com/insights/ux-ui-design-best-practices-2025-enterprise-applications/
+- **Source:** <https://medium.com/@rounakbajoriastar/from-chaos-to-clarity-organizing-complex-interfaces-with-ux-best-practices-daec1a8328ab>
+- **Source:** <https://devpulse.com/insights/ux-ui-design-best-practices-2025-enterprise-applications/>
 - **Date:** May 2025
 
 <a id="research-62"></a>
 **[Research:62]** Contextual Help and Onboarding (Nielsen Norman Group February 2024)
+
 - **Pull revelations:** Help triggered when user would benefit at that moment
 - **Progressive delivery:** Introduce actions/features gradually as they become relevant to avoid overload
 - **AI-enhanced personalization:** Tailor onboarding to user goals and behavior
-- **Source:** https://www.nngroup.com/articles/onboarding-tutorials/
-- **Source:** https://www.uxdesigninstitute.com/blog/ux-onboarding-best-practices-guide/
+- **Source:** <https://www.nngroup.com/articles/onboarding-tutorials/>
+- **Source:** <https://www.uxdesigninstitute.com/blog/ux-onboarding-best-practices-guide/>
 - **Date:** February 2024
 
 <a id="research-63"></a>
 **[Research:63]** Tooltip Design and Contextual Guidance
+
 - **Design principle:** Tooltips provide subtle, contextual guidance; pop-ups/modals are disruptive
 - **Best practices:** Concise, context-sensitive pop-ups that give information without interrupting flow
-- **Source:** https://www.chameleon.io/blog/why-tooltips-are-terrible-and-why-you-should-use-them
-- **Source:** https://www.appcues.com/blog/tooltips
+- **Source:** <https://www.chameleon.io/blog/why-tooltips-are-terrible-and-why-you-should-use-them>
+- **Source:** <https://www.appcues.com/blog/tooltips>
 - **Date:** 2024-2025
 
 <a id="research-64"></a>
 **[Research:64]** 2024-2025 UX Trends for Power Users
+
 - **"Choose your own UX adventure"** settings for power users
 - **Smart defaults** with behavior-based interfaces
 - **Adaptive interfaces:** Dark mode at night, simplified UI when fatigued
-- **Source:** https://www.aufaitux.com/blog/power-bi-trends-enterprise-analytics-dashboard-ux/
-- **Source:** https://trends.uxdesign.cc
+- **Source:** <https://www.aufaitux.com/blog/power-bi-trends-enterprise-analytics-dashboard-ux/>
+- **Source:** <https://trends.uxdesign.cc>
 - **Date:** 2025
 
 <a id="research-65"></a>
 **[Research:65]** Cognitive Load Reduction Techniques
+
 - **Progressive disclosure:** Accordions, tooltips, step-by-step flows keep interface clean
 - **Simplification:** Consistent patterns, clear layouts, minimal distractions, logical grouping
 - **Mobile-specific:** Bottom navigation, gesture-based controls streamline journeys
-- **Source:** https://www.ijraset.com/best-journal/reducing-cognitive-load-in-ui-design
-- **Source:** https://hapy.design/journal/ways-to-reduce-cognitive-load-for-a-better-ui/
+- **Source:** <https://www.ijraset.com/best-journal/reducing-cognitive-load-in-ui-design>
+- **Source:** <https://hapy.design/journal/ways-to-reduce-cognitive-load-for-a-better-ui/>
 - **Date:** 2024-2025
 
 ### Nostr-Specific Data
 
 <a id="data-31"></a>
 **[Data:31]** Cross-Client Relay List Confusion
+
 - Users setting relay preferences in Nostrudel find other clients (Coracle, Nostter) pulling incorrectly
 - Manual relay additions multiply unexpectedly
 - "Imperfect, incomplete, and/or partially implemented NIPs' unintended consequences"
-- **Source:** https://github.com/nostr-protocol/nips/discussions/1134
+- **Source:** <https://github.com/nostr-protocol/nips/discussions/1134>
 - **Date:** 2024-2025
 
 <a id="data-32"></a>
 **[Data:32]** NIP-65 Relay List Metadata
+
 - Uses kind:10002 events to advertise user's write relays (OUTBOX) and read relays (INBOX)
 - Clients should guide users to keep lists small (2-4 relays)
-- **Source:** https://nips.nostr.com/65
-- **Source:** https://nostrify.dev/relay/outbox
+- **Source:** <https://nips.nostr.com/65>
+- **Source:** <https://nostrify.dev/relay/outbox>
 - **Date:** 2024-2025
 
 <a id="data-33"></a>
 **[Data:33]** NIP-46 Signer App UX Challenges
+
 - Specification "unclear and constantly changing"
 - Incompatibilities between apps and signers
 - No signer apps in traditional app stores (requires Obtanium or zap.store)
 - Clients don't handle latency well
 - "While NIP-46 is best practice, it doesn't currently work very well at all"
-- **Source:** https://nostr.com/naddr1qqxnzdenxyenvdesxvmrvwp4qy28wumn8ghj7ctvvahjuat50phjummwv5hsygyhcu9ygdn2v56uz3dnx0uh865xmlwz675emfsccsxxguz6mx8rygpsgqqqw4rsvrkrdw
+- **Source:** <https://nostr.com/naddr1qqxnzdenxyenvdesxvmrvwp4qy28wumn8ghj7ctvvahjuat50phjummwv5hsygyhcu9ygdn2v56uz3dnx0uh865xmlwz675emfsccsxxguz6mx8rygpsgqqqw4rsvrkrdw>
 - **Date:** 2024
 
 <a id="data-34"></a>
 **[Data:34]** Available Nostr Signer Apps
+
 - **Amber (Android):** Offline signing, multiple accounts, granular permissions
 - **Nostr Signer (Alby):** Remote signing via push notifications
-- **Source:** https://blog.getalby.com/nostr-signer/
-- **Source:** https://maxgravitt.com/articles/nostr-connect/
+- **Source:** <https://blog.getalby.com/nostr-signer/>
+- **Source:** <https://maxgravitt.com/articles/nostr-connect/>
 - **Date:** 2024-2025
 
 ---

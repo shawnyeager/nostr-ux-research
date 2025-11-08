@@ -8,7 +8,7 @@ Research compilation for Pattern 2: Content Discovery & Feed Quality
 
 - **Finding:** Bluesky's "starter packs" (curated lists of accounts users can follow with one click) accounted for 43% of follow actions during peak periods and 20% of all follow relationships during their first 6 months. Users included in starter packs received 85% more followers and posted 60% more than similar users not included. Over 335,000 starter packs were created in the first six months.
 
-- **Source:** "Bootstrapping Social Networks: Lessons from Bluesky Starter Packs" - Lancaster University, TU Darmstadt, City St George's University of London. arXiv preprint: https://arxiv.org/pdf/2501.11605
+- **Source:** "Bootstrapping Social Networks: Lessons from Bluesky Starter Packs" - Lancaster University, TU Darmstadt, City St George's University of London. arXiv preprint: <https://arxiv.org/pdf/2501.11605>
 
 - **Date:** January 2025
 
@@ -20,7 +20,7 @@ Research compilation for Pattern 2: Content Discovery & Feed Quality
 
 - **Finding:** TikTok's For You Page algorithm prioritizes content relevance over creator popularity, meaning even users with zero followers can reach large audiences if content aligns with viewer interests. The algorithm analyzes user interactions (watch time, likes, comments), video information (captions, hashtags, sounds), and device settings. Accounts with fewer followers receive more than 75% of impressions from the "For You" feed, confirming balanced content distribution.
 
-- **Source:** Multiple 2024-2025 sources including Sprout Social "How the TikTok Algorithm Works in 2025" (https://sproutsocial.com/insights/tiktok-algorithm/) and Buffer "TikTok Algorithm Guide 2026" (https://buffer.com/resources/tiktok-algorithm/)
+- **Source:** Multiple 2024-2025 sources including Sprout Social "How the TikTok Algorithm Works in 2025" (<https://sproutsocial.com/insights/tiktok-algorithm/>) and Buffer "TikTok Algorithm Guide 2026" (<https://buffer.com/resources/tiktok-algorithm/>)
 
 - **Date:** 2024-2025
 
@@ -32,7 +32,7 @@ Research compilation for Pattern 2: Content Discovery & Feed Quality
 
 - **Finding:** Instagram's April 2024 algorithm update rewards original content creation. The platform now heavily weights "shares per reach" (content sent via DMs) as a key engagement signal, viewing it as deeper engagement than likes. Instagram introduced "Trial Reels" in December 2024, allowing creators to test content with non-followers before sharing to their audience. Instagram head Adam Mosseri announced a shift to views-focused analytics in summer 2024.
 
-- **Source:** Later "How the Instagram Algorithm Works in 2025" (https://later.com/blog/how-instagram-algorithm-works/) and Sprout Social "How the Instagram Algorithm Works [Updated 2025]" (https://sproutsocial.com/insights/instagram-algorithm/)
+- **Source:** Later "How the Instagram Algorithm Works in 2025" (<https://later.com/blog/how-instagram-algorithm-works/>) and Sprout Social "How the Instagram Algorithm Works [Updated 2025]" (<https://sproutsocial.com/insights/instagram-algorithm/>)
 
 - **Date:** 2024-2025
 
@@ -44,7 +44,7 @@ Research compilation for Pattern 2: Content Discovery & Feed Quality
 
 - **Finding:** Research study moving users from algorithmic to reverse-chronological feeds on Facebook and Instagram found substantial decreases in time spent on platform and user activity over 3 months. However, chronological feeds did not significantly alter levels of polarization, political knowledge, or other attitudes. Instagram users compensated by increasing TikTok usage by 36% and YouTube by 20%; Facebook users moved to Reddit (52% more) and YouTube (21% more).
 
-- **Source:** Georgetown University Knight-Georgetown Institute "Better Feeds: Algorithms That Put People First" (https://kgi.georgetown.edu/wp-content/uploads/2025/02/Better-Feeds_-Algorithms-That-Put-People-First.pdf)
+- **Source:** Georgetown University Knight-Georgetown Institute "Better Feeds: Algorithms That Put People First" (<https://kgi.georgetown.edu/wp-content/uploads/2025/02/Better-Feeds_-Algorithms-That-Put-People-First.pdf>)
 
 - **Date:** March 2025
 
@@ -56,7 +56,7 @@ Research compilation for Pattern 2: Content Discovery & Feed Quality
 
 - **Finding:** Preregistered algorithmic audit of Twitter/X found that engagement-based ranking algorithms amplify emotionally charged, out-group hostile political content that users report makes them feel worse. Users do not prefer the political tweets selected by the algorithm, suggesting the algorithm underperforms in satisfying users' stated preferences. Item-level satisfaction surveys correlate with integrity metrics and can improve user retention when used in ranking.
 
-- **Source:** "Engagement, user satisfaction, and the amplification of divisive content on social media" published in PNAS Nexus, Oxford Academic (https://academic.oup.com/pnasnexus/article/4/3/pgaf062/8052060) and PMC (https://pmc.ncbi.nlm.nih.gov/articles/PMC11894805/)
+- **Source:** "Engagement, user satisfaction, and the amplification of divisive content on social media" published in PNAS Nexus, Oxford Academic (<https://academic.oup.com/pnasnexus/article/4/3/pgaf062/8052060>) and PMC (<https://pmc.ncbi.nlm.nih.gov/articles/PMC11894805/>)
 
 - **Date:** 2024-2025
 
@@ -68,7 +68,7 @@ Research compilation for Pattern 2: Content Discovery & Feed Quality
 
 - **Finding:** Two in five Americans currently use TikTok as a search engine. Over 50% of Gen Z and Millennials prefer social media for product discovery, recommendations, and research over traditional search engines. TikTok introduced "Creator Search Insights Tool" in 2024 to help creators optimize for search behavior. Platforms are no longer just for scrolling—they're where consumers look for information.
 
-- **Source:** Sked Social "Social search: How to Optimize for Discoverability on TikTok and Instagram (2025)" (https://skedsocial.com/blog/social-search-how-to-optimize-for-discoverability-on-tiktok-and-instagram-2025/)
+- **Source:** Sked Social "Social search: How to Optimize for Discoverability on TikTok and Instagram (2025)" (<https://skedsocial.com/blog/social-search-how-to-optimize-for-discoverability-on-tiktok-and-instagram-2025/>)
 
 - **Date:** 2024-2025
 
@@ -80,7 +80,7 @@ Research compilation for Pattern 2: Content Discovery & Feed Quality
 
 - **Finding:** TikTok's algorithm overcomes the cold start problem because short videos make it easy for users to watch many at once, providing rich signal about preferences quickly. The UX provides detailed data about every video (watch time, replays, completion rate), allowing the algorithm to learn user preferences rapidly. Additionally, 55% of TikTok users create content, ensuring sufficient content supply even for new users.
 
-- **Source:** Jackson Mohsenin "The algorithm isn't everything: TikTok's virtuous cycle" (https://jmohsenin.com/tiktok-strategy) and Tape Real "6 Strategies to Solve Cold Start Problem in Recommender Systems" (https://web.tapereal.com/blog/6-strategies-to-solve-cold-start-problem-in-recommender-systems/)
+- **Source:** Jackson Mohsenin "The algorithm isn't everything: TikTok's virtuous cycle" (<https://jmohsenin.com/tiktok-strategy>) and Tape Real "6 Strategies to Solve Cold Start Problem in Recommender Systems" (<https://web.tapereal.com/blog/6-strategies-to-solve-cold-start-problem-in-recommender-systems/>)
 
 - **Date:** 2024
 
@@ -92,7 +92,7 @@ Research compilation for Pattern 2: Content Discovery & Feed Quality
 
 - **Finding:** Recent academic research identifies multiple strategies to solve the cold start problem in recommender systems: (1) using social network information from existing platforms, (2) leveraging collaborative filtering based on similar user behavior, (3) hybrid models combining content-based and collaborative filtering, (4) incorporating user demographics and stated preferences, (5) using community detection to identify similar users.
 
-- **Source:** "A social importance and category enhanced cold-start user recommendation system" published in Expert Systems with Applications, ScienceDirect (https://www.sciencedirect.com/science/article/abs/pii/S0957417425007523) and "Recruitment From Social Networks for the Cold Start Problem in Mobile Crowdsourcing," IEEE Internet of Things Journal (https://pureportal.coventry.ac.uk/en/publications/recruitment-from-social-networks-for-the-cold-start-problem-in-mo)
+- **Source:** "A social importance and category enhanced cold-start user recommendation system" published in Expert Systems with Applications, ScienceDirect (<https://www.sciencedirect.com/science/article/abs/pii/S0957417425007523>) and "Recruitment From Social Networks for the Cold Start Problem in Mobile Crowdsourcing," IEEE Internet of Things Journal (<https://pureportal.coventry.ac.uk/en/publications/recruitment-from-social-networks-for-the-cold-start-problem-in-mo>)
 
 - **Date:** 2024
 
@@ -104,7 +104,7 @@ Research compilation for Pattern 2: Content Discovery & Feed Quality
 
 - **Finding:** Instagram uses multiple algorithms for different surfaces: Feed algorithm prioritizes content from close connections, Reels algorithm focuses on entertainment value and gives newcomers viral potential regardless of follower count, and Explore algorithm helps users discover new content using similar signals. Each algorithm optimizes for different user goals (staying connected vs. discovering new content).
 
-- **Source:** Shopify "Instagram Algorithm: How It Works and Tips for 2025" (https://www.shopify.com/blog/instagram-algorithm) and Buffer "How the Instagram Algorithm Works: Your 2025 Guide" (https://buffer.com/library/instagram-feed-algorithm/)
+- **Source:** Shopify "Instagram Algorithm: How It Works and Tips for 2025" (<https://www.shopify.com/blog/instagram-algorithm>) and Buffer "How the Instagram Algorithm Works: Your 2025 Guide" (<https://buffer.com/library/instagram-feed-algorithm/>)
 
 - **Date:** 2024-2025
 
@@ -116,7 +116,7 @@ Research compilation for Pattern 2: Content Discovery & Feed Quality
 
 - **Finding:** TikTok's 2024 algorithm updates include analyzing emotional tone of videos, giving more exposure to positive, supportive, or "feel-good" content. The algorithm rewards content that aligns with specific communities (e.g., #BookTok, #SportsOnTikTok), making them more visible within those groups. TikTok introduced dedicated STEM feed by default late in 2024, contributing to 45% increase in #Science hashtag posts.
 
-- **Source:** Sprout Social "How the TikTok Algorithm Works in 2025" (https://sproutsocial.com/insights/tiktok-algorithm/) and Hootsuite "How does the TikTok algorithm work in 2025?" (https://blog.hootsuite.com/tiktok-algorithm/)
+- **Source:** Sprout Social "How the TikTok Algorithm Works in 2025" (<https://sproutsocial.com/insights/tiktok-algorithm/>) and Hootsuite "How does the TikTok algorithm work in 2025?" (<https://blog.hootsuite.com/tiktok-algorithm/>)
 
 - **Date:** 2024
 
@@ -128,7 +128,7 @@ Research compilation for Pattern 2: Content Discovery & Feed Quality
 
 - **Finding:** Nielsen's 2024 Annual Marketing Report surveying nearly 2,000 global marketers found social media has average ROI 36% higher than all media channels over the past three years. 71% of EMEA marketers view social media as extremely/very effective. Marketers plan to allocate 63% of budgets to digital channels, with social media, search, online video, and digital display as top priorities.
 
-- **Source:** Nielsen "2024 Annual Marketing Report" (https://www.nielsen.com/insights/2024/maximizing-roi-in-a-fragmented-world-nielsen-annual-marketing-report/)
+- **Source:** Nielsen "2024 Annual Marketing Report" (<https://www.nielsen.com/insights/2024/maximizing-roi-in-a-fragmented-world-nielsen-annual-marketing-report/>)
 
 - **Date:** 2024
 
@@ -140,7 +140,7 @@ Research compilation for Pattern 2: Content Discovery & Feed Quality
 
 - **Finding:** Research on social media functionalities finds that algorithmic curation significantly enhances user interaction and is key to retention and active participation. However, it creates a double-edged situation: balancing user experience personalization against risks of creating informational echo chambers. Features like AR filters, ephemeral content, and algorithmic curation all contribute to enhanced engagement.
 
-- **Source:** Research findings discussed in multiple 2024 studies including "Novel Social Media Functionalities and User Behavior" and Encyclopedia MDPI "The Shaping of Social Media Algorithms on User Behavior" (https://encyclopedia.pub/entry/57094)
+- **Source:** Research findings discussed in multiple 2024 studies including "Novel Social Media Functionalities and User Behavior" and Encyclopedia MDPI "The Shaping of Social Media Algorithms on User Behavior" (<https://encyclopedia.pub/entry/57094>)
 
 - **Date:** 2024
 
@@ -158,7 +158,7 @@ The comprehensive Georgetown University report "Better Feeds: Algorithms That Pu
 - Chronological feeds may increase exposure to abuse, amplify untrustworthy content, and create recency bias rewarding "spammy" posting behavior
 - More than 75 bills targeting algorithm design have been introduced in the US since 2023, with over a dozen passing into law
 
-**Source:** https://kgi.georgetown.edu/wp-content/uploads/2025/02/Better-Feeds_-Algorithms-That-Put-People-First.pdf
+**Source:** <https://kgi.georgetown.edu/wp-content/uploads/2025/02/Better-Feeds_-Algorithms-That-Put-People-First.pdf>
 **Date:** March 2025
 
 ---

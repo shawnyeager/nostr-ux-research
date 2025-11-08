@@ -267,6 +267,7 @@ This creates spam resistance and discovery improvement by limiting global feeds 
 **Implementation approaches:**
 
 **Option 1: Interest-Based Onboarding**
+
 ```
 During signup:
 1. "What are you interested in?"
@@ -276,6 +277,7 @@ During signup:
 ```
 
 **Option 2: "Popular Accounts" Recommendation**
+
 ```
 After signup:
 1. Show feed with mix of:
@@ -287,6 +289,7 @@ After signup:
 ```
 
 **Option 3: Import From Other Platforms**
+
 ```
 "Find your Twitter follows on Nostr"
 1. Upload Twitter following list (CSV export)
@@ -327,6 +330,7 @@ After signup:
 **Implementation approaches:**
 
 **Approach 1: Simple Engagement-Based Ranking**
+
 ```typescript
 function calculatePostScore(post: Event): number {
   const age = now() - post.created_at
@@ -342,6 +346,7 @@ function calculatePostScore(post: Event): number {
 ```
 
 **Approach 2: Web of Trust Weighted**
+
 ```typescript
 function getDiscoveryFeed(userPubkey: string): Event[] {
   const following = getFollowing(userPubkey) // Direct follows
@@ -361,6 +366,7 @@ function getDiscoveryFeed(userPubkey: string): Event[] {
 ```
 
 **Approach 3: Multiple Feed Types**
+
 ```
 Tab navigation:
 - "Following" - Chronological from accounts you follow
@@ -407,6 +413,7 @@ Tab navigation:
 **Implementation approaches:**
 
 **Approach 1: Client-Side Trending Calculation**
+
 ```typescript
 async function getTrendingPosts(timeWindow: number = 86400): Promise<Event[]> {
   // Query recent posts from user's relay set
@@ -435,6 +442,7 @@ async function getTrendingPosts(timeWindow: number = 86400): Promise<Event[]> {
 ```
 
 **Approach 2: Relay-Provided Trending**
+
 ```
 Some relays could offer "trending" endpoints:
 - REQ trending {"kinds": [1], "limit": 50, "#trending": ["24h"]}
@@ -452,6 +460,7 @@ Challenges:
 ```
 
 **Approach 3: Hashtag Trending**
+
 ```
 Track most-used hashtags in recent time period:
 
@@ -491,6 +500,7 @@ Trending Hashtags (24h)
 **Implementation approaches:**
 
 **Approach 1: Local Search (Client-Side Index)**
+
 ```
 Client maintains search index of cached content:
 - Index posts user has seen (feed, profile views)
@@ -507,6 +517,7 @@ Limitations:
 ```
 
 **Approach 2: Relay Search (Server-Side Index)**
+
 ```
 Query relays that support search:
 REQ search {
@@ -526,6 +537,7 @@ Challenges:
 ```
 
 **Approach 3: Specialized Search Relays**
+
 ```
 Dedicated relays that aggregate and index content for search:
 - Crawl public relays for content
@@ -537,6 +549,7 @@ Example: nostr.band already does this
 ```
 
 **Approach 4: Search by Type**
+
 ```
 Separate search interfaces:
 - "Search People" - By name, NIP-05, npub (metadata search)
@@ -571,22 +584,26 @@ Reduces scope of each search, makes implementation easier
 **Notification Priority Tiers:**
 
 **Tier 1: Direct Engagement (Always notify)**
+
 - Replies to your posts
 - Mentions (@username)
 - Zaps received
 - Direct messages
 
 **Tier 2: Social Proof (Notify selectively)**
+
 - Likes/reactions on your posts (batch: "10 people liked your post")
 - New follower (batch if many: "5 new followers")
 - Someone you follow replied to a thread you're in
 
 **Tier 3: Discovery (Low priority, user opt-in)**
+
 - "Person you follow just posted"
 - "Trending post in your network"
 - Daily digest: "You missed these posts today"
 
 **Implementation considerations:**
+
 ```typescript
 interface NotificationSettings {
   mentions: 'all' | 'follows-only' | 'off'
@@ -599,6 +616,7 @@ interface NotificationSettings {
 ```
 
 **Batching strategy:**
+
 ```
 Instead of: 10 separate "X liked your post" notifications
 Send: "10 people reacted to your post" (once)
@@ -611,6 +629,7 @@ Batch window: 15 minutes to 1 hour depending on notification type
 Challenge: Nostr has no central push notification server.
 
 **Options:**
+
 1. **Client polling:** App checks for new events periodically (battery drain)
 2. **Push notification relay:** Specialized relay that forwards events to push services
 3. **NIP-46 signer with notifications:** Signer app handles notifications, forwards to client
@@ -629,6 +648,7 @@ Challenge: Nostr has no central push notification server.
 ### Anti-Pattern 1: Empty Feed with "Follow People" Message
 
 **What it looks like:**
+
 ```
 [Empty screen]
 "Your feed is empty! Follow people to see content."

@@ -9,6 +9,7 @@ This directory contains verified evidence files that support the pattern documen
 These are **raw evidence collections** that inform the pattern documents and master bibliography. They represent the source material gathered during research, before being synthesized into the final patterns.
 
 **Distinction:**
+
 - `research/` = Raw evidence files with verified citations
 - `appendices/` = Polished documentation and deep-dive analysis
 - `patterns/` = Final deliverable pattern documents
@@ -20,6 +21,7 @@ These are **raw evidence collections** that inform the pattern documents and mas
 **All findings must have verifiable URLs or be removed.**
 
 Every claim in these files includes:
+
 - Direct quote or specific finding
 - Source URL (must be accessible)
 - Date of publication/access
@@ -34,12 +36,14 @@ This strict policy ensures all research is traceable and verifiable.
 ### Content Discovery Research
 
 **`content-discovery-evidence-2024-2025.md`**
+
 - Nostr-specific content discovery problems
 - 11 findings from 6 distinct verified sources
 - Focus: Retention crisis, cold start problem, discovery mechanisms
 - Evidence of: Empty feeds, poor onboarding, lack of growth loops
 
 **`content-discovery-mainstream-lessons.md`**
+
 - Mainstream platform research for inspiration
 - 12 academic and platform research findings
 - Focus: TikTok, Instagram, Bluesky algorithms
@@ -48,6 +52,7 @@ This strict policy ensures all research is traceable and verifiable.
 ### Performance Research
 
 **`pattern-4-performance-evidence.md`**
+
 - Performance research foundation for Pattern 4
 - 14 distinct verified sources (2022-2025)
 - Focus: User complaints, technical evidence, optimization efforts

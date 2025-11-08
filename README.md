@@ -11,6 +11,7 @@
 Nostr has a working, censorship-resistant protocol. The critical problem is user experience.
 
 **Current metrics:**
+
 - **30-day retention trending to 0%** for recent cohorts
 - **Daily active users stuck at 10,000-12,000** despite viral adoption spikes
 - Users often need **multiple clients** to access different features
@@ -24,6 +25,7 @@ This research study provides evidence-based patterns to fix these critical UX pr
 ## What You'll Find Here
 
 **6 critical UX patterns** backed by 100+ verified sources:
+
 1. **[Onboarding & First-Run Experience](patterns/01-onboarding.md)** - Minimize time-to-first-value
 2. **[Content Discovery & Feed Quality](patterns/02-content-discovery.md)** - Solve the empty feed problem
 3. **[Core Interaction Loops](patterns/03-core-interactions.md)** - Make posting/replying work reliably
@@ -32,6 +34,7 @@ This research study provides evidence-based patterns to fix these critical UX pr
 6. **[Cross-Client Consistency](patterns/06-cross-client-consistency.md)** - Data integrity across apps
 
 Each pattern includes:
+
 - Research-backed problem statement
 - Universal UX principles (70%) + Nostr-specific considerations (30%)
 - Concrete implementation examples
@@ -47,6 +50,7 @@ Each pattern includes:
 → **[Read the complete study](https://nostr-ux.com/docs/get-started/)**
 
 Or jump directly to a specific pattern:
+
 - **[Pattern 1: Onboarding](https://nostr-ux.com/docs/patterns/01-onboarding)** - Get users to value in under 2 minutes
 - **[Pattern 2: Content Discovery](https://nostr-ux.com/docs/patterns/02-content-discovery)** - Solve the empty feed problem
 - **[Pattern 3: Core Interactions](https://nostr-ux.com/docs/patterns/03-core-interactions)** - Make basic actions reliable
@@ -69,6 +73,7 @@ Or jump directly to a specific pattern:
 ## Research Foundation
 
 This study synthesizes:
+
 - Academic HCI research on social media UX, onboarding, feed algorithms
 - Industry design systems (Apple HIG, Material Design)
 - Nostr-specific data (retention metrics from nostr.band, user complaints, GitHub issues)
@@ -104,10 +109,12 @@ Found errors? Have additional research? Implemented these patterns and want to s
 This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 
 You are free to:
+
 - **Share** — copy and redistribute the material in any medium or format
 - **Adapt** — remix, transform, and build upon the material for any purpose, even commercially
 
 Under the following terms:
+
 - **Attribution** — You must give appropriate credit to Shawn Yeager, provide a link to the license, and indicate if changes were made
 
 ---

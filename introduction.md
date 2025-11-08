@@ -26,6 +26,7 @@ This research study provides evidence-based patterns to fix these critical UX pr
 This is **not** a UI kit with pixel-perfect mockups. It's a **pattern language for making better UX decisions** when building Nostr clients.
 
 Based on analysis of:
+
 - Real user retention data from nostr.band
 - 100+ verified sources from academic HCI research, mainstream app case studies, and Nostr-specific data
 - Synthesis of what works in successful social apps (TikTok, Instagram, Bluesky) and what doesn't work in Nostr
@@ -49,12 +50,15 @@ A key challenge in Nostr development has been **shipping features without valida
 Before building anything, ask these three questions:
 
 ### 1. Does this help users accomplish their core goal?
+
 Users come to social apps to **see interesting content** and **connect with people**. Not to configure relays, manage keys, or understand protocols.
 
 If a feature doesn't directly support content discovery, posting, or social connection, it's probably not core functionality.
 
 ### 2. Have we validated this solves a real problem?
+
 "Users might want X" is not validation. Evidence includes:
+
 - **Data:** Retention metrics, session length, completion rates
 - **User feedback:** Direct complaints, support tickets, observed behavior
 - **Research:** Academic findings or mainstream app case studies
@@ -63,7 +67,9 @@ Example: "We think users want 50 relay options" → NO VALIDATION
 vs. "Users complain about missing posts, relay coordination is the cause" → VALIDATED PROBLEM
 
 ### 3. Can we measure if it's working?
+
 If you can't measure it, you can't improve it. Every feature should have:
+
 - **Leading indicators:** Usage rates, adoption, engagement
 - **Lagging indicators:** D1/D7/D30 retention, DAU growth, session length
 - **Qualitative signals:** User feedback, support ticket volume
@@ -71,11 +77,13 @@ If you can't measure it, you can't improve it. Every feature should have:
 **The framework in practice:**
 
 ❌ **Bad decision:** Add signer app (NIP-46) setup to onboarding because "it's more secure"
+
 - Doesn't help core goal (seeing content)
 - No validation users need this in first 5 minutes
 - Can't measure if it improves retention (likely harms it)
 
 ✅ **Good decision:** Implement guest/browse mode so users see content before creating account
+
 - Directly supports core goal (content discovery)
 - Validated by TikTok's success, Nostr's empty feed complaints
 - Measurable: Time-to-first-value, signup conversion rate, D1 retention
@@ -87,36 +95,42 @@ If you can't measure it, you can't improve it. Every feature should have:
 Each pattern addresses a specific, high-impact UX failure in Nostr clients:
 
 ### Pattern 1: Onboarding & First-Run Experience
+
 **Problem:** 15-20 minute setup process, key management overwhelming
 **Impact:** Users abandon before reaching value
 **Core principle:** Minimize time-to-first-value (TikTok shows content immediately), defer complexity
 [Read full pattern →](patterns/01-onboarding.md)
 
 ### Pattern 2: Content Discovery & Feed Quality
+
 **Problem:** "Traditional apps win by having much better content selection"
 **Impact:** Users bounce because feed is boring/empty
 **Core principle:** Solve cold start with smart defaults, discovery mechanisms
 [Read full pattern →](patterns/02-content-discovery.md)
 
 ### Pattern 3: Core Interaction Loops
+
 **Problem:** Posts disappear, notifications missing, basic actions unreliable
 **Impact:** Users lose trust, abandon platform
 **Core principle:** Make posting/replying work reliably before adding features
 [Read full pattern →](patterns/03-core-interactions.md)
 
 ### Pattern 4: Performance & Perceived Speed
+
 **Problem:** Apps hang/buffer, crashes, slow loads
 **Impact:** Users perceive apps as unreliable
 **Core principle:** Optimistic UI and loading states for perceived speed
 [Read full pattern →](patterns/04-performance.md)
 
 ### Pattern 5: Progressive Complexity
+
 **Problem:** Exposing relay management, key signers, NIPs to all users
 **Impact:** Overwhelming, users ignore or leave
 **Core principle:** Hide power features until users need them, smart defaults
 [Read full pattern →](patterns/05-progressive-complexity.md)
 
 ### Pattern 6: Cross-Client Consistency & Data Integrity
+
 **Problem:** "Lost all followers when switching from Primal → Damus → Snort"
 **Impact:** Users don't trust the platform
 **Core principle:** Ensure data integrity across apps, explicit sync status
@@ -126,33 +140,38 @@ Each pattern addresses a specific, high-impact UX failure in Nostr clients:
 
 ## Where to Start: Choose Your Path
 
-### If you're building a new Nostr client:
+### If you're building a new Nostr client
+
 1. Read [The Validation Framework](#the-validation-framework-build-features-that-solve-real-problems) (above)
 2. Start with [Pattern 1: Onboarding](patterns/01-onboarding.md) and [Pattern 2: Content Discovery](patterns/02-content-discovery.md)
 3. Use the [Quick Reference Guide](quick-reference.md) to scan all 6 patterns
 4. Implement core interactions (Pattern 3) before adding advanced features
 
-### If you have an existing Nostr client:
+### If you have an existing Nostr client
+
 1. Audit your app using the [Quick Reference Guide](quick-reference.md) validation checklists
 2. Measure your D1/D7/D30 retention (if you're not tracking this, start now)
 3. Identify your biggest retention drop-off point
 4. Deep-dive the relevant pattern(s) and implement recommendations
 5. **Measure** if it improved retention before moving to the next pattern
 
-### If you're a designer:
+### If you're a designer
+
 1. Read [The Validation Framework](#the-validation-framework-build-features-that-solve-real-problems)
 2. Review [Pattern 1: Onboarding](patterns/01-onboarding.md) and [Pattern 5: Progressive Complexity](patterns/05-progressive-complexity.md)
 3. Study the case studies in [Pattern 2: Content Discovery](patterns/02-content-discovery.md) (TikTok, Bluesky)
 4. Reference [Appendices: Methodology](appendices/methodology.md) for research approach
 
-### If you're a mainstream developer evaluating Nostr:
+### If you're a mainstream developer evaluating Nostr
+
 1. Read this introduction
 2. Scan the [Quick Reference Guide](quick-reference.md) to understand the 6 patterns
 3. Deep-dive [Pattern 3: Core Interactions](patterns/03-core-interactions.md) to see Nostr-specific challenges
 4. Review [Pattern 6: Cross-Client Consistency](patterns/06-cross-client-consistency.md) for multi-relay implications
 5. Check [Appendices: References](appendices/references.md) for academic grounding
 
-### If you're short on time:
+### If you're short on time
+
 1. Read [Quick Reference Guide](quick-reference.md) (6 patterns in ~10 minutes)
 2. Pick the pattern most relevant to your current challenges
 3. Implement the Top 3 Recommendations
@@ -206,6 +225,7 @@ The 6 patterns in this study build that gateway. Reliable posting, engaging feed
 ## Acknowledgments
 
 This research builds on:
+
 - The Nostr Design community (nostrdesign.org) for identifying core UX gaps
 - Academic HCI research on social media UX, onboarding, and feed algorithms
 - Mainstream app case studies (TikTok, Instagram, Bluesky, Discord)

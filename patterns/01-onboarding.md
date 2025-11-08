@@ -19,6 +19,7 @@ Onboarding is the critical gate between curiosity and engagement. If users can't
 Users abandon before reaching their "aha moment" - that first experience of value that makes them want to return. Every minute of friction in onboarding is a decision point where users can leave. Crypto-native early adopters might tolerate this complexity, but mainstream users won't.
 
 **Root Causes:**
+
 1. **Protocol complexity exposed upfront:** Relay selection, key generation, and NIPs terminology shown to beginners
 2. **No progressive disclosure:** Everything required immediately rather than deferred
 3. **Cold start problem unsolved:** Empty feeds after signup with no content discovery
@@ -66,6 +67,7 @@ These principles apply to any social application, not just Nostr.
 **Principle:** Only ask for information or decisions that are absolutely necessary for the first experience. Everything else can wait.
 
 **The friction ladder:**
+
 ```
 Low friction:    Browse without account
                  ↓
@@ -98,6 +100,7 @@ Highest:         Advanced configuration (power user features)
 **Principle:** Start with the lowest possible commitment, then gradually increase investment as users see value.
 
 **Commitment levels:**
+
 1. **Zero commitment:** Browse, explore (no account)
 2. **Low commitment:** Create account (minimal info)
 3. **Medium commitment:** Customize profile
@@ -276,6 +279,7 @@ Unlike Twitter/Facebook/Instagram, Nostr identities are portable. Your keypair w
 
 **The Onboarding Challenge:**
 This portability means:
+
 - Users don't understand why they need to "create an account" if identity is portable
 - Key management is critical (no reset = permanent loss)
 - Cross-client consistency expectations are higher
@@ -397,6 +401,7 @@ Nostr's decentralization is a feature, but content discovery suffers. Algorithmi
 **Description:** Introduce key concepts progressively with context, not all at once.
 
 **Bad flow:**
+
 ```
 1. Welcome to Nostr!
 2. Here's your private key: nsec1abc123def456...
@@ -405,6 +410,7 @@ Nostr's decentralization is a feature, but content discovery suffers. Algorithmi
 ```
 
 **Good flow:**
+
 ```
 1. Welcome! Let's create your account.
 2. [Generate keypair in background]
@@ -479,6 +485,7 @@ Nostr's decentralization is a feature, but content discovery suffers. Algorithmi
 **Description:** Solve cold start by suggesting follows based on user interests.
 
 **Implementation:**
+
 ```
 1. "What are you interested in?" (select topics)
    [ ] Bitcoin  [ ] Art  [ ] Technology  [ ] Nostr Development  [ ] Memes
@@ -519,6 +526,7 @@ Nostr's decentralization is a feature, but content discovery suffers. Algorithmi
 **Description:** Guide users to post something successfully and see immediate feedback.
 
 **Implementation:**
+
 ```
 1. After signup: "Share your first post!"
 2. Composition UI with helpful prompt: "Introduce yourself or share what brought you to Nostr"
@@ -554,6 +562,7 @@ Nostr's decentralization is a feature, but content discovery suffers. Algorithmi
 **Description:** Break onboarding into clear steps with satisfying completion.
 
 **Implementation:**
+
 ```
 Getting Started (3/5 completed)
 ✅ Create account
@@ -597,6 +606,7 @@ Getting Started (3/5 completed)
 ### Anti-Pattern 1: Show Private Key Immediately
 
 **What it looks like:**
+
 ```
 Welcome to Nostr!
 Your private key: nsec1qpzqgr3qg7v6p...
@@ -615,6 +625,7 @@ Your private key: nsec1qpzqgr3qg7v6p...
 ### Anti-Pattern 2: Relay Picker During Signup
 
 **What it looks like:**
+
 ```
 Choose your relays:
 [ ] wss://relay.damus.io
@@ -636,6 +647,7 @@ Choose your relays:
 ### Anti-Pattern 3: Empty Feed After Signup
 
 **What it looks like:**
+
 ```
 [Empty timeline]
 "Follow people to see content!"
@@ -653,6 +665,7 @@ Choose your relays:
 ### Anti-Pattern 4: Require Signer App for Onboarding
 
 **What it looks like:**
+
 ```
 1. Download Nostr Signer app
 2. Generate key in signer
@@ -674,6 +687,7 @@ Choose your relays:
 ### Anti-Pattern 5: Feature Tour Before Usage
 
 **What it looks like:**
+
 ```
 [5-screen carousel]
 "Welcome to Nostr! Swipe to learn about..."
@@ -696,6 +710,7 @@ Screen 5: Now you're ready!
 ### Anti-Pattern 6: Require Complete Profile Before Access
 
 **What it looks like:**
+
 ```
 Create your profile:
 - Username (required)
@@ -719,6 +734,7 @@ Create your profile:
 ### Anti-Pattern 7: Technical Jargon in Onboarding
 
 **What it looks like:**
+
 ```
 "Configure your NIP-65 relay list metadata"
 "Choose read/write relay split strategy"
@@ -836,6 +852,7 @@ Create your profile:
 ## Implementation Roadmap
 
 ### Phase 1: Quick Wins (1-2 weeks)
+
 - [ ] Add smart default relays (remove relay picker from onboarding)
 - [ ] Implement default follows (curated list by interest)
 - [ ] Defer key exposure (show after first post)
@@ -844,6 +861,7 @@ Create your profile:
 **Expected impact:** Reduce time-to-first-post by 50%, improve D1 retention
 
 ### Phase 2: Core Experience (2-4 weeks)
+
 - [ ] Build guest/browse mode
 - [ ] Create first post success flow with optimistic UI
 - [ ] Implement gradual key education
@@ -852,6 +870,7 @@ Create your profile:
 **Expected impact:** Improve D7 retention, reduce abandonment
 
 ### Phase 3: Refinement (4-6 weeks)
+
 - [ ] A/B test onboarding variations
 - [ ] User research on remaining friction points
 - [ ] Iterate based on data
@@ -860,6 +879,7 @@ Create your profile:
 **Expected impact:** Sustained retention improvement
 
 ### Phase 4: Advanced (6+ weeks)
+
 - [ ] Optional signer app integration
 - [ ] Advanced relay configuration (for power users)
 - [ ] Cross-client import flow
@@ -945,90 +965,112 @@ Interest-based follow suggestions, pre-populated feed
 ## Citations & Sources
 
 ### Data Sources
-[[Data:1]](#data-1) Nostr.band analytics showing 30-day retention trends - https://nostr.band/stats (Accessed November 2025)
 
-[[Data:3]](#data-3) Andreessen Horowitz (a16z) - Social App Retention Benchmarks (March 2023) - https://a16z.com/do-you-have-lightning-in-a-bottle-how-to-benchmark-your-social-app/
+[[Data:1]](#data-1) Nostr.band analytics showing 30-day retention trends - <https://nostr.band/stats> (Accessed November 2025)
+
+[[Data:3]](#data-3) Andreessen Horowitz (a16z) - Social App Retention Benchmarks (March 2023) - <https://a16z.com/do-you-have-lightning-in-a-bottle-how-to-benchmark-your-social-app/>
+
 - OK: D1: 50%, D7: 35%, D30: 20%
 - Good: D1: 60%, D7: 40%, D30: 25%
 - Great: D1: 70%, D7: 50%, D30: 30%
 
-[[Data:4]](#data-4) AppsFlyer - Mobile App Retention Benchmarks (2024) - https://www.appsflyer.com/resources/reports/app-retention-benchmarks/
+[[Data:4]](#data-4) AppsFlyer - Mobile App Retention Benchmarks (2024) - <https://www.appsflyer.com/resources/reports/app-retention-benchmarks/>
+
 - Social media apps: D1: 26.3%, D7: 9.3%, D30: 3.11%
 
 ### Research & UX Principles
+
 [[Research:1]](#research-1) Time to First Value (TTFV) in Product Onboarding
+
 - Multiple industry sources (UserGuiding, Sixteenventures, MarTech)
 - Key finding: 40% of users abandon products after first interaction if experience isn't seamless
-- URLs: https://sixteenventures.com/customer-onboarding-ttfv
+- URLs: <https://sixteenventures.com/customer-onboarding-ttfv>
 
 [[Research:2]](#research-2) Nielsen, J. (1995). Progressive Disclosure. Nielsen Norman Group.
-- URL: https://www.nngroup.com/articles/progressive-disclosure/
+
+- URL: <https://www.nngroup.com/articles/progressive-disclosure/>
 - Improves learnability, efficiency, and error rate
 
 [[Research:3]](#research-3) Cialdini, R. B. (2006). *Influence: Science and Practice* (5th ed.). Pearson Education.
-- Applied by Kate Moran (Nielsen Norman Group): https://www.nngroup.com/articles/commitment-consistency-ux/
+
+- Applied by Kate Moran (Nielsen Norman Group): <https://www.nngroup.com/articles/commitment-consistency-ux/>
 - Principle: Small commitments build to larger ones
 
 ### Examples & Case Studies
+
 [[Example:1]](#example-1) TikTok Onboarding Analysis
+
 - Multiple sources: Appcues, UX Planet, Medium
 - Key pattern: No-signup browsing, immediate value (<10 seconds)
-- URL: https://goodux.appcues.com/blog/tiktok-user-onboarding
+- URL: <https://goodux.appcues.com/blog/tiktok-user-onboarding>
 
 [[Example:2]](#example-2) Samuel Hulick - User Onboarding Philosophy
+
 - UserOnboard.com, Heavybit, Intercom interviews
 - Quote: "The single biggest mistake is not focusing on delivering value to users"
-- URL: https://www.heavybit.com/library/article/samuel-hulick-elements-of-user-onboarding
+- URL: <https://www.heavybit.com/library/article/samuel-hulick-elements-of-user-onboarding>
 
 [[Example:3]](#example-3) Instagram Onboarding Flow
+
 - Interest-based follow suggestions, pre-populated feed
 - Minimum 8 clicks before viewing first content (contrast with TikTok)
 
 ### Protocol Documentation
-[[Protocol:3]](#protocol-3) NIP-46: Nostr Connect - https://github.com/nostr-protocol/nips/blob/master/46.md
-[[Protocol:4]](#protocol-4) NIP-65: Relay List Metadata - https://github.com/nostr-protocol/nips/blob/master/65.md
-[[Protocol:7]](#protocol-7) Nostr Design community resources - https://nostrdesign.org/
+
+[[Protocol:3]](#protocol-3) NIP-46: Nostr Connect - <https://github.com/nostr-protocol/nips/blob/master/46.md>
+[[Protocol:4]](#protocol-4) NIP-65: Relay List Metadata - <https://github.com/nostr-protocol/nips/blob/master/65.md>
+[[Protocol:7]](#protocol-7) Nostr Design community resources - <https://nostrdesign.org/>
 
 ### User Feedback (All 2024-2025)
+
 [[User:11]](#user-11) Stacker News discussion - "After 15-20 minutes of messing around, I was able to create a NOSTR account"
-- URL: https://stacker.news/items/222205
+
+- URL: <https://stacker.news/items/222205>
 - Date: 2024
 
 [[User:12]](#user-12) Iris FAQ - "If you lose the private key the account is lost forever"
-- URL: https://github.com/irislib/faq
+
+- URL: <https://github.com/irislib/faq>
 - Date: Current documentation
 
 [[User:15]](#user-15) "The State of Nostr Clients" analysis
+
 - Quote: "Traditional apps win by having much better content selection"
 - Quantitative data: DAU stuck at 10-12k, users need 5-6 clients
 - Date: March 2024
 
 [[User:16]](#user-16) Jack Dorsey interview (May 2024)
+
 - Quote: "Nostr is weird and hard to use"
 - Multiple news outlets: Washington Post, TechTimes, Engadget
 
 [[User:17]](#user-17) "Managing Nostr Keys and Signing Devices" - Key management remains blocker
-- URL: https://onnostr.substack.com/p/managing-nostr-keys-and-signing-devices
+
+- URL: <https://onnostr.substack.com/p/managing-nostr-keys-and-signing-devices>
 - Date: March 2025
 - Quote: "A protocol based entirely on public/private key pairs cannot gain traction if people are burning their accounts by accident"
 
 [[User:18]](#user-18) Nostr Design - Onboarding guidance published
-- URL: https://nostrdesign.org/docs/reference-designs/onboarding/
+
+- URL: <https://nostrdesign.org/docs/reference-designs/onboarding/>
 - Date: 2024
 - Quote: Relay selection is "high friction" that should be minimized during onboarding
 
 [[User:19]](#user-19) Damus GitHub Issue #2642 - Onboarding improvements tracker
-- URL: https://github.com/damus-io/damus/issues/2642
+
+- URL: <https://github.com/damus-io/damus/issues/2642>
 - Date: Opened Nov 2024, last updated Feb 2025 (ACTIVE)
 - Status: Still open, showing onboarding is ongoing problem
 
 [[User:20]](#user-20) Damus GitHub Issue #3207 - Remove 'Create Account' step
-- URL: https://github.com/damus-io/damus/issues/3207
+
+- URL: <https://github.com/damus-io/damus/issues/3207>
 - Date: August 2025
 - Quote: Account creation step being considered for removal due to friction
 
 [[User:21]](#user-21) Nstart Onboarding Tool creation
-- URL: https://start.njump.me
+
+- URL: <https://start.njump.me>
 - Date: February 2025
 - Context: Standalone tool created because client-level onboarding is too complex
 

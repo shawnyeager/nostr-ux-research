@@ -18,13 +18,16 @@ This file provides guidance to Claude Code when working with this Nostr UX resea
 ## Project Goals & Context
 
 ### Primary Goal
+
 Help existing Nostr developers improve their UX, while being useful enough for mainstream developers to understand Nostr app development.
 
 ### Target Frustrations Being Addressed
+
 1. **Naive feature bloat:** Piling on features without user validation
 2. **Protocol purism:** Thinking that protocol purity will somehow win when the UX is poor
 
 ### Success Criteria
+
 We'll know this is valuable based on **the discussion it generates on Nostr** itself.
 
 ---
@@ -32,26 +35,31 @@ We'll know this is valuable based on **the discussion it generates on Nostr** it
 ## Scope & Approach (From Initial Interview)
 
 ### Depth vs Breadth
+
 - **Deep dive on 5-7 critical patterns** (not broad coverage of 15-20)
 - Patterns chosen based on research of Nostr apps' typical weaknesses
 - Each pattern: thorough treatment with examples, anti-patterns, validation
 
 ### Content Balance
+
 - **70%:** Universal social app UX principles (applicable to any platform)
 - **30%:** Nostr-specific considerations (relays, keys, zaps, censorship-resistance)
 
 ### Audience Profile
+
 - **Mix:** Mobile developers (iOS/Android) + Web developers (React, Vue, etc.)
 - **Level:** Mid to senior developers (junior devs have bigger problems)
 - **Nostr Knowledge:** Assume they know basics of Nostr protocols
 
 ### Tone & Style
+
 - **Balanced:** Principles + rationale (not purely academic, not purely prescriptive)
 - Evidence-based with citations where useful
 - Opinionated where it helps ("just do this" when appropriate)
 - Practical over theoretical
 
 ### Length Target
+
 "Just make it good" - no specific page count constraints
 
 ---
@@ -61,24 +69,28 @@ We'll know this is valuable based on **the discussion it generates on Nostr** it
 ### Primary Issues Identified
 
 **Retention Crisis:**
+
 - 30-day retention trends to 0% for recent cohorts
 - Daily active users stuck at 10,000-12,000 "trusted" pubkeys
 - Users need 5-6 different clients to work around bugs
 - All apps described as "alpha state"
 
 **Onboarding Failure:**
+
 - 15-20 minute setup process
 - Key management overwhelming and terrifying (loss = permanent identity loss)
 - Relay selection too complex for new users
 - Users abandon before reaching value
 
 **Content Discovery Problems:**
+
 - "Traditional apps win by having much better content selection"
 - Cold start problem: empty feeds after signup
 - No effective discovery mechanisms
 - Chicken/egg: need users for content, need content for users
 
 **Core Reliability Issues:**
+
 - Posts disappearing seconds after posting
 - Cross-client data loss (following/followers disappear when switching apps)
 - Missing notifications
@@ -86,17 +98,20 @@ We'll know this is valuable based on **the discussion it generates on Nostr** it
 - Crashes and performance problems
 
 **Complexity Exposure:**
+
 - Protocol complexity exposed to end users
 - Relay management shown to beginners
 - Signer setup (NIP-46) too complex for onboarding
 - Tech jargon in user-facing UI
 
 **No Growth Loops:**
+
 - No email invites
 - Users not notified when tagged
 - No habit formation triggers
 
 ### Root Causes
+
 - Feature bloat without validating core UX works
 - Protocol complexity exposed to end users
 - Shipping features before core interactions are reliable
@@ -139,7 +154,9 @@ Based on research findings, these patterns address the highest-impact UX problem
 ## Structure & Format
 
 ### Pattern Documentation Structure
+
 Each pattern follows this format:
+
 1. **Problem Statement** (research-backed)
 2. **Universal Principles** (70% - applicable to any social app)
 3. **Nostr-Specific Considerations** (30%)
@@ -148,12 +165,14 @@ Each pattern follows this format:
 6. **Validation Checklist** (how to measure if it's working)
 
 ### Key Sections
+
 - **Part 0:** Introduction, context, and the Validation Framework (meta-pattern)
 - **Parts 1-6:** The 6 critical patterns
 - **Part 7:** Implementation guide (where to start, how to measure, common traps)
 - **Part 8:** Appendices (case studies, resources, glossary, methodology)
 
 ### Delivery Format
+
 - **Primary:** GitHub repository (markdown)
 - Each pattern = detailed markdown file
 - Code examples where relevant
@@ -161,6 +180,7 @@ Each pattern follows this format:
 - Links to reference implementations
 
 **Supplementary:**
+
 - Summary version (TL;DR for each pattern)
 - Discussion thread on Nostr
 - Video walkthrough (optional)
@@ -172,17 +192,20 @@ Each pattern follows this format:
 A central theme woven throughout all patterns to address "features without validation" problem.
 
 **The Three-Question Filter:**
+
 1. Does this help users accomplish their core goal?
 2. Have we validated this solves a real problem?
 3. Can we measure if it's working?
 
 **Principles:**
+
 - Evidence-based design: Metrics that matter for social apps
 - When to ship vs when to validate first
 - Ship small, validate fast
 - Core interactions before new features
 
 **Common Traps to Avoid:**
+
 - "We need feature X because competitor has it"
 - "Protocol purity over pragmatic UX"
 - "Power users will configure it themselves"
@@ -193,6 +216,7 @@ A central theme woven throughout all patterns to address "features without valid
 ## Development Workflow
 
 ### File Organization
+
 ```
 nostr-ux-research/
 ├── CLAUDE.md              # This file
@@ -222,6 +246,7 @@ nostr-ux-research/
 ### Project Status
 
 **Completed:**
+
 1. ✅ All 6 pattern documents complete (900-1900 lines each)
 2. ✅ Research evidence files with verified citations (URL-only policy enforced)
 3. ✅ README.md created
@@ -229,12 +254,14 @@ nostr-ux-research/
 5. ✅ All files committed and pushed to GitHub
 
 **Current Phase: Cleanup & Organization**
+
 - Refining citation quality across all documents
 - Auditing relationship between pattern files and research files
 - Reviewing file organization and naming for clarity
 - Closing citation gaps or removing placeholders
 
 ### Git Workflow
+
 - **Branch:** master (or main, depending on repo setup)
 - **Commit style:** Descriptive messages explaining changes
 - **Push policy:** NEVER push without explicit permission ("ship it" or direct request)
@@ -244,6 +271,7 @@ nostr-ux-research/
 ## Research Sources & Methodology
 
 ### Sources Used
+
 - Web research on Nostr client UX problems (2024-2025)
 - User complaints and feedback (Damus, Amethyst, Primal, Snort)
 - Nostr Design website (nostrdesign.org)
@@ -251,6 +279,7 @@ nostr-ux-research/
 - Retention and usage data (nostr.band)
 
 ### What Still Needs Research
+
 - Academic HCI literature on social media UX
 - Industry design systems (Apple HIG, Material Design)
 - Detailed audit of 10-15 popular Nostr clients
@@ -263,6 +292,7 @@ nostr-ux-research/
 ## Writing Guidelines
 
 ### Voice & Tone
+
 - Direct and practical
 - Balanced (not preachy, not academic)
 - Opinionated where it helps decision-making
@@ -270,6 +300,7 @@ nostr-ux-research/
 - Respectful of Nostr developers' work while being honest about problems
 
 ### What to Emphasize
+
 - **Pragmatism over purity:** UX wins matter more than protocol elegance
 - **Validation before features:** Measure, don't guess
 - **User empathy:** Think like a mainstream user, not a power user
@@ -277,6 +308,7 @@ nostr-ux-research/
 - **Anti-patterns:** Learn from what doesn't work
 
 ### What to Avoid
+
 - Condescension toward Nostr developers
 - Pure theory without practical application
 - Feature checklists without rationale
@@ -331,17 +363,20 @@ Based on CLAUDE.md patterns from other repos:
 ## Success Metrics (How We'll Know This Works)
 
 ### Short-term (0-3 months)
+
 - Generates substantive discussion on Nostr
 - Developers reference it in client changelogs
 - Nostr Design website links to it
 - Other researchers/designers cite it
 
 ### Medium-term (3-6 months)
+
 - Measurable UX improvements in Nostr clients
 - Cross-client coordination on core patterns emerges
 - New clients launch using these principles
 
 ### Long-term (6-12 months)
+
 - Retention metrics improve across ecosystem
 - User complaints shift from "UX is broken" to feature requests
 - Mainstream developers start building on Nostr
@@ -351,6 +386,7 @@ Based on CLAUDE.md patterns from other repos:
 ## Current State Summary
 
 **Major Milestones Completed:**
+
 - 6 complete pattern documents (01-06, ranging from 900-1900 lines each)
 - 3 research evidence files with verified URL-only citations
 - README.md, OUTLINE.md, CLAUDE.md all complete
@@ -358,6 +394,7 @@ Based on CLAUDE.md patterns from other repos:
 - Multiple rounds of citation verification and cleanup
 
 **Recent Work (November 2025):**
+
 - Citation audit: Verified all sources have URLs, removed unverifiable claims
 - Fixed date errors across research files
 - Moved and renamed files for clarity (content-discovery-mainstream-lessons.md)
@@ -368,6 +405,7 @@ Based on CLAUDE.md patterns from other repos:
 - Removed outdated research-notes.md working document
 
 **Current Focus:**
+
 - Final cleanup and organization refinement
 - Resolving citation gaps in pattern documents
 - Clarifying relationship between pattern files (definitive) and research files (supporting)
