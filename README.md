@@ -19,7 +19,7 @@ This research study exists to change that.
 ## What You'll Find Here
 
 **6 critical UX patterns** backed by 100+ verified sources:
-1. **[Onboarding & First-Run Experience](patterns/01-onboarding.md)** - Get to value in <2 minutes
+1. **[Onboarding & First-Run Experience](patterns/01-onboarding.md)** - Minimize time-to-first-value
 2. **[Content Discovery & Feed Quality](patterns/02-content-discovery.md)** - Solve the empty feed problem
 3. **[Core Interaction Loops](patterns/03-core-interactions.md)** - Make posting/replying work reliably
 4. **[Performance & Perceived Speed](patterns/04-performance.md)** - Optimistic UI and loading states
@@ -80,7 +80,7 @@ Each pattern includes:
 ### Pattern 1: Onboarding & First-Run Experience
 **Problem:** 15-20 minute setup, key management overwhelming
 **Impact:** Users abandon before reaching value
-**Solution:** Time-to-value <2 minutes, defer complexity, browse-first approach
+**Solution:** Minimize time-to-first-value, defer complexity, browse-first approach
 → **[Read Pattern 1](patterns/01-onboarding.md)**
 
 ### Pattern 2: Content Discovery & Feed Quality

@@ -36,7 +36,7 @@ Scan this guide in ~10 minutes to understand the critical issues. Then deep-dive
 
 ### Validation Checklist
 
-- [ ] Time-to-first-value measured (target: <2 minutes)
+- [ ] Time-to-first-value measured (under 30 seconds ideal)
 - [ ] Signup completion rate tracked (baseline, then improve)
 - [ ] D1, D7, D30 retention measured
 - [ ] User research: Where do people drop off in onboarding?
@@ -119,7 +119,7 @@ Posts disappear, notifications missing, basic actions unreliable - users lose tr
 
 ### Validation Checklist
 
-- [ ] Post success rate measured (target: >95% to at least one relay)
+- [ ] Post success rate measured and optimized
 - [ ] Time-to-publish tracked (user perception)
 - [ ] Error rates and recovery success measured
 - [ ] User feedback: "Does posting feel reliable?" (qualitative)
@@ -144,7 +144,7 @@ Apps hang/buffer/crash - users perceive Nostr clients as broken compared to main
 
 **2. Set Performance Budgets**
 - Initial bundle: <250KB gzipped for fast 3G
-- Time-to-interactive: <3 seconds (5+ seconds = 90% bounce rate)
+- Page load time: Under 3 seconds (53% of mobile users abandon at >3 seconds)
 - React within 100ms to all user inputs (even if backend is slow)
 
 **3. Implement Smart Caching**
@@ -160,7 +160,7 @@ Apps hang/buffer/crash - users perceive Nostr clients as broken compared to main
 
 ### Validation Checklist
 
-- [ ] Time-to-interactive measured (target: <3 seconds)
+- [ ] Initial load time measured (under 3 seconds to avoid abandonment)
 - [ ] Relay response times tracked (timeout slow relays)
 - [ ] Error/timeout rates monitored
 - [ ] Memory usage profiled (prevent leaks from unclosed subscriptions)
@@ -243,7 +243,7 @@ Exposing relay management, key signers (NIP-46), and protocol details to all use
 ### Validation Checklist
 
 - [ ] Data loss incidents tracked (user reports, automated detection)
-- [ ] Event propagation success rate measured (target: >95% to configured relays)
+- [ ] Event propagation success rate measured across configured relays
 - [ ] Cross-client compatibility tested (follow list, profile updates)
 - [ ] User feedback: "Do you trust your data is safe?"
 - [ ] Sync conflict frequency measured

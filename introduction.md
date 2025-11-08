@@ -79,7 +79,7 @@ Each pattern addresses a specific, high-impact UX failure in Nostr clients:
 ### Pattern 1: Onboarding & First-Run Experience
 **Problem:** 15-20 minute setup process, key management overwhelming
 **Impact:** Users abandon before reaching value
-**Core principle:** Get to "aha moment" in <2 minutes, defer complexity
+**Core principle:** Minimize time-to-first-value (TikTok shows content immediately), defer complexity
 [Read full pattern →](patterns/01-onboarding.md)
 
 ### Pattern 2: Content Discovery & Feed Quality
@@ -172,7 +172,7 @@ If Nostr clients can match mainstream apps on UX fundamentals while delivering o
 
 **Medium-term (3-6 months):**
 - Measurable improvements in D1/D7/D30 retention across Nostr clients
-- New clients launch with onboarding <2 minutes, working discovery mechanisms
+- New clients launch with immediate time-to-value onboarding, working discovery mechanisms
 - User complaints shift from "UX is broken" to feature requests
 
 **Long-term (6-12 months):**

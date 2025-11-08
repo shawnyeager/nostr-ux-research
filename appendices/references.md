@@ -560,9 +560,16 @@ Citations in pattern documents use this format:
 
 ### Progressive Complexity & Feature Discovery
 
-**[Research:12]** The 80/20 Rule in Feature Usage
-- **Citation:** [Product design research - to be found]
+**[Research:12]** The 80/20 Rule in Feature Usage (Pareto Principle)
+- **Citation:** Interaction Design Foundation, Think.Design
+- **URLs:**
+  - https://www.interaction-design.org/literature/topics/pareto-principle
+  - https://think.design/blog/the-pareto-principle-in-ux/
+  - https://lawsofux.com/pareto-principle/
+  - https://www.cursorup.com/blog/the-pareto-principle
+- **Date:** Updated September 2025 (IDF), December 2024 (Think.Design)
 - **Key finding:** 80% of users use only 20% of features
+- **Application:** Focus on 20% of design decisions that drive 80% of impact, design for majority first
 - **Relevance:** Pattern 5 (Progressive Complexity)
 
 **[Research:13]** Settings Hierarchy and Configuration Burden
