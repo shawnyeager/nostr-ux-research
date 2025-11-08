@@ -2,8 +2,8 @@
   <!-- Background -->
   <rect width="1200" height="630" fill="#8e30eb"/>
 
-  <!-- Logo squircle - centered at 600, 265 -->
-  <rect x="450" y="115" width="300" height="300" rx="60" fill="rgba(255,255,255,0.15)"/>
+  <!-- Logo squircle - same color as logo.svg, centered at 600, 265 -->
+  <rect x="450" y="115" width="300" height="300" rx="60" fill="#8e30eb"/>
 
   <!-- N - properly centered in the squircle -->
   <g transform="translate(600, 265)">
