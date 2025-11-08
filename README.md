@@ -41,7 +41,7 @@ Based on research into Nostr apps' typical weaknesses, this study focuses on:
 2. **[Content Discovery & Feed Quality](patterns/02-content-discovery.md)** ✅ - Solve the cold start problem
 3. **[Core Interaction Loops](patterns/03-core-interactions.md)** ✅ - Make posting/replying/reacting work perfectly
 4. **[Performance & Perceived Speed](patterns/04-performance.md)** ✅ - Optimistic UI, loading states, reliability
-5. **Progressive Complexity** 🚧 - Reveal power features gradually (relays, signers)
+5. **[Progressive Complexity](patterns/05-progressive-complexity.md)** ✅ - Reveal power features gradually (relays, signers)
 6. **Cross-Client Consistency** 🚧 - Following/follower sync, data integrity
 
 Each pattern includes:
@@ -75,7 +75,7 @@ A meta-pattern addressing "features without validation" problem.
 2. **[Pattern 2: Content Discovery & Feed Quality](patterns/02-content-discovery.md)** ✅ Complete
 3. **[Pattern 3: Core Interaction Loops](patterns/03-core-interactions.md)** ✅ Complete
 4. **[Pattern 4: Performance & Perceived Speed](patterns/04-performance.md)** ✅ Complete with 35+ 2024-2025 citations
-5. Pattern 5: Progressive Complexity 🚧 Coming soon
+5. **[Pattern 5: Progressive Complexity](patterns/05-progressive-complexity.md)** ✅ Complete with 12+ 2024-2025 citations
 6. Pattern 6: Cross-Client Consistency 🚧 Coming soon
 
 ### Supporting Materials
@@ -124,9 +124,10 @@ This balance makes the research valuable for both existing Nostr developers and 
 - [x] [Pattern 2: Content Discovery & Feed Quality](patterns/02-content-discovery.md) - Complete with 67+ 2024-2025 citations
 - [x] [Pattern 3: Core Interaction Loops](patterns/03-core-interactions.md) - Complete with 30+ 2024-2025 citations from Nostr-specific sources and UX research
 - [x] [Pattern 4: Performance & Perceived Speed](patterns/04-performance.md) - Complete with 35+ 2024-2025 citations, includes critical March 2024 Core Web Vitals update (INP replaced FID)
+- [x] [Pattern 5: Progressive Complexity](patterns/05-progressive-complexity.md) - Complete with 12+ 2024-2025 citations, includes Pareto principle, progressive disclosure, contextual help, smart defaults, and 5 code pattern examples
 
 **Current Work:**
-- [ ] Patterns 5-6 - Detailed documentation
+- [ ] Pattern 6: Cross-Client Consistency - Detailed documentation
 - [ ] Case studies from mainstream apps
 - [ ] Validation framework
 - [ ] Implementation guide
