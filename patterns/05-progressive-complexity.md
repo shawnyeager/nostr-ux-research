@@ -23,11 +23,11 @@
 ### Current State
 
 **Overwhelming complexity killing adoption:**
-- [[User:12]](#user-12) New users exposed to relay selection, key management, and NIP configurations immediately during onboarding
-- [[Data:28]](#data-28) Nostr clients showing 50+ relay pickers, signer app setup (NIP-46), and read/write relay splits before users understand basic posting
-- [[Data:29]](#data-29) Settings pages with technical jargon: "Outbox model (NIP-65)", "Relay list metadata", "Event signature verification"
-- [[User:13]](#user-13) Users report feeling "overwhelmed" and "confused" by protocol complexity exposed in UI
-- [[Data:30]](#data-30) Power user features (relay health indicators, custom feeds, mute lists) presented as essential setup steps
+- New users exposed to relay selection, key management, and NIP configurations immediately during onboarding
+- Nostr clients showing 50+ relay pickers, signer app setup (NIP-46), and read/write relay splits before users understand basic posting
+- Settings pages with technical jargon: "Outbox model (NIP-65)", "Relay list metadata", "Event signature verification"
+- Users report feeling "overwhelmed" and "confused" by protocol complexity exposed in UI
+- Power user features (relay health indicators, custom feeds, mute lists) presented as essential setup steps
 
 **The perception problem:**
 Nostr apps feel like developer tools, not consumer apps. Users compare to Twitter/Instagram's "it just works" simplicity and abandon when faced with:
@@ -284,7 +284,7 @@ Great UX isn't about hiding features—it's about organizing them so users can f
 **The problem:** Nostr's multi-relay architecture is powerful but overwhelming for new users.
 
 **Current failures:**
-- [[Data:28]](#data-28) Apps showing 50+ relay pickers during onboarding
+- Apps showing 50+ relay pickers during onboarding
 - [[Data:31]](#data-31) Users setting relay preferences in one client (Nostrudel) find other clients (Coracle, Nostter) pulling relay lists incorrectly
 - [[Data:31]](#data-31) Manual relay additions multiply unexpectedly, causing confusion
 - Read/write relay splits exposed to beginners who don't understand the concept
@@ -444,7 +444,7 @@ Backup flow:
 
 **The problem:** Nostr-specific jargon (NIPs, relays, events, kinds) exposed in user-facing UI.
 
-**Current failures:** [[Data:29]](#data-29)
+**Current failures:**
 - Error messages: "Failed to publish kind:1 event to relay"
 - Settings: "Enable NIP-65 Outbox Model"
 - Features: "Import NIP-05 identifier"
@@ -1889,24 +1889,6 @@ signer app to manage your keys.
 
 ### Nostr-Specific Data
 
-<a id="data-28"></a>
-**[Data:28]** Relay Picker Complexity in Nostr Apps
-- Nostr clients showing 50+ relay pickers during onboarding
-- Users exposed to relay selection before understanding basic posting
-- Source: Observation of Nostr client UX (2024-2025)
-
-<a id="data-29"></a>
-**[Data:29]** Protocol Terminology in User-Facing UI
-- Settings pages with technical jargon: "Outbox model (NIP-65)", "Relay list metadata", "Event signature verification"
-- Error messages: "Failed to publish kind:1 event to relay"
-- Source: Nostr client UI analysis (2024-2025)
-
-<a id="data-30"></a>
-**[Data:30]** Power User Features Presented as Essential
-- Relay health indicators, custom feeds, mute lists shown during onboarding
-- Read/write relay splits exposed to beginners
-- Source: Nostr client onboarding flows (2024-2025)
-
 <a id="data-31"></a>
 **[Data:31]** Cross-Client Relay List Confusion
 - Users setting relay preferences in Nostrudel find other clients (Coracle, Nostter) pulling incorrectly
@@ -1940,17 +1922,6 @@ signer app to manage your keys.
 - **Source:** https://blog.getalby.com/nostr-signer/
 - **Source:** https://maxgravitt.com/articles/nostr-connect/
 - **Date:** 2024-2025
-
-<a id="user-12"></a>
-**[User:12]** New User Exposure to Complexity
-- New users exposed to relay selection, key management, NIP configurations during onboarding
-- Source: User feedback and UX research (2024-2025)
-
-<a id="user-13"></a>
-**[User:13]** User Overwhelm Reports
-- Users report feeling "overwhelmed" and "confused" by protocol complexity in UI
-- "Too complicated" cited as top reason for not adopting Nostr
-- Source: User surveys and feedback (2024-2025)
 
 ---
 
