@@ -1,6 +1,6 @@
 ---
 title: "The 6 Critical Patterns"
-description: "Research-backed solutions to the highest-impact UX problems in Nostr applications"
+weight: 2
 ---
 
 These six patterns address the most critical UX problems facing Nostr applications today, based on extensive research of user complaints, retention data, and mainstream app best practices.

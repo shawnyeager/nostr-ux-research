@@ -1,8 +1,0 @@
-name = "Nostr UX"
-license = "MIT"
-description = "Clean, minimal theme for Nostr UX Research documentation"
-homepage = "https://github.com/shawnyeager/nostr-ux-research"
-min_version = "0.112.0"
-
-[author]
-  name = "Shawn Yeager"

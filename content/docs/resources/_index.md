@@ -1,17 +1,17 @@
 ---
 title: "Resources"
-description: "Research methodology, references, and supporting documentation"
+weight: 3
 ---
 
 ## Available Resources
 
-### [Research Methodology](/resources/methodology/)
+### [Research Methodology](methodology)
 How this study was conducted, sources used, and research approach.
 
-### [References & Bibliography](/resources/references/)
+### [References & Bibliography](references)
 All 100+ citations used across the 6 patterns. Includes academic research, industry studies, and Nostr-specific data.
 
-### [Onboarding Research Sources](/resources/onboarding-research-sources/)
+### [Onboarding Research Sources](onboarding-research-sources)
 Detailed evidence and sources specifically for Pattern 1 (Onboarding).
 
 ---
@@ -28,25 +28,6 @@ This study synthesizes:
 **Content balance:** 70% universal principles (applicable to any social app) + 30% Nostr-specific considerations (relays, keys, decentralization).
 
 **Citation Policy:** All claims backed by verifiable sources with URLs. No unverifiable statements.
-
----
-
-## How to Use These Resources
-
-**For Developers:**
-- Use references to validate patterns with your team
-- Share methodology when proposing UX changes
-- Cite specific research when making design decisions
-
-**For Researchers:**
-- Build on this foundation for deeper studies
-- Use as starting point for Nostr-specific UX research
-- Reference methodology for similar studies
-
-**For Skeptics:**
-- Check the sources yourself
-- Verify claims independently
-- Understand the research limitations
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Get Started"
-description: "Where to begin with improving your Nostr app's UX"
+weight: 1
 ---
 
 ## Executive Overview
@@ -28,22 +28,22 @@ description: "Where to begin with improving your Nostr app's UX"
 ## Where to Start
 
 ### If you have 5 minutes
-Read the [Quick Reference](/quick-reference/) for TL;DR summaries of all 6 patterns.
+Browse the pattern summaries in the sidebar to understand the critical issues.
 
 ### If you have 30 minutes
 Pick the pattern that matches your biggest pain point:
-- **Users abandon during signup?** → [Pattern 1: Onboarding](/patterns/01-onboarding/)
-- **Empty feeds after signup?** → [Pattern 2: Content Discovery](/patterns/02-content-discovery/)
-- **Posts disappearing?** → [Pattern 3: Core Interactions](/patterns/03-core-interactions/)
-- **App feels slow/crashy?** → [Pattern 4: Performance](/patterns/04-performance/)
-- **Users overwhelmed by settings?** → [Pattern 5: Progressive Complexity](/patterns/05-progressive-complexity/)
-- **Data loss when switching clients?** → [Pattern 6: Cross-Client Consistency](/patterns/06-cross-client-consistency/)
+- **Users abandon during signup?** → [Pattern 1: Onboarding](patterns/01-onboarding)
+- **Empty feeds after signup?** → [Pattern 2: Content Discovery](patterns/02-content-discovery)
+- **Posts disappearing?** → [Pattern 3: Core Interactions](patterns/03-core-interactions)
+- **App feels slow/crashy?** → [Pattern 4: Performance](patterns/04-performance)
+- **Users overwhelmed by settings?** → [Pattern 5: Progressive Complexity](patterns/05-progressive-complexity)
+- **Data loss when switching clients?** → [Pattern 6: Cross-Client Consistency](patterns/06-cross-client-consistency)
 
 ### If you're building from scratch
 Read patterns in order (1-6). Each builds on principles from earlier patterns.
 
 ### If you want evidence
-Check the [Research Methodology](/resources/methodology/) and [References](/resources/references/) to see the 100+ sources backing these patterns.
+Check the [Research Methodology](resources/methodology) and [References](resources/references) to see the 100+ sources backing these patterns.
 
 ---
 
@@ -56,8 +56,6 @@ Before building any feature, ask these three questions:
 3. **Can we measure if it's working?** (leading indicators, lagging indicators, qualitative signals)
 
 If you can't answer "yes" to all three, reconsider whether this feature should be built now.
-
-**Learn more:** Full framework with examples in the [Introduction](/introduction/).
 
 ---
 

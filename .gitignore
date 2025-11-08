@@ -4,6 +4,10 @@
 /assets/jsconfig.json
 hugo_stats.json
 
+# Hugo modules
+/_vendor/
+go.sum
+
 # IDE
 .idea/
 .vscode/
