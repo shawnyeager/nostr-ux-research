@@ -1,185 +1,232 @@
 # Nostr UX Research Study
 
-A meta research study on UX best practices and design patterns for Nostr consumer applications.
+**Evidence-based design patterns for building Nostr clients that people actually use.**
 
-## Overview
-
-This project synthesizes research on user experience design for social applications and applies it to the unique challenges of building Nostr clients. It's designed to help Nostr developers create better user experiences by learning from both mainstream social app patterns and Nostr-specific considerations.
-
-**Core Thesis:** Good UX wins every time. Ship working experiences, then add features.
+---
 
 ## The Problem
 
-Current state of Nostr apps (based on 2024-2025 data):
-- **30-day user retention trending to 0%** for recent cohorts
-- **15-20 minute onboarding** drives user abandonment
-- **All clients in "alpha state"** with reliability issues
-- Users need **5-6 different clients** to work around bugs
-- Cross-client data loss and inconsistency
-- DAU stuck at 10,000-12,000 trusted pubkeys
+Nostr has a working, censorship-resistant protocol. The critical problem is user experience.
 
-**Root causes:**
-- Feature bloat without user validation
-- Protocol complexity exposed to end users
-- Core interactions shipped before they're reliable
-- Power user features treated as essential
+**Current metrics:**
+- **30-day retention trending to 0%** for recent cohorts
+- **Daily active users stuck at 10,000-12,000** despite viral adoption spikes
+- Users often need **multiple clients** to access different features
 
-## Target Audience
+This is a retention crisis. But it's also **solvable**. Traditional social apps achieve better retention not through centralization, but through better content discovery, reliable core interactions, and streamlined onboarding—all implementable on Nostr.
 
-This research is for:
+This research study provides evidence-based patterns to fix these critical UX problems.
+
+---
+
+## What You'll Find Here
+
+**6 critical UX patterns** backed by 100+ verified sources:
+1. **[Onboarding & First-Run Experience](patterns/01-onboarding.md)** - Minimize time-to-first-value
+2. **[Content Discovery & Feed Quality](patterns/02-content-discovery.md)** - Solve the empty feed problem
+3. **[Core Interaction Loops](patterns/03-core-interactions.md)** - Make posting/replying work reliably
+4. **[Performance & Perceived Speed](patterns/04-performance.md)** - Optimistic UI and loading states
+5. **[Progressive Complexity](patterns/05-progressive-complexity.md)** - Hide power features until needed
+6. **[Cross-Client Consistency](patterns/06-cross-client-consistency.md)** - Data integrity across apps
+
+Each pattern includes:
+- Research-backed problem statement
+- Universal UX principles (70%) + Nostr-specific considerations (30%)
+- Concrete implementation examples
+- Anti-patterns to avoid
+- Validation checklists with measurable metrics
+
+**Plus:** The Validation Framework - a decision-making filter to prevent feature bloat.
+
+---
+
+## Quick Start: Choose Your Path
+
+### 🚀 First Time Here?
+→ Read **[Introduction](introduction.md)** (5 minutes) - understand the problem, the framework, the 6 patterns
+
+### 🏃 Short on Time?
+→ **[Quick Reference Guide](quick-reference.md)** (10 minutes) - one-page summaries of all 6 patterns
+
+### 🔨 Building a New Client?
+1. Read **[Introduction](introduction.md)** (get the framework)
+2. Start with **[Pattern 1: Onboarding](patterns/01-onboarding.md)** + **[Pattern 2: Content Discovery](patterns/02-content-discovery.md)**
+3. Use **[Quick Reference](quick-reference.md)** to scan all patterns
+4. Implement core interactions (Pattern 3) before adding features
+
+### 🔧 Have an Existing Client?
+1. Audit your app using **[Quick Reference](quick-reference.md)** validation checklists
+2. Measure D1/D7/D30 retention (if you're not tracking, start now)
+3. Identify your biggest retention drop-off
+4. Deep-dive the relevant pattern and implement recommendations
+5. **Measure** if it improved retention before moving to next pattern
+
+### 🎨 Designer?
+→ Start with **[Pattern 1: Onboarding](patterns/01-onboarding.md)** + **[Pattern 5: Progressive Complexity](patterns/05-progressive-complexity.md)**
+
+### 👀 Evaluating Nostr as a Platform?
+→ Read **[Introduction](introduction.md)**, then **[Quick Reference](quick-reference.md)**, then **[Pattern 6: Cross-Client Consistency](patterns/06-cross-client-consistency.md)** for multi-relay implications
+
+---
+
+## Core Documentation
+
+- **[Introduction](introduction.md)** - Why this exists, the Validation Framework, where to start
+- **[Quick Reference Guide](quick-reference.md)** - TL;DR summaries of all 6 patterns
+- **[Research Methodology](appendices/methodology.md)** - How this study was conducted
+- **[References & Bibliography](appendices/references.md)** - All 100+ citations
+
+---
+
+## The 6 Patterns (All Complete ✅)
+
+### Pattern 1: Onboarding & First-Run Experience
+**Problem:** 15-20 minute setup, key management overwhelming
+**Impact:** Users abandon before reaching value
+**Solution:** Minimize time-to-first-value, defer complexity, browse-first approach
+→ **[Read Pattern 1](patterns/01-onboarding.md)**
+
+### Pattern 2: Content Discovery & Feed Quality
+**Problem:** Empty feeds, "Traditional apps win by having better content selection"
+**Impact:** Users bounce because feed is boring
+**Solution:** Smart defaults, starter packs, algorithmic discovery, search that works
+→ **[Read Pattern 2](patterns/02-content-discovery.md)**
+
+### Pattern 3: Core Interaction Loops
+**Problem:** Posts disappear, notifications missing, unreliable actions
+**Impact:** Users lose trust, abandon platform
+**Solution:** Optimistic UI, instant feedback, error recovery, reliability first
+→ **[Read Pattern 3](patterns/03-core-interactions.md)**
+
+### Pattern 4: Performance & Perceived Speed
+**Problem:** Apps hang/buffer, crashes, slow loading
+**Impact:** Users perceive apps as unreliable
+**Solution:** Skeleton screens, optimistic UI, lazy loading, caching strategies
+→ **[Read Pattern 4](patterns/04-performance.md)**
+
+### Pattern 5: Progressive Complexity
+**Problem:** Relay management, key signers, NIPs exposed to all users
+**Impact:** Overwhelming, users leave
+**Solution:** 80/20 rule, smart defaults work for most, hide advanced settings
+→ **[Read Pattern 5](patterns/05-progressive-complexity.md)**
+
+### Pattern 6: Cross-Client Consistency & Data Integrity
+**Problem:** "Lost all followers when switching clients"
+**Impact:** Users don't trust the platform
+**Solution:** Multi-relay write strategy, sync verification, conflict resolution
+→ **[Read Pattern 6](patterns/06-cross-client-consistency.md)**
+
+---
+
+## The Validation Framework
+
+Before building any feature, ask:
+1. **Does this help users accomplish their core goal?** (seeing content, connecting with people)
+2. **Have we validated this solves a real problem?** (data, user feedback, research - not hunches)
+3. **Can we measure if it's working?** (leading indicators, lagging indicators, qualitative signals)
+
+**Core principle:** Great UX is the gateway to the protocol's power.
+
+Full framework with examples in **[Introduction](introduction.md#the-validation-framework-build-features-that-solve-real-problems)**.
+
+---
+
+## Who This Is For
+
 - **Nostr developers** building consumer social apps (mobile, web, desktop)
 - **Product designers** working on Nostr clients
 - **Mainstream developers** evaluating whether to build on Nostr
 
 **Assumed knowledge:** Basics of Nostr protocols (relays, events, NIPs)
 
-## The 6 Critical Patterns
+---
 
-Based on research into Nostr apps' typical weaknesses, this study focuses on:
+## Research Foundation
 
-1. **[Onboarding & First-Run Experience](patterns/01-onboarding.md)** ✅ - Get to value fast, defer complexity
-2. **[Content Discovery & Feed Quality](patterns/02-content-discovery.md)** ✅ - Solve the cold start problem
-3. **[Core Interaction Loops](patterns/03-core-interactions.md)** ✅ - Make posting/replying/reacting work perfectly
-4. **[Performance & Perceived Speed](patterns/04-performance.md)** ✅ - Optimistic UI, loading states, reliability
-5. **[Progressive Complexity](patterns/05-progressive-complexity.md)** ✅ - Reveal power features gradually (relays, signers)
-6. **[Cross-Client Consistency](patterns/06-cross-client-consistency.md)** ✅ - Following/follower sync, data integrity
+This study synthesizes:
+- ✅ Academic HCI research on social media UX, onboarding, feed algorithms
+- ✅ Industry design systems (Apple HIG, Material Design)
+- ✅ Nostr-specific data (retention metrics from nostr.band, user complaints, GitHub issues)
+- ✅ Mainstream app case studies (TikTok, Instagram, Bluesky, Discord)
+- ✅ 100+ verified sources with URLs (strict citation policy)
 
-Each pattern includes:
-- Problem statement (research-backed)
-- Universal principles (70% - applicable to any social app)
-- Nostr-specific considerations (30%)
-- Pattern library (concrete examples)
-- Anti-patterns (what not to do)
-- Validation checklist (how to measure success)
+**Content balance:** 70% universal principles (applicable to any social app) + 30% Nostr-specific considerations (relays, keys, decentralization)
 
-## The Validation Framework
+Full methodology: **[appendices/methodology.md](appendices/methodology.md)**
 
-A meta-pattern addressing "features without validation" problem.
-
-**Three-question filter before building features:**
-1. Does this help users accomplish their core goal?
-2. Have we validated this solves a real problem?
-3. Can we measure if it's working?
-
-**Core principle:** Ship small, validate fast. Core interactions before new features.
-
-## Navigation
-
-### Core Documentation
-- **[Complete Outline](OUTLINE.md)** - Full study structure and plan
-- **[Research Methodology](appendices/methodology.md)** - How this study was conducted
-- **[References & Bibliography](appendices/references.md)** - All citations and sources
-
-### Pattern Documentation
-1. **[Pattern 1: Onboarding & First-Run Experience](patterns/01-onboarding.md)** ✅ Complete
-2. **[Pattern 2: Content Discovery & Feed Quality](patterns/02-content-discovery.md)** ✅ Complete
-3. **[Pattern 3: Core Interaction Loops](patterns/03-core-interactions.md)** ✅ Complete
-4. **[Pattern 4: Performance & Perceived Speed](patterns/04-performance.md)** ✅ Complete with 35+ 2024-2025 citations
-5. **[Pattern 5: Progressive Complexity](patterns/05-progressive-complexity.md)** ✅ Complete with 12+ 2024-2025 citations
-6. **[Pattern 6: Cross-Client Consistency & Data Integrity](patterns/06-cross-client-consistency.md)** ✅ Complete with 19+ 2024-2025 citations
-
-### Supporting Materials
-- Validation Framework 🚧 Coming soon
-- Implementation Guide 🚧 Coming soon
-- Case Studies 🚧 Coming soon
-- Glossary 🚧 Coming soon
+---
 
 ## Project Structure
 
 ```
 nostr-ux-research/
-├── README.md                    # This file (navigation & overview)
-├── OUTLINE.md                   # Complete study structure ✅
-├── CLAUDE.md                    # Project context for AI assistance ✅
-├── patterns/                    # Detailed pattern documentation
-│   ├── 01-onboarding.md         # ✅ Complete with citations
-│   └── 02-content-discovery.md  # ✅ Complete with citations
-├── validation-framework.md      # 🚧 Coming soon
-├── implementation-guide.md      # 🚧 Coming soon
-└── appendices/
-    ├── methodology.md           # ✅ Research approach and ethics
-    ├── references.md            # ✅ Master bibliography
-    ├── research-notes.md        # ✅ Raw findings organized by topic
-    ├── case-studies.md          # 🚧 Coming soon
-    ├── resources.md             # 🚧 Coming soon
-    └── glossary.md              # 🚧 Coming soon
+├── README.md                           # This file (start here)
+├── introduction.md                     # Why this exists, Validation Framework, where to start
+├── quick-reference.md                  # TL;DR summaries of all 6 patterns
+├── OUTLINE.md                          # Original study structure
+├── patterns/                           # Detailed pattern documentation (all complete ✅)
+│   ├── 01-onboarding.md                # ~1200 lines, 20+ citations
+│   ├── 02-content-discovery.md         # ~1900 lines, 67+ citations
+│   ├── 03-core-interactions.md         # ~1500 lines, 30+ citations
+│   ├── 04-performance.md               # ~1400 lines, 35+ citations
+│   ├── 05-progressive-complexity.md    # ~900 lines, 12+ citations
+│   └── 06-cross-client-consistency.md  # ~1100 lines, 19+ citations
+├── research/                           # Evidence files with verified citations
+│   ├── README.md                       # Explains evidence collection methodology
+│   ├── content-discovery-evidence-2024-2025.md
+│   ├── content-discovery-mainstream-lessons.md
+│   └── pattern-4-performance-evidence.md
+└── appendices/                         # Supporting documentation
+    ├── methodology.md                  # Research approach, ethics, limitations
+    ├── references.md                   # Master bibliography (100+ sources)
+    └── onboarding-research-sources.md  # Deep-dive for Pattern 1
 ```
 
-## Content Balance
-
-- **70%** - Universal UX principles (applicable to any social app)
-- **30%** - Nostr-specific considerations (relays, keys, zaps, censorship-resistance)
-
-This balance makes the research valuable for both existing Nostr developers and mainstream developers evaluating the platform.
-
-## Status
-
-🚧 **Work in Progress** - Pattern documentation underway.
-
-**Completed:**
-- [x] [Research methodology framework](appendices/methodology.md)
-- [x] [Master bibliography structure](appendices/references.md)
-- [x] [Complete study outline](OUTLINE.md)
-- [x] [Pattern 1: Onboarding](patterns/01-onboarding.md) - Fully documented with 2024-2025 citations
-- [x] [Pattern 2: Content Discovery & Feed Quality](patterns/02-content-discovery.md) - Complete with 67+ 2024-2025 citations
-- [x] [Pattern 3: Core Interaction Loops](patterns/03-core-interactions.md) - Complete with 30+ 2024-2025 citations from Nostr-specific sources and UX research
-- [x] [Pattern 4: Performance & Perceived Speed](patterns/04-performance.md) - Complete with 35+ 2024-2025 citations, includes critical March 2024 Core Web Vitals update (INP replaced FID)
-- [x] [Pattern 5: Progressive Complexity](patterns/05-progressive-complexity.md) - Complete with 12+ 2024-2025 citations, includes Pareto principle, progressive disclosure, contextual help, smart defaults, and 5 code pattern examples
-- [x] [Pattern 6: Cross-Client Consistency & Data Integrity](patterns/06-cross-client-consistency.md) - Complete with 19+ 2024-2025 citations, covers data loss prevention, sync state visibility, conflict resolution, and distributed systems UX. **ALL 6 CORE PATTERNS NOW COMPLETE!**
-
-**Current Work:**
-- [ ] Case studies from mainstream apps
-- [ ] Validation framework
-- [ ] Implementation guide
-
-**Planned:**
-- [ ] Visual diagrams and flows
-- [ ] Community feedback and iteration
-- [ ] Summary quick-start guide
-- [ ] Video walkthrough
-
-## Research Methodology
-
-This study synthesizes:
-- Academic HCI literature on social media UX
-- Industry design systems (Apple HIG, Material Design)
-- User feedback from Nostr clients (Damus, Amethyst, Primal, Snort, etc.)
-- Retention and usage data (nostr.band)
-- Developer discussions on UX challenges
-- Successful patterns from mainstream social apps
-
-Full methodology documented in **[appendices/methodology.md](appendices/methodology.md)** - includes research approach, source categories, citation standards, limitations, and research ethics.
+---
 
 ## Success Criteria
 
-We'll know this is valuable when:
-- It generates substantive discussion on Nostr
-- Developers reference it in client changelogs
-- Measurable UX improvements appear in Nostr clients
-- Cross-client coordination on core patterns emerges
-- Retention metrics improve across the ecosystem
+We'll know this research is valuable when:
+- Developers reference it in changelogs and design discussions
+- Cross-client coordination on core UX patterns emerges
+- D1/D7/D30 retention improves across Nostr clients
+- User feedback shifts from fundamental UX issues to feature enhancement requests
+- Mainstream developers start building on Nostr
+
+**Target:** Nostr retention reaches "OK" benchmarks (D30: 20%+) within 6-12 months
+
+---
 
 ## Contributing & Feedback
 
-This research is being developed in the open. Feedback welcome via:
-- GitHub Issues (questions, suggestions, corrections)
-- Pull requests (examples, case studies, additional research)
-- Nostr discussions (links will be posted when content is ready)
+Found errors? Have additional research? Implemented these patterns and want to share results?
+
+- **GitHub Issues:** [Report issues or suggest improvements](https://github.com/shawnyeager/nostr-ux-research/issues)
+- **Pull Requests:** Contributions welcome (methodology in [appendices/methodology.md](appendices/methodology.md))
+- **Nostr Discussion:** Share feedback on Nostr (link TBD)
+
+---
 
 ## Related Resources
 
-- [Nostr Design](https://nostrdesign.org/) - Design patterns and guidelines for Nostr
-- [Awesome Nostr](https://github.com/aljazceru/awesome-nostr) - Collection of Nostr projects
-- [Nostr NIPs](https://github.com/nostr-protocol/nips) - Protocol specifications
+- **[Nostr Design](https://nostrdesign.org/)** - Design patterns and guidelines for Nostr
+- **[Nostr NIPs](https://github.com/nostr-protocol/nips)** - Protocol specifications
+- **[Awesome Nostr](https://github.com/aljazceru/awesome-nostr)** - Collection of Nostr projects
+
+---
 
 ## License
 
 This research is shared openly for the benefit of the Nostr community.
+
+---
 
 ## Author
 
 **Shawn Yeager** ([@shawnyeager](https://github.com/shawnyeager))
 
 ---
+
+**Remember:** Good UX beats protocol purity. Ship working experiences, then add features.
 
 *Last updated: November 2025*
