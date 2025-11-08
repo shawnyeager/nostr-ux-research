@@ -133,7 +133,7 @@ Posts disappear, notifications missing, basic actions unreliable - users lose tr
 ## Pattern 4: Performance & Perceived Speed
 
 ### The Problem
-Apps hang/buffer/crash - users perceive Nostr clients as broken compared to mainstream apps.
+Apps hang, buffer, or crash - users perceive performance as below mainstream app standards.
 
 ### Top 3 Recommendations
 
@@ -238,7 +238,7 @@ Exposing relay management, key signers (NIP-46), and protocol details to all use
 
 ❌ **Write to one relay, hope for the best** - Recipe for data loss
 ❌ **No verification of event propagation** - Silent failures
-❌ **Overwriting newer data with older cached data** - Race condition disasters
+❌ **Overwriting newer data with older cached data** - Race conditions cause data loss
 
 ### Validation Checklist
 
@@ -305,19 +305,19 @@ If you can't measure it, you can't improve it.
 
 ---
 
-## Common Traps to Avoid
+## Common Development Patterns to Reconsider
 
-❌ **"We need feature X because competitor has it"**
-→ Validate it solves a real problem for YOUR users first
+**"We need feature X because competitor has it"**
+→ Better: Validate it solves a real problem for your users first
 
-❌ **"Protocol purity over pragmatic UX"**
-→ Users don't care about decentralization if posting doesn't work
+**"Protocol purity over pragmatic UX"**
+→ Better: Deliver both excellent UX and protocol benefits
 
-❌ **"Power users will configure it themselves"**
-→ 80% of users need defaults that "just work"
+**"Power users will configure it themselves"**
+→ Better: 80% of users need defaults that work out of the box
 
-❌ **"We'll fix UX after we add more features"**
-→ Feature bloat makes UX worse, not better. Fix core UX first.
+**"We'll fix UX after we add more features"**
+→ Better: Core UX enables feature adoption. Fix fundamentals first.
 
 ---
 

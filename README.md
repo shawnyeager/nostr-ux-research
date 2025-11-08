@@ -4,15 +4,18 @@
 
 ---
 
-## The Crisis
+## The Opportunity
 
-**30-day retention trending to 0%.** Daily active users stuck at 10,000-12,000 despite viral spikes. Users need 5-6 different clients just to work around bugs.
+Nostr has the technical foundation for censorship-resistant social media. The protocol works. What needs improvement is the user experience.
 
-This isn't a protocol problem. **It's a UX problem.**
+**Current metrics show room for growth:**
+- 30-day retention trending to 0% for recent cohorts
+- Daily active users at 10,000-12,000 despite viral adoption spikes
+- Users often need multiple clients to access different features
 
-Traditional apps win not because they're centralized, but because they have better content selection, reliable posting, and onboarding that works. Nostr has the technical foundation for censorship-resistant social media. What it lacks is UX fundamentals.
+**The good news:** These are solvable UX challenges. Traditional social apps achieved better retention not through centralization, but through better content discovery, reliable core interactions, and streamlined onboarding.
 
-This research study exists to change that.
+This research study provides evidence-based patterns to close that gap.
 
 ---
 
@@ -40,7 +43,7 @@ Each pattern includes:
 ## Quick Start: Choose Your Path
 
 ### 🚀 First Time Here?
-→ Read **[Introduction](introduction.md)** (5 minutes) - understand the crisis, the framework, the 6 patterns
+→ Read **[Introduction](introduction.md)** (5 minutes) - understand the challenge, the framework, the 6 patterns
 
 ### 🏃 Short on Time?
 → **[Quick Reference Guide](quick-reference.md)** (10 minutes) - one-page summaries of all 6 patterns
@@ -97,7 +100,7 @@ Each pattern includes:
 
 ### Pattern 4: Performance & Perceived Speed
 **Problem:** Apps hang/buffer, crashes, slow loading
-**Impact:** Users perceive app as broken
+**Impact:** Users perceive apps as unreliable
 **Solution:** Skeleton screens, optimistic UI, lazy loading, caching strategies
 → **[Read Pattern 4](patterns/04-performance.md)**
 
@@ -124,7 +127,7 @@ Before building any feature, ask:
 
 **Core principle:** Ship working experiences, then add features. Good UX beats protocol purity.
 
-Full framework with examples in **[Introduction](introduction.md#the-validation-framework-stop-building-features-nobody-wants)**.
+Full framework with examples in **[Introduction](introduction.md#the-validation-framework-build-features-that-solve-real-problems)**.
 
 ---
 
@@ -187,7 +190,7 @@ We'll know this research is valuable when:
 - Developers reference it in changelogs and design discussions
 - Cross-client coordination on core UX patterns emerges
 - D1/D7/D30 retention improves across Nostr clients
-- User complaints shift from "UX is broken" to feature requests
+- User feedback shifts from fundamental UX issues to feature enhancement requests
 - Mainstream developers start building on Nostr
 
 **Target:** Nostr retention reaches "OK" benchmarks (D30: 20%+) within 6-12 months
