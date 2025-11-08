@@ -30,8 +30,22 @@ theme = 'hextra'
 
   [params.navbar]
     displayTitle = true
-    displayLogo = false
+    displayLogo = true
     width = "wide"
+
+    [params.navbar.logo]
+      path = "images/logo.svg"
+      dark = "images/logo-dark.svg"
+      link = "/"
+      width = 32
+      height = 32
+
+  [params.search]
+    enable = true
+    type = "flexsearch"
+
+    [params.search.flexsearch]
+      index = "content"
 
   [params.footer]
     displayCopyright = true
