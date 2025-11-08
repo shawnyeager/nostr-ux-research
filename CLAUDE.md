@@ -206,6 +206,7 @@ nostr-ux-research/
 │   ├── 05-progressive-complexity.md
 │   └── 06-cross-client-consistency.md
 ├── research/              # Evidence files with verified citations (URL-only policy)
+│   ├── README.md                                   # Explains purpose and structure
 │   ├── content-discovery-evidence-2024-2025.md    # Nostr-specific problems
 │   ├── content-discovery-mainstream-lessons.md    # Mainstream platform research
 │   └── pattern-4-performance-evidence.md          # Performance research
@@ -362,6 +363,9 @@ Based on CLAUDE.md patterns from other repos:
 - Moved and renamed files for clarity (content-discovery-mainstream-lessons.md)
 - Removed 30+ unverifiable findings, restored accidentally removed verified sources
 - Enforced strict URL-only citation policy across all research documents
+- Organized file structure: research/ = raw evidence, appendices/ = polished analysis
+- Created research/README.md to clarify purpose of evidence files
+- Removed outdated research-notes.md working document
 
 **Current Focus:**
 - Final cleanup and organization refinement
