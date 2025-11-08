@@ -78,7 +78,7 @@ Each pattern includes:
 
 ---
 
-## The 6 Patterns (All Complete ✅)
+## The 6 Patterns
 
 ### Pattern 1: Onboarding & First-Run Experience
 **Problem:** 15-20 minute setup, key management overwhelming
@@ -144,11 +144,11 @@ Full framework with examples in **[Introduction](introduction.md#the-validation-
 ## Research Foundation
 
 This study synthesizes:
-- ✅ Academic HCI research on social media UX, onboarding, feed algorithms
-- ✅ Industry design systems (Apple HIG, Material Design)
-- ✅ Nostr-specific data (retention metrics from nostr.band, user complaints, GitHub issues)
-- ✅ Mainstream app case studies (TikTok, Instagram, Bluesky, Discord)
-- ✅ 100+ verified sources with URLs (strict citation policy)
+- Academic HCI research on social media UX, onboarding, feed algorithms
+- Industry design systems (Apple HIG, Material Design)
+- Nostr-specific data (retention metrics from nostr.band, user complaints, GitHub issues)
+- Mainstream app case studies (TikTok, Instagram, Bluesky, Discord)
+- 100+ verified sources with URLs (strict citation policy)
 
 **Content balance:** 70% universal principles (applicable to any social app) + 30% Nostr-specific considerations (relays, keys, decentralization)
 
@@ -164,7 +164,7 @@ nostr-ux-research/
 ├── introduction.md                     # Why this exists, Validation Framework, where to start
 ├── quick-reference.md                  # TL;DR summaries of all 6 patterns
 ├── OUTLINE.md                          # Original study structure
-├── patterns/                           # Detailed pattern documentation (all complete ✅)
+├── patterns/                           # Detailed pattern documentation
 │   ├── 01-onboarding.md                # ~1200 lines, 20+ citations
 │   ├── 02-content-discovery.md         # ~1900 lines, 67+ citations
 │   ├── 03-core-interactions.md         # ~1500 lines, 30+ citations

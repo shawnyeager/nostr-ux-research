@@ -1103,5 +1103,3 @@ Yeager, Shawn. "Nostr UX Research Study: Design Patterns for Consumer Applicatio
 ---
 
 *Last updated: November 2025*
-
-**Note:** This is a living document. Citations are added as patterns are developed. Placeholders marked with [To be researched] will be filled during the writing process.
