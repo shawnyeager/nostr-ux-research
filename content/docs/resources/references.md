@@ -16,6 +16,160 @@ Citations in pattern documents use this format:
 - **[Example:5]** = Case Studies & Examples (section 3)
 - **[Protocol:3]** = Nostr Protocol Documentation (section 4)
 - **[User:8]** = User Feedback & Quotes (section 5)
+- **[Client:1]** = Nostr Clients Referenced (study scope)
+- **[Service:1]** = Services & Tools Referenced (study scope)
+
+---
+
+## Nostr Clients & Apps Referenced in This Study {#nostr-clients-referenced}
+
+This study analyzed **13 distinct Nostr applications and services** across multiple platforms. Clients are categorized by citation frequency to indicate depth of analysis within the research.
+
+### Primary Research Subjects (5+ citations)
+
+**[Client:1]** Damus (iOS)
+
+- **Platform:** iOS (Swift)
+- **Repository:** <https://github.com/damus-io/damus>
+- **App Store:** <https://apps.apple.com/us/app/damus/id1628663131>
+- **Rating:** 4.78/5 (656 reviews, September 2024)
+- **Key Findings:**
+  - Performance: NIP-05 verification slow loading [[Data:20]](#data-20)
+  - Performance: Follower count queries bandwidth intensive [[Data:20]](#data-20)
+  - Security: Omitted signature verification in earlier versions [[Data:25]](#data-25)
+  - Database: Created nostrdb for performance optimization [[Data:26]](#data-26)
+  - User feedback: "Very smooth experience" and "amazed by how smooth"
+- **Referenced in:** [Pattern 1](/docs/patterns/01-onboarding), [Pattern 3](/docs/patterns/03-core-interactions), [Pattern 4](/docs/patterns/04-performance), [Pattern 6](/docs/patterns/06-cross-client-consistency)
+- **Cross-client scenario:** User data loss when switching "Primal → Damus → Snort"
+
+**[Client:2]** Amethyst (Android)
+
+- **Platform:** Android (Kotlin)
+- **Repository:** <https://github.com/vitorpamplona/amethyst>
+- **Google Play:** <https://play.google.com/store/apps/details?id=com.vitorpamplona.amethyst>
+- **Rating:** 4.35/5 (930 ratings, 2024-2025)
+- **Key Findings:**
+  - Performance: Excessive relay requests - identical filters repeated multiple times within seconds [[Data:22]](#data-22)
+  - Performance: Battery drain from background video playback and multi-relay connections [[Data:22]](#data-22)
+  - Performance benchmark: Score of 93 (vs Twitter 125) [[Data:20]](#data-20)
+  - Crashes: Community join/leave crashes [[Data:20]](#data-20)
+  - User feedback: "Most feature rich and high performance Nostr client"
+- **Referenced in:** [Pattern 3](/docs/patterns/03-core-interactions), [Pattern 4](/docs/patterns/04-performance)
+- **Context:** Frequently cited for both performance challenges and optimization efforts
+
+**[Client:3]** Primal (iOS/Android/Web)
+
+- **Platform:** Cross-platform (iOS, Android, Web)
+- **Repository:** <https://github.com/PrimalHQ/primal-android-app> (Android), <https://github.com/PrimalHQ/primal-caching-service> (archived caching service)
+- **Key Findings:**
+  - Innovation: Feed Marketplace (v2.0, November 2024) - Explore tab, Reads tab, Advanced Search [[User:31]](#user-31)
+  - Performance: Highest benchmark score of 136 (vs Twitter 125) [[Data:20]](#data-20)
+  - Performance: Created dedicated caching service for optimization [[Data:27]](#data-27)
+  - Reliability: Android crashes in v2.5.11 and v2.5.20 [[Data:20]](#data-20)
+  - Content Discovery: Topic-specific feeds (Bitcoin Reads, Philosophy Reads, News Reads)
+- **Referenced in:** [Pattern 2](/docs/patterns/02-content-discovery), [Pattern 4](/docs/patterns/04-performance), [Pattern 6](/docs/patterns/06-cross-client-consistency)
+- **Cross-client scenario:** User data loss when switching "Primal → Damus → Snort"
+- **Context:** Major innovator in content discovery solutions
+
+**[Client:4]** Snort (Web)
+
+- **Platform:** Web
+- **Repository:** <https://github.com/v0l/snort>
+- **Key Findings:**
+  - Performance: Users reported "slow and clunky" compared to Twitter [[Data:19]](#data-19)
+  - Performance: Database performance identified as bottleneck [[Data:21]](#data-21)
+- **Referenced in:** [Pattern 4](/docs/patterns/04-performance), [Pattern 6](/docs/patterns/06-cross-client-consistency)
+- **Cross-client scenario:** User data loss when switching "Primal → Damus → Snort"
+
+**[Client:5]** Iris (Web)
+
+- **Platform:** Web
+- **Key Findings:**
+  - Performance: Users reported "slow and clunky" as Twitter alternative [[Data:19]](#data-19)
+  - Reliability: User reported follow list loss incident [[Data:14]](#data-14)
+  - Security: Omitted signature verification entirely to improve speed [[Data:25]](#data-25)
+- **Referenced in:** [Pattern 3](/docs/patterns/03-core-interactions), [Pattern 4](/docs/patterns/04-performance), [Pattern 6](/docs/patterns/06-cross-client-consistency)
+
+### Secondary Research Subjects (1-4 citations)
+
+**[Client:6]** Nostur (iOS)
+
+- **Platform:** iOS
+- **Repository:** <https://github.com/nostur-com/nostur-ios-public>
+- **Key Findings:**
+  - Crashes and performance fixes in v1.24.4 (October 2024) [[Data:20]](#data-20)
+  - Fixed: video pausing on toggle, feed state not saving/restoring, unread counter issues
+- **Referenced in:** [Pattern 4](/docs/patterns/04-performance)
+
+**[Client:7]** Coracle
+
+- **Platform:** Web
+- **Key Findings:**
+  - Race conditions: "Contact list failed to fully sync before they followed someone, and they ended up deleting all their follows" [[Data:15]](#data-15)
+  - Cross-client relay confusion: Settings from Nostrudel don't transfer properly [[Data:31]](#data-31)
+- **Referenced in:** [Pattern 3](/docs/patterns/03-core-interactions), [Pattern 5](/docs/patterns/05-progressive-complexity), [Pattern 6](/docs/patterns/06-cross-client-consistency)
+- **Context:** Frequently cited for data consistency failures
+
+**[Client:8]** Nostrudel
+
+- **Platform:** Web
+- **Key Findings:**
+  - Cross-client relay confusion: Relay preferences don't transfer to Coracle/Nostter [[Data:31]](#data-31)
+- **Referenced in:** [Pattern 5](/docs/patterns/05-progressive-complexity)
+
+**[Client:9]** Nostter
+
+- **Platform:** Web
+- **Key Findings:**
+  - Cross-client relay confusion: Imperfect NIP implementations [[Data:31]](#data-31)
+- **Referenced in:** [Pattern 5](/docs/patterns/05-progressive-complexity)
+
+**[Client:10]** Plebstr
+
+- **Key Findings:**
+  - Security: Omitted signature verification in past versions to improve performance [[Data:25]](#data-25)
+- **Referenced in:** [Pattern 4](/docs/patterns/04-performance)
+
+**[Client:11]** FreeFrom
+
+- **Key Findings:**
+  - Security: Omitted signature verification entirely [[Data:25]](#data-25)
+- **Referenced in:** [Pattern 4](/docs/patterns/04-performance)
+
+### Tools & Services
+
+**[Service:1]** Nstart - Onboarding Wizard
+
+- **Type:** Standalone onboarding tool
+- **URL:** <https://www.nobsbitcoin.com/nstart-nostr-onboarding-wizard/>
+- **Launch:** January 2025
+- **Key Features:**
+  - Auto-follow curated lists of trusted Nostr users
+  - Simplified key management with email backup
+  - Progressive hints about protocol features
+- **Referenced in:** [Pattern 1](/docs/patterns/01-onboarding), [Pattern 2](/docs/patterns/02-content-discovery)
+- **Context:** Created specifically to address onboarding complexity; demonstrates recognition that client-level onboarding was insufficient [[User:21]](#user-21), [[User:32]](#user-32)
+
+**[Service:2]** Nostr.band - Analytics & Statistics
+
+- **Type:** Data analytics service
+- **URLs:**
+  - Statistics: <https://stats.nostr.band/>
+  - Spam Filter: <https://spam.nostr.band/>
+- **Key Data:**
+  - 30-day retention tracking (trending to 0% for recent cohorts)
+  - DAU/WAU metrics (10,000-12,000 daily active users)
+  - Weekly active users: ~36,000 (October 2024)
+  - Spam crisis tracking (500,000 daily spam messages, February 2024)
+- **Referenced in:** All patterns (primary data source)
+- **Context:** Critical infrastructure for ecosystem-wide metrics [[Data:1]](#data-1), [[Data:2]](#data-2), [[Data:5]](#data-5)
+
+### Research Coverage Summary
+
+- **Total clients analyzed:** 13 (11 clients + 2 services)
+- **Platforms covered:** iOS (3), Android (2), Web (6), Cross-platform (1), Tools (2)
+- **Primary evidence sources:** GitHub issues, app store reviews, release notes, performance benchmarks, user reports
+- **Citation methodology:** All findings include verifiable URLs in research evidence files
 
 ---
 
@@ -1122,162 +1276,6 @@ Citations in pattern documents use this format:
 
 - **Source:** <https://www.microsoft.com/design/fluent/>
 - **Relevance:** Pattern 5 (Progressive Complexity)
-
----
-
-## 7. Developer Resources
-
-### Nostr Clients & Apps Referenced in This Study {#nostr-clients-referenced}
-
-This study analyzed **13 distinct Nostr applications and services** across multiple platforms. Clients are categorized by citation frequency to indicate depth of analysis within the research.
-
-#### Primary Research Subjects (5+ citations)
-
-**[Client:1]** Damus (iOS)
-
-- **Platform:** iOS (Swift)
-- **Repository:** <https://github.com/damus-io/damus>
-- **App Store:** <https://apps.apple.com/us/app/damus/id1628663131>
-- **Rating:** 4.78/5 (656 reviews, September 2024)
-- **Key Findings:**
-  - Performance: NIP-05 verification slow loading [[Data:20]](#data-20)
-  - Performance: Follower count queries bandwidth intensive [[Data:20]](#data-20)
-  - Security: Omitted signature verification in earlier versions [[Data:25]](#data-25)
-  - Database: Created nostrdb for performance optimization [[Data:26]](#data-26)
-  - User feedback: "Very smooth experience" and "amazed by how smooth"
-- **Referenced in:** [Pattern 1](/docs/patterns/01-onboarding), [Pattern 3](/docs/patterns/03-core-interactions), [Pattern 4](/docs/patterns/04-performance), [Pattern 6](/docs/patterns/06-cross-client-consistency)
-- **Cross-client scenario:** User data loss when switching "Primal → Damus → Snort"
-
-**[Client:2]** Amethyst (Android)
-
-- **Platform:** Android (Kotlin)
-- **Repository:** <https://github.com/vitorpamplona/amethyst>
-- **Google Play:** <https://play.google.com/store/apps/details?id=com.vitorpamplona.amethyst>
-- **Rating:** 4.35/5 (930 ratings, 2024-2025)
-- **Key Findings:**
-  - Performance: Excessive relay requests - identical filters repeated multiple times within seconds [[Data:22]](#data-22)
-  - Performance: Battery drain from background video playback and multi-relay connections [[Data:22]](#data-22)
-  - Performance benchmark: Score of 93 (vs Twitter 125) [[Data:20]](#data-20)
-  - Crashes: Community join/leave crashes [[Data:20]](#data-20)
-  - User feedback: "Most feature rich and high performance Nostr client"
-- **Referenced in:** [Pattern 3](/docs/patterns/03-core-interactions), [Pattern 4](/docs/patterns/04-performance)
-- **Context:** Frequently cited for both performance challenges and optimization efforts
-
-**[Client:3]** Primal (iOS/Android/Web)
-
-- **Platform:** Cross-platform (iOS, Android, Web)
-- **Repository:** <https://github.com/PrimalHQ/primal-android-app> (Android), <https://github.com/PrimalHQ/primal-caching-service> (archived caching service)
-- **Key Findings:**
-  - Innovation: Feed Marketplace (v2.0, November 2024) - Explore tab, Reads tab, Advanced Search [[User:31]](#user-31)
-  - Performance: Highest benchmark score of 136 (vs Twitter 125) [[Data:20]](#data-20)
-  - Performance: Created dedicated caching service for optimization [[Data:27]](#data-27)
-  - Reliability: Android crashes in v2.5.11 and v2.5.20 [[Data:20]](#data-20)
-  - Content Discovery: Topic-specific feeds (Bitcoin Reads, Philosophy Reads, News Reads)
-- **Referenced in:** [Pattern 2](/docs/patterns/02-content-discovery), [Pattern 4](/docs/patterns/04-performance), [Pattern 6](/docs/patterns/06-cross-client-consistency)
-- **Cross-client scenario:** User data loss when switching "Primal → Damus → Snort"
-- **Context:** Major innovator in content discovery solutions
-
-**[Client:4]** Snort (Web)
-
-- **Platform:** Web
-- **Repository:** <https://github.com/v0l/snort>
-- **Key Findings:**
-  - Performance: Users reported "slow and clunky" compared to Twitter [[Data:19]](#data-19)
-  - Performance: Database performance identified as bottleneck [[Data:21]](#data-21)
-- **Referenced in:** [Pattern 4](/docs/patterns/04-performance), [Pattern 6](/docs/patterns/06-cross-client-consistency)
-- **Cross-client scenario:** User data loss when switching "Primal → Damus → Snort"
-
-**[Client:5]** Iris (Web)
-
-- **Platform:** Web
-- **Key Findings:**
-  - Performance: Users reported "slow and clunky" as Twitter alternative [[Data:19]](#data-19)
-  - Reliability: User reported follow list loss incident [[Data:14]](#data-14)
-  - Security: Omitted signature verification entirely to improve speed [[Data:25]](#data-25)
-- **Referenced in:** [Pattern 3](/docs/patterns/03-core-interactions), [Pattern 4](/docs/patterns/04-performance), [Pattern 6](/docs/patterns/06-cross-client-consistency)
-
-#### Secondary Research Subjects (1-4 citations)
-
-**[Client:6]** Nostur (iOS)
-
-- **Platform:** iOS
-- **Repository:** <https://github.com/nostur-com/nostur-ios-public>
-- **Key Findings:**
-  - Crashes and performance fixes in v1.24.4 (October 2024) [[Data:20]](#data-20)
-  - Fixed: video pausing on toggle, feed state not saving/restoring, unread counter issues
-- **Referenced in:** [Pattern 4](/docs/patterns/04-performance)
-
-**[Client:7]** Coracle
-
-- **Platform:** Web
-- **Key Findings:**
-  - Race conditions: "Contact list failed to fully sync before they followed someone, and they ended up deleting all their follows" [[Data:15]](#data-15)
-  - Cross-client relay confusion: Settings from Nostrudel don't transfer properly [[Data:31]](#data-31)
-- **Referenced in:** [Pattern 3](/docs/patterns/03-core-interactions), [Pattern 5](/docs/patterns/05-progressive-complexity), [Pattern 6](/docs/patterns/06-cross-client-consistency)
-- **Context:** Frequently cited for data consistency failures
-
-**[Client:8]** Nostrudel
-
-- **Platform:** Web
-- **Key Findings:**
-  - Cross-client relay confusion: Relay preferences don't transfer to Coracle/Nostter [[Data:31]](#data-31)
-- **Referenced in:** [Pattern 5](/docs/patterns/05-progressive-complexity)
-
-**[Client:9]** Nostter
-
-- **Platform:** Web
-- **Key Findings:**
-  - Cross-client relay confusion: Imperfect NIP implementations [[Data:31]](#data-31)
-- **Referenced in:** [Pattern 5](/docs/patterns/05-progressive-complexity)
-
-**[Client:10]** Plebstr
-
-- **Key Findings:**
-  - Security: Omitted signature verification in past versions to improve performance [[Data:25]](#data-25)
-- **Referenced in:** [Pattern 4](/docs/patterns/04-performance)
-
-**[Client:11]** FreeFrom
-
-- **Key Findings:**
-  - Security: Omitted signature verification entirely [[Data:25]](#data-25)
-- **Referenced in:** [Pattern 4](/docs/patterns/04-performance)
-
-#### Tools & Services
-
-**[Service:1]** Nstart - Onboarding Wizard
-
-- **Type:** Standalone onboarding tool
-- **URL:** <https://www.nobsbitcoin.com/nstart-nostr-onboarding-wizard/>
-- **Launch:** January 2025
-- **Key Features:**
-  - Auto-follow curated lists of trusted Nostr users
-  - Simplified key management with email backup
-  - Progressive hints about protocol features
-- **Referenced in:** [Pattern 1](/docs/patterns/01-onboarding), [Pattern 2](/docs/patterns/02-content-discovery)
-- **Context:** Created specifically to address onboarding complexity; demonstrates recognition that client-level onboarding was insufficient [[User:21]](#user-21), [[User:32]](#user-32)
-
-**[Service:2]** Nostr.band - Analytics & Statistics
-
-- **Type:** Data analytics service
-- **URLs:**
-  - Statistics: <https://stats.nostr.band/>
-  - Spam Filter: <https://spam.nostr.band/>
-- **Key Data:**
-  - 30-day retention tracking (trending to 0% for recent cohorts)
-  - DAU/WAU metrics (10,000-12,000 daily active users)
-  - Weekly active users: ~36,000 (October 2024)
-  - Spam crisis tracking (500,000 daily spam messages, February 2024)
-- **Referenced in:** All patterns (primary data source)
-- **Context:** Critical infrastructure for ecosystem-wide metrics [[Data:1]](#data-1), [[Data:2]](#data-2), [[Data:5]](#data-5)
-
----
-
-### Research Coverage Summary
-
-- **Total clients analyzed:** 13 (11 clients + 2 services)
-- **Platforms covered:** iOS (3), Android (2), Web (6), Cross-platform (1), Tools (2)
-- **Primary evidence sources:** GitHub issues, app store reviews, release notes, performance benchmarks, user reports
-- **Citation methodology:** All findings include verifiable URLs in research evidence files
 
 ---
 
