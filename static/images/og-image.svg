@@ -1,9 +1,9 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background - lighter purple -->
-  <rect width="1200" height="630" fill="#b76ef5"/>
+  <!-- Background - darker purple #8e30eb -->
+  <rect width="1200" height="630" fill="#8e30eb"/>
 
-  <!-- Logo squircle - darker purple #8e30eb, centered at 600, 265 -->
-  <rect x="450" y="115" width="300" height="300" rx="60" fill="#8e30eb"/>
+  <!-- Logo squircle with border - centered at 600, 265 -->
+  <rect x="450" y="115" width="300" height="300" rx="60" fill="#8e30eb" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
 
   <!-- N - properly centered in the squircle -->
   <g transform="translate(600, 265)">
