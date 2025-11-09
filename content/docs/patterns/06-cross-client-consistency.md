@@ -1030,203 +1030,35 @@ User's posts disappear with no explanation
 
 ### Universal UX Research
 
-<a id="research-66"></a>
-**[Research:66]** Data Security & User Trust (2025)
+- <a id="research-66"></a>**[[Research:66]](/docs/resources/references#research-77)** Data Security & Trust: 85% delete apps over privacy; no sector >50% trust (Sidekick Interactive, 2025)
+- <a id="research-67"></a>**[[Research:67]](/docs/resources/references#research-78)** Mobile Privacy: 81% concerned about data handling; 80% see loyalty boost from privacy focus (NowSecure, Feb 2024)
+- <a id="research-68"></a>**[[Research:68]](/docs/resources/references#research-79)** dApp Trust: "UX = trust" in scam-heavy industry; blockchain can't guarantee DApp quality (The Alien Design, 2024)
+- <a id="research-69"></a>**[[Research:69]](/docs/resources/references#research-80)** Offline Sync Conflicts: Users confused by multi-user offline edits; conflict handling crucial (Mark AI Code, 2025)
+- <a id="research-70"></a>**[[Research:70]](/docs/resources/references#research-81)** Real-Time Sync: 72% expect instant financial data reflection; WebSocket/Firebase essential (Pixel Free Studio, 2024)
+- <a id="research-71"></a>**[[Research:71]](/docs/resources/references#research-82)** Cross-Platform UX: Data sync + clear cross-device interactions = continuity; biggest IoT usability challenge (Medium, October 2025)
+- <a id="research-72"></a>**[[Research:72]](/docs/resources/references#research-73)** Connected Consumer 2025: $896/year on devices; 45% expect content display consistency (Deloitte, 2025)
+- <a id="research-73"></a>**[[Research:73]](/docs/resources/references#research-74)** Consistency & Standards (NN/g): Adherence increases learnability, reduces cognitive load (January 2024)
+- <a id="research-74"></a>**[[Research:74]](/docs/resources/references#research-75)** 10 Usability Heuristics (NN/g): Maintain internal + external consistency for learnability (January 2024)
 
-- **Source:** "Data Security in Mobile Apps: Protecting User Privacy in 2025 and Beyond" - Sidekick Interactive
-- **URL:** <https://www.sidekickinteractive.com/uncategorized/data-security-in-mobile-apps-protecting-user-privacy-in-2025-and-beyond/>
-- **Date:** 2025
-- **Key finding:** 2025 Digital Trust Index revealed universal decline in trust for digital services compared to last year, with not one sector reaching above 50% approval. 85% of consumers deleted a mobile app due to privacy concerns.
-
-<a id="research-67"></a>
-**[Research:67]** Elevate Mobile App Privacy to Win User Trust
-
-- **Source:** NowSecure Blog
-- **URL:** <https://www.nowsecure.com/blog/2024/02/07/elevate-mobile-app-privacy-to-win-user-trust/>
-- **Date:** February 7, 2024
-- **Key finding:** 81% of U.S. adults are concerned about how companies handle their data (Pew Research). Cisco 2024 Data Privacy Benchmark Study found that 80% of businesses saw a boost in customer loyalty after focusing on privacy measures.
-
-<a id="research-68"></a>
-**[Research:68]** dApp Design Challenges: Trust in Decentralized Systems
-
-- **Source:** "dApp Design Challenges 2024: Overcoming Web3 Design Obstacles" - The Alien Design
-- **URL:** <https://www.thealien.design/insights/dapp-design-challenges>
-- **Date:** 2024
-- **Key finding:** In an industry where scams are everywhere, UX = trust. Blockchain cannot guarantee the quality of service of DApps, which entirely depends on the services' performance, creating critical need for trust system.
-
-<a id="research-69"></a>
-**[Research:69]** Offline Functionality Sync Issues
-
-- **Source:** "Offline Functionality in No-Code Mobile Applications: Solving Sync Issues in 2025" - Mark AI Code
-- **URL:** <https://markaicode.com/offline-no-code-app-sync-solutions-2025/>
-- **Date:** 2025
-- **Key finding:** When multiple users modify the same record offline, conflicts occur during synchronization, causing users to become confused by sync conflicts. Handling conflicts is crucial to maintain data consistency and provide smooth user experience.
-
-<a id="research-70"></a>
-**[Research:70]** Real-Time Data Synchronization Best Practices
-
-- **Source:** "Best Practices for Real-Time Data Synchronization Across Devices" - Pixel Free Studio
-- **URL:** <https://blog.pixelfreestudio.com/best-practices-for-real-time-data-synchronization-across-devices/>
-- **Date:** 2024
-- **Key finding:** 72% of users expect instant reflection of changes in their financial data, making real-time sync technologies like WebSocket or Firebase essential. This degree of synchronization allows people to seamlessly switch between devices without losing continuity of user experience.
-
-<a id="research-71"></a>
-**[Research:71]** Cross-Platform UX Consistency Across Devices
-
-- **Source:** "Cross-Platform UX: Designing Consistency Across Devices" - Medium
-- **URL:** <https://medium.com/@harsh.mudgal_27075/cross-platform-ux-designing-consistency-across-devices-42ad853c7e15>
-- **Date:** October 2025
-- **Key finding:** Data and content synchronization, along with clearly signposted cross-device interactions, are key components of continuity in cross-device UX. Continuity issues are noted as some of the biggest usability challenges in IoT.
-
-<a id="research-72"></a>
-**[Research:72]** 2025 Connected Consumer Innovation with Trust
-
-- **Source:** "2025 Connected Consumer: Innovation with Trust" - Deloitte Insights
-- **URL:** <https://www.deloitte.com/us/en/insights/industry/telecommunications/connectivity-mobile-trends-survey.html>
-- **Date:** 2025
-- **Key finding:** US households spent average of $896 on connected devices in past year. 45% of users expect content to display correctly across different devices, emphasizing importance of responsive design.
-
-<a id="research-73"></a>
-**[Research:73]** Maintain Consistency and Adhere to Standards (NN/g)
-
-- **Source:** "Maintain Consistency and Adhere to Standards (Usability Heuristic #4)" - Nielsen Norman Group
-- **URL:** <https://www.nngroup.com/articles/consistency-and-standards/>
-- **Date:** January 16, 2024
-- **Key finding:** When websites and applications adhere to standards, users know what to expect, learnability is increased, and confusion is reduced. Failing to maintain consistency may increase users' cognitive load by forcing them to learn something new.
-
-<a id="research-74"></a>
-**[Research:74]** 10 Usability Heuristics for User Interface Design
-
-- **Source:** Nielsen Norman Group
-- **URL:** <https://www.nngroup.com/articles/ten-usability-heuristics/>
-- **Date:** January 30, 2024
-- **Key finding:** Improve learnability by maintaining both types of consistency: internal (within single product/family) and external (follow established industry conventions).
-
-<a id="research-75"></a>
-**[Research:75]** Material 3 Expressive Design System
-
-- **Source:** "Material 3 Expressive: What's New and Why it Matters for Designers" - Supercharge Design
-- **URL:** <https://supercharge.design/blog/material-3-expressive>
-- **Date:** 2025
-- **Key finding:** Backed by more user research than any previous update, with 46 research studies involving more than 18,000 participants worldwide. Material Design provides common language of components, motion, and interaction patterns helping teams create cohesive, cross-platform experiences.
-
-<a id="research-76"></a>
-**[Research:76]** UX User Experience Statistics and Trends (2025)
-
-- **Source:** "150+ UX (User Experience) Statistics and Trends (Updated for 2025)" - UserGuiding
-- **URL:** <https://userguiding.com/blog/ux-statistics-trends>
-- **Date:** Updated for 2025
-- **Key finding:** 69% of users appreciate digital assistants' quick reply times, with 59% anticipating chatbot reply within 5 seconds. Demonstrates high user expectations for immediate responses in digital interactions.
-
-<a id="research-77"></a>
-**[Research:77]** Seamless Cross-Device Experiences UX/UI Trends 2025
-
-- **Source:** "Seamless Cross-Device Experiences: UX/UI Trends in 2025" - 123 Internet Agency
-- **URL:** <https://www.123internet.agency/seamless-cross-device-experiences-ux-ui-trends-in-2025/>
-- **Date:** 2025
-- **Key finding:** Delivering seamless cross-device experience has become cornerstone of digital marketing success as we move into 2025, with UX/UI trends shaped by technological advancements, changing user behaviours, and increasing demand for frictionless digital experiences.
-
-<a id="research-78"></a>
-**[Research:78]** Progressive Web Apps 2.0: Offline-First UX
-
-- **Source:** "Progressive Web Apps 2.0: Must-Have Features for Offline-First UX" - Dazzle Birds
-- **URL:** <https://dazzlebirds.com/blog/progressive-web-apps-2-0-must-have-features-for-offline-first-ux/>
-- **Date:** 2024-2025
-- **Key finding:** Users today do not wish to view plain "You're offline" message - PWA 2.0 confirms applications function even in absence of internet. Offline/Online/Sync state indicators are essential UX elements.
-
-<a id="research-79"></a>
-**[Research:79]** Progressive Web App Design Strategies 2025
-
-- **Source:** "Progressive Web App Design Strategies: Hidden UX Secrets for 2025" - Lollypop Studio
-- **URL:** <https://lollypop-studio.medium.com/progressive-web-app-design-strategies-hidden-ux-secrets-for-2025-4d86754e0f7f>
-- **Date:** October 2025
-- **Key finding:** PWAs will learn usage patterns and pre-cache content you're likely to need, ensuring seamless offline experience. PWAs will allow you to create and edit content offline, which will then be automatically synced to cloud when you regain connectivity.
-
-<a id="research-80"></a>
-**[Research:80]** Offline-First Mobile App Development 2025
-
-- **Source:** "Offline-First Mobile App Development in 2025 and Its Importance" - HashStudioz
-- **URL:** <https://www.hashstudioz.com/blog/what-is-offline-first-mobile-app-development-and-why-it-matters-in-2025/>
-- **Date:** 2025
-- **Key finding:** Successful offline functionality isn't just about handling disconnection—it's about creating experience so smooth that users don't notice when they're offline. Offline sync isn't optional anymore—it's must-have for great user experience.
-
-<a id="research-81"></a>
-**[Research:81]** Offline File Sync Developer Guide 2024
-
-- **Source:** "Offline File Sync: Developer Guide 2024" - Daily.dev
-- **URL:** <https://daily.dev/blog/offline-file-sync-developer-guide-2024>
-- **Date:** 2024
-- **Key finding:** Building offline-capable apps leads to sync conflicts, requiring practical ways to handle these situations. Common strategies include Last Write Wins (LWW), CRDTs for complex data structures, and manual resolution providing users with seamless way to address conflicts.
-
-<a id="research-82"></a>
-**[Research:82]** Version Vector for Conflict Resolution
-
-- **Source:** "Distributed Systems Design Pattern: Version Vector for Conflict Resolution" - Shanoj
-- **URL:** <https://shanoj.com/2024/11/14/distributed-systems-design-pattern-version-vector-for-conflict-resolution-supply-chain-use/>
-- **Date:** November 14, 2024
-- **Key finding:** When inventory records are updated independently in different warehouses, data conflicts can arise due to network partitions or concurrent updates. Version Vector pattern addresses these challenges by tracking updates across nodes.
-
-<a id="research-83"></a>
-**[Research:83]** Distributed Data Consistency Challenges & Solutions
-
-- **Source:** "Distributed Data Consistency: Challenges & Solutions" - Endgrate
-- **URL:** <https://endgrate.com/blog/distributed-data-consistency-challenges-and-solutions>
-- **Date:** 2024-2025
-- **Key finding:** For systems using eventual consistency, systems often implement conflict resolution strategies to handle conflicting changes. They might use timestamps to resolve conflicts or allow users to manually reconcile conflicting changes. Communicate expectations: Inform users about potential delays in data updates.
-
-<a id="research-84"></a>
-**[Research:84]** Handling State and State Management (System Design)
-
-- **Source:** "Handling State and State Management | System Design" - GeeksforGeeks
-- **URL:** <https://www.geeksforgeeks.org/handling-state-and-state-management-system-design/>
-- **Date:** 2024-2025
-- **Key finding:** In distributed systems, effective state management enables concurrent access without conflicts, optimizes resource utilization to improve performance and responsiveness, and provides scalability to handle increasing loads. Maintaining consistency across distributed replicas is challenging.
+- <a id="research-75"></a>**[[Research:75]](/docs/resources/references#research-76)** Material 3 Expressive: 46 studies, 18K participants; common language for cohesive cross-platform (Supercharge Design, 2025)
+- <a id="research-76"></a>**[[Research:76]](/docs/resources/references#research-85)** UX Trends 2025: 59% expect chatbot reply <5s; high expectations for immediate responses (UserGuiding, 2025)
+- <a id="research-77"></a>**[[Research:77]](/docs/resources/references#research-86)** Cross-Device UX 2025: Seamless experience now cornerstone of digital success; frictionless demand (123 Internet, 2025)
+- <a id="research-78"></a>**[[Research:78]](/docs/resources/references#research-87)** PWA 2.0 Offline-First: Offline/Online/Sync state indicators essential; users don't want "You're offline" message (Dazzle Birds, 2024-2025)
+- <a id="research-79"></a>**[[Research:79]](/docs/resources/references#research-88)** PWA 2025 Strategies: Pre-cache usage patterns; offline create/edit with auto-sync (Lollypop Studio, October 2025)
+- <a id="research-80"></a>**[[Research:80]](/docs/resources/references#research-89)** Offline-First Development: Smooth experience where users don't notice they're offline; sync no longer optional (HashStudioz, 2025)
+- <a id="research-81"></a>**[[Research:81]](/docs/resources/references#research-90)** Offline Sync Conflicts: LWW, CRDTs, manual resolution for seamless conflict handling (Daily.dev, 2024)
+- <a id="research-82"></a>**[[Research:82]](/docs/resources/references#research-91)** Version Vector Pattern: Track updates across nodes for conflict resolution in distributed systems (Shanoj, November 2024)
+- <a id="research-83"></a>**[[Research:83]](/docs/resources/references#research-83)** Distributed Consistency (Endgrate): Use timestamps or manual reconciliation; communicate delay expectations (2024-2025)
+- <a id="research-84"></a>**[[Research:84]](/docs/resources/references#research-84)** State Management (GeeksforGeeks): Enable concurrent access, optimize resources, scale; consistency across replicas challenging (2024-2025)
 
 ### Nostr-Specific Data
 
-<a id="data-12"></a>
-**[Data:12]** Relay Data Loss During Downtime
-
-- **Source:** "User Relays" by Sondre Bjellås - Medium
-- **URL:** <https://medium.com/@sondreb/user-relays-7e23e2ac2590>
-- **Date:** April 2025
-- **Key findings:** "When the Damus relay was taken down for upgrades, users' content was potentially wiped and gone... content stored on that relay was reduced to remaining on one less relay"
-
-<a id="data-14"></a>
-**[Data:14]** Catastrophic Follow List Loss
-
-- **Source:** "All my nostr follows gone - how do I get them back?" - Stacker News
-- **URL:** <https://stacker.news/items/182519>
-- **Date:** 2024
-- **Key findings:** User reported "I was trying out the new Iris Nostr client and decided to follow someone new. From that moment on, I noticed my follows count reset from about 130 to 1 (that last follow)... At least one developer reported losing 75% of their follows"
-
-<a id="data-15"></a>
-**[Data:15]** Kind 3 Race Condition Root Cause
-
-- **Source:** "Add kinds 10 and 11 to prevent race conditions" - GitHub PR #349
-- **URL:** <https://github.com/nostr-protocol/nips/pull/349>
-- **Date:** Opened 2023, discussed through 2024
-- **Key findings:** "A very common experience on Nostr is that of losing follows due to race conditions when sending kind 3 events... Earlier this week someone signed in to Coracle, their contact list failed to fully sync before they followed someone, and they ended up deleting all their follows"
-
-<a id="data-17"></a>
-**[Data:17]** Relay Network Decline
-
-- **Source:** "Improving the Availability and Reliability of the Relay Network"
-- **URL:** <https://research.dorahacks.io/2024/04/30/nostr-relay-incentive/>
-- **Date:** April 23, 2024
-- **Key findings:** "Only 639 relays online globally (two-thirds reduction from previous year). 95% of relays struggle to cover operational costs. 20% have faced significant downtime"
-
-<a id="protocol-2"></a>
-**[Protocol:2]** NIP-02: Contact List and Petnames
-
-- **Source:** <https://github.com/nostr-protocol/nips/blob/master/02.md>
-- **Key details:** Defines kind 3 events for following lists. Each new contact list event is replaceable event that supersedes previous ones. Must contain all pubkeys the user is following, as event replaces previous list entirely.
-
-<a id="protocol-5"></a>
-**[Protocol:5]** NIP-65: Relay List Metadata (Outbox Model)
-
-- **Source:** <https://github.com/nostr-protocol/nips/blob/master/65.md>
-- **Key details:** Defines kind 10002 events for user's relay preferences. Helps other users discover which relays to use when looking for someone's content or publishing content meant for them to see.
+- <a id="data-12"></a>**[[Data:12]](/docs/resources/references#data-12)** Relay Data Loss: Damus relay downtime potentially wiped users' content; reduced to one less relay (Sondre Bjellås, April 2025)
+- <a id="data-14"></a>**[[Data:14]](/docs/resources/references#data-14)** Catastrophic Follow Loss: User lost 130 follows to 1 when switching to Iris; developer lost 75% follows (Stacker News, 2024)
+- <a id="data-15"></a>**[[Data:15]](/docs/resources/references#data-15)** Kind 3 Race Conditions: "Very common experience" losing follows; sync failures before follow action delete entire list (GitHub PR #349, 2023-2024)
+- <a id="data-17"></a>**[[Data:17]](/docs/resources/references#data-18)** Relay Network Decline: 639 relays online (two-thirds reduction), 95% struggle with costs, 20% face downtime (April 2024)
+- <a id="protocol-2"></a>**[[Protocol:2]](/docs/resources/references#protocol-2)** NIP-02: Contact List and Petnames (kind 3) - Replaceable events; must contain all pubkeys as event supersedes previous
+- <a id="protocol-5"></a>**[[Protocol:5]](/docs/resources/references#protocol-5)** NIP-65: Relay List Metadata (kind 10002) - Outbox model for user relay preferences and content discovery
 
 ---
 

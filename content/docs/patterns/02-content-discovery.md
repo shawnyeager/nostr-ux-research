@@ -876,70 +876,44 @@ Challenge: Nostr has no central push notification server.
 
 ### Data & Analytics
 
-<a id="data-1"></a>
-**[Data:1]** Nostr.band Analytics - 30-day retention trending to 0% for recent cohorts
-<a id="data-2"></a>
-**[Data:2]** Nostr Content Discovery Crisis - ~36K weekly active users (October 2024), post-viral retention failure
-<a id="data-5"></a>
-**[Data:5]** Nostr Spam Crisis - 500,000 daily spam messages (February 2024)
+- <a id="data-1"></a>**[[Data:1]](/docs/resources/references#data-1)** Nostr.band Analytics - 30-day retention trending to 0% for recent cohorts
+- <a id="data-2"></a>**[[Data:2]](/docs/resources/references#data-2)** Nostr Content Discovery Crisis - ~36K weekly active users (October 2024), post-viral retention failure
+- <a id="data-5"></a>**[[Data:5]](/docs/resources/references#data-5)** Nostr Spam Crisis - 500,000 daily spam messages (February 2024)
 
 ### Academic & UX Research
 
-<a id="research-4"></a>
-**[Research:4]** Bluesky Starter Packs Study (Lancaster University, January 2025) - 43% of follows from starter packs during peak periods, 85% more followers for included users
-<a id="research-5"></a>
-**[Research:5]** Cold Start Problem in Recommendation Systems (Academic, 2024) - Strategies: social network info, collaborative filtering, hybrid models, user demographics, community detection
-<a id="research-6"></a>
-**[Research:6]** "Better Feeds" Report (Georgetown University, March 2025) - Chronological feeds decrease engagement without reducing polarization; users compensate by using other platforms
-<a id="research-7"></a>
-**[Research:7]** Engagement-Based Algorithms Amplify Divisive Content (PNAS Nexus, 2024-2025) - Pure engagement optimization amplifies content users report makes them feel worse
-<a id="research-8"></a>
-**[Research:8]** Social Media as Search Engine (2024-2025) - 2 in 5 Americans use TikTok as search engine; 50%+ of Gen Z prefer social for discovery over Google
+- <a id="research-4"></a>**[[Research:4]](/docs/resources/references#research-4)** Bluesky Starter Packs Study (Lancaster University, January 2025) - 43% of follows from starter packs during peak periods, 85% more followers for included users
+- <a id="research-5"></a>**[[Research:5]](/docs/resources/references#research-5)** Cold Start Problem in Recommendation Systems (Academic, 2024) - Strategies: social network info, collaborative filtering, hybrid models, user demographics, community detection
+- <a id="research-6"></a>**[[Research:6]](/docs/resources/references#research-6)** "Better Feeds" Report (Georgetown University, March 2025) - Chronological feeds decrease engagement without reducing polarization; users compensate by using other platforms
+- <a id="research-7"></a>**[[Research:7]](/docs/resources/references#research-7)** Engagement-Based Algorithms Amplify Divisive Content (PNAS Nexus, 2024-2025) - Pure engagement optimization amplifies content users report makes them feel worse
+- <a id="research-8"></a>**[[Research:8]](/docs/resources/references#research-8)** Social Media as Search Engine (2024-2025) - 2 in 5 Americans use TikTok as search engine; 50%+ of Gen Z prefer social for discovery over Google
 
 ### Case Studies & Examples
 
-<a id="example-4"></a>
-**[Example:4]** TikTok For You Algorithm (2024-2025) - Prioritizes content relevance over creator popularity; users with zero followers can reach large audiences; 75%+ impressions from For You feed
-<a id="example-5"></a>
-**[Example:5]** Instagram Algorithm Updates (2024-2025) - April 2024: rewards original content, weights shares over likes; Multiple specialized algorithms for Feed/Reels/Explore
-<a id="example-6"></a>
-**[Example:6]** Bluesky Starter Packs (June 2024) - Up to 150 people + 3 custom feeds per pack; proven cold start solution
-<a id="example-7"></a>
-**[Example:7]** Mastodon Discovery - Local/Federated timeline structure, hashtag-based discovery
+- <a id="example-4"></a>**[[Example:4]](/docs/resources/references#example-4)** TikTok For You Algorithm (2024-2025) - Prioritizes content relevance over creator popularity; users with zero followers can reach large audiences; 75%+ impressions from For You feed
+- <a id="example-5"></a>**[[Example:5]](/docs/resources/references#example-5)** Instagram Algorithm Updates (2024-2025) - April 2024: rewards original content, weights shares over likes; Multiple specialized algorithms for Feed/Reels/Explore
+- <a id="example-6"></a>**[[Example:6]](/docs/resources/references#example-6)** Bluesky Starter Packs (June 2024) - Up to 150 people + 3 custom feeds per pack; proven cold start solution
+- <a id="example-7"></a>**[[Example:7]](/docs/resources/references#example-7)** Mastodon Discovery - Local/Federated timeline structure, hashtag-based discovery
 
 ### Nostr Protocol Documentation
 
-<a id="protocol-5"></a>
-**[Protocol:5]** NIP-57: Lightning Zaps - Unique quality signal for content ranking
+- <a id="protocol-5"></a>**[[Protocol:5]](/docs/resources/references#protocol-5)** NIP-57: Lightning Zaps - Unique quality signal for content ranking
 
 ### User Feedback & Quotes (2024-2025)
 
-<a id="user-15"></a>
-**[User:15]** "Traditional apps win simply by having much better content selection" (karnage, March 2024)
-<a id="user-22"></a>
-**[User:22]** "Nostr is lacking in content, which could be the primary reason people are not sticking around" (2024)
-<a id="user-23"></a>
-**[User:23]** Chicken-egg problem: need users for content, need content for users (2024)
-<a id="user-24"></a>
-**[User:24]** "Nostr does not seem to have any external growth loops" (karnage, March 2024)
-<a id="user-25"></a>
-**[User:25]** "Users are not notified when tagged" (karnage, March 2024)
-<a id="user-26"></a>
-**[User:26]** "Habit formation... Nostr seems to have a weak spot here" (karnage, March 2024)
-<a id="user-27"></a>
-**[User:27]** "The main problem of decentralized alternatives like Nostr is content discovery" (2024)
-<a id="user-28"></a>
-**[User:28]** "It's only possible to search on what you have seen" (2024)
-<a id="user-29"></a>
-**[User:29]** "500,000 daily spam messages in mid-February" (February 2024)
-<a id="user-30"></a>
-**[User:30]** "There can't be a 'global' view of the network, as it would be full of spam" (2024)
-<a id="user-31"></a>
-**[User:31]** Primal 2.0 launch - Feed Marketplace, Explore tab, Advanced Search (November 21, 2024)
-<a id="user-32"></a>
-**[User:32]** Nstart onboarding wizard - Auto-follow trusted users (January 2025)
-<a id="user-33"></a>
-**[User:33]** Derek Ross - "Content discovery keeps improving, but we still need to act as our own algorithms" (January 2025)
+- <a id="user-15"></a>**[[User:15]](/docs/resources/references#user-15)** "Traditional apps win simply by having much better content selection" (karnage, March 2024)
+- <a id="user-22"></a>**[[User:22]](/docs/resources/references#user-22)** "Nostr is lacking in content, which could be the primary reason people are not sticking around" (2024)
+- <a id="user-23"></a>**[[User:23]](/docs/resources/references#user-23)** Chicken-egg problem: need users for content, need content for users (2024)
+- <a id="user-24"></a>**[[User:24]](/docs/resources/references#user-24)** "Nostr does not seem to have any external growth loops" (karnage, March 2024)
+- <a id="user-25"></a>**[[User:25]](/docs/resources/references#user-25)** "Users are not notified when tagged" (karnage, March 2024)
+- <a id="user-26"></a>**[[User:26]](/docs/resources/references#user-26)** "Habit formation... Nostr seems to have a weak spot here" (karnage, March 2024)
+- <a id="user-27"></a>**[[User:27]](/docs/resources/references#user-27)** "The main problem of decentralized alternatives like Nostr is content discovery" (2024)
+- <a id="user-28"></a>**[[User:28]](/docs/resources/references#user-28)** "It's only possible to search on what you have seen" (2024)
+- <a id="user-29"></a>**[[User:29]](/docs/resources/references#user-29)** "500,000 daily spam messages in mid-February" (February 2024)
+- <a id="user-30"></a>**[[User:30]](/docs/resources/references#user-30)** "There can't be a 'global' view of the network, as it would be full of spam" (2024)
+- <a id="user-31"></a>**[[User:31]](/docs/resources/references#user-31)** Primal 2.0 launch - Feed Marketplace, Explore tab, Advanced Search (November 21, 2024)
+- <a id="user-32"></a>**[[User:32]](/docs/resources/references#user-32)** Nstart onboarding wizard - Auto-follow trusted users (January 2025)
+- <a id="user-33"></a>**[[User:33]](/docs/resources/references#user-33)** Derek Ross - "Content discovery keeps improving, but we still need to act as our own algorithms" (January 2025)
 
 ---
 

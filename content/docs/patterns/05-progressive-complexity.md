@@ -1885,158 +1885,25 @@ signer app to manage your keys.
 
 ### Universal UX Research
 
-<a id="research-54"></a>
-**[Research:54]** Pareto Principle (80/20 Rule) in UX Design
-
-- **Updated:** September 2025 (Interaction Design Foundation)
-- **Key finding:** 80% of users use only 20% of features
-- **Application:** Focus on 20% of design decisions that drive 80% of impact
-- **Source:** <https://www.interaction-design.org/literature/topics/pareto-principle>
-- **Source:** <https://think.design/blog/the-pareto-principle-in-ux/>
-- **Date:** December 2024
-
-<a id="research-55"></a>
-**[Research:55]** Progressive Disclosure Reduces Cognitive Load
-
-- **Key finding:** 30-40% reduction in cognitive load during onboarding
-- **Benefits:** Breaks complex processes into manageable steps, eliminates abandonment friction
-- **Source:** <https://www.interaction-design.org/literature/topics/progressive-disclosure>
-- **Source:** <https://lollypop.design/blog/2025/may/progressive-disclosure/>
-- **Date:** May 2025
-
-<a id="research-56"></a>
-**[Research:56]** Progressive Disclosure Strategy
-
-- **Key finding:** Reduces decision fatigue by revealing information in stages
-- **Common implementations:** Collapsible menus, tooltips, hover actions, toggles
-- **Source:** <https://blog.logrocket.com/ux-design/progressive-disclosure-ux-types-use-cases/>
-- **Source:** <https://octet.design/journal/progressive-disclosure/>
-- **Date:** 2024-2025
-
-<a id="research-57"></a>
-**[Research:57]** Cognitive Load Reduction Impact
-
-- **Airbnb:** 25% fewer interactions with smart defaults, higher conversion
-- **Figma:** 24% reduction in cognitive load with minimal layouts
-- **Adobe (2024):** 30% increase in engagement with decluttered designs
-- **Source:** <https://developerux.com/2025/04/18/ultimate-guide-to-cognitive-load-reduction-in-ux-design/>
-- **Date:** April 2025
-
-<a id="research-58"></a>
-**[Research:58]** Android Settings Design Guidelines
-
-- **Key finding:** Limit settings to 10-15 items per screen
-- **Best practices:** Place frequently used at top, users should glance and understand all settings
-- **Source:** <https://source.android.com/docs/core/settings/settings-guidelines>
-- **Source:** <https://www.setproduct.com/blog/settings-ui-design>
-- **Date:** 2024-2025
-
-<a id="research-59"></a>
-**[Research:59]** Pareto Principle Application to Interface Design
-
-- **Feature prioritization:** Identify 20% of features that meet 80% of users' needs
-- **MVP development:** Minimum viable products are Pareto Principle in action
-- **Source:** <https://lawsofux.com/pareto-principle/>
-- **Source:** <https://www.cursorup.com/blog/the-pareto-principle>
-- **Date:** 2024-2025
-
-<a id="research-60"></a>
-**[Research:60]** Progressive Disclosure Techniques
-
-- **Core insight:** Defer advanced features to secondary UI, keep essential content in primary UI
-- **When to use:** Novice users, complex tasks, limited screen space, high cognitive load
-- **Design methods:** Card sorting and task analysis to define essential vs. advanced content
-- **Source:** <https://www.nngroup.com/articles/progressive-disclosure/>
-- **Source:** <https://www.ux-bulletin.com/progressive-disclosure-in-ux/>
-- **Date:** 2024-2025
-
-<a id="research-61"></a>
-**[Research:61]** Complexity Organization Best Practices
-
-- **Core insight:** Great UX isn't hiding features—it's organizing them so users can find, understand, use without frustration
-- **Visual hierarchy:** Prioritize important information, align with user needs, use shared visual traits
-- **Source:** <https://medium.com/@rounakbajoriastar/from-chaos-to-clarity-organizing-complex-interfaces-with-ux-best-practices-daec1a8328ab>
-- **Source:** <https://devpulse.com/insights/ux-ui-design-best-practices-2025-enterprise-applications/>
-- **Date:** May 2025
-
-<a id="research-62"></a>
-**[Research:62]** Contextual Help and Onboarding (Nielsen Norman Group February 2024)
-
-- **Pull revelations:** Help triggered when user would benefit at that moment
-- **Progressive delivery:** Introduce actions/features gradually as they become relevant to avoid overload
-- **AI-enhanced personalization:** Tailor onboarding to user goals and behavior
-- **Source:** <https://www.nngroup.com/articles/onboarding-tutorials/>
-- **Source:** <https://www.uxdesigninstitute.com/blog/ux-onboarding-best-practices-guide/>
-- **Date:** February 2024
-
-<a id="research-63"></a>
-**[Research:63]** Tooltip Design and Contextual Guidance
-
-- **Design principle:** Tooltips provide subtle, contextual guidance; pop-ups/modals are disruptive
-- **Best practices:** Concise, context-sensitive pop-ups that give information without interrupting flow
-- **Source:** <https://www.chameleon.io/blog/why-tooltips-are-terrible-and-why-you-should-use-them>
-- **Source:** <https://www.appcues.com/blog/tooltips>
-- **Date:** 2024-2025
-
-<a id="research-64"></a>
-**[Research:64]** 2024-2025 UX Trends for Power Users
-
-- **"Choose your own UX adventure"** settings for power users
-- **Smart defaults** with behavior-based interfaces
-- **Adaptive interfaces:** Dark mode at night, simplified UI when fatigued
-- **Source:** <https://www.aufaitux.com/blog/power-bi-trends-enterprise-analytics-dashboard-ux/>
-- **Source:** <https://trends.uxdesign.cc>
-- **Date:** 2025
-
-<a id="research-65"></a>
-**[Research:65]** Cognitive Load Reduction Techniques
-
-- **Progressive disclosure:** Accordions, tooltips, step-by-step flows keep interface clean
-- **Simplification:** Consistent patterns, clear layouts, minimal distractions, logical grouping
-- **Mobile-specific:** Bottom navigation, gesture-based controls streamline journeys
-- **Source:** <https://www.ijraset.com/best-journal/reducing-cognitive-load-in-ui-design>
-- **Source:** <https://hapy.design/journal/ways-to-reduce-cognitive-load-for-a-better-ui/>
-- **Date:** 2024-2025
+- <a id="research-54"></a>**[[Research:54]](/docs/resources/references#research-62)** Pareto Principle (80/20): 80% users use only 20% of features; focus on 20% of decisions driving 80% impact (September 2025)
+- <a id="research-55"></a>**[[Research:55]](/docs/resources/references#research-63)** Progressive Disclosure: 30-40% cognitive load reduction during onboarding; breaks complexity into manageable steps (May 2025)
+- <a id="research-56"></a>**[[Research:56]](/docs/resources/references#research-64)** Progressive Disclosure Strategy: Reduces decision fatigue via staged revelation; collapsible menus, tooltips, toggles (2024-2025)
+- <a id="research-57"></a>**[[Research:57]](/docs/resources/references#research-65)** Cognitive Load Impact: Airbnb 25% fewer interactions, Figma 24% load reduction, Adobe 30% engagement increase (April 2025)
+- <a id="research-58"></a>**[[Research:58]](/docs/resources/references#research-66)** Android Settings: Limit to 10-15 items/screen; frequently used at top; users should glance and understand (2024-2025)
+- <a id="research-59"></a>**[[Research:59]](/docs/resources/references#research-67)** Pareto in Interface Design: Identify 20% features meeting 80% needs; MVP development is Pareto in action (2024-2025)
+- <a id="research-60"></a>**[[Research:60]](/docs/resources/references#research-68)** Progressive Disclosure Techniques (NN/g): Defer advanced to secondary UI; use for novices, complex tasks, limited space (2024-2025)
+- <a id="research-61"></a>**[[Research:61]](/docs/resources/references#research-69)** Complexity Organization: Great UX isn't hiding features—it's organizing them; visual hierarchy prioritizes user needs (May 2025)
+- <a id="research-62"></a>**[[Research:62]](/docs/resources/references#research-70)** Contextual Help (NN/g): Pull revelations when beneficial; progressive delivery; AI-enhanced personalization (February 2024)
+- <a id="research-63"></a>**[[Research:63]](/docs/resources/references#research-71)** Tooltip Design: Subtle contextual guidance vs disruptive modals; concise, context-sensitive, non-interrupting (2024-2025)
+- <a id="research-64"></a>**[[Research:64]](/docs/resources/references#research-64)** UX Trends for Power Users: "Choose your own UX adventure"; smart defaults, adaptive interfaces (dark mode, simplified) (2025)
+- <a id="research-65"></a>**[[Research:65]](/docs/resources/references#research-65)** Cognitive Load Techniques: Progressive disclosure (accordions, tooltips), consistent patterns, bottom nav, gestures (2024-2025)
 
 ### Nostr-Specific Data
 
-<a id="data-31"></a>
-**[Data:31]** Cross-Client Relay List Confusion
-
-- Users setting relay preferences in Nostrudel find other clients (Coracle, Nostter) pulling incorrectly
-- Manual relay additions multiply unexpectedly
-- "Imperfect, incomplete, and/or partially implemented NIPs' unintended consequences"
-- **Source:** <https://github.com/nostr-protocol/nips/discussions/1134>
-- **Date:** 2024-2025
-
-<a id="data-32"></a>
-**[Data:32]** NIP-65 Relay List Metadata
-
-- Uses kind:10002 events to advertise user's write relays (OUTBOX) and read relays (INBOX)
-- Clients should guide users to keep lists small (2-4 relays)
-- **Source:** <https://nips.nostr.com/65>
-- **Source:** <https://nostrify.dev/relay/outbox>
-- **Date:** 2024-2025
-
-<a id="data-33"></a>
-**[Data:33]** NIP-46 Signer App UX Challenges
-
-- Specification "unclear and constantly changing"
-- Incompatibilities between apps and signers
-- No signer apps in traditional app stores (requires Obtanium or zap.store)
-- Clients don't handle latency well
-- "While NIP-46 is best practice, it doesn't currently work very well at all"
-- **Source:** <https://nostr.com/naddr1qqxnzdenxyenvdesxvmrvwp4qy28wumn8ghj7ctvvahjuat50phjummwv5hsygyhcu9ygdn2v56uz3dnx0uh865xmlwz675emfsccsxxguz6mx8rygpsgqqqw4rsvrkrdw>
-- **Date:** 2024
-
-<a id="data-34"></a>
-**[Data:34]** Available Nostr Signer Apps
-
-- **Amber (Android):** Offline signing, multiple accounts, granular permissions
-- **Nostr Signer (Alby):** Remote signing via push notifications
-- **Source:** <https://blog.getalby.com/nostr-signer/>
-- **Source:** <https://maxgravitt.com/articles/nostr-connect/>
-- **Date:** 2024-2025
+- <a id="data-31"></a>**[[Data:31]](/docs/resources/references#data-29)** Cross-Client Relay Confusion: Nostrudel settings don't transfer to Coracle/Nostter; "imperfect NIP implementations" (2024-2025)
+- <a id="data-32"></a>**[[Data:32]](/docs/resources/references#data-30)** NIP-65 Relay List: kind:10002 for OUTBOX/INBOX relays; clients should guide to 2-4 relays (2024-2025)
+- <a id="data-33"></a>**[[Data:33]](/docs/resources/references#data-31)** NIP-46 Signer UX: "Unclear and constantly changing"; incompatibilities; no app store availability; poor latency handling (2024)
+- <a id="data-34"></a>**[[Data:34]](/docs/resources/references#data-32)** Nostr Signers: Amber (Android offline, multi-account, granular); Alby (remote via push) (2024-2025)
 
 ---
 

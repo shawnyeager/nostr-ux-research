@@ -1018,360 +1018,50 @@ Test different approaches:
 
 ### Data & Analytics (Nostr-Specific)
 
-<a id="data-19"></a>
-**[Data:19]** User complaints - Nostr apps "slow and clunky", "clients blasting entire message history"
-
-- Source: Community feedback on Nostr performance (2024-2025)
-- URL: Aggregated from GitHub issues and user reports
-
-<a id="data-20"></a>
-**[Data:20]** Crash reports across Nostr clients
-
-- Primal Android crashes (September & October 2025)
-- Amethyst community join/leave crashes, permission crashes
-- Nostur iOS crashes and slow loading
-- Damus Issue #3163 (July 2025) bug/crash report
-- Source: GitHub issues from major Nostr clients (2024-2025)
-
-<a id="data-21"></a>
-**[Data:21]** Database performance bottleneck
-
-- Users identify database as "core bottleneck" for slow feed loading
-- Comparison to Twitter's Redis architecture shows gap
-- Source: Nostr developer discussions (2024-2025)
-
-<a id="data-22"></a>
-**[Data:22]** Amethyst battery drain issues
-
-- Background video playback silently draining battery on loop
-- Multi-relay connections (up to 100 relays) causing resource consumption
-- Improper WebSocket connection management when app backgrounds
-- Source: Amethyst GitHub issues (2024-2025)
-
-<a id="data-23"></a>
-**[Data:23]** Relay infrastructure statistics
-
-- Only 639 relays online globally (80% in North America & Europe)
-- Default nostr-relay config: ~100 requests/second, hundreds of connections
-- Default SQLite backend: "worst performance"
-- Free relays: Higher latency, less reliable
-- Paid relays: Lower latency, better uptime
-- Source: Nostr relay monitoring (2024-2025)
-
-<a id="data-24"></a>
-**[Data:24]** Multi-relay coordination overhead
-
-- Clients can open "hundreds of WebSocket connections simultaneously"
-- Each relay gets one WebSocket connection for all communication
-- Source: Nostr protocol analysis (2024-2025)
-
-<a id="data-25"></a>
-**[Data:25]** Black Hat USA 2025: "Not Sealed: Practical Attacks on Nostr"
-
-- Several clients (Damus, Iris, FreeFrom, Plebstr past versions) omit signature verification entirely
-- Trade-off: Performance improvement vs security vulnerability
-- Recommendation: Enforce mandatory signature verification in NIP-01
-- Source: Black Hat USA 2025 security research
-
-<a id="data-26"></a>
-**[Data:26]** nostrdb optimization
-
-- "Unfairly fast" embedded database
-- Zero-copy, O(1) access patterns
-- Memory-mapped LMDB design (copied from strfry)
-- Source: nostrdb documentation (2024-2025)
-
-<a id="data-27"></a>
-**[Data:27]** Primal Caching Service
-
-- Server-side caching for Nostr events
-- Open sourced, archived December 2024
-- Source: Primal project (2024-2025)
+- <a id="data-19"></a>**[[Data:19]](/docs/resources/references#data-21)** User complaints: Nostr apps "slow and clunky", "clients blasting entire message history" (2024-2025)
+- <a id="data-20"></a>**[[Data:20]](/docs/resources/references#data-22)** Crash reports across Primal, Amethyst, Nostur, Damus clients (2024-2025)
+- <a id="data-21"></a>**[[Data:21]](/docs/resources/references#data-23)** Database identified as "core bottleneck" for slow feed loading; gap vs Twitter's Redis architecture (2024-2025)
+- <a id="data-22"></a>**[[Data:22]](/docs/resources/references#data-24)** Amethyst battery drain: Background video loops, up to 100 relay connections, improper WebSocket management (2024-2025)
+- <a id="data-23"></a>**[[Data:23]](/docs/resources/references#data-18)** Only 639 relays online; default SQLite backend "worst performance"; free relays slower than paid (2024-2025)
+- <a id="data-24"></a>**[[Data:24]](/docs/resources/references#data-25)** Clients can open hundreds of WebSocket connections simultaneously; one per relay (2024-2025)
+- <a id="data-25"></a>**[[Data:25]](/docs/resources/references#data-26)** Black Hat USA 2025: Some clients omit signature verification for performance; security tradeoff (2025)
+- <a id="data-26"></a>**[[Data:26]](/docs/resources/references#data-27)** nostrdb: "Unfairly fast" embedded database with zero-copy, O(1) access, LMDB design (2024-2025)
+- <a id="data-27"></a>**[[Data:27]](/docs/resources/references#data-28)** Primal Caching Service: Server-side caching for Nostr events, open sourced (December 2024)
 
 ### Academic & UX Research (Universal Principles)
 
-<a id="research-31"></a>
-**[Research:31]** Nielsen Norman Group - Response Time Limits (Updated January 2024)
+- <a id="research-31"></a>**[[Research:31]](/docs/resources/references#research-28)** Response Time Limits: 100ms instant, 1s flow uninterrupted, 5s (updated from 10s) keeps attention (NN/g, January 2024)
+- <a id="research-32"></a>**[[Research:32]](/docs/resources/references#research-42)** Speed & Bounce: 32% bounce at 3s, 90% at 5s, 123% at 10s; 53% mobile visitors leave >3s (2025)
+- <a id="research-33"></a>**[[Research:33]](/docs/resources/references#research-43)** Conversion Impact: 39% at 1s load, 1.9% at 2.4s, 0.6% at 5.7s; 7% loss per second delay (2025)
+- <a id="research-34"></a>**[[Research:34]](/docs/resources/references#research-34)** Skeleton screens perceived 30% faster than spinners; best for <10s waits, container components (LogRocket, 2024)
+- <a id="research-35"></a>**[[Research:35]](/docs/resources/references#research-44)** Skeleton vs Spinners: More engaging, dramatic UX improvement despite identical speed (UI-Deploy, 2024)
+- <a id="research-36"></a>**[[Research:36]](/docs/resources/references#research-30)** React 19 useOptimistic Hook: Elegant optimistic UI solution for social media (LogRocket, 2024)
+- <a id="research-37"></a>**[[Research:37]](/docs/resources/references#research-45)** Material Design 3 Expressive loading indicator for <5s waits; 7 unique shape morphs (May 2025)
+- <a id="research-38"></a>**[[Research:38]](/docs/resources/references#research-46)** React Optimistic UI vital for social media: Facebook like button turns blue instantly (Telerik, 2025)
+- <a id="research-39"></a>**[[Research:39]](/docs/resources/references#research-47)** Service Workers + IndexedDB significantly improves performance, enables offline-first apps (September 2024)
+- <a id="research-40"></a>**[[Research:40]](/docs/resources/references#research-48)** Offline-First PWAs: 45% use hybrid approach; Cache API for files, IndexedDB for data (August 2025)
 
-- **100ms:** Perceived as instant response
-- **1.0 second:** Upper limit of user's flow of thought
-- **10 seconds → Now 5 seconds:** "Probably safe to say the upper limit of 10 seconds is now 5 seconds or even less"
-- Original research from 1993, updated for 2024 expectations
-- URL: <https://www.nngroup.com/articles/response-times-3-important-limits/>
-- Date: Updated January 2024
-
-<a id="research-32"></a>
-**[Research:32]** Website Speed & Bounce Rate Statistics
-
-- **32% bounce increase** from 1 to 3 seconds load time
-- **90% bounce increase** at 5 seconds
-- **123% bounce increase** at 10 seconds
-- **53% of mobile visitors** leave if page takes >3 seconds
-- Even **1-second delay can double bounce rate**
-- URL: <https://www.sitebuilderreport.com/website-speed-statistics>
-- Date: 2025
-
-<a id="research-33"></a>
-**[Research:33]** User Experience Conversion Statistics
-
-- Sites loading in **1 second achieve 39% conversion rates**
-- **1.9% conversion at 2.4 seconds**
-- **0.6% conversion at 5.7 seconds**
-- **7% loss in conversion** for every 1-second delay
-- URL: <https://techjury.net/industry-analysis/user-experience-stats/>
-- Date: 2025
-
-<a id="research-34"></a>
-**[Research:34]** Skeleton Loading Screen Design
-
-- **Users perceive skeleton screens as 30% faster** than identical sites with spinners
-- **Skeleton screens feel 20% faster** than spinners for identical wait times
-- Best for wait times under 10 seconds
-- Best for container-based components: tiles, lists, grids, data tables, cards
-- URL: <https://blog.logrocket.com/ux-design/skeleton-loading-screen-design/>
-- Date: 2024
-
-<a id="research-35"></a>
-**[Research:35]** Skeleton Screens vs Spinners Performance
-
-- Skeleton screens keep users more engaged during wait times
-- One developer saw dramatic UX improvement switching from spinners to skeletons despite identical backend speed
-- URL: <https://ui-deploy.com/blog/skeleton-screens-vs-spinners-optimizing-perceived-performance>
-- Date: 2024
-
-<a id="research-36"></a>
-**[Research:36]** React Optimistic UI with useOptimistic Hook
-
-- **React 19's `useOptimistic` Hook** provides elegant solution
-- Currently available in React Canary version
-- Essential for social media: "seeing a comment appear the moment it's clicked"
-- URL: <https://blog.logrocket.com/understanding-optimistic-ui-react-useoptimistic-hook/>
-- Date: 2024
-
-<a id="research-37"></a>
-**[Research:37]** Material Design 3 Loading Indicators
-
-- **New Material 3 Expressive loading indicator** (2025)
-- For wait times **less than 5 seconds**
-- Looping shape morph sequence with 7 unique Material 3 shapes
-- Updated linear and circular progress indicators with wavy shapes
-- URL: <https://m3.material.io/components/progress-indicators/guidelines>
-- URL: <https://9to5google.com/2025/05/16/material-3-expressive-loading-indicator/>
-- Date: May 2025
-
-<a id="research-38"></a>
-**[Research:38]** React Design Patterns Best Practices
-
-- Optimistic UI especially vital in seamless interaction environments like social media
-- Facebook example: Like button immediately turns blue without waiting for server
-- Mimics immediate responsiveness
-- URL: <https://www.telerik.com/blogs/react-design-patterns-best-practices>
-- Date: 2025
-
-<a id="research-39"></a>
-**[Research:39]** Caching Strategy with Service Workers
-
-- Service Workers + IndexedDB significantly improves performance and UX
-- Enables robust offline-first applications
-- URL: <https://peerdh.com/blogs/programming-insights/implementing-a-caching-strategy-for-indexeddb-with-service-workers>
-- Date: September 2024
-
-<a id="research-40"></a>
-**[Research:40]** Offline-First Web Applications
-
-- Service Workers + Cache API enhance PWAs with offline access and improved loading speed
-- **Cache-then-network** or **stale-while-revalidate** for dynamic content
-- **2024 HTTP Archive data:** Nearly 45% of high-rated installable PWAs use hybrid approach
-- Use **Cache API** for application files, **IndexedDB** for other data
-- URL: <https://techtruth.dev/building-offline-first-web-applications-with-service-workers-and-indexeddb>
-- Date: August 2025
-
-<a id="research-41"></a>
-**[Research:41]** JavaScript Bundle Size Reduction
-
-- Tree shaking, code splitting, dependency analysis most effective strategies
-- Can reduce bundle sizes by **20-50%** in typical applications
-- Use **dynamic import()** expressions to split modules at runtime
-- URL: <https://dev.to/hamzakhan/reducing-javascript-bundle-size-with-code-splitting-in-2025-3927>
-- Date: 2025
-
-<a id="research-42"></a>
-**[Research:42]** Webpack Bundle Splitting Best Practices
-
-- **Recommended approach:** Dynamic imports conforming to ECMAScript proposal
-- **Performance budgets for 2024:**
-  - Initial bundle: **<250KB gzipped** for fast 3G
-  - Total bundle: **<1MB gzipped** for good UX
-- URL: <https://infervour.com/blog/how-to-split-webpack-bundles-for-code-splitting>
-- Date: 2025
-
-<a id="research-43"></a>
-**[Research:43]** React Server Components Performance Impact
-
-- **Real-world example:** E-commerce company migrating product listing pages to RSC:
-  - **40% improvement in load times**
-  - **15% increase in conversion rates** (within first quarter)
-- RSCs not hydrated on server, no JS shipped to client
-- **Significantly increases page load time** and **reduces total JavaScript bundle size**
-- URL: <https://www.developerway.com/posts/react-server-components-performance>
-- URL: <https://www.codertrove.com/articles/react-server-components-2025-nextjs-performance>
-- Date: 2024-2025
-
-<a id="research-44"></a>
-**[Research:44]** Native Image Lazy Loading Performance
-
-- **On 4G:** 97.5% of lazy-loaded images fully loaded within 10ms of becoming visible
-- **On 2G:** 92.6% loaded within 10ms
-- Native `loading="lazy"` attribute - no custom code needed
-- **Modern image formats** (WebP, AVIF) more efficient than JPEG/PNG
-- URL: <https://web.dev/articles/browser-level-image-lazy-loading>
-- URL: <https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Lazy_loading>
-- URL: <https://medium.com/@iliketoplay/lazy-loading-images-in-2024-9b579e885e07>
-- Date: 2024-2025
-
-<a id="research-45"></a>
-**[Research:45]** React Performance Optimization Complete Guide
-
-- Virtual scrolling/windowing essential for large lists
-- Only render visible items to reduce DOM operations
-- URL: <https://dev.to/amaresh_adak/react-performance-optimization-from-slow-to-lightning-fast-complete-guide-2025-19hl>
-- Date: 2025
-
-<a id="research-46"></a>
-**[Research:46]** Virtualization in React for Large Lists
-
-- Virtualization optimizes by only rendering visible elements
-- **Significantly reduces:**
-  - DOM updates (only visible elements in DOM)
-  - Memory usage (fewer elements = less memory)
-  - Render time (minimized DOM operations)
-- URL: <https://medium.com/@ignatovich.dm/virtualization-in-react-improving-performance-for-large-lists-3df0800022ef>
-- Date: 2024
-
-<a id="research-47"></a>
-**[Research:47]** Smooth Scrolling with TanStack Virtual
-
-- **TanStack Virtual** most popular library (November 2024)
-- **Best practices:**
-  - Wrap row components in `React.memo()` to prevent unnecessary re-renders
-  - Combine virtual scrolling with API pagination
-  - Render 1-2 additional items above/below visible area (overscan)
-- URL: <https://borstch.com/blog/development/achieving-smooth-scrolling-in-react-with-tanstack-virtual-best-practices>
-- Date: November 2024
-
-<a id="research-48"></a>
-**[Research:48]** Academic Research: Nostr Replication Overhead
-
-- Title: "Replication of posts across relays enhances censorship-resistance but introduces significant overhead"
-- Authors: Yiluo Wei & Gareth Tyson
-- **Proposed Solutions:** Control replication count + reduce retrieval overhead
-- **Client-side optimizations:** Designed to avoid complicated relay coordination
-- Source: arXiv 2402.05709 (February 2024, revised September 2025)
-
-<a id="research-49"></a>
-**[Research:49]** INP Replaces FID as Core Web Vital (March 2024)
-
-- **INP (Interaction to Next Paint) replaced FID** as Core Web Vital on March 12, 2024
-- Chrome team introduced INP as experimental metric in May 2022
-- After nearly 2 years of testing, became stable Core Web Vital
-- FID officially deprecated, removed from Google Search Console
-- URL: <https://web.dev/blog/inp-cwv-march-12>
-- Date: March 12, 2024
-
-<a id="research-50"></a>
-**[Research:50]** First Input Delay vs Interaction to Next Paint
-
-- **Key differences between INP and FID:**
-  - **Scope:** FID measures only first interaction; INP considers all interactions
-  - **What measured:** FID only measures input delay; INP measures input delay + event handler processing + browser paint time
-- **Good INP score:** <200 milliseconds
-- **Poor INP score:** >500 milliseconds
-- URL: <https://vercel.com/blog/first-input-delay-vs-interaction-to-next-paint>
-- Date: 2024
-
-<a id="research-51"></a>
-**[Research:51]** Animation Performance and Frame Rate
-
-- **For 60fps:** Browser has **16.7 milliseconds** to execute scripts, recalculate styles/layout, and repaint
-- Complex transitions may raise paint times from 5ms to 30ms per frame, breaching 16ms budget
-- **GPU-accelerated properties** (transform, opacity) provide consistently smoother results
-- URL: <https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Animation_performance_and_frame_rate>
-- URL: <https://moldstud.com/articles/p-exploring-the-impact-of-animation-on-performance-essential-insights-for-developers>
-- Date: Updated November 2025, September 2025
-
-<a id="research-52"></a>
-**[Research:52]** Rakuten Core Web Vitals Case Study
-
-- **Rakuten 24** (rigorous A/B test):
-  - Good LCP led to **up to 61.13% increase in conversion rate**
-  - **26.09% increase in revenue per visitor**
-  - **11.26% increase in average order value**
-- Optimized landing page: **53.4% increase in revenue per visitor**, **33.1% increase in conversion rate**
-- URL: <https://web.dev/case-studies/rakuten>
-- Date: 2024
-
-<a id="research-53"></a>
-**[Research:53]** Core Web Vitals Business Impact
-
-- Sites meeting Core Web Vitals thresholds show:
-  - **24% reduction in page abandonment**
-  - **8-10% conversion increase** for every 0.1-second improvement in load time
-- **Carpe:** 52% improvement in LCP → **10% increase in traffic**, **5% increase in conversion**, **15% increase in revenue**
-- **Relive:** Over 50% faster LCP → **3% increase in conversion**, **6% decrease in bounce**, **9% increase in page views/session**
-- URL: <https://bluetriangle.com/blog/web-vitals-impact-lcp>
-- URL: <https://nitropack.io/blog/post/improve-conversion-rates-cwv>
-- Date: 2024
+- <a id="research-41"></a>**[[Research:41]](/docs/resources/references#research-49)** JS Bundle Size: Tree shaking, code splitting, dynamic import() reduce bundles 20-50% (2025)
+- <a id="research-42"></a>**[[Research:42]](/docs/resources/references#research-50)** Webpack Bundles: <250KB gzipped initial, <1MB total for good UX (2025)
+- <a id="research-43"></a>**[[Research:43]](/docs/resources/references#research-51)** React Server Components: 40% faster loads, 15% conversion increase; no JS shipped to client (2024-2025)
+- <a id="research-44"></a>**[[Research:44]](/docs/resources/references#research-52)** Native Lazy Loading: 97.5% images load <10ms on 4G, 92.6% on 2G; WebP/AVIF more efficient (2024-2025)
+- <a id="research-45"></a>**[[Research:45]](/docs/resources/references#research-53)** React Performance: Virtual scrolling/windowing essential for large lists, reduces DOM ops (2025)
+- <a id="research-46"></a>**[[Research:46]](/docs/resources/references#research-54)** React Virtualization: Only render visible elements; reduces DOM updates, memory, render time (2024)
+- <a id="research-47"></a>**[[Research:47]](/docs/resources/references#research-55)** TanStack Virtual: Most popular library; use React.memo(), combine with pagination, overscan 1-2 items (November 2024)
+- <a id="research-48"></a>**[[Research:48]](/docs/resources/references#research-56)** Nostr Replication Overhead (arXiv): Control replication count, reduce retrieval overhead (Wei & Tyson, September 2025)
+- <a id="research-49"></a>**[[Research:49]](/docs/resources/references#research-57)** INP Replaces FID as Core Web Vital: March 12, 2024; measures all interactions vs first only (2024)
+- <a id="research-50"></a>**[[Research:50]](/docs/resources/references#research-58)** INP vs FID: INP measures input+processing+paint; Good <200ms, Poor >500ms (Vercel, 2024)
+- <a id="research-51"></a>**[[Research:51]](/docs/resources/references#research-59)** 60fps Animation: 16.7ms budget; GPU-accelerated transform/opacity smoother (MDN, November 2025)
+- <a id="research-52"></a>**[[Research:52]](/docs/resources/references#research-60)** Rakuten CWV: Good LCP = 61% conversion increase, 26% revenue/visitor increase (web.dev, 2024)
+- <a id="research-53"></a>**[[Research:53]](/docs/resources/references#research-61)** Core Web Vitals Impact: 24% less abandonment, 8-10% conversion per 0.1s improvement (2024)
 
 ### Case Studies & Examples (Mainstream Apps)
 
-<a id="example-11"></a>
-**[Example:11]** Twitter/X Algorithm Performance
-
-- Recommendation algorithm runs **~5 billion times per day**
-- Completes each execution in **under 1.5 seconds on average**
-- Massive scale delivering personalized content
-- "For You" feed: Mixes followed accounts + recommendations
-- URL: <https://sproutsocial.com/insights/twitter-algorithm/>
-- Date: 2025
-
-<a id="example-12"></a>
-**[Example:12]** Instagram Algorithm and Performance
-
-- **Instagram's AI** picks 500 posts per user, ranks by predictions
-- Instagram explicitly advises: **"Engage your audience in the first three seconds"**
-- **Reels outperform:** 2.46% engagement rate vs 2% average (2025)
-- URL: <https://sproutsocial.com/insights/instagram-algorithm/>
-- Date: 2025
-
-<a id="example-13"></a>
-**[Example:13]** TikTok Performance Optimization
-
-- **Watch time first**—if video keeps eyes glued, it flies on FYP
-- TikTok loves content that **stops scrolls cold**—video needs grabber upfront
-- Brands post **6 times per week on average**
-- URL: <https://www.dashsocial.com/social-media-benchmarks/tiktok>
-- Date: 2025
-
-<a id="example-14"></a>
-**[Example:14]** Starbucks PWA Case Study
-
-- Significantly enhanced customer experience with offline functionality
-- **2x increase in daily active users**
-- **53% rise in order completions**
-- **PWAs typically weigh <1 megabyte**, sites load in **less than 1 second**
-- URL: <https://www.solutelabs.com/blog/the-state-of-progressive-web-applications>
-- Date: 2025
-
-<a id="example-15"></a>
-**[Example:15]** Discord Performance Improvements (2024-2025)
-
-- **84% reduction in overall crash rate** on iOS (August 2024)
-- Improved chat renderer performance on Android (October 2024)
-- **30% faster server switching** on mobile
-- **Up to 80% faster GIF Picker** loading times
-- **~25% reduction in API latency**
-- URL: <https://discord.com/blog/discord-update-december-19-2024-changelog>
-- Date: December 19, 2024
+- <a id="example-11"></a>**[[Example:11]](/docs/resources/references#example-17)** Twitter/X: Algorithm runs 5 billion times/day, <1.5s average execution for personalized For You feed (2025)
+- <a id="example-12"></a>**[[Example:12]](/docs/resources/references#example-18)** Instagram: AI picks 500 posts/user; "Engage in first 3 seconds"; Reels 2.46% engagement (2025)
+- <a id="example-13"></a>**[[Example:13]](/docs/resources/references#example-19)** TikTok: Watch time priority; content must "stop scrolls cold"; brands post 6x/week (2025)
+- <a id="example-14"></a>**[[Example:14]](/docs/resources/references#example-20)** Starbucks PWA: 2x daily users, 53% more completions; <1MB, <1s load (2025)
+- <a id="example-15"></a>**[[Example:15]](/docs/resources/references#example-21)** Discord: 84% crash reduction iOS, 30% faster switching, 80% faster GIFs, 25% less latency (Dec 2024)
 
 ---
 

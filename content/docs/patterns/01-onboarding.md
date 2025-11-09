@@ -975,113 +975,39 @@ Interest-based follow suggestions, pre-populated feed
 
 ### Data Sources
 
-[[Data:1]](#data-1) Nostr.band analytics showing 30-day retention trends - <https://nostr.band/stats> (Accessed November 2025)
-
-[[Data:3]](#data-3) Andreessen Horowitz (a16z) - Social App Retention Benchmarks (March 2023) - <https://a16z.com/do-you-have-lightning-in-a-bottle-how-to-benchmark-your-social-app/>
-
-- OK: D1: 50%, D7: 35%, D30: 20%
-- Good: D1: 60%, D7: 40%, D30: 25%
-- Great: D1: 70%, D7: 50%, D30: 30%
-
-[[Data:4]](#data-4) AppsFlyer - Mobile App Retention Benchmarks (2024) - <https://www.appsflyer.com/resources/reports/app-retention-benchmarks/>
-
-- Social media apps: D1: 26.3%, D7: 9.3%, D30: 3.11%
+- <a id="data-1"></a>**[[Data:1]](/docs/resources/references#data-1)** Nostr.band analytics showing 30-day retention trends (Accessed November 2025)
+- <a id="data-3"></a>**[[Data:3]](/docs/resources/references#data-3)** Andreessen Horowitz (a16z) - Social App Retention Benchmarks (March 2023): OK (D1: 50%, D7: 35%, D30: 20%), Good (D1: 60%, D7: 40%, D30: 25%), Great (D1: 70%, D7: 50%, D30: 30%)
+- <a id="data-4"></a>**[[Data:4]](/docs/resources/references#data-4)** AppsFlyer - Mobile App Retention Benchmarks (2024): Social media apps D1: 26.3%, D7: 9.3%, D30: 3.11%
 
 ### Research & UX Principles
 
-[[Research:1]](#research-1) Time to First Value (TTFV) in Product Onboarding
-
-- Multiple industry sources (UserGuiding, Sixteenventures, MarTech)
-- Key finding: 40% of users abandon products after first interaction if experience isn't seamless
-- URLs: <https://sixteenventures.com/customer-onboarding-ttfv>
-
-[[Research:2]](#research-2) Nielsen, J. (1995). Progressive Disclosure. Nielsen Norman Group.
-
-- URL: <https://www.nngroup.com/articles/progressive-disclosure/>
-- Improves learnability, efficiency, and error rate
-
-[[Research:3]](#research-3) Cialdini, R. B. (2006). *Influence: Science and Practice* (5th ed.). Pearson Education.
-
-- Applied by Kate Moran (Nielsen Norman Group): <https://www.nngroup.com/articles/commitment-consistency-ux/>
-- Principle: Small commitments build to larger ones
+- <a id="research-1"></a>**[[Research:1]](/docs/resources/references#research-1)** Time to First Value (TTFV) in Product Onboarding: 40% of users abandon products after first interaction if experience isn't seamless
+- <a id="research-2"></a>**[[Research:2]](/docs/resources/references#research-2)** Nielsen, J. (1995). Progressive Disclosure - Improves learnability, efficiency, and error rate
+- <a id="research-3"></a>**[[Research:3]](/docs/resources/references#research-3)** Cialdini, R. B. (2006). *Influence: Science and Practice* - Commitment and consistency principle applied to UX
 
 ### Examples & Case Studies
 
-[[Example:1]](#example-1) TikTok Onboarding Analysis
-
-- Multiple sources: Appcues, UX Planet, Medium
-- Key pattern: No-signup browsing, immediate value (<10 seconds)
-- URL: <https://goodux.appcues.com/blog/tiktok-user-onboarding>
-
-[[Example:2]](#example-2) Samuel Hulick - User Onboarding Philosophy
-
-- UserOnboard.com, Heavybit, Intercom interviews
-- Quote: "The single biggest mistake is not focusing on delivering value to users"
-- URL: <https://www.heavybit.com/library/article/samuel-hulick-elements-of-user-onboarding>
-
-[[Example:3]](#example-3) Instagram Onboarding Flow
-
-- Interest-based follow suggestions, pre-populated feed
-- Minimum 8 clicks before viewing first content (contrast with TikTok)
+- <a id="example-1"></a>**[[Example:1]](/docs/resources/references#example-1)** TikTok Onboarding Analysis: No-signup browsing, immediate value (<10 seconds)
+- <a id="example-2"></a>**[[Example:2]](/docs/resources/references#example-2)** Samuel Hulick - User Onboarding Philosophy: "The single biggest mistake is not focusing on delivering value to users"
+- <a id="example-3"></a>**[[Example:3]](/docs/resources/references#example-3)** Instagram Onboarding Flow: Interest-based follow suggestions, pre-populated feed
 
 ### Protocol Documentation
 
-[[Protocol:3]](#protocol-3) NIP-46: Nostr Connect - <https://github.com/nostr-protocol/nips/blob/master/46.md>
-[[Protocol:4]](#protocol-4) NIP-65: Relay List Metadata - <https://github.com/nostr-protocol/nips/blob/master/65.md>
-[[Protocol:7]](#protocol-7) Nostr Design community resources - <https://nostrdesign.org/>
+- <a id="protocol-3"></a>**[[Protocol:3]](/docs/resources/references#protocol-3)** NIP-46: Nostr Connect
+- <a id="protocol-4"></a>**[[Protocol:4]](/docs/resources/references#protocol-4)** NIP-65: Relay List Metadata
+- <a id="protocol-7"></a>**[[Protocol:7]](/docs/resources/references#protocol-7)** Nostr Design community resources
 
 ### User Feedback (All 2024-2025)
 
-[[User:11]](#user-11) Stacker News discussion - "After 15-20 minutes of messing around, I was able to create a NOSTR account"
-
-- URL: <https://stacker.news/items/222205>
-- Date: 2024
-
-[[User:12]](#user-12) Iris FAQ - "If you lose the private key the account is lost forever"
-
-- URL: <https://github.com/irislib/faq>
-- Date: Current documentation
-
-[[User:15]](#user-15) "The State of Nostr Clients" analysis
-
-- Quote: "Traditional apps win by having much better content selection"
-- Quantitative data: DAU stuck at 10-12k, users need 5-6 clients
-- Date: March 2024
-
-[[User:16]](#user-16) Jack Dorsey interview (May 2024)
-
-- Quote: "Nostr is weird and hard to use"
-- Multiple news outlets: Washington Post, TechTimes, Engadget
-
-[[User:17]](#user-17) "Managing Nostr Keys and Signing Devices" - Key management remains blocker
-
-- URL: <https://onnostr.substack.com/p/managing-nostr-keys-and-signing-devices>
-- Date: March 2025
-- Quote: "A protocol based entirely on public/private key pairs cannot gain traction if people are burning their accounts by accident"
-
-[[User:18]](#user-18) Nostr Design - Onboarding guidance published
-
-- URL: <https://nostrdesign.org/docs/reference-designs/onboarding/>
-- Date: 2024
-- Quote: Relay selection is "high friction" that should be minimized during onboarding
-
-[[User:19]](#user-19) Damus GitHub Issue #2642 - Onboarding improvements tracker
-
-- URL: <https://github.com/damus-io/damus/issues/2642>
-- Date: Opened Nov 2024, last updated Feb 2025 (ACTIVE)
-- Status: Still open, showing onboarding is ongoing problem
-
-[[User:20]](#user-20) Damus GitHub Issue #3207 - Remove 'Create Account' step
-
-- URL: <https://github.com/damus-io/damus/issues/3207>
-- Date: August 2025
-- Quote: Account creation step being considered for removal due to friction
-
-[[User:21]](#user-21) Nstart Onboarding Tool creation
-
-- URL: <https://start.njump.me>
-- Date: February 2025
-- Context: Standalone tool created because client-level onboarding is too complex
+- <a id="user-11"></a>**[[User:11]](/docs/resources/references#user-11)** Stacker News discussion: "After 15-20 minutes of messing around, I was able to create a NOSTR account" (2024)
+- <a id="user-12"></a>**[[User:12]](/docs/resources/references#user-12)** Iris FAQ: "If you lose the private key the account is lost forever"
+- <a id="user-15"></a>**[[User:15]](/docs/resources/references#user-15)** "The State of Nostr Clients" analysis: "Traditional apps win by having much better content selection" (March 2024)
+- <a id="user-16"></a>**[[User:16]](/docs/resources/references#user-16)** Jack Dorsey interview: "Nostr is weird and hard to use" (May 2024)
+- <a id="user-17"></a>**[[User:17]](/docs/resources/references#user-17)** "Managing Nostr Keys and Signing Devices": "A protocol based entirely on public/private key pairs cannot gain traction if people are burning their accounts by accident" (March 2025)
+- <a id="user-18"></a>**[[User:18]](/docs/resources/references#user-18)** Nostr Design - Onboarding guidance: Relay selection is "high friction" that should be minimized during onboarding (2024)
+- <a id="user-19"></a>**[[User:19]](/docs/resources/references#user-19)** Damus GitHub Issue #2642: Onboarding improvements tracker (Opened Nov 2024, last updated Feb 2025, ACTIVE)
+- <a id="user-20"></a>**[[User:20]](/docs/resources/references#user-20)** Damus GitHub Issue #3207: Remove 'Create Account' step being considered due to friction (August 2025)
+- <a id="user-21"></a>**[[User:21]](/docs/resources/references#user-21)** Nstart Onboarding Tool: Standalone tool created because client-level onboarding is too complex (February 2025)
 
 ---
 
