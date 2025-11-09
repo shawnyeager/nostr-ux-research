@@ -2,7 +2,6 @@
 
 ## Research Evidence from 2024-2025 Sources
 
-**Last Updated:** November 7, 2025
 **Research Focus:** Concrete evidence of performance problems affecting Nostr apps
 
 ---

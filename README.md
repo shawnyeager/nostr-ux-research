@@ -140,4 +140,3 @@ Under the following terms:
 
 **Remember:** Good UX beats protocol purity. Ship working experiences, then add features.
 
-*Last updated: November 2025*

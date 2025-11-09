@@ -1088,4 +1088,3 @@ Test different approaches:
 
 ---
 
-*Last updated: November 2025*

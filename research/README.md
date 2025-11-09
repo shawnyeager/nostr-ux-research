@@ -78,4 +78,3 @@ This strict policy ensures all research is traceable and verifiable.
 
 ---
 
-**Last Updated:** November 8, 2025

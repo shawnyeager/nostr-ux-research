@@ -419,4 +419,3 @@ If you can't measure it, you can't improve it.
 
 **Remember:** Good UX beats protocol purity. Ship working experiences, then add features.
 
-*Last updated: November 2025*

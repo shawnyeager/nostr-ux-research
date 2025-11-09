@@ -940,4 +940,3 @@ Challenge: Nostr has no central push notification server.
 
 ---
 
-*Last updated: November 2025*

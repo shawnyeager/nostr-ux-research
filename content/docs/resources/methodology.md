@@ -307,4 +307,3 @@ We'll know this methodology is sound if:
 
 ---
 
-*Last updated: November 2025*

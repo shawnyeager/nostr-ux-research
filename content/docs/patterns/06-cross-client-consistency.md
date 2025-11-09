@@ -1085,4 +1085,3 @@ User's posts disappear with no explanation
 
 ---
 
-*Last updated: November 2025*

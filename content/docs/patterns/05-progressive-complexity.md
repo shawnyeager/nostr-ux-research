@@ -1930,4 +1930,3 @@ signer app to manage your keys.
 
 ---
 
-*Last updated: November 2025*

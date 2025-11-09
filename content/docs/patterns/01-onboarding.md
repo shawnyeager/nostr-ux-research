@@ -1030,4 +1030,3 @@ Interest-based follow suggestions, pre-populated feed
 
 ---
 
-*Last updated: November 2025*
