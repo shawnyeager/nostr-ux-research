@@ -160,7 +160,7 @@ This study analyzed **13 distinct Nostr applications and services** across multi
   - 30-day retention tracking (trending to 0% for recent cohorts)
   - DAU/WAU metrics (10,000-12,000 daily active users)
   - Weekly active users: ~36,000 (October 2024)
-  - Spam crisis tracking (500,000 daily spam messages, February 2024)
+  - Spam tracking (500,000 daily spam messages, February 2024)
 - **Referenced in:** All patterns (primary data source)
 - **Context:** Critical infrastructure for ecosystem-wide metrics [[Data:1]](#data-1), [[Data:2]](#data-2), [[Data:5]](#data-5)
 
@@ -500,7 +500,7 @@ This study analyzed **13 distinct Nostr applications and services** across multi
   - Two in five Americans currently use TikTok as a search engine
   - Over 50% of Gen Z and Millennials prefer social media for product discovery, recommendations, and research over traditional search engines
   - TikTok introduced "Creator Search Insights Tool" in 2024 to help creators optimize for search behavior
-  - Platforms are no longer just for scrolling—they're where consumers look for information
+  - Platforms are no longer just for scrolling---they're where consumers look for information
 - **Relevance:** Pattern 2 (Content Discovery) - Search functionality is now table stakes, not an afterthought. Users expect to search for topics, hashtags, and people as primary discovery mechanism
 
 ### Pattern 3: Core Interaction Loops & Reliability
@@ -531,7 +531,7 @@ This study analyzed **13 distinct Nostr applications and services** across multi
 
 **[Research:20]** React useOptimistic Hook (Official Documentation 2024)
 
-- **Source:** "useOptimistic – React" - React Official Docs
+- **Source:** "useOptimistic -- React" - React Official Docs
 - **URL:** <https://react.dev/reference/react/useOptimistic>
 - **Date:** 2024 (Canary version)
 - **Key findings:** New official React hook for optimistic UI updates. Shows different state while async action is underway, indicating optimistic UI is now framework-level standard pattern
@@ -854,7 +854,7 @@ This study analyzed **13 distinct Nostr applications and services** across multi
 - **Source:** UserOnboard.com, various interviews and analyses
   - Heavybit: "Elements of User Onboarding's Samuel Hulick" - <https://www.heavybit.com/library/article/samuel-hulick-elements-of-user-onboarding>
   - Intercom: "Samuel Hulick on building better onboarding" - <https://www.intercom.com/blog/podcasts/podcast-samuel-hulick-onboarding/>
-  - Appcues: "Onboarding new users—an interview with Samuel Hulick" - <https://www.appcues.com/blog/onboarding-new-users-an-interview-with-samuel-hulick>
+  - Appcues: "Onboarding new users---an interview with Samuel Hulick" - <https://www.appcues.com/blog/onboarding-new-users-an-interview-with-samuel-hulick>
 - **Key philosophy:**
   - "The single biggest mistake is not focusing on delivering value to users"
   - "What's the shortest path to get a user to think this product will make them more awesome at a specific task?"
@@ -948,7 +948,7 @@ This study analyzed **13 distinct Nostr applications and services** across multi
 - **Source:** Dash Social - "TikTok Benchmarks 2025"
 - **URL:** <https://www.dashsocial.com/social-media-benchmarks/tiktok>
 - **Date:** 2025
-- **Key patterns:** Watch time prioritized—content that "stops scrolls cold" with grabber upfront. Brands post 6 times per week on average for frequent surfacing
+- **Key patterns:** Watch time prioritized---content that "stops scrolls cold" with grabber upfront. Brands post 6 times per week on average for frequent surfacing
 - **Relevance:** Pattern 4 (Performance) - Stopping power and perceived instant loading
 
 **[Example:14]** Starbucks PWA Case Study
@@ -1205,14 +1205,14 @@ This study analyzed **13 distinct Nostr applications and services** across multi
 - **Context:** Search is limited by relay coverage and local content
 - **Relevance:** Pattern 2 (Content Discovery) - Search limitations in decentralized architecture
 
-**[User:29]** Nostr spam crisis - "500,000 daily spam messages in mid-February"
+**[User:29]** Nostr spam problem - "500,000 daily spam messages in mid-February"
 
 - **Source:** Nostr.band spam filter documentation and web research
 - **URL:** <https://spam.nostr.band/>
 - **Date:** February 2024
 - **Full quote:** "Nostr was hit with approximately 500,000 daily spam messages in mid-February, consisting of ads for spam services, scams, and NSFW content"
 - **Context:** Global feed usability severely impacted by spam
-- **Relevance:** Pattern 2 (Content Discovery) - Feed quality crisis requiring spam filtering
+- **Relevance:** Pattern 2 (Content Discovery) - Feed quality problem requiring spam filtering
 
 **[User:30]** "There can't be a 'global' view of the network, as it would be full of spam, so indexers have to choose what to display"
 
@@ -1229,7 +1229,7 @@ This study analyzed **13 distinct Nostr applications and services** across multi
 - **Date:** November 21, 2024
 - **Quote:** "Primal 2.0 was announced by miljan, founder and CEO of Primal, after the team worked for many months to reach this milestone. Primal now offers a much more comprehensive view of Nostr on its web and mobile apps, with the following additions: a Reads tab, an Explore tab, a Feed Marketplace, comprehensive Advanced Search options, and multiple performance improvements."
 - **Context:** Major discovery innovation launched late 2024
-- **Relevance:** Pattern 2 (Content Discovery) - Ecosystem response to discovery crisis
+- **Relevance:** Pattern 2 (Content Discovery) - Ecosystem response to discovery challenges
 
 **[User:32]** Nstart onboarding wizard with auto-follow
 
@@ -1245,7 +1245,7 @@ This study analyzed **13 distinct Nostr applications and services** across multi
 - **Source:** Derek Ross Nostr post via NoBS Bitcoin coverage
 - **URL:** <https://www.nobsbitcoin.com/>
 - **Date:** January 2025
-- **Quote:** "Content discovery on Nostr keeps improving, but I believe we still need to act as our own algorithms most of the time—and I actually prefer it that way"
+- **Quote:** "Content discovery on Nostr keeps improving, but I believe we still need to act as our own algorithms most of the time---and I actually prefer it that way"
 - **Context:** Philosophy on discovery vs algorithms
 - **Relevance:** Pattern 2 (Content Discovery) - Developer perspective on algorithmic vs manual discovery
 

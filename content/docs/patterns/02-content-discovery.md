@@ -237,7 +237,7 @@ This creates spam resistance and discovery improvement by limiting global feeds 
 - Total zaps as reputation/credibility score
 - Weighted feed ranking by zap engagement
 
-**Current usage:** Primal 2.0's trending feeds likely incorporate zap signals as quality indicators. [[User:31]](#user-31) This is a unique Nostr advantage that mainstream platforms lack—authentic monetary endorsement as a ranking signal.
+**Current usage:** Primal 2.0's trending feeds likely incorporate zap signals as quality indicators. [[User:31]](#user-31) This is a unique Nostr advantage that mainstream platforms lack---authentic monetary endorsement as a ranking signal.
 
 ### Challenge 5: Relay-Based Filtering
 

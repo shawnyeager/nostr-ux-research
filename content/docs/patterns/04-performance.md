@@ -82,7 +82,7 @@ These principles apply to any application prioritizing performance and user expe
 
 - **Twitter/X:** [[Example:11]](#example-11) Algorithm runs 5 billion times/day, completes each execution in <1.5 seconds on average
 - **Instagram:** [[Example:12]](#example-12) AI ranks 500 posts per user by engagement predictions, emphasizes "engage in first 3 seconds"
-- **TikTok:** [[Example:13]](#example-13) Watch time prioritized—content that "stops scrolls cold" with grabber upfront
+- **TikTok:** [[Example:13]](#example-13) Watch time prioritized---content that "stops scrolls cold" with grabber upfront
 - **Starbucks PWA:** [[Example:14]](#example-14) Offline functionality led to **2x increase in daily active users** and **53% rise in order completions**
 
 ### 2. The 100ms / 1s / 10s Rule

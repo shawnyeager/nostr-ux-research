@@ -58,7 +58,7 @@ Research findings on content discovery problems in Nostr apps, compiled November
 
 ### Finding 3.1: Unknown Recommendations Add Confusion
 
-- **Quote:** "Unknown people recommendations could add to confusion during onboarding – it's better to present well known accounts or publications (e.g. news feeds)"
+- **Quote:** "Unknown people recommendations could add to confusion during onboarding -- it's better to present well known accounts or publications (e.g. news feeds)"
 - **Source:** <https://nostrdesign.org/docs/how-to/onboarding/> (Nostr Design onboarding guidelines)
 - **Date:** 2024
 - **Context:** Design recommendation for solving cold start
@@ -150,7 +150,7 @@ Research findings on content discovery problems in Nostr apps, compiled November
 > "Nostr does not seem to have any external growth loops, such as the ability to invite people by email with a single click"
 
 **On onboarding recommendations:**
-> "Unknown people recommendations could add to confusion during onboarding – it's better to present well known accounts or publications"
+> "Unknown people recommendations could add to confusion during onboarding -- it's better to present well known accounts or publications"
 
 ---
 

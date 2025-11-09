@@ -48,7 +48,7 @@ Research compilation for Pattern 2: Content Discovery & Feed Quality
 
 - **Date:** March 2025
 
-- **Relevance:** Simply offering chronological feeds won't solve Nostr's retention problem—users will leave platforms with less engaging feeds for alternatives. Nostr needs sophisticated discovery mechanisms beyond pure chronological ordering, while avoiding the pitfalls of engagement-maximizing algorithms that amplify divisive content.
+- **Relevance:** Simply offering chronological feeds won't solve Nostr's retention problem---users will leave platforms with less engaging feeds for alternatives. Nostr needs sophisticated discovery mechanisms beyond pure chronological ordering, while avoiding the pitfalls of engagement-maximizing algorithms that amplify divisive content.
 
 ---
 
@@ -66,7 +66,7 @@ Research compilation for Pattern 2: Content Discovery & Feed Quality
 
 ## Finding 6: Social Media Now Functions as Search Engine for Gen Z
 
-- **Finding:** Two in five Americans currently use TikTok as a search engine. Over 50% of Gen Z and Millennials prefer social media for product discovery, recommendations, and research over traditional search engines. TikTok introduced "Creator Search Insights Tool" in 2024 to help creators optimize for search behavior. Platforms are no longer just for scrolling—they're where consumers look for information.
+- **Finding:** Two in five Americans currently use TikTok as a search engine. Over 50% of Gen Z and Millennials prefer social media for product discovery, recommendations, and research over traditional search engines. TikTok introduced "Creator Search Insights Tool" in 2024 to help creators optimize for search behavior. Platforms are no longer just for scrolling---they're where consumers look for information.
 
 - **Source:** Sked Social "Social search: How to Optimize for Discoverability on TikTok and Instagram (2025)" (<https://skedsocial.com/blog/social-search-how-to-optimize-for-discoverability-on-tiktok-and-instagram-2025/>)
 

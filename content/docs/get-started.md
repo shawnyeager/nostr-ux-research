@@ -5,7 +5,7 @@ weight: 1
 
 ## Executive Overview
 
-**The Problem:** Nostr is struggling with user retention. 30-day retention trends toward 0%, DAU is stuck at 10-12k trusted pubkeys, and users need 5-6 different clients to work around bugs. The root cause isn't the protocol—it's UX.
+**The Problem:** Nostr is struggling with user retention. 30-day retention trends toward 0%, DAU is stuck at 10-12k trusted pubkeys, and users need 5-6 different clients to work around bugs. The root cause isn't the protocol---it's UX.
 
 **The Solution:** Six research-backed patterns that address the highest-impact problems:
 

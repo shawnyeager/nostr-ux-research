@@ -21,7 +21,7 @@ Nostr apps feel like developer tools, not consumer apps. Users compare to Twitte
 - Relay management decisions on first launch
 - Key signer configuration requirements
 - Technical error messages referencing NIPs
-- No sensible defaults—everything requires user configuration
+- No sensible defaults---everything requires user configuration
 
 **The retention impact:**
 
@@ -69,14 +69,14 @@ These principles apply to any application managing feature complexity and user e
 **Application to interface design:**
 
 - **Feature prioritization:** Identify which 20% of features meet 80% of users' needs [[Research:59]](#research-59)
-- **Design focus:** 20% of design decisions drive 80% of impact—focus there [[Research:59]](#research-59)
+- **Design focus:** 20% of design decisions drive 80% of impact---focus there [[Research:59]](#research-59)
 - **MVP development:** Minimum viable products are Pareto Principle in action [[Research:59]](#research-59)
 
 **Key strategies:**
 
 - Default to the 20% of features that deliver 80% of value
 - Make power features discoverable, not prominent
-- Measure feature usage—if <20% use it, it shouldn't be in primary UI
+- Measure feature usage---if <20% use it, it shouldn't be in primary UI
 - Reduce cognitive load by simplifying design elements [[Research:59]](#research-59)
 
 **Examples from mainstream apps:**
@@ -120,7 +120,7 @@ Define essential vs. advanced content through user research using card sorting a
 
 **Research backing:** [[Research:57]](#research-57) [[Research:61]](#research-61)
 
-**Core insight:** Great UX isn't about hiding features—it's about organizing them so users can find, understand, and use them without frustration. [[Research:61]](#research-61)
+**Core insight:** Great UX isn't about hiding features---it's about organizing them so users can find, understand, and use them without frustration. [[Research:61]](#research-61)
 
 **The default experience should:**
 
@@ -153,7 +153,7 @@ Define essential vs. advanced content through user research using card sorting a
 **Research backing:** [[Research:58]](#research-58) [[Research:61]](#research-61)
 
 {{< callout type="warning" >}}
-**Core insight:** Limit settings on one screen to 10-15 items—more becomes overwhelming. [[Research:58]](#research-58)
+**Core insight:** Limit settings on one screen to 10-15 items---more becomes overwhelming. [[Research:58]](#research-58)
 
 Create intuitive menus by moving additional settings to separate screens.
 {{< /callout >}}
@@ -219,7 +219,7 @@ Progressive and contextual delivery introduces actions, steps, and features grad
 Pendo, Appcues, and Userpilot enable contextual help implementation without coding.
 
 **Design principle:** [[Research:63]](#research-63)
-Tooltips provide subtle, contextual guidance; pop-ups or modals are more disruptive—choose appropriately.
+Tooltips provide subtle, contextual guidance; pop-ups or modals are more disruptive---choose appropriately.
 
 ### 6. Feature Discovery for Power Users
 
@@ -288,7 +288,7 @@ Bottom navigation bars and gesture-based controls streamline user journeys. [[Re
 - **Adobe (2024):** 30% increase in engagement with decluttered designs
 
 **Key principle:** [[Research:61]](#research-61)
-Great UX isn't about hiding features—it's about organizing them so users can find, understand, and use without frustration.
+Great UX isn't about hiding features---it's about organizing them so users can find, understand, and use without frustration.
 
 ---
 
@@ -1334,7 +1334,7 @@ Welcome to Nostr!
 
 [Create account]  [Sign in]
 
-(No relay selection—handled automatically)
+(No relay selection---handled automatically)
 ```
 
 ---
@@ -1892,7 +1892,7 @@ signer app to manage your keys.
 - <a id="research-58"></a>**[[Research:58]](/docs/resources/references#research-66)** Android Settings: Limit to 10-15 items/screen; frequently used at top; users should glance and understand (2024)
 - <a id="research-59"></a>**[[Research:59]](/docs/resources/references#research-67)** Pareto in Interface Design: Identify 20% features meeting 80% needs; MVP development is Pareto in action (2024)
 - <a id="research-60"></a>**[[Research:60]](/docs/resources/references#research-68)** Progressive Disclosure Techniques (NN/g): Defer advanced to secondary UI; use for novices, complex tasks, limited space (2024)
-- <a id="research-61"></a>**[[Research:61]](/docs/resources/references#research-69)** Complexity Organization: Great UX isn't hiding features—it's organizing them; visual hierarchy prioritizes user needs (May 2025)
+- <a id="research-61"></a>**[[Research:61]](/docs/resources/references#research-69)** Complexity Organization: Great UX isn't hiding features---it's organizing them; visual hierarchy prioritizes user needs (May 2025)
 - <a id="research-62"></a>**[[Research:62]](/docs/resources/references#research-70)** Contextual Help (NN/g): Pull revelations when beneficial; progressive delivery; AI-enhanced personalization (February 2024)
 - <a id="research-63"></a>**[[Research:63]](/docs/resources/references#research-71)** Tooltip Design: Subtle contextual guidance vs disruptive modals; concise, context-sensitive, non-interrupting (2024)
 - <a id="research-64"></a>**[[Research:64]](/docs/resources/references#research-64)** UX Trends for Power Users: "Choose your own UX adventure"; smart defaults, adaptive interfaces (dark mode, simplified) (2025)

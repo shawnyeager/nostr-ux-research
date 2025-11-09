@@ -16,7 +16,7 @@ Nostr has a working, censorship-resistant protocol. The critical problem is user
 - **Daily active users stuck at 10,000-12,000** despite viral adoption spikes
 - Users often need **multiple clients** to access different features
 
-This is a retention crisis. But it's also **solvable**. Traditional social apps achieve better retention not through centralization, but through better content discovery, reliable core interactions, and streamlined onboarding—all implementable on Nostr.
+This is a retention crisis. But it's also **solvable**. Traditional social apps achieve better retention not through centralization, but through better content discovery, reliable core interactions, and streamlined onboarding---all implementable on Nostr.
 
 This research study provides evidence-based patterns to fix these critical UX problems.
 
@@ -123,12 +123,12 @@ This work is licensed under [Creative Commons Attribution 4.0 International (CC 
 
 You are free to:
 
-- **Share** — copy and redistribute the material in any medium or format
-- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially
+- **Share** --- copy and redistribute the material in any medium or format
+- **Adapt** --- remix, transform, and build upon the material for any purpose, even commercially
 
 Under the following terms:
 
-- **Attribution** — You must give appropriate credit to Shawn Yeager, provide a link to the license, and indicate if changes were made
+- **Attribution** --- You must give appropriate credit to Shawn Yeager, provide a link to the license, and indicate if changes were made
 
 ---
 

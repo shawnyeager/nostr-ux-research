@@ -24,7 +24,7 @@ This is the most severe UX failure in Nostr. Users don't trust the platform afte
 
 - [[Research:66]](#research-66) 85% of consumers deleted a mobile app due to privacy/data concerns (2025 Digital Trust Index)
 - [[Research:67]](#research-67) Over 80% of businesses saw boost in customer loyalty after focusing on data integrity
-- [[Research:68]](#research-68) Distributed systems face "scams are everywhere" problem—UX equals trust
+- [[Research:68]](#research-68) Distributed systems face "scams are everywhere" problem---UX equals trust
 - Users don't trust Nostr after losing data once
 - "It just works" expectation from mainstream apps not met
 
@@ -113,7 +113,7 @@ These principles apply to any distributed system managing user data across multi
 **Research backing:** [[Research:78]](#research-78) [[Research:79]](#research-79) [[Research:80]](#research-80)
 
 **Modern user expectations:** [[Research:78]](#research-78)
-> "Users today do not wish to view a plain 'You're offline' message—PWA 2.0 confirms applications function even in the absence of the internet."
+> "Users today do not wish to view a plain 'You're offline' message---PWA 2.0 confirms applications function even in the absence of the internet."
 
 **Essential UX elements:** [[Research:78]](#research-78) [[Research:79]](#research-79)
 
@@ -126,7 +126,7 @@ These principles apply to any distributed system managing user data across multi
 
 - Apps learn usage patterns and pre-cache likely-needed content
 - Offline editing queues for automatic sync
-- "Offline sync isn't optional anymore—it's a must-have for great UX"
+- "Offline sync isn't optional anymore---it's a must-have for great UX"
 
 ### 4. Conflict Resolution Strategies
 
@@ -153,7 +153,7 @@ These principles apply to any distributed system managing user data across multi
 
 **Research backing:** [[Research:67]](#research-67) [[Research:68]](#research-68) [[Research:66]](#research-66)
 
-**Trust crisis:** [[Research:66]](#research-66)
+**Trust problem:** [[Research:66]](#research-66)
 
 - 2025 Digital Trust Index: universal decline in trust for digital services
 - Not one sector reached above 50% approval for data trustworthiness
@@ -164,7 +164,7 @@ These principles apply to any distributed system managing user data across multi
 - **Transparency**: Real-time information about transaction progress reduces anxiety [[Research:68]](#research-68)
 - **Clear explanations**: Detailed, clear risk explanations before approving actions [[Research:68]](#research-68)
 - **Privacy measures**: 80% of businesses saw customer loyalty boost from privacy focus [[Research:67]](#research-67)
-- **User control**: In decentralized systems, users own all control—UX must reflect this [[Research:68]](#research-68)
+- **User control**: In decentralized systems, users own all control---UX must reflect this [[Research:68]](#research-68)
 
 **Critical for distributed systems:** [[Research:68]](#research-68)
 > "In an industry where scams are everywhere, UX = trust. Blockchain cannot guarantee the quality of service of DApps, which entirely depends on the services' performance."

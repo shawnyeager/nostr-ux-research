@@ -851,7 +851,7 @@ Test different approaches:
 ### Additional Context
 
 - **Toast Notification Patterns (2024):** Four types (SUCCESS/INFO/WARNING/ERROR) with color coding; no auto-dismiss for critical messages (Salesforce, ByteHide, Carbon Design System)
-- **Offline-First Patterns (2024):** "Offline sync isn't optional—it's a must-have for great UX" - Sync intervals 5min-1day; visual feedback vital (Daily.dev, Flutter, Microsoft)
+- **Offline-First Patterns (2024):** "Offline sync isn't optional---it's a must-have for great UX" - Sync intervals 5min-1day; visual feedback vital (Daily.dev, Flutter, Microsoft)
 - **Design System Guidance (2024):** Initial sync with time estimates, status bar for sync states, progress indicators, timestamps (Google Open Health Stack)
 
 ---
