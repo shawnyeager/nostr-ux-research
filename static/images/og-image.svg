@@ -2,21 +2,24 @@
   <!-- Background - darker purple #8e30eb -->
   <rect width="1200" height="630" fill="#8e30eb"/>
 
-  <!-- Logo squircle with border - 200x200, top at y=80 -->
-  <rect x="500" y="80" width="200" height="200" rx="40" fill="#8e30eb" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <!-- Vertical center is 315. Content block height ~280px (200 squircle + 80 spacing + text) -->
+  <!-- Start at (315 - 140) = 175 to center the entire composition -->
 
-  <!-- N - centered in squircle at y=180 -->
-  <g transform="translate(600, 180)">
+  <!-- Logo squircle with border - 200x200, centered horizontally and in upper portion -->
+  <rect x="500" y="115" width="200" height="200" rx="40" fill="#8e30eb" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+
+  <!-- N - centered in squircle -->
+  <g transform="translate(600, 215)">
     <path d="M-32,-40 h16 l32,56 V-40 h16 v80 h-16 l-32,-56 v56 h-16 V-40 z" fill="white"/>
   </g>
 
-  <!-- Title - 60px gap from bottom of squircle (280 + 60 = 340) -->
-  <text x="600" y="370" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="700" fill="white" text-anchor="middle">
+  <!-- Title - 60px gap from bottom of squircle (315 + 60) -->
+  <text x="600" y="385" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="700" fill="white" text-anchor="middle">
     Design Patterns for Nostr UX
   </text>
 
   <!-- Tagline - 40px gap from title baseline -->
-  <text x="600" y="420" font-family="system-ui, -apple-system, sans-serif" font-size="26" fill="rgba(255,255,255,0.95)" text-anchor="middle">
+  <text x="600" y="435" font-family="system-ui, -apple-system, sans-serif" font-size="26" fill="rgba(255,255,255,0.95)" text-anchor="middle">
     Evidence-based patterns for building clients people actually use
   </text>
 </svg>
