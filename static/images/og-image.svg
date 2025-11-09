@@ -3,33 +3,31 @@
   <rect width="1200" height="630" fill="#8e30eb"/>
 
   <!--
-    Math:
-    - Squircle: 200px tall
-    - Gap after squircle: 60px
-    - Title height: ~44px
-    - Gap between title and tagline: 40px
-    - Tagline height: ~26px
-    Total content height: 200 + 60 + 44 + 40 + 26 = 370px
-
-    Vertical center of 630px = 315px
-    Start position = 315 - (370/2) = 315 - 185 = 130px
+    Better vertical balance:
+    - Canvas: 630px tall
+    - Top margin: 95px
+    - Squircle: 220px tall (slightly larger)
+    - Gap after squircle: 70px
+    - Title + tagline area: ~80px
+    - Bottom margin: ~165px
+    This creates better breathing room and optical centering
   -->
 
-  <!-- Logo squircle - starts at y=130 -->
-  <rect x="500" y="130" width="200" height="200" rx="40" fill="#8e30eb" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <!-- Logo squircle - larger, starts at y=95 -->
+  <rect x="490" y="95" width="220" height="220" rx="44" fill="#8e30eb" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
 
-  <!-- N - centered in squircle at y=230 -->
-  <g transform="translate(600, 230)">
-    <path d="M-32,-40 h16 l32,56 V-40 h16 v80 h-16 l-32,-56 v56 h-16 V-40 z" fill="white"/>
+  <!-- N - centered in squircle at y=205 -->
+  <g transform="translate(600, 205)">
+    <path d="M-35,-44 h18 l35,61 V-44 h18 v88 h-18 l-35,-61 v61 h-18 V-44 z" fill="white"/>
   </g>
 
-  <!-- Title - squircle ends at 330, + 60px gap + 44px text height = 434px baseline -->
-  <text x="600" y="434" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="700" fill="white" text-anchor="middle">
+  <!-- Title - squircle ends at 315, + 70px gap = 385 baseline -->
+  <text x="600" y="415" font-family="system-ui, -apple-system, sans-serif" font-size="46" font-weight="700" fill="white" text-anchor="middle">
     Design Patterns for Nostr UX
   </text>
 
-  <!-- Tagline - 40px gap from title baseline -->
-  <text x="600" y="474" font-family="system-ui, -apple-system, sans-serif" font-size="26" fill="rgba(255,255,255,0.95)" text-anchor="middle">
+  <!-- Tagline - 45px gap from title baseline -->
+  <text x="600" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="27" fill="rgba(255,255,255,0.95)" text-anchor="middle">
     Evidence-based patterns for building clients people actually use
   </text>
 </svg>
