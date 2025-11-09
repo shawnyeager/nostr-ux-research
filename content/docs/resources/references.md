@@ -21,7 +21,7 @@ Citations in pattern documents use this format:
 
 ---
 
-## Nostr Clients & Apps Referenced in This Study {#nostr-clients-referenced}
+## Clients & Apps Referenced {#nostr-clients-referenced}
 
 This study analyzed **13 distinct Nostr applications and services** across multiple platforms. Clients are categorized by citation frequency to indicate depth of analysis within the research.
 
