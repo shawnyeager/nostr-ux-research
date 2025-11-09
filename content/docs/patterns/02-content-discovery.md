@@ -946,8 +946,3 @@ Challenge: Nostr has no central push notification server.
 **See [References & Bibliography](/docs/resources/references) for full citation details.**
 
 ---
-
-{{< cards >}}
-  {{< card link="03-core-interactions" title="Next: Pattern 3" subtitle="Core Interactions" icon="arrow-right" >}}
-  {{< card link="../" title="All Patterns" subtitle="Back to patterns overview" icon="collection" >}}
-{{< /cards >}}

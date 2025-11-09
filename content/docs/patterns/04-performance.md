@@ -1378,8 +1378,3 @@ Test different approaches:
 **See [References & Bibliography](/docs/resources/references) for full citation details.**
 
 ---
-
-{{< cards >}}
-  {{< card link="05-progressive-complexity" title="Next: Pattern 5" subtitle="Progressive Complexity" icon="arrow-right" >}}
-  {{< card link="../" title="All Patterns" subtitle="Back to patterns overview" icon="collection" >}}
-{{< /cards >}}

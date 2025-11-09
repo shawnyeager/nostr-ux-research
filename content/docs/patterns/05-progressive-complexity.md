@@ -2043,8 +2043,3 @@ signer app to manage your keys.
 **See [References & Bibliography](/docs/resources/references) for full citation details.**
 
 ---
-
-{{< cards >}}
-  {{< card link="06-cross-client-consistency" title="Next: Pattern 6" subtitle="Cross-Client Consistency" icon="arrow-right" >}}
-  {{< card link="../" title="All Patterns" subtitle="Back to patterns overview" icon="collection" >}}
-{{< /cards >}}

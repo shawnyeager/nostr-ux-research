@@ -1233,8 +1233,3 @@ User's posts disappear with no explanation
 **See [References & Bibliography](/docs/resources/references) for full citation details.**
 
 ---
-
-{{< cards >}}
-  {{< card link="../../resources/references" title="References" subtitle="Full bibliography & sources" icon="book-open" >}}
-  {{< card link="../" title="All Patterns" subtitle="Back to patterns overview" icon="collection" >}}
-{{< /cards >}}

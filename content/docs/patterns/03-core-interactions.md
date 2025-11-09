@@ -1071,8 +1071,3 @@ Google Design Guidelines emphasize: Initial sync with clear guidance and time es
 **See [References & Bibliography](/docs/resources/references) for full citation details.**
 
 ---
-
-{{< cards >}}
-  {{< card link="04-performance" title="Next: Pattern 4" subtitle="Performance & Perceived Speed" icon="arrow-right" >}}
-  {{< card link="../" title="All Patterns" subtitle="Back to patterns overview" icon="collection" >}}
-{{< /cards >}}
