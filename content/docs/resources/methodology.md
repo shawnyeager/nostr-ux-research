@@ -198,9 +198,11 @@ All factual claims are backed by citations in the following categories:
 
 ## Validation & Peer Review
 
+{{< callout type="warning" >}}
 **Status: Work in Progress**
 
 This research has not undergone formal academic peer review. It represents an initial synthesis of UX research, industry best practices, and Nostr-specific observations.
+{{< /callout >}}
 
 ### Internal Validation (Completed)
 
