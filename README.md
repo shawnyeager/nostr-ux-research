@@ -47,7 +47,7 @@ Each pattern includes:
 
 ## Quick Start
 
-→ **[Read the complete study](https://nostr-ux.com/docs/get-started/)**
+→ **[Read the complete study](https://nostr-ux.com/docs/introduction/quick-start/)**
 
 Or jump directly to a specific pattern:
 

@@ -804,49 +804,49 @@ Test different approaches:
 
 ### Data & Analytics (Nostr-Specific)
 
-- <a id="data-1"></a>**[[Data:1]](/docs/resources/references#data-11)** Posts getting stuck while publishing require retry mechanisms (Nostr Biweekly Review, January 2025)
-- <a id="data-2"></a>**[[Data:2]](/docs/resources/references#data-13)** NIP-25 reactions inefficient: clients must gather thousands of events to count likes for a note (GitHub Issue #159, 2024)
-- <a id="data-3"></a>**[[Data:3]](/docs/resources/references#data-12)** Damus relay downtime for upgrades potentially wiped users' content (Sondre Bjellås, April 2025)
-- <a id="data-4"></a>**[[Data:4]](/docs/resources/references#data-14)** User lost 130 follows down to 1 when trying new client; developer lost 75% of follows (Stacker News, 2024)
-- <a id="data-5"></a>**[[Data:5]](/docs/resources/references#data-16)** Zap notifications fail, missing p-tags don't notify, HTTP 431 errors from large relay lists (Nostrability/NDK Issues, 2024)
-- <a id="data-6"></a>**[[Data:6]](/docs/resources/references#data-15)** Race conditions in kind 3 events cause follow list loss; common experience on Nostr (GitHub PR #349, 2023-2024)
-- <a id="data-7"></a>**[[Data:7]](/docs/resources/references#data-2)** ~36K weekly active users, <15K daily, 30-day retention trending to 0% (Nostr User Statistics, Late 2024)
-- <a id="data-8"></a>**[[Data:8]](/docs/resources/references#data-18)** Only 639 relays online (two-thirds reduction), 95% struggle with costs, 20% face significant downtime (April 2024)
-- <a id="data-9"></a>**[[Data:9]](/docs/resources/references#data-19)** Non-kind:1 events storage 10:1 ratio to content; 2GB/day relay growth from reactions/metadata (2024)
-- <a id="data-10"></a>**[[Data:10]](/docs/resources/references#data-20)** Relay availability challenges; financial sustainability of free relays is key factor (arXiv, February 2024)
+- <a id="data-1"></a>**[[Data:1]](/docs/research/references#data-11)** Posts getting stuck while publishing require retry mechanisms (Nostr Biweekly Review, January 2025)
+- <a id="data-2"></a>**[[Data:2]](/docs/research/references#data-13)** NIP-25 reactions inefficient: clients must gather thousands of events to count likes for a note (GitHub Issue #159, 2024)
+- <a id="data-3"></a>**[[Data:3]](/docs/research/references#data-12)** Damus relay downtime for upgrades potentially wiped users' content (Sondre Bjellås, April 2025)
+- <a id="data-4"></a>**[[Data:4]](/docs/research/references#data-14)** User lost 130 follows down to 1 when trying new client; developer lost 75% of follows (Stacker News, 2024)
+- <a id="data-5"></a>**[[Data:5]](/docs/research/references#data-16)** Zap notifications fail, missing p-tags don't notify, HTTP 431 errors from large relay lists (Nostrability/NDK Issues, 2024)
+- <a id="data-6"></a>**[[Data:6]](/docs/research/references#data-15)** Race conditions in kind 3 events cause follow list loss; common experience on Nostr (GitHub PR #349, 2023-2024)
+- <a id="data-7"></a>**[[Data:7]](/docs/research/references#data-2)** ~36K weekly active users, <15K daily, 30-day retention trending to 0% (Nostr User Statistics, Late 2024)
+- <a id="data-8"></a>**[[Data:8]](/docs/research/references#data-18)** Only 639 relays online (two-thirds reduction), 95% struggle with costs, 20% face significant downtime (April 2024)
+- <a id="data-9"></a>**[[Data:9]](/docs/research/references#data-19)** Non-kind:1 events storage 10:1 ratio to content; 2GB/day relay growth from reactions/metadata (2024)
+- <a id="data-10"></a>**[[Data:10]](/docs/research/references#data-20)** Relay availability challenges; financial sustainability of free relays is key factor (arXiv, February 2024)
 
 ### Academic & UX Research (Universal Principles)
 
-- <a id="research-1"></a>**[[Research:1]](/docs/resources/references#research-26)** Mobile App Trends: 94% cite design as rejection reason; 40% leave for better performance alternatives (Framna, 2024)
-- <a id="research-2"></a>**[[Research:2]](/docs/resources/references#research-27)** User trust in social platforms falling: Only 35% feel safe (down from 44%); all major platforms lost trust (eMarketer, 2024)
-- <a id="research-3"></a>**[[Research:3]](/docs/resources/references#research-28)** Response Time Limits: 100ms feels instantaneous, 1s keeps flow uninterrupted, 10s keeps attention (Nielsen, January 2024)
-- <a id="research-4"></a>**[[Research:4]](/docs/resources/references#research-29)** React useOptimistic hook for optimistic UI updates (React Official Docs, 2024)
-- <a id="research-5"></a>**[[Research:5]](/docs/resources/references#research-30)** Optimistic UI makes apps feel faster by updating immediately before server confirmation (LogRocket, August 2024)
-- <a id="research-6"></a>**[[Research:6]](/docs/resources/references#research-31)** Optimistic UI best for high-success actions (posts, messages); NOT for critical ops (payments, bookings) (Medium, August 2024)
-- <a id="research-7"></a>**[[Research:7]](/docs/resources/references#research-32)** Visibility of System Status: Keep users informed; feedback as quickly as possible, ideally immediately (NN/g, January 2024)
-- <a id="research-8"></a>**[[Research:8]](/docs/resources/references#research-33)** Skeleton screens reduce perceived loading time by showing wireframe immediately (NN/g, November 2024)
-- <a id="research-9"></a>**[[Research:9]](/docs/resources/references#research-34)** Skeleton screens best for 2-10s waits; must match final layout; use subtle animations (LogRocket, April 2025)
-- <a id="research-10"></a>**[[Research:10]](/docs/resources/references#research-35)** Success feedback as important as error feedback for user confidence (Pencil & Paper, 2024)
-- <a id="research-11"></a>**[[Research:11]](/docs/resources/references#research-36)** 10 Design Guidelines for Form Errors: Help users identify and recover from problems (NN/g, December 2024)
-- <a id="research-12"></a>**[[Research:12]](/docs/resources/references#research-37)** Error Handling: Recognize, Diagnose, Recover - Tell what happened, explain why, show how to fix (Medium, October 2025)
-- <a id="research-13"></a>**[[Research:13]](/docs/resources/references#research-38)** Error Messages Need: Problem statement, cause explanation, solution suggestion; use neutral language (2024)
-- <a id="research-14"></a>**[[Research:14]](/docs/resources/references#research-39)** Post/Redirect/Get pattern prevents double-submission via idempotency (FreeCodeCamp, September 2024)
-- <a id="research-15"></a>**[[Research:15]](/docs/resources/references#research-40)** Idempotency ensures consistent results, avoids duplicate actions, provides reliability (Bits and Pieces, March 2025)
-- <a id="research-16"></a>**[[Research:16]](/docs/resources/references#research-41)** Retry Pattern: Use exponential back-off; classify errors as transient vs permanent (Microsoft Azure, 2024)
+- <a id="research-1"></a>**[[Research:1]](/docs/research/references#research-26)** Mobile App Trends: 94% cite design as rejection reason; 40% leave for better performance alternatives (Framna, 2024)
+- <a id="research-2"></a>**[[Research:2]](/docs/research/references#research-27)** User trust in social platforms falling: Only 35% feel safe (down from 44%); all major platforms lost trust (eMarketer, 2024)
+- <a id="research-3"></a>**[[Research:3]](/docs/research/references#research-28)** Response Time Limits: 100ms feels instantaneous, 1s keeps flow uninterrupted, 10s keeps attention (Nielsen, January 2024)
+- <a id="research-4"></a>**[[Research:4]](/docs/research/references#research-29)** React useOptimistic hook for optimistic UI updates (React Official Docs, 2024)
+- <a id="research-5"></a>**[[Research:5]](/docs/research/references#research-30)** Optimistic UI makes apps feel faster by updating immediately before server confirmation (LogRocket, August 2024)
+- <a id="research-6"></a>**[[Research:6]](/docs/research/references#research-31)** Optimistic UI best for high-success actions (posts, messages); NOT for critical ops (payments, bookings) (Medium, August 2024)
+- <a id="research-7"></a>**[[Research:7]](/docs/research/references#research-32)** Visibility of System Status: Keep users informed; feedback as quickly as possible, ideally immediately (NN/g, January 2024)
+- <a id="research-8"></a>**[[Research:8]](/docs/research/references#research-33)** Skeleton screens reduce perceived loading time by showing wireframe immediately (NN/g, November 2024)
+- <a id="research-9"></a>**[[Research:9]](/docs/research/references#research-34)** Skeleton screens best for 2-10s waits; must match final layout; use subtle animations (LogRocket, April 2025)
+- <a id="research-10"></a>**[[Research:10]](/docs/research/references#research-35)** Success feedback as important as error feedback for user confidence (Pencil & Paper, 2024)
+- <a id="research-11"></a>**[[Research:11]](/docs/research/references#research-36)** 10 Design Guidelines for Form Errors: Help users identify and recover from problems (NN/g, December 2024)
+- <a id="research-12"></a>**[[Research:12]](/docs/research/references#research-37)** Error Handling: Recognize, Diagnose, Recover - Tell what happened, explain why, show how to fix (Medium, October 2025)
+- <a id="research-13"></a>**[[Research:13]](/docs/research/references#research-38)** Error Messages Need: Problem statement, cause explanation, solution suggestion; use neutral language (2024)
+- <a id="research-14"></a>**[[Research:14]](/docs/research/references#research-39)** Post/Redirect/Get pattern prevents double-submission via idempotency (FreeCodeCamp, September 2024)
+- <a id="research-15"></a>**[[Research:15]](/docs/research/references#research-40)** Idempotency ensures consistent results, avoids duplicate actions, provides reliability (Bits and Pieces, March 2025)
+- <a id="research-16"></a>**[[Research:16]](/docs/research/references#research-41)** Retry Pattern: Use exponential back-off; classify errors as transient vs permanent (Microsoft Azure, 2024)
 
 ### Case Studies & Examples (Mainstream Apps)
 
-- <a id="example-1"></a>**[[Example:1]](/docs/resources/references#example-8)** Social media management retry patterns: Re-queue for bugs, edit for post issues, wait for rate limits (SocialBee et al., 2024)
-- <a id="example-2"></a>**[[Example:2]](/docs/resources/references#example-5)** Instagram April 2024 update: Rewards original content, weights 'shares per reach' as key signal (Later, 2024)
-- <a id="example-3"></a>**[[Example:3]](/docs/resources/references#example-9)** TikTok FYP: Instant content display, no loading state, 100ms response creates instantaneous feel (Iterators, 2024)
-- <a id="example-4"></a>**[[Example:4]](/docs/resources/references#example-10)** Apple Human Interface Guidelines: Clear feedback, progress indication, animations/sounds/haptics confirm actions (Apple, 2024)
-- <a id="example-5"></a>**[[Example:5]](/docs/resources/references#example-16)** Material Design 3: Motion for visual feedback, instant response, spring-like animations (Google, 2024)
+- <a id="example-1"></a>**[[Example:1]](/docs/research/references#example-8)** Social media management retry patterns: Re-queue for bugs, edit for post issues, wait for rate limits (SocialBee et al., 2024)
+- <a id="example-2"></a>**[[Example:2]](/docs/research/references#example-5)** Instagram April 2024 update: Rewards original content, weights 'shares per reach' as key signal (Later, 2024)
+- <a id="example-3"></a>**[[Example:3]](/docs/research/references#example-9)** TikTok FYP: Instant content display, no loading state, 100ms response creates instantaneous feel (Iterators, 2024)
+- <a id="example-4"></a>**[[Example:4]](/docs/research/references#example-10)** Apple Human Interface Guidelines: Clear feedback, progress indication, animations/sounds/haptics confirm actions (Apple, 2024)
+- <a id="example-5"></a>**[[Example:5]](/docs/research/references#example-16)** Material Design 3: Motion for visual feedback, instant response, spring-like animations (Google, 2024)
 
 ### Nostr Protocol Documentation
 
-- <a id="protocol-1"></a>**[[Protocol:1]](/docs/resources/references#protocol-2)** NIP-02: Contact List and Petnames (kind 3) - Replaceable events for following lists
-- <a id="protocol-2"></a>**[[Protocol:2]](/docs/resources/references#protocol-5)** NIP-65: Relay List Metadata (kind 10002) - User relay preferences for content discovery
-- <a id="protocol-3"></a>**[[Protocol:3]](/docs/resources/references#protocol-6)** NIP-25: Reactions (kind 7) - Reactions/likes with 'e' and 'p' tags
+- <a id="protocol-1"></a>**[[Protocol:1]](/docs/research/references#protocol-2)** NIP-02: Contact List and Petnames (kind 3) - Replaceable events for following lists
+- <a id="protocol-2"></a>**[[Protocol:2]](/docs/research/references#protocol-5)** NIP-65: Relay List Metadata (kind 10002) - User relay preferences for content discovery
+- <a id="protocol-3"></a>**[[Protocol:3]](/docs/research/references#protocol-6)** NIP-25: Reactions (kind 7) - Reactions/likes with 'e' and 'p' tags
 
 ### Additional Context
 
@@ -856,7 +856,7 @@ Test different approaches:
 
 ---
 
-**See [References & Bibliography](/docs/resources/references) for full citation details.**
+**See [References & Bibliography](/docs/research/references) for full citation details.**
 
 ---
 

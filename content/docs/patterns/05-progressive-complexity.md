@@ -1885,29 +1885,29 @@ signer app to manage your keys.
 
 ### Universal UX Research
 
-- <a id="research-54"></a>**[[Research:54]](/docs/resources/references#research-62)** Pareto Principle (80/20): 80% users use only 20% of features; focus on 20% of decisions driving 80% impact (September 2025)
-- <a id="research-55"></a>**[[Research:55]](/docs/resources/references#research-63)** Progressive Disclosure: 30-40% cognitive load reduction during onboarding; breaks complexity into manageable steps (May 2025)
-- <a id="research-56"></a>**[[Research:56]](/docs/resources/references#research-64)** Progressive Disclosure Strategy: Reduces decision fatigue via staged revelation; collapsible menus, tooltips, toggles (2024)
-- <a id="research-57"></a>**[[Research:57]](/docs/resources/references#research-65)** Cognitive Load Impact: Airbnb 25% fewer interactions, Figma 24% load reduction, Adobe 30% engagement increase (April 2025)
-- <a id="research-58"></a>**[[Research:58]](/docs/resources/references#research-66)** Android Settings: Limit to 10-15 items/screen; frequently used at top; users should glance and understand (2024)
-- <a id="research-59"></a>**[[Research:59]](/docs/resources/references#research-67)** Pareto in Interface Design: Identify 20% features meeting 80% needs; MVP development is Pareto in action (2024)
-- <a id="research-60"></a>**[[Research:60]](/docs/resources/references#research-68)** Progressive Disclosure Techniques (NN/g): Defer advanced to secondary UI; use for novices, complex tasks, limited space (2024)
-- <a id="research-61"></a>**[[Research:61]](/docs/resources/references#research-69)** Complexity Organization: Great UX isn't hiding features---it's organizing them; visual hierarchy prioritizes user needs (May 2025)
-- <a id="research-62"></a>**[[Research:62]](/docs/resources/references#research-70)** Contextual Help (NN/g): Pull revelations when beneficial; progressive delivery; AI-enhanced personalization (February 2024)
-- <a id="research-63"></a>**[[Research:63]](/docs/resources/references#research-71)** Tooltip Design: Subtle contextual guidance vs disruptive modals; concise, context-sensitive, non-interrupting (2024)
-- <a id="research-64"></a>**[[Research:64]](/docs/resources/references#research-64)** UX Trends for Power Users: "Choose your own UX adventure"; smart defaults, adaptive interfaces (dark mode, simplified) (2025)
-- <a id="research-65"></a>**[[Research:65]](/docs/resources/references#research-65)** Cognitive Load Techniques: Progressive disclosure (accordions, tooltips), consistent patterns, bottom nav, gestures (2024)
+- <a id="research-54"></a>**[[Research:54]](/docs/research/references#research-62)** Pareto Principle (80/20): 80% users use only 20% of features; focus on 20% of decisions driving 80% impact (September 2025)
+- <a id="research-55"></a>**[[Research:55]](/docs/research/references#research-63)** Progressive Disclosure: 30-40% cognitive load reduction during onboarding; breaks complexity into manageable steps (May 2025)
+- <a id="research-56"></a>**[[Research:56]](/docs/research/references#research-64)** Progressive Disclosure Strategy: Reduces decision fatigue via staged revelation; collapsible menus, tooltips, toggles (2024)
+- <a id="research-57"></a>**[[Research:57]](/docs/research/references#research-65)** Cognitive Load Impact: Airbnb 25% fewer interactions, Figma 24% load reduction, Adobe 30% engagement increase (April 2025)
+- <a id="research-58"></a>**[[Research:58]](/docs/research/references#research-66)** Android Settings: Limit to 10-15 items/screen; frequently used at top; users should glance and understand (2024)
+- <a id="research-59"></a>**[[Research:59]](/docs/research/references#research-67)** Pareto in Interface Design: Identify 20% features meeting 80% needs; MVP development is Pareto in action (2024)
+- <a id="research-60"></a>**[[Research:60]](/docs/research/references#research-68)** Progressive Disclosure Techniques (NN/g): Defer advanced to secondary UI; use for novices, complex tasks, limited space (2024)
+- <a id="research-61"></a>**[[Research:61]](/docs/research/references#research-69)** Complexity Organization: Great UX isn't hiding features---it's organizing them; visual hierarchy prioritizes user needs (May 2025)
+- <a id="research-62"></a>**[[Research:62]](/docs/research/references#research-70)** Contextual Help (NN/g): Pull revelations when beneficial; progressive delivery; AI-enhanced personalization (February 2024)
+- <a id="research-63"></a>**[[Research:63]](/docs/research/references#research-71)** Tooltip Design: Subtle contextual guidance vs disruptive modals; concise, context-sensitive, non-interrupting (2024)
+- <a id="research-64"></a>**[[Research:64]](/docs/research/references#research-64)** UX Trends for Power Users: "Choose your own UX adventure"; smart defaults, adaptive interfaces (dark mode, simplified) (2025)
+- <a id="research-65"></a>**[[Research:65]](/docs/research/references#research-65)** Cognitive Load Techniques: Progressive disclosure (accordions, tooltips), consistent patterns, bottom nav, gestures (2024)
 
 ### Nostr-Specific Data
 
-- <a id="data-31"></a>**[[Data:31]](/docs/resources/references#data-29)** Cross-Client Relay Confusion: Nostrudel settings don't transfer to Coracle/Nostter; "imperfect NIP implementations" (2024)
-- <a id="data-32"></a>**[[Data:32]](/docs/resources/references#data-30)** NIP-65 Relay List: kind:10002 for OUTBOX/INBOX relays; clients should guide to 2-4 relays (2024)
-- <a id="data-33"></a>**[[Data:33]](/docs/resources/references#data-31)** NIP-46 Signer UX: "Unclear and constantly changing"; incompatibilities; no app store availability; poor latency handling (2024)
-- <a id="data-34"></a>**[[Data:34]](/docs/resources/references#data-32)** Nostr Signers: Amber (Android offline, multi-account, granular); Alby (remote via push) (2024)
+- <a id="data-31"></a>**[[Data:31]](/docs/research/references#data-29)** Cross-Client Relay Confusion: Nostrudel settings don't transfer to Coracle/Nostter; "imperfect NIP implementations" (2024)
+- <a id="data-32"></a>**[[Data:32]](/docs/research/references#data-30)** NIP-65 Relay List: kind:10002 for OUTBOX/INBOX relays; clients should guide to 2-4 relays (2024)
+- <a id="data-33"></a>**[[Data:33]](/docs/research/references#data-31)** NIP-46 Signer UX: "Unclear and constantly changing"; incompatibilities; no app store availability; poor latency handling (2024)
+- <a id="data-34"></a>**[[Data:34]](/docs/research/references#data-32)** Nostr Signers: Amber (Android offline, multi-account, granular); Alby (remote via push) (2024)
 
 ---
 
-**See [References & Bibliography](/docs/resources/references) for full citation details.**
+**See [References & Bibliography](/docs/research/references) for full citation details.**
 
 ---
 

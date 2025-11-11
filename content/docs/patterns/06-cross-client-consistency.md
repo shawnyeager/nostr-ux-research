@@ -1030,39 +1030,39 @@ User's posts disappear with no explanation
 
 ### Universal UX Research
 
-- <a id="research-66"></a>**[[Research:66]](/docs/resources/references#research-77)** Data Security & Trust: 85% delete apps over privacy; no sector >50% trust (Sidekick Interactive, 2025)
-- <a id="research-67"></a>**[[Research:67]](/docs/resources/references#research-78)** Mobile Privacy: 81% concerned about data handling; 80% see loyalty boost from privacy focus (NowSecure, Feb 2024)
-- <a id="research-68"></a>**[[Research:68]](/docs/resources/references#research-79)** dApp Trust: "UX = trust" in scam-heavy industry; blockchain can't guarantee DApp quality (The Alien Design, 2024)
-- <a id="research-69"></a>**[[Research:69]](/docs/resources/references#research-80)** Offline Sync Conflicts: Users confused by multi-user offline edits; conflict handling crucial (Mark AI Code, 2025)
-- <a id="research-70"></a>**[[Research:70]](/docs/resources/references#research-81)** Real-Time Sync: 72% expect instant financial data reflection; WebSocket/Firebase essential (Pixel Free Studio, 2024)
-- <a id="research-71"></a>**[[Research:71]](/docs/resources/references#research-82)** Cross-Platform UX: Data sync + clear cross-device interactions = continuity; biggest IoT usability challenge (Medium, October 2025)
-- <a id="research-72"></a>**[[Research:72]](/docs/resources/references#research-73)** Connected Consumer 2025: $896/year on devices; 45% expect content display consistency (Deloitte, 2025)
-- <a id="research-73"></a>**[[Research:73]](/docs/resources/references#research-74)** Consistency & Standards (NN/g): Adherence increases learnability, reduces cognitive load (January 2024)
-- <a id="research-74"></a>**[[Research:74]](/docs/resources/references#research-75)** 10 Usability Heuristics (NN/g): Maintain internal + external consistency for learnability (January 2024)
+- <a id="research-66"></a>**[[Research:66]](/docs/research/references#research-77)** Data Security & Trust: 85% delete apps over privacy; no sector >50% trust (Sidekick Interactive, 2025)
+- <a id="research-67"></a>**[[Research:67]](/docs/research/references#research-78)** Mobile Privacy: 81% concerned about data handling; 80% see loyalty boost from privacy focus (NowSecure, Feb 2024)
+- <a id="research-68"></a>**[[Research:68]](/docs/research/references#research-79)** dApp Trust: "UX = trust" in scam-heavy industry; blockchain can't guarantee DApp quality (The Alien Design, 2024)
+- <a id="research-69"></a>**[[Research:69]](/docs/research/references#research-80)** Offline Sync Conflicts: Users confused by multi-user offline edits; conflict handling crucial (Mark AI Code, 2025)
+- <a id="research-70"></a>**[[Research:70]](/docs/research/references#research-81)** Real-Time Sync: 72% expect instant financial data reflection; WebSocket/Firebase essential (Pixel Free Studio, 2024)
+- <a id="research-71"></a>**[[Research:71]](/docs/research/references#research-82)** Cross-Platform UX: Data sync + clear cross-device interactions = continuity; biggest IoT usability challenge (Medium, October 2025)
+- <a id="research-72"></a>**[[Research:72]](/docs/research/references#research-73)** Connected Consumer 2025: $896/year on devices; 45% expect content display consistency (Deloitte, 2025)
+- <a id="research-73"></a>**[[Research:73]](/docs/research/references#research-74)** Consistency & Standards (NN/g): Adherence increases learnability, reduces cognitive load (January 2024)
+- <a id="research-74"></a>**[[Research:74]](/docs/research/references#research-75)** 10 Usability Heuristics (NN/g): Maintain internal + external consistency for learnability (January 2024)
 
-- <a id="research-75"></a>**[[Research:75]](/docs/resources/references#research-76)** Material 3 Expressive: 46 studies, 18K participants; common language for cohesive cross-platform (Supercharge Design, 2025)
-- <a id="research-76"></a>**[[Research:76]](/docs/resources/references#research-85)** UX Trends 2025: 59% expect chatbot reply <5s; high expectations for immediate responses (UserGuiding, 2025)
-- <a id="research-77"></a>**[[Research:77]](/docs/resources/references#research-86)** Cross-Device UX 2025: Seamless experience now cornerstone of digital success; frictionless demand (123 Internet, 2025)
-- <a id="research-78"></a>**[[Research:78]](/docs/resources/references#research-87)** PWA 2.0 Offline-First: Offline/Online/Sync state indicators essential; users don't want "You're offline" message (Dazzle Birds, 2024)
-- <a id="research-79"></a>**[[Research:79]](/docs/resources/references#research-88)** PWA 2025 Strategies: Pre-cache usage patterns; offline create/edit with auto-sync (Lollypop Studio, October 2025)
-- <a id="research-80"></a>**[[Research:80]](/docs/resources/references#research-89)** Offline-First Development: Smooth experience where users don't notice they're offline; sync no longer optional (HashStudioz, 2025)
-- <a id="research-81"></a>**[[Research:81]](/docs/resources/references#research-90)** Offline Sync Conflicts: LWW, CRDTs, manual resolution for seamless conflict handling (Daily.dev, 2024)
-- <a id="research-82"></a>**[[Research:82]](/docs/resources/references#research-91)** Version Vector Pattern: Track updates across nodes for conflict resolution in distributed systems (Shanoj, November 2024)
-- <a id="research-83"></a>**[[Research:83]](/docs/resources/references#research-83)** Distributed Consistency (Endgrate): Use timestamps or manual reconciliation; communicate delay expectations (2024)
-- <a id="research-84"></a>**[[Research:84]](/docs/resources/references#research-84)** State Management (GeeksforGeeks): Enable concurrent access, optimize resources, scale; consistency across replicas challenging (2024)
+- <a id="research-75"></a>**[[Research:75]](/docs/research/references#research-76)** Material 3 Expressive: 46 studies, 18K participants; common language for cohesive cross-platform (Supercharge Design, 2025)
+- <a id="research-76"></a>**[[Research:76]](/docs/research/references#research-85)** UX Trends 2025: 59% expect chatbot reply <5s; high expectations for immediate responses (UserGuiding, 2025)
+- <a id="research-77"></a>**[[Research:77]](/docs/research/references#research-86)** Cross-Device UX 2025: Seamless experience now cornerstone of digital success; frictionless demand (123 Internet, 2025)
+- <a id="research-78"></a>**[[Research:78]](/docs/research/references#research-87)** PWA 2.0 Offline-First: Offline/Online/Sync state indicators essential; users don't want "You're offline" message (Dazzle Birds, 2024)
+- <a id="research-79"></a>**[[Research:79]](/docs/research/references#research-88)** PWA 2025 Strategies: Pre-cache usage patterns; offline create/edit with auto-sync (Lollypop Studio, October 2025)
+- <a id="research-80"></a>**[[Research:80]](/docs/research/references#research-89)** Offline-First Development: Smooth experience where users don't notice they're offline; sync no longer optional (HashStudioz, 2025)
+- <a id="research-81"></a>**[[Research:81]](/docs/research/references#research-90)** Offline Sync Conflicts: LWW, CRDTs, manual resolution for seamless conflict handling (Daily.dev, 2024)
+- <a id="research-82"></a>**[[Research:82]](/docs/research/references#research-91)** Version Vector Pattern: Track updates across nodes for conflict resolution in distributed systems (Shanoj, November 2024)
+- <a id="research-83"></a>**[[Research:83]](/docs/research/references#research-83)** Distributed Consistency (Endgrate): Use timestamps or manual reconciliation; communicate delay expectations (2024)
+- <a id="research-84"></a>**[[Research:84]](/docs/research/references#research-84)** State Management (GeeksforGeeks): Enable concurrent access, optimize resources, scale; consistency across replicas challenging (2024)
 
 ### Nostr-Specific Data
 
-- <a id="data-12"></a>**[[Data:12]](/docs/resources/references#data-12)** Relay Data Loss: Damus relay downtime potentially wiped users' content; reduced to one less relay (Sondre Bjellås, April 2025)
-- <a id="data-14"></a>**[[Data:14]](/docs/resources/references#data-14)** Catastrophic Follow Loss: User lost 130 follows to 1 when switching to Iris; developer lost 75% follows (Stacker News, 2024)
-- <a id="data-15"></a>**[[Data:15]](/docs/resources/references#data-15)** Kind 3 Race Conditions: "Very common experience" losing follows; sync failures before follow action delete entire list (GitHub PR #349, 2023-2024)
-- <a id="data-17"></a>**[[Data:17]](/docs/resources/references#data-18)** Relay Network Decline: 639 relays online (two-thirds reduction), 95% struggle with costs, 20% face downtime (April 2024)
-- <a id="protocol-2"></a>**[[Protocol:2]](/docs/resources/references#protocol-2)** NIP-02: Contact List and Petnames (kind 3) - Replaceable events; must contain all pubkeys as event supersedes previous
-- <a id="protocol-5"></a>**[[Protocol:5]](/docs/resources/references#protocol-5)** NIP-65: Relay List Metadata (kind 10002) - Outbox model for user relay preferences and content discovery
+- <a id="data-12"></a>**[[Data:12]](/docs/research/references#data-12)** Relay Data Loss: Damus relay downtime potentially wiped users' content; reduced to one less relay (Sondre Bjellås, April 2025)
+- <a id="data-14"></a>**[[Data:14]](/docs/research/references#data-14)** Catastrophic Follow Loss: User lost 130 follows to 1 when switching to Iris; developer lost 75% follows (Stacker News, 2024)
+- <a id="data-15"></a>**[[Data:15]](/docs/research/references#data-15)** Kind 3 Race Conditions: "Very common experience" losing follows; sync failures before follow action delete entire list (GitHub PR #349, 2023-2024)
+- <a id="data-17"></a>**[[Data:17]](/docs/research/references#data-18)** Relay Network Decline: 639 relays online (two-thirds reduction), 95% struggle with costs, 20% face downtime (April 2024)
+- <a id="protocol-2"></a>**[[Protocol:2]](/docs/research/references#protocol-2)** NIP-02: Contact List and Petnames (kind 3) - Replaceable events; must contain all pubkeys as event supersedes previous
+- <a id="protocol-5"></a>**[[Protocol:5]](/docs/research/references#protocol-5)** NIP-65: Relay List Metadata (kind 10002) - Outbox model for user relay preferences and content discovery
 
 ---
 
-**See [References & Bibliography](/docs/resources/references) for full citation details.**
+**See [References & Bibliography](/docs/research/references) for full citation details.**
 
 ---
 
