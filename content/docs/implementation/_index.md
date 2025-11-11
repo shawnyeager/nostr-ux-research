@@ -20,7 +20,7 @@ This section provides practical guidance on:
 
 ## The Implementation Challenge
 
-**The patterns are comprehensive.** Six patterns, 100+ recommendations, thousands of lines of guidance.
+**The patterns are comprehensive.** Six patterns covering onboarding, content discovery, core interactions, performance, complexity management, and data consistency.
 
 **You can't implement everything at once.** Trying to do so will:
 - Overwhelm your team
