@@ -9,7 +9,7 @@ weight: 1
 
 Most Nostr apps suffer from **features without validation**. Features get built because:
 
-- "Protocol X protocol supports it" (protocol-driven)
+- "The protocol supports it" (protocol-driven)
 - "Competitor Y has it" (competition-driven)
 - "Power users asked for it" (power-user-driven)
 - "It's technically interesting" (engineer-driven)
