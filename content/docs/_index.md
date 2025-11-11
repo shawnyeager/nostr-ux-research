@@ -32,9 +32,11 @@ This study synthesizes **100+ verified sources** from academic HCI research, ind
 ---
 
 {{< cards >}}
-  {{< card link="get-started/" title="Get Started" subtitle="Executive overview, quick wins, and where to begin" icon="academic-cap" >}}
-  {{< card link="patterns/" title="The 6 Critical Patterns" subtitle="Deep-dive on onboarding, discovery, interactions, performance, complexity, and consistency" icon="collection" >}}
-  {{< card link="resources/" title="Resources" subtitle="Methodology, references, and research sources" icon="book-open" >}}
+  {{< card link="introduction/" title="Introduction" subtitle="The problem, the solution, who this is for" icon="document-text" >}}
+  {{< card link="foundation/" title="Foundation" subtitle="Validation framework and core principles" icon="academic-cap" >}}
+  {{< card link="patterns/" title="Patterns" subtitle="The 6 critical design patterns" icon="collection" >}}
+  {{< card link="implementation/" title="Implementation" subtitle="How to apply these patterns" icon="code" >}}
+  {{< card link="research/" title="Research" subtitle="Methodology and references" icon="book-open" >}}
 {{< /cards >}}
 
 ---

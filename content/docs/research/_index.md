@@ -1,21 +1,22 @@
 ---
-title: "Resources"
-weight: 3
+linkTitle: "Research"
+title: Research & Methodology
+weight: 5
 ---
 
-## Available Resources
+## Research Foundation
 
-### [Research Methodology](methodology)
+### [Methodology](methodology/)
 
-How this study was conducted, sources used, and research approach.
+How this study was conducted, research approach, and validation process.
 
-### [References & Bibliography](references)
+### [References & Bibliography](references/)
 
-All 100+ citations used across the 6 patterns. Includes academic research, industry studies, and Nostr-specific data.
+All 100+ verified citations used across the 6 patterns. Includes academic research, industry studies, and Nostr-specific data.
 
-### [Onboarding Research Sources](onboarding-research-sources)
+### [Evidence Sources](onboarding-research-sources/)
 
-Detailed evidence and sources specifically for Pattern 1 (Onboarding).
+Detailed research evidence organized by pattern area. Direct links to source materials and findings.
 
 ---
 
