@@ -5,6 +5,24 @@ weight: 2
 
 **How to validate your improvements are working.**
 
+## About These Benchmarks
+
+**Target metrics in this guide come from three sources:**
+
+1. **Industry Standards** - Google Core Web Vitals (performance), standard SaaS metrics (retention/engagement)
+2. **Research Evidence** - Academic studies on social media UX (see [Research section](../../research/))
+3. **Nostr-Specific Baselines** - Current observed metrics from nostr.band and user research
+
+**Important:** These targets are guidelines, not absolute requirements. Your specific goals should be based on:
+- Your current baseline metrics
+- Your user base and use case
+- Competitive benchmarks in your category
+- Continuous validation with real users
+
+Start by measuring your current state, then set incremental improvement goals.
+
+---
+
 ## The Measurement Framework
 
 Every pattern improvement should have three types of metrics:
@@ -48,10 +66,12 @@ analytics.track('first_value_reached', { action: 'viewed_feed' })
 - **D7 retention**: % who return within 7 days
 - **D30 retention**: % who return within 30 days
 
-**Targets:**
+**Targets (based on consumer social app benchmarks):**
 - D1 retention: >40% (world-class: >60%)
 - D7 retention: >20% (world-class: >30%)
 - D30 retention: >10% (Nostr currently ~0%, aim for >5% first)
+
+**Note:** These are typical benchmarks for consumer social applications. Your targets should be based on your current baseline and incremental improvement goals.
 
 **Engagement Metrics:**
 - **Activation rate**: % who complete first meaningful action within 24h
@@ -204,11 +224,13 @@ analytics.track('first_value_reached', { action: 'viewed_feed' })
 - **Largest contentful paint (LCP)**: ms until largest content renders
 - **Time to interactive (TTI)**: ms until app is interactive
 
-**Targets:**
+**Targets (based on Google Core Web Vitals):**
 - FP: <500ms
 - FCP: <1s
 - LCP: <2.5s (good), <4s (needs improvement)
 - TTI: <3s
+
+**Source:** [Google Core Web Vitals](https://web.dev/articles/vitals) - Industry-standard performance metrics for web applications
 
 **User-Perceived Performance:**
 - **Perceived latency**: User survey ("How fast does the app feel?" 1-5)
@@ -488,6 +510,21 @@ analytics.track('feature_variant', { feature: 'guest-mode', variant })
 | Performance | Time to interactive | Session length | "So slow" vs "Snappy" |
 | Progressive Complexity | Settings abandonment | Feature discovery | "Overwhelming" vs "Easy to understand" |
 | Cross-Client Consistency | Write success rate | Data loss tickets | "Lost followers" vs "Works across apps" |
+
+---
+
+## Further Reading on Metrics & Benchmarks
+
+**Performance Metrics:**
+- [Google Core Web Vitals](https://web.dev/articles/vitals) - Industry-standard performance benchmarks
+- [Web.dev Performance](https://web.dev/explore/metrics) - Detailed guides on measuring web performance
+
+**Retention & Engagement:**
+- [Lenny's Newsletter: Retention benchmarks](https://www.lennysnewsletter.com/p/what-is-good-retention-issue-29) - Consumer app retention data
+- [Mixpanel Product Benchmarks](https://mixpanel.com/blog/product-benchmarks/) - Cross-industry metrics
+- [Amplitude's Behavioral Cohorts Guide](https://amplitude.com/blog/behavioral-cohorts) - User engagement patterns
+
+**Note:** Benchmark data varies significantly by app type, audience, and context. Use industry standards as directional guides, not absolute targets.
 
 ---
 
