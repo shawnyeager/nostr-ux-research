@@ -20,7 +20,34 @@ layout: hextra-home
 {{< hextra/hero-button text="Get Started" link="docs/introduction/quick-start/" >}}
 </div>
 
-<div class="hx:mt-6"></div>
+<div class="hx:mt-12 hx:mb-8">
+  <h2 class="hx:text-3xl hx:font-bold hx:tracking-tight hx:text-gray-900 dark:hx:text-gray-50 hx:mb-6">Start Here</h2>
+</div>
+
+{{< hextra/feature-grid >}}
+  {{< hextra/feature-card
+    title="Validation Framework"
+    subtitle="Stop building unvalidated features. Use the 3-question filter for every feature decision."
+    link="docs/foundation/validation-framework"
+    style="background: linear-gradient(to bottom right, #6366f1, #8b5cf6); color: white;"
+  >}}
+  {{< hextra/feature-card
+    title="Quick Wins"
+    subtitle="Ship improvements this week. 18 high-impact, low-effort improvements by pattern area."
+    link="docs/foundation/quick-wins"
+    style="background: linear-gradient(to bottom right, #3b82f6, #6366f1); color: white;"
+  >}}
+  {{< hextra/feature-card
+    title="Implementation Guide"
+    subtitle="Apply these patterns. Which pattern first, how to measure, what to avoid."
+    link="docs/implementation"
+    style="background: linear-gradient(to bottom right, #06b6d4, #3b82f6); color: white;"
+  >}}
+{{< /hextra/feature-grid >}}
+
+<div class="hx:mt-16 hx:mb-8">
+  <h2 class="hx:text-3xl hx:font-bold hx:tracking-tight hx:text-gray-900 dark:hx:text-gray-50 hx:mb-6">The 6 Critical Patterns</h2>
+</div>
 
 {{< hextra/feature-grid >}}
   {{< hextra/feature-card
